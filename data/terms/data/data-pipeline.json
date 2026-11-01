@@ -1,0 +1,121 @@
+{
+  "order": 580,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "데이터 파이프라인",
+    "en": "Data Pipeline"
+  },
+  "description": {
+    "ko": "데이터가 수집부터 처리와 전달까지 이어서 흐르도록 연결한 작업 체계예요.",
+    "en": "A connected system of tasks that moves data through collection, processing and delivery."
+  },
+  "analogy": {
+    "ko": "재료가 여러 공정을 거쳐 완제품 보관소로 이동하는 생산 라인과 같아요.",
+    "en": "Like a production line that moves material through stages to a finished-goods store."
+  },
+  "details": {
+    "ko": [
+      "수집, 변환, 검증, 저장과 배포 같은 단계를 연결해요. 정해진 시간에 묶어서 처리하거나 새 이벤트를 지속적으로 처리할 수 있어요.",
+      "단계 사이의 의존 관계, 실패 복구, 중복과 지연 관리가 중요해요. ETL은 파이프라인에 포함될 수 있지만, 파이프라인은 데이터 이동 전체를 더 넓게 가리켜요."
+    ],
+    "en": [
+      "Pipelines connect ingestion, transformation, validation, storage and delivery. They may process scheduled batches or continuously arriving events.",
+      "Dependencies, recovery, duplication and delays matter. ETL can be part of a pipeline, while pipeline is the broader term for the connected flow."
+    ]
+  },
+  "background": {
+    "ko": [
+      "한 번의 수작업이 아니라 계속 들어오는 데이터를 반복 가능하고 관찰 가능한 방식으로 전달하려고 구축해요."
+    ],
+    "en": [
+      "Pipelines are built to deliver ongoing data repeatably and observably rather than through one-off manual work."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "흐름 설계",
+        "text": "원천, 처리 단계와 목적지를 정해요."
+      },
+      {
+        "title": "실행 연결",
+        "text": "일정이나 이벤트에 따라 각 단계를 실행해요."
+      },
+      {
+        "title": "상태 감시",
+        "text": "오류, 누락과 지연을 확인하고 필요한 부분을 재처리해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Design the flow",
+        "text": "Define sources, processing stages and destinations."
+      },
+      {
+        "title": "Connect execution",
+        "text": "Run stages according to schedules or events."
+      },
+      {
+        "title": "Monitor status",
+        "text": "Monitor errors, gaps and delays and reprocess when needed."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "서비스 로그의 분석 저장소 전송",
+      "실시간 센서 데이터 처리",
+      "주문 데이터의 일일 갱신"
+    ],
+    "en": [
+      "Delivering service logs to analytics storage",
+      "Processing sensor streams",
+      "Refreshing orders daily"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "대시보드 갱신",
+        "text": "“데이터 파이프라인이 마지막으로 성공한 시각을 보여 줘서 오래된 지표를 바로 알게 하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Refreshing dashboards",
+        "text": "Say: “Show the pipeline’s last successful run so people can spot stale metrics.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "한 번 만들면 관리할 일이 없나요?",
+        "en": "Does a pipeline need no maintenance after setup?"
+      },
+      "fact": {
+        "ko": "원천 형식, 데이터량과 업무 규칙이 바뀔 수 있어요. 품질 검사와 감시, 변경 대응이 계속 필요해요.",
+        "en": "Source schemas, volumes and business rules can change. Quality checks, monitoring and maintenance remain necessary."
+      }
+    }
+  ],
+  "keywords": [
+    "etl",
+    "data-preprocessing",
+    "metadata"
+  ],
+  "related": [
+    {
+      "id": "etl",
+      "type": "related"
+    },
+    {
+      "id": "data-preprocessing",
+      "type": "related"
+    },
+    {
+      "id": "metadata",
+      "type": "related"
+    }
+  ]
+}

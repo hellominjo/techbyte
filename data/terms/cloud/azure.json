@@ -1,0 +1,130 @@
+{
+  "order": 1010,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "Azure",
+    "en": "Azure"
+  },
+  "fullName": {
+    "ko": "마이크로소프트 애저",
+    "en": "Microsoft Azure"
+  },
+  "description": {
+    "ko": "마이크로소프트가 컴퓨팅, 저장소와 데이터·AI 기능 등을 제공하는 클라우드 플랫폼이에요.",
+    "en": "Microsoft’s cloud platform offering computing, storage, data, AI and other capabilities."
+  },
+  "analogy": {
+    "ko": "앱에 필요한 시설과 운영 서비스를 골라 연결하는 IT 서비스 단지와 같아요.",
+    "en": "Like an IT service complex where you choose and connect facilities for an application."
+  },
+  "details": {
+    "ko": [
+      "가상 머신부터 관리형 앱 실행과 데이터 서비스까지 여러 수준의 서비스를 제공해요. 웹·모바일 앱, 데이터 분석이나 사내 시스템 연계 등에 활용할 수 있어요.",
+      "기존 마이크로소프트 제품만을 위한 것은 아니에요. 여러 운영체제와 개발 도구를 활용할 수 있으며, 실제 지원 범위와 지역, 관리 책임은 서비스별로 확인해요."
+    ],
+    "en": [
+      "Azure provides services from virtual machines to managed application and data platforms. Uses include web and mobile apps, analytics and enterprise integrations.",
+      "It is not limited to Microsoft application stacks. Different operating systems and tools can be used; check support, regions and responsibilities for each service."
+    ]
+  },
+  "background": {
+    "ko": [
+      "IT 자원을 필요에 맞게 제공하고 조직의 기존 시스템과 클라우드 기능을 연결하려는 수요를 지원해요."
+    ],
+    "en": [
+      "Azure supports on-demand IT resources and integration between existing organizational systems and cloud capabilities."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "사용 목적 정의",
+        "text": "앱, 데이터와 기존 시스템 연결 요구를 정해요."
+      },
+      {
+        "title": "자원 구성",
+        "text": "서비스와 지역을 선택하고 네트워크·권한을 연결해요."
+      },
+      {
+        "title": "배포와 운영",
+        "text": "앱을 반영하고 성능, 비용과 복구 상태를 살펴요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Define the purpose",
+        "text": "Define application, data and integration requirements."
+      },
+      {
+        "title": "Configure resources",
+        "text": "Choose services and locations and configure networks and access."
+      },
+      {
+        "title": "Deploy and operate",
+        "text": "Deploy and review performance, costs and recovery readiness."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "업무 웹 앱 운영",
+      "조직 데이터 분석 환경",
+      "이벤트 기반 함수 실행"
+    ],
+    "en": [
+      "Hosting business web apps",
+      "Organizational analytics environments",
+      "Event-triggered function execution"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "플랫폼 검토",
+        "text": "“Azure와 기존 시스템의 연결 방식을 확인하고, 실제 필요한 서비스의 운영 범위와 비용을 비교하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Assessing a platform",
+        "text": "Say: “Check integration with existing systems and compare responsibilities and costs for the services we need.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "Azure는 윈도 앱만 실행하나요?",
+        "en": "Does Azure run only Windows applications?"
+      },
+      "fact": {
+        "ko": "아니에요. 리눅스와 컨테이너 등도 활용할 수 있어요. 다만 각 서비스의 지원 환경은 따로 확인해야 해요.",
+        "en": "No. Linux and containers are also supported, with exact environments depending on the service."
+      }
+    }
+  ],
+  "keywords": [
+    "cloud",
+    "aws",
+    "paas",
+    "container"
+  ],
+  "related": [
+    {
+      "id": "cloud",
+      "type": "prerequisite"
+    },
+    {
+      "id": "aws",
+      "type": "compare"
+    },
+    {
+      "id": "paas",
+      "type": "related"
+    },
+    {
+      "id": "container",
+      "type": "related"
+    }
+  ]
+}

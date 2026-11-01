@@ -1,0 +1,121 @@
+{
+  "order": 820,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "캐시",
+    "en": "Cache"
+  },
+  "description": {
+    "ko": "다시 필요할 가능성이 있는 데이터나 계산 결과를 가까운 곳에 보관해 재사용하는 방식이에요.",
+    "en": "Keeping data or computed results readily available for reuse."
+  },
+  "analogy": {
+    "ko": "자주 찾는 자료를 매번 창고에서 가져오지 않고 책상 위에 놓아두는 것과 같아요.",
+    "en": "Like keeping frequently used material on your desk instead of fetching it from storage every time."
+  },
+  "details": {
+    "ko": [
+      "브라우저, 서버 메모리와 중간 네트워크 등 여러 위치에 둘 수 있어요. 원본 조회나 계산을 줄여 지연과 부하를 낮출 수 있어요.",
+      "원본이 바뀌면 오래된 값이 남을 수 있어 만료와 무효화 기준을 정해야 해요. 사용자별 응답은 다른 사람에게 섞여 전달되지 않도록 범위를 구분해요."
+    ],
+    "en": [
+      "Caches can sit in browsers, server memory or intermediary networks. They can reduce latency and load by avoiding repeated fetches or computation.",
+      "Expiration and invalidation rules manage stale data after source changes. User-specific responses need appropriate separation to avoid cross-user disclosure."
+    ]
+  },
+  "background": {
+    "ko": [
+      "같은 정보를 반복해서 가져오거나 계산하는 비용을 줄이기 위해 사용하는 성능 기법이에요."
+    ],
+    "en": [
+      "Caching reduces the cost of repeatedly fetching or computing the same information."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "저장 기준",
+        "text": "무엇을 어떤 키로 얼마나 보관할지 정해요."
+      },
+      {
+        "title": "재사용",
+        "text": "쓸 수 있는 값이 있으면 원본 처리 대신 돌려줘요."
+      },
+      {
+        "title": "갱신",
+        "text": "없거나 오래된 값은 다시 만들고 변경 시 무효화해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Define storage rules",
+        "text": "Define entries, keys and retention time."
+      },
+      {
+        "title": "Reuse",
+        "text": "Return a usable cached value instead of processing the source."
+      },
+      {
+        "title": "Refresh",
+        "text": "Recreate missing or stale entries and invalidate when necessary."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "브라우저의 이미지 재사용",
+      "인기 상품 목록 보관",
+      "반복 계산 결과 재사용"
+    ],
+    "en": [
+      "Reusing images in browsers",
+      "Caching popular product lists",
+      "Reusing computed results"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "화면 속도 개선",
+        "text": "“목록은 캐시하되 가격 변경 반영 시점과 사용자별 조건을 먼저 정하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Improving page speed",
+        "text": "Say: “Cache the list, but define price-update timing and user-specific conditions first.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "캐시는 오래 저장할수록 좋은가요?",
+        "en": "Is keeping cache entries longer always better?"
+      },
+      "fact": {
+        "ko": "오래된 값과 메모리 사용 문제가 커질 수 있어요. 데이터의 변경 빈도와 허용 지연에 맞춰 정해요.",
+        "en": "Longer retention can increase staleness and memory use. Match it to update frequency and acceptable delay."
+      }
+    }
+  ],
+  "keywords": [
+    "client",
+    "server",
+    "database"
+  ],
+  "related": [
+    {
+      "id": "client",
+      "type": "related"
+    },
+    {
+      "id": "server",
+      "type": "related"
+    },
+    {
+      "id": "database",
+      "type": "related"
+    }
+  ]
+}

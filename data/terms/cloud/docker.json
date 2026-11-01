@@ -1,0 +1,163 @@
+{
+  "order": 1090,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "Docker",
+    "en": "Docker"
+  },
+  "description": {
+    "ko": "컨테이너 이미지를 만들고 공유하며 컨테이너를 실행하도록 돕는 도구와 플랫폼이에요.",
+    "en": "Tools and a platform for building and sharing container images and running containers."
+  },
+  "analogy": {
+    "ko": "작업 상자의 제작법을 적고 같은 상자를 만들어 운반·실행하게 하는 도구 세트와 같아요.",
+    "en": "Like a toolset for specifying, building, sharing and using standard work kits."
+  },
+  "details": {
+    "ko": [
+      "Dockerfile에 앱 준비 절차를 적고 이미지를 빌드한 뒤, 그 이미지로 컨테이너를 실행할 수 있어요. 레지스트리는 이미지를 저장하고 공유하는 곳이에요.",
+      "Docker는 컨테이너 개념 자체와 같지 않아요. 컨테이너를 다루는 다른 도구도 있으며, 이미지에는 비밀번호 같은 비밀값을 넣지 않고 실행 시 따로 제공해요."
+    ],
+    "en": [
+      "A Dockerfile describes preparation steps; building produces an image used to run containers. Registries store and share images.",
+      "Docker is not the container concept itself; other tools can manage containers. Keep secrets out of images and supply them separately at runtime."
+    ]
+  },
+  "background": {
+    "ko": [
+      "컨테이너 생성과 전달 과정을 개발자가 일관된 명령과 파일로 다룰 수 있게 돕는 도구로 널리 활용돼요."
+    ],
+    "en": [
+      "Docker makes container creation and distribution accessible through consistent commands and configuration files."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "제작법 작성",
+        "text": "기반 이미지와 앱 설치·실행 조건을 정의해요."
+      },
+      {
+        "title": "빌드와 공유",
+        "text": "이미지를 만들고 레지스트리로 전달해요."
+      },
+      {
+        "title": "실행",
+        "text": "필요한 설정, 포트와 저장소를 연결해 컨테이너를 실행해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Write build instructions",
+        "text": "Define the base image and application setup and execution requirements."
+      },
+      {
+        "title": "Build and share",
+        "text": "Build the image and share it through a registry."
+      },
+      {
+        "title": "Run",
+        "text": "Run containers with configuration, ports and storage attached."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "앱 이미지 생성",
+      "팀 개발 환경 통일",
+      "여러 서비스의 로컬 실행"
+    ],
+    "en": [
+      "Building application images",
+      "Standardizing team development environments",
+      "Running multiple services locally"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "환경 차이 해결",
+        "text": "“Docker 이미지로 실행 환경을 맞추고, CPU 구조와 외부 의존성도 같은지 확인하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Addressing environment differences",
+        "text": "Say: “Align runtimes with a Docker image and also check CPU architecture and external dependencies.”"
+      }
+    ]
+  },
+  "comparison": {
+    "target": "container",
+    "rows": [
+      {
+        "label": {
+          "ko": "범위",
+          "en": "Scope"
+        },
+        "values": [
+          {
+            "ko": "이미지 제작·공유와 실행을 돕는 도구·플랫폼",
+            "en": "Tools and a platform for building, sharing and running images"
+          },
+          {
+            "ko": "이미지로부터 실행하는 격리된 앱 단위",
+            "en": "An isolated application runtime unit instantiated from an image"
+          }
+        ]
+      },
+      {
+        "label": {
+          "ko": "관계",
+          "en": "Relationship"
+        },
+        "values": [
+          {
+            "ko": "컨테이너를 다루는 여러 도구 중 하나",
+            "en": "One toolset for working with containers"
+          },
+          {
+            "ko": "Docker 외의 도구로도 생성·실행 가능",
+            "en": "Can be created and run using other toolsets"
+          }
+        ]
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "Docker 이미지에 데이터도 모두 보관하면 되나요?",
+        "en": "Should all application data be stored in the Docker image?"
+      },
+      "fact": {
+        "ko": "이미지는 배포할 실행 환경의 틀이에요. 실행 중 바뀌는 데이터는 목적에 맞는 볼륨이나 외부 저장소로 관리하는 것이 일반적이에요.",
+        "en": "An image is a deployment template. Mutable runtime data is typically managed using volumes or suitable external storage."
+      }
+    }
+  ],
+  "keywords": [
+    "container",
+    "build",
+    "deployment",
+    "kubernetes"
+  ],
+  "related": [
+    {
+      "id": "container",
+      "type": "prerequisite"
+    },
+    {
+      "id": "build",
+      "type": "related"
+    },
+    {
+      "id": "deployment",
+      "type": "related"
+    },
+    {
+      "id": "kubernetes",
+      "type": "related"
+    }
+  ]
+}

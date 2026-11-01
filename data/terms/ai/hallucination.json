@@ -1,14 +1,146 @@
 {
   "order": 60,
   "updatedAt": "2026-11-01",
-  "term": { "ko": "환각", "en": "Hallucination" },
+  "term": {
+    "ko": "환각",
+    "en": "Hallucination"
+  },
   "description": {
-    "ko": "AI가 틀린 내용을 그럴듯하게 지어내는 현상이에요.",
-    "en": "When an AI confidently makes up something that isn't true."
+    "ko": "AI가 사실과 다르거나 근거 없는 내용을 그럴듯하게 만들어 내는 현상이에요.",
+    "en": "When AI produces plausible content that is false or unsupported."
   },
   "analogy": {
-    "ko": "모르는 질문을 받은 사람이 모른다고 하지 않고, 아는 척 그럴듯하게 둘러대는 것과 같아요.",
-    "en": "Like someone who, instead of admitting they don't know, gives a confident but made-up answer."
+    "ko": "빈칸이 있는 지도에 실제로 확인하지 않은 길을 자연스럽게 이어 그려 넣는 것과 비슷해요.",
+    "en": "Like filling gaps in a map with plausible roads without checking whether they exist."
   },
-  "related": [{ "id": "llm", "type": "prerequisite" }, { "id": "rag", "type": "related" }]
+  "details": {
+    "ko": [
+      "존재하지 않는 논문이나 링크를 제시하거나, 문서에 없는 내용을 요약에 넣는 경우가 있어요. 사실과 다른 답뿐 아니라 주어진 자료로 뒷받침되지 않는 주장도 문제가 돼요.",
+      "모델은 문맥에 맞는 출력을 만들지만 모든 문장을 사실과 대조하는 것은 아니에요. 학습 정보의 한계, 모호한 질문, 잘못된 검색 결과나 자료 해석 등 여러 요인이 영향을 줄 수 있어요."
+    ],
+    "en": [
+      "Examples include fabricated papers or links and summaries that add information absent from the source. Both false statements and claims unsupported by provided material can be problematic.",
+      "Models generate contextually fitting outputs without necessarily checking every statement against facts. Training limitations, ambiguous questions, poor retrieval and misinterpretation can all contribute."
+    ]
+  },
+  "background": {
+    "ko": [
+      "생성형 AI는 정해진 데이터베이스의 항목을 그대로 꺼내는 것과 달리 새로운 문장을 만들어요. 문장이 자연스러운 정도와 내용이 사실인 정도가 달라질 수 있어 이 현상을 구분해 다뤄요."
+    ],
+    "en": [
+      "Generative AI composes new text rather than simply returning database records. Fluency and factual accuracy can diverge, making hallucination a distinct concern."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "입력과 맥락",
+        "text": "질문과 함께 주어진 자료를 바탕으로 응답을 시작해요."
+      },
+      {
+        "title": "근거 없는 생성",
+        "text": "충분한 근거가 없거나 자료를 잘못 연결해도 그럴듯한 내용을 생성할 수 있어요."
+      },
+      {
+        "title": "검증에서 발견",
+        "text": "원문, 실제 데이터나 실행 결과와 대조하면 잘못된 부분을 발견할 수 있어요. 모든 환각이 쉽게 드러나는 것은 아니에요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Input and context",
+        "text": "The model begins responding using the question and available context."
+      },
+      {
+        "title": "Unsupported generation",
+        "text": "It may generate plausible claims despite missing evidence or incorrect connections."
+      },
+      {
+        "title": "Detection through checks",
+        "text": "Comparing with sources, real data or execution results can reveal errors, though not all hallucinations are easy to detect."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "존재하지 않는 논문과 저자 인용",
+      "회의록에 없는 결정을 요약에 추가",
+      "실제로 없는 API 기능 설명"
+    ],
+    "en": [
+      "Citing nonexistent papers and authors",
+      "Adding decisions absent from meeting minutes",
+      "Describing nonexistent API capabilities"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "근거가 필요한 답변",
+        "text": "사내 규정 답변이 틀릴 때 “RAG를 넣는 데서 끝내지 말고, 답의 주장이 실제 조항에 있는지 평가하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Answers requiring evidence",
+        "text": "When policy answers are wrong, say: “Beyond adding RAG, evaluate whether each claim is supported by the actual policy.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "AI가 일부러 거짓말하는 건가요?",
+        "en": "Is the AI intentionally lying?"
+      },
+      "fact": {
+        "ko": "환각이라는 말은 출력의 오류를 가리켜요. 사람처럼 사실을 알면서 속이려는 의도가 있다고 단정하는 표현은 아니에요.",
+        "en": "Hallucination describes an output failure. It does not establish a human-like intention to deceive while knowing the truth."
+      }
+    },
+    {
+      "myth": {
+        "ko": "출처 링크가 있으면 믿어도 되나요?",
+        "en": "Is an answer reliable if it includes a source link?"
+      },
+      "fact": {
+        "ko": "링크 자체가 없거나 연결된 자료가 주장을 뒷받침하지 않을 수 있어요. 출처의 존재와 내용의 일치 여부를 함께 확인해야 해요.",
+        "en": "A link may be fabricated, or the linked material may not support the claim. Check that the source exists and actually supports the answer."
+      }
+    },
+    {
+      "myth": {
+        "ko": "RAG나 추론 모델을 쓰면 완전히 없어지나요?",
+        "en": "Do RAG or reasoning models eliminate hallucinations?"
+      },
+      "fact": {
+        "ko": "도움이 될 수 있지만 보장하지는 않아요. 검색 실패, 잘못된 해석과 계산 오류 등을 작업에 맞는 방식으로 검증해야 해요.",
+        "en": "They can help but offer no guarantee. Check retrieval failures, misinterpretations and calculation errors with task-appropriate methods."
+      }
+    }
+  ],
+  "keywords": [
+    "llm",
+    "rag",
+    "reasoning-model",
+    "evaluation"
+  ],
+  "related": [
+    {
+      "id": "llm",
+      "type": "prerequisite"
+    },
+    {
+      "id": "rag",
+      "type": "related"
+    },
+    {
+      "id": "reasoning-model",
+      "type": "related"
+    },
+    {
+      "id": "evaluation",
+      "type": "related"
+    }
+  ]
 }

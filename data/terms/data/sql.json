@@ -1,0 +1,125 @@
+{
+  "order": 510,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "SQL",
+    "en": "SQL"
+  },
+  "fullName": {
+    "ko": "구조화 질의 언어",
+    "en": "Structured Query Language"
+  },
+  "description": {
+    "ko": "데이터베이스에 원하는 데이터를 조회하거나 변경하도록 요청하는 언어예요.",
+    "en": "A language for requesting data retrieval and changes in databases."
+  },
+  "analogy": {
+    "ko": "자료실 담당자에게 “지난달 주문만 골라 고객별로 합쳐 주세요”라고 정해진 문법으로 부탁하는 것과 같아요.",
+    "en": "Like using a standard language to ask an archivist for last month’s orders grouped by customer."
+  },
+  "details": {
+    "ko": [
+      "SELECT로 조회하고 INSERT, UPDATE, DELETE 등으로 데이터를 변경해요. 테이블 정의와 접근 권한을 다루는 명령도 있어요.",
+      "주로 관계형 데이터베이스에서 사용하지만 데이터 웨어하우스 등 다른 시스템에서도 써요. 기본 개념은 비슷해도 세부 문법과 함수는 제품마다 달라요."
+    ],
+    "en": [
+      "SELECT retrieves data; INSERT, UPDATE and DELETE change it. SQL also includes commands for defining tables and managing access.",
+      "SQL is common in relational databases and also used in systems such as data warehouses. Core ideas are shared, but syntax and functions vary by product."
+    ]
+  },
+  "background": {
+    "ko": [
+      "데이터를 찾는 절차를 하나하나 구현하기보다 어떤 결과가 필요한지 선언적으로 표현하려고 만들어졌어요."
+    ],
+    "en": [
+      "SQL was developed to describe the desired result declaratively rather than implementing each data-access step."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "질의 작성",
+        "text": "가져올 항목, 조건과 집계 방식을 문장으로 적어요."
+      },
+      {
+        "title": "실행 계획",
+        "text": "시스템이 질의를 해석하고 데이터를 찾을 방법을 정해요."
+      },
+      {
+        "title": "결과 반환",
+        "text": "질의에 맞는 결과를 돌려주거나 요청한 변경을 적용해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Write a query",
+        "text": "Specify fields, conditions and aggregation in a statement."
+      },
+      {
+        "title": "Plan execution",
+        "text": "The system interprets the query and plans how to access the data."
+      },
+      {
+        "title": "Return results",
+        "text": "Return matching results or apply the requested changes."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "월별 매출 집계",
+      "주문과 고객 정보 연결",
+      "조건에 맞는 상품 가격 수정"
+    ],
+    "en": [
+      "Monthly sales aggregation",
+      "Joining orders with customer information",
+      "Updating prices for matching products"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "매출 분석 요청",
+        "text": "“SQL로 지난달 결제 완료 주문만 집계하되, 취소와 환불을 어떻게 반영할지 먼저 정하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Requesting sales analysis",
+        "text": "Say: “Use SQL to aggregate last month’s paid orders, after defining how cancellations and refunds should count.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "SQL은 데이터베이스 제품 이름인가요?",
+        "en": "Is SQL a database product?"
+      },
+      "fact": {
+        "ko": "제품이 아니라 언어예요. 같은 SQL을 사용해도 실행하는 데이터베이스와 지원 기능은 다를 수 있어요.",
+        "en": "It is a language, not a product. Systems using SQL can offer different features."
+      }
+    }
+  ],
+  "keywords": [
+    "database",
+    "rdbms",
+    "data-warehouse"
+  ],
+  "related": [
+    {
+      "id": "database",
+      "type": "prerequisite"
+    },
+    {
+      "id": "rdbms",
+      "type": "related"
+    },
+    {
+      "id": "data-warehouse",
+      "type": "related"
+    }
+  ]
+}

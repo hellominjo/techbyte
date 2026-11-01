@@ -1,0 +1,126 @@
+{
+  "order": 860,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "웹훅",
+    "en": "Webhook"
+  },
+  "description": {
+    "ko": "이벤트가 발생하면 미리 등록한 주소로 HTTP 요청을 보내 알려 주는 방식이에요.",
+    "en": "Notifying a registered URL with an HTTP request when an event occurs."
+  },
+  "analogy": {
+    "ko": "계속 전화로 진행 상황을 묻는 대신 일이 끝나면 연락해 달라고 번호를 남기는 것과 같아요.",
+    "en": "Like leaving a callback number instead of repeatedly asking for status."
+  },
+  "details": {
+    "ko": [
+      "결제 완료나 코드 변경 같은 이벤트를 다른 시스템에 전달해 후속 작업을 시작하게 해요. 보내는 쪽에서 받는 쪽의 HTTP 주소를 호출해요.",
+      "재전송이나 지연, 순서 변경이 있을 수 있어 중복 처리와 오류 복구를 설계해야 해요. 요청이 진짜 발신자에게서 왔는지도 검증해요."
+    ],
+    "en": [
+      "Events such as completed payments or code changes can trigger another system. The sender calls the receiver’s HTTP endpoint.",
+      "Retries, delays and reordered events may occur. Design deduplication and recovery and verify the sender’s authenticity."
+    ]
+  },
+  "background": {
+    "ko": [
+      "다른 시스템의 상태를 계속 조회하는 폴링을 줄이고 변화가 생겼을 때 바로 연동 작업을 시작하려고 사용해요."
+    ],
+    "en": [
+      "Webhooks reduce repeated polling and trigger integration work when something changes."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "주소 등록",
+        "text": "받는 시스템의 이벤트 수신 주소를 등록해요."
+      },
+      {
+        "title": "이벤트 전송",
+        "text": "발생한 이벤트의 정보를 HTTP 요청으로 보내요."
+      },
+      {
+        "title": "검증과 처리",
+        "text": "발신과 중복 여부를 확인하고 후속 작업을 수행해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Register an endpoint",
+        "text": "Register the receiver’s event endpoint."
+      },
+      {
+        "title": "Send an event",
+        "text": "Send event information through an HTTP request."
+      },
+      {
+        "title": "Verify and process",
+        "text": "Check authenticity and duplicates, then perform follow-up work."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "결제 완료 후 주문 갱신",
+      "Git 변경 시 자동 빌드 시작",
+      "외부 시스템의 처리 완료 알림"
+    ],
+    "en": [
+      "Updating orders after payment",
+      "Triggering builds on Git changes",
+      "Receiving external completion events"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "결제 연동",
+        "text": "“결제 웹훅은 발신 검증과 이벤트 ID 중복 확인을 하고, 재전송돼도 한 번만 반영하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Payment integration",
+        "text": "Say: “Verify payment webhooks and event IDs so retries do not apply the same update twice.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "웹훅은 한 번만, 순서대로 오나요?",
+        "en": "Are webhooks delivered exactly once and in order?"
+      },
+      "fact": {
+        "ko": "보장 범위는 제공자마다 달라요. 재전송, 지연과 누락 가능성을 확인하고 복구 절차를 준비해요.",
+        "en": "Guarantees vary by provider. Check retries, delays and possible missed events and prepare recovery procedures."
+      }
+    }
+  ],
+  "keywords": [
+    "api",
+    "https",
+    "ci-cd",
+    "json"
+  ],
+  "related": [
+    {
+      "id": "api",
+      "type": "prerequisite"
+    },
+    {
+      "id": "https",
+      "type": "related"
+    },
+    {
+      "id": "ci-cd",
+      "type": "related"
+    },
+    {
+      "id": "json",
+      "type": "related"
+    }
+  ]
+}

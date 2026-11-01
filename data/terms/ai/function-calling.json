@@ -1,0 +1,121 @@
+{
+  "order": 320,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "함수 호출",
+    "en": "Function Calling"
+  },
+  "description": {
+    "ko": "모델이 외부 기능을 쓰도록 함수 이름과 입력값을 정해진 형식으로 요청하는 방식이에요.",
+    "en": "A way for a model to request an external capability using a function name and structured arguments."
+  },
+  "analogy": {
+    "ko": "담당자에게 자유롭게 말하는 대신 정해진 신청서에 필요한 항목을 적어 보내는 것과 같아요.",
+    "en": "Like submitting a form with defined fields instead of making a free-form request."
+  },
+  "details": {
+    "ko": [
+      "앱이 함수 설명과 입력 형식을 모델에 알려 주면, 모델은 필요한 함수를 고르고 인수를 생성할 수 있어요. 실제 함수 실행은 앱이나 실행 환경이 맡아요.",
+      "도구 호출이라고도 불러요. MCP가 외부 기능을 연결하는 통신 규격이라면, 함수 호출은 모델이 어떤 기능을 어떤 값으로 요청하는지에 초점이 있어요."
+    ],
+    "en": [
+      "The application describes functions and their input schemas. The model can select a function and generate arguments; the application or runtime executes it.",
+      "It is also called tool calling. MCP standardizes external connections; function calling focuses on how a model requests a capability with arguments."
+    ]
+  },
+  "background": {
+    "ko": [
+      "자유로운 문장만으로는 프로그램을 안정적으로 실행하기 어려워, 모델의 요청을 구조화된 데이터로 받는 방식이 필요해졌어요."
+    ],
+    "en": [
+      "Programs need structured requests rather than free-form prose, creating a need for models to produce structured action requests."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "함수 설명",
+        "text": "함수의 목적과 필수 입력값을 모델에 알려 줘요."
+      },
+      {
+        "title": "요청과 검증",
+        "text": "모델이 호출 정보를 만들면 앱이 값과 권한을 확인해요."
+      },
+      {
+        "title": "실행과 전달",
+        "text": "앱이 함수를 실행하고 결과를 모델에 돌려줘요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Describe functions",
+        "text": "Tell the model each function’s purpose and required inputs."
+      },
+      {
+        "title": "Request and validate",
+        "text": "The model produces a call, and the application validates arguments and permissions."
+      },
+      {
+        "title": "Execute and return",
+        "text": "The application executes the function and returns its result to the model."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "주문 상태 조회",
+      "날씨 데이터 조회",
+      "일정 등록 요청"
+    ],
+    "en": [
+      "Looking up order status",
+      "Querying weather data",
+      "Requesting calendar creation"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "주문 챗봇",
+        "text": "“주문 조회 함수를 호출하게 하고, 주문 번호와 본인 권한은 서버에서 확인하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Order chatbot",
+        "text": "Say: “Let the model call the order lookup function, with server-side checks for order IDs and user access.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "모델이 함수를 직접 실행하나요?",
+        "en": "Does the model execute the function itself?"
+      },
+      "fact": {
+        "ko": "일반적으로 모델은 실행 요청을 만들어요. 실제 실행 여부와 권한 확인, 오류 처리는 앱이 책임져요.",
+        "en": "Usually the model generates a request. The application controls execution, authorization and error handling."
+      }
+    }
+  ],
+  "keywords": [
+    "llm",
+    "mcp",
+    "ai-agent"
+  ],
+  "related": [
+    {
+      "id": "llm",
+      "type": "prerequisite"
+    },
+    {
+      "id": "mcp",
+      "type": "related"
+    },
+    {
+      "id": "ai-agent",
+      "type": "related"
+    }
+  ]
+}

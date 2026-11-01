@@ -1,0 +1,121 @@
+{
+  "order": 830,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "쿠키와 세션",
+    "en": "Cookies and Sessions"
+  },
+  "description": {
+    "ko": "쿠키는 브라우저가 보관해 요청에 보내는 작은 데이터이고, 세션은 여러 요청에 걸쳐 유지하는 이용 상태예요.",
+    "en": "Cookies are small browser-held data sent with requests; sessions maintain an interaction’s state across requests."
+  },
+  "analogy": {
+    "ko": "쿠키를 보관증, 세션을 보관증으로 찾아보는 이용 기록에 비유할 수 있어요.",
+    "en": "A cookie can be like a claim ticket, with a session like the record located using that ticket."
+  },
+  "details": {
+    "ko": [
+      "대표적인 로그인 구현에서는 서버가 세션 상태를 저장하고, 브라우저는 세션 ID를 쿠키에 보관해요. 서버는 다음 요청의 ID로 상태를 찾아요.",
+      "쿠키는 언어 설정 등에도 쓰이며, 모든 세션이 쿠키나 서버 저장소를 사용하는 것은 아니에요. 저장과 만료 방식은 설계에 따라 달라요."
+    ],
+    "en": [
+      "In a common login design, the server stores session state and the browser keeps a session ID in a cookie. The server looks up the state on later requests.",
+      "Cookies also store preferences, and not every session uses cookies or server-side storage. Storage and expiration depend on the design."
+    ]
+  },
+  "background": {
+    "ko": [
+      "HTTP 요청은 기본적으로 서로 독립적이라 로그인이나 장바구니 같은 연속된 이용 상태를 연결할 방법이 필요해요."
+    ],
+    "en": [
+      "HTTP requests are fundamentally independent, creating a need to connect interactions such as login and shopping-cart activity."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "상태 시작",
+        "text": "로그인 등으로 세션을 만들고 필요한 식별 정보를 전달해요."
+      },
+      {
+        "title": "요청 연결",
+        "text": "브라우저가 범위와 정책에 맞는 쿠키를 보내면 서버가 상태를 확인해요."
+      },
+      {
+        "title": "만료와 종료",
+        "text": "유효 기간과 로그아웃 규칙에 따라 상태와 식별자를 종료해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Start state",
+        "text": "Create a session through an action such as login and provide an identifier."
+      },
+      {
+        "title": "Link requests",
+        "text": "The browser sends cookies under their scope and policies, allowing the server to identify state."
+      },
+      {
+        "title": "Expire and end",
+        "text": "End state and identifiers according to expiration and logout rules."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "로그인 유지",
+      "장바구니 상태 연결",
+      "언어 설정 쿠키"
+    ],
+    "en": [
+      "Maintaining login",
+      "Linking shopping-cart activity",
+      "Language-preference cookies"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "로그아웃 설계",
+        "text": "“브라우저 쿠키 삭제와 서버 세션 종료를 함께 확인하고, 만료 시간도 정하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Designing logout",
+        "text": "Say: “Check both cookie removal and server-session termination, and define expiration.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "브라우저를 닫으면 로그인은 반드시 끝나나요?",
+        "en": "Does closing the browser always end a login?"
+      },
+      "fact": {
+        "ko": "쿠키 만료, 브라우저 복원과 서버 세션 정책에 따라 달라요. 종료 조건은 실제 설계와 동작으로 확인해야 해요.",
+        "en": "It depends on cookie expiration, browser restoration and server policy. Verify the actual termination behavior."
+      }
+    }
+  ],
+  "keywords": [
+    "client",
+    "authentication",
+    "https"
+  ],
+  "related": [
+    {
+      "id": "client",
+      "type": "prerequisite"
+    },
+    {
+      "id": "authentication",
+      "type": "related"
+    },
+    {
+      "id": "https",
+      "type": "related"
+    }
+  ]
+}

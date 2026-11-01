@@ -1,0 +1,121 @@
+{
+  "order": 220,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "딥러닝",
+    "en": "Deep Learning"
+  },
+  "description": {
+    "ko": "여러 층으로 쌓은 신경망이 데이터의 복잡한 패턴을 배우는 머신러닝 방법이에요.",
+    "en": "Machine learning that uses neural networks with many layers to learn complex patterns."
+  },
+  "analogy": {
+    "ko": "사진에서 선을 찾고, 선을 모아 모양을 알아보고, 모양을 모아 사물을 구별하는 여러 겹의 관찰 과정과 비슷해요.",
+    "en": "Like layers of observation that find lines, combine them into shapes, and recognize objects."
+  },
+  "details": {
+    "ko": [
+      "여러 층이 입력을 차례로 변환하며 필요한 특징을 배워요. 이미지·음성·언어처럼 복잡한 데이터를 다루는 데 많이 쓰여요.",
+      "좋은 성능에는 데이터와 연산 자원이 많이 필요할 수 있어요. 데이터가 적은 표 형태의 업무 문제에서는 다른 머신러닝 방법이 더 적합할 수도 있어요."
+    ],
+    "en": [
+      "Layers transform inputs and learn useful features. Deep learning is widely used for complex data such as images, audio and language.",
+      "Strong performance can require substantial data and computing resources. Other machine-learning methods may suit small tabular business datasets better."
+    ]
+  },
+  "background": {
+    "ko": [
+      "데이터와 GPU 연산 능력이 늘면서 깊은 신경망을 실제로 학습시킬 수 있게 되었고, 인식과 생성 분야의 활용이 커졌어요."
+    ],
+    "en": [
+      "More data and GPU computing made deep networks practical to train, expanding their use in recognition and generation."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "층 구성",
+        "text": "문제에 맞는 여러 층의 신경망을 준비해요."
+      },
+      {
+        "title": "오차 계산",
+        "text": "모델 출력이 학습 목표와 얼마나 다른지 계산해요."
+      },
+      {
+        "title": "가중치 조정",
+        "text": "오차를 줄이는 방향으로 각 층의 숫자를 반복해서 바꿔요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Build layers",
+        "text": "Set up a multilayer network suited to the task."
+      },
+      {
+        "title": "Measure error",
+        "text": "Measure how far the output is from the training objective."
+      },
+      {
+        "title": "Adjust weights",
+        "text": "Repeatedly adjust numbers in the layers to reduce error."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "사진 속 물체 인식",
+      "음성을 글로 변환",
+      "문장과 이미지 생성"
+    ],
+    "en": [
+      "Recognizing objects in photos",
+      "Transcribing speech",
+      "Generating text and images"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "이미지 검사",
+        "text": "제품 사진에서 흠집을 찾을 때 써요. “딥러닝 모델이 조명 변화에도 잘 작동하는지 확인하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Visual inspection",
+        "text": "Use it to detect defects in product photos. Say: “Check whether the deep-learning model also works under different lighting.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "층이 많으면 무조건 더 좋나요?",
+        "en": "Are more layers always better?"
+      },
+      "fact": {
+        "ko": "층 수만으로 성능이 정해지지 않아요. 데이터 품질, 구조, 학습 방법, 지연 시간과 비용도 함께 봐야 해요.",
+        "en": "Layer count alone does not determine quality. Data, architecture, training, latency and cost also matter."
+      }
+    }
+  ],
+  "keywords": [
+    "machine-learning",
+    "neural-network",
+    "transformer"
+  ],
+  "related": [
+    {
+      "id": "machine-learning",
+      "type": "prerequisite"
+    },
+    {
+      "id": "neural-network",
+      "type": "prerequisite"
+    },
+    {
+      "id": "transformer",
+      "type": "related"
+    }
+  ]
+}

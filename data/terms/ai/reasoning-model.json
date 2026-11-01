@@ -1,0 +1,126 @@
+{
+  "order": 370,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "추론 모델",
+    "en": "Reasoning Model"
+  },
+  "description": {
+    "ko": "복잡한 문제를 풀 때 중간 계산과 검토에 더 많은 연산을 쓰도록 설계·학습된 모델이에요.",
+    "en": "A model designed or trained to spend more computation on intermediate problem solving and checking."
+  },
+  "analogy": {
+    "ko": "바로 답하기보다 풀이를 진행하고 다시 확인한 뒤 답을 내는 문제 해결자와 비슷해요.",
+    "en": "Like a problem solver who works through a solution and checks it before answering."
+  },
+  "details": {
+    "ko": [
+      "수학, 코드, 계획처럼 여러 단계가 필요한 문제를 풀도록 학습하는 경우가 많아요. 방식은 모델마다 다르며 강화학습이나 추론 시 연산 확대를 활용할 수 있어요.",
+      "응답 시간과 비용이 늘 수 있고, 간단한 작업에는 이점이 작을 수 있어요. 사용자에게 보이는 설명이 내부 계산 전체를 그대로 보여 주는 것은 아니에요."
+    ],
+    "en": [
+      "These models often train for multistep tasks such as math, coding and planning. Methods vary and can include reinforcement learning and additional computation at inference time.",
+      "Latency and cost can increase, with limited benefit on simple tasks. A visible explanation is not necessarily a complete record of internal computation."
+    ]
+  },
+  "background": {
+    "ko": [
+      "익숙한 문장을 생성하는 것만으로 풀기 어려운 문제에서, 답을 내기 전 계산과 검토를 늘리려는 방향으로 발전했어요."
+    ],
+    "en": [
+      "These models developed to improve problems that need more computation and checking than straightforward response generation."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "문제 해석",
+        "text": "목표와 조건을 파악해요."
+      },
+      {
+        "title": "중간 처리",
+        "text": "모델 방식에 따라 중간 풀이와 검토에 연산을 사용해요."
+      },
+      {
+        "title": "답변",
+        "text": "최종 결과를 제시하고 외부 검사로 정확성을 확인해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Interpret the problem",
+        "text": "Identify the goal and constraints."
+      },
+      {
+        "title": "Work through it",
+        "text": "Use computation for intermediate solving and checking, depending on the model."
+      },
+      {
+        "title": "Answer",
+        "text": "Present a result and verify it with external checks."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "복잡한 수학 문제",
+      "여러 조건을 맞추는 계획",
+      "코드 오류 원인 분석"
+    ],
+    "en": [
+      "Complex math problems",
+      "Planning under several constraints",
+      "Analyzing code defects"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "모델 선택",
+        "text": "“단순 분류와 복잡한 분석을 나눠 추론 모델의 품질 향상이 지연 시간을 감수할 만큼인지 보자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Choosing a model",
+        "text": "Say: “Compare simple classification and complex analysis to see where the quality gain justifies the extra latency.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "추론 모델은 항상 정답을 내나요?",
+        "en": "Do reasoning models always give correct answers?"
+      },
+      "fact": {
+        "ko": "중간 풀이도 틀릴 수 있어요. 테스트, 계산기, 원자료 확인 등 작업에 맞는 검증이 필요해요.",
+        "en": "Intermediate reasoning can be wrong too. Use tests, calculators or source checks suited to the task."
+      }
+    }
+  ],
+  "keywords": [
+    "llm",
+    "inference",
+    "reinforcement-learning",
+    "evaluation"
+  ],
+  "related": [
+    {
+      "id": "llm",
+      "type": "prerequisite"
+    },
+    {
+      "id": "inference",
+      "type": "related"
+    },
+    {
+      "id": "reinforcement-learning",
+      "type": "related"
+    },
+    {
+      "id": "evaluation",
+      "type": "related"
+    }
+  ]
+}

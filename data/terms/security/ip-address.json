@@ -1,0 +1,167 @@
+{
+  "order": 1200,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "IP 주소",
+    "en": "IP Address"
+  },
+  "fullName": {
+    "ko": "인터넷 프로토콜 주소",
+    "en": "Internet Protocol Address"
+  },
+  "description": {
+    "ko": "IP 네트워크에서 통신할 인터페이스의 위치를 식별하고 패킷을 전달하는 데 쓰는 주소예요.",
+    "en": "An address used to identify network interfaces and route packets on an IP network."
+  },
+  "analogy": {
+    "ko": "우편물이 갈 곳을 구분하는 주소와 비슷하지만, 한 사람이 영구히 갖는 신분증은 아니에요.",
+    "en": "Like an address used to deliver mail, rather than a permanent personal identity card."
+  },
+  "details": {
+    "ko": [
+      "IPv4는 32비트, IPv6는 128비트 주소를 사용해요. 외부 통신에 쓰는 공인 주소와 내부 네트워크에서 사용하는 사설 주소 등으로 용도를 구분할 수 있어요.",
+      "장치에 주소가 여러 개 있을 수 있고, 주소가 바뀌거나 여러 장치가 하나의 공인 IP를 공유할 수도 있어요. IP만으로 특정 사람이나 정확한 물리 위치를 확정할 수는 없어요."
+    ],
+    "en": [
+      "IPv4 uses 32-bit addresses and IPv6 uses 128-bit addresses. Address scopes include public routing and private network use.",
+      "Devices can have multiple addresses, addresses can change, and multiple devices can share a public IP. An IP alone does not establish a person or precise physical location."
+    ]
+  },
+  "background": {
+    "ko": [
+      "서로 연결된 네트워크에서 데이터를 목적지로 전달하려면 공통된 주소와 경로 선택 방식이 필요해요."
+    ],
+    "en": [
+      "Interconnected networks need common addressing and routing mechanisms to deliver data."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "주소 설정",
+        "text": "네트워크 정책에 따라 주소를 자동 또는 수동으로 설정해요."
+      },
+      {
+        "title": "패킷 전달",
+        "text": "출발지와 목적지 주소를 포함한 패킷을 라우터가 전달해요."
+      },
+      {
+        "title": "통신 확인",
+        "text": "주소, 경로와 방화벽 등 조건을 확인해 연결 문제를 살펴요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Configure an address",
+        "text": "Configure addresses automatically or manually under network policy."
+      },
+      {
+        "title": "Route packets",
+        "text": "Routers forward packets containing source and destination addresses."
+      },
+      {
+        "title": "Check communication",
+        "text": "Check addressing, routes and firewall conditions when diagnosing connectivity."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "서비스 접속 주소",
+      "네트워크 접근 허용 규칙",
+      "접속 기록의 조사 단서"
+    ],
+    "en": [
+      "Service connection addresses",
+      "Network access rules",
+      "Evidence in connection logs"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "접속 문제 확인",
+        "text": "“IP가 맞는지만 보지 말고 포트와 경로, 방화벽 허용 여부도 확인하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Investigating connectivity",
+        "text": "Say: “Check ports, routing and firewall rules as well as the IP address.”"
+      }
+    ]
+  },
+  "comparison": {
+    "target": "domain",
+    "rows": [
+      {
+        "label": {
+          "ko": "역할",
+          "en": "Role"
+        },
+        "values": [
+          {
+            "ko": "IP 통신에서 인터페이스 식별과 경로 전달에 사용",
+            "en": "Identifies interfaces and supports IP routing"
+          },
+          {
+            "ko": "사람이 사용하는 계층형 이름",
+            "en": "A hierarchical, human-readable name"
+          }
+        ]
+      },
+      {
+        "label": {
+          "ko": "연결 관계",
+          "en": "Mapping"
+        },
+        "values": [
+          {
+            "ko": "하나의 주소를 여러 이름이 가리킬 수 있음",
+            "en": "Several names can point to one address"
+          },
+          {
+            "ko": "DNS로 여러 IP 주소 등에 연결 가능",
+            "en": "DNS can map a name to multiple addresses"
+          }
+        ]
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "IP 주소 하나는 항상 한 사람을 뜻하나요?",
+        "en": "Does one IP address always identify one person?"
+      },
+      "fact": {
+        "ko": "공유기나 프록시 뒤의 여러 사용자가 같은 공인 주소를 쓸 수 있어요. 식별과 접근 제어에서 IP만을 유일한 근거로 삼지 않아요.",
+        "en": "Multiple users behind a router or proxy can share an address. IP should not be the sole basis for identity or access decisions."
+      }
+    }
+  ],
+  "keywords": [
+    "dns",
+    "domain",
+    "firewall",
+    "vpn"
+  ],
+  "related": [
+    {
+      "id": "dns",
+      "type": "related"
+    },
+    {
+      "id": "domain",
+      "type": "compare"
+    },
+    {
+      "id": "firewall",
+      "type": "related"
+    },
+    {
+      "id": "vpn",
+      "type": "related"
+    }
+  ]
+}

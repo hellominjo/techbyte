@@ -1,0 +1,167 @@
+{
+  "order": 1280,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "MFA",
+    "en": "MFA"
+  },
+  "fullName": {
+    "ko": "다중요소 인증",
+    "en": "Multi-Factor Authentication"
+  },
+  "description": {
+    "ko": "서로 다른 종류의 인증 요소를 둘 이상 조합해 신원을 확인하는 방식이에요.",
+    "en": "Verifying identity with at least two distinct kinds of authentication factor."
+  },
+  "analogy": {
+    "ko": "신분을 확인할 때 암호만 묻지 않고 실제 출입 장치의 소유 같은 다른 증거도 확인하는 것과 같아요.",
+    "en": "Like checking possession of an access device as well as knowledge of a secret."
+  },
+  "details": {
+    "ko": [
+      "아는 것, 가진 것, 생체 특성처럼 종류가 다른 요소를 조합해요. 비밀번호와 별도 인증기, 또는 사용자 확인을 요구하는 암호학적 인증 장치 등이 해당할 수 있어요.",
+      "화면 단계 수와 요소 수는 같지 않아요. 방식별 피싱 저항성과 복구 절차가 다르며, 하나의 장치에서 둘 이상의 요소를 확인할 수도 있어요."
+    ],
+    "en": [
+      "Factors include knowledge, possession and inherence. Examples include a password with an authenticator or a cryptographic authenticator requiring user verification.",
+      "The number of screens is not the number of factors. Phishing resistance and recovery vary; a single device can verify multiple factors."
+    ]
+  },
+  "background": {
+    "ko": [
+      "비밀번호 하나가 유출되거나 추측됐을 때 그것만으로 계정을 사용할 위험을 줄이려고 사용해요."
+    ],
+    "en": [
+      "MFA reduces the risk that a leaked or guessed password alone grants account access."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "요소 등록",
+        "text": "서로 다른 종류의 인증 수단과 복구 방법을 등록해요."
+      },
+      {
+        "title": "조합 확인",
+        "text": "정책이 요구하는 요소들을 확인해요."
+      },
+      {
+        "title": "결과와 복구 관리",
+        "text": "인증 결과를 적용하고 장치 분실·재등록 절차도 보호해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Enroll factors",
+        "text": "Enroll distinct factors and recovery methods."
+      },
+      {
+        "title": "Verify the combination",
+        "text": "Verify the factors required by policy."
+      },
+      {
+        "title": "Manage results and recovery",
+        "text": "Apply the result and protect loss and re-enrollment processes."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "비밀번호와 인증 앱 코드",
+      "관리자 계정의 추가 인증",
+      "사용자 확인을 요구하는 보안키"
+    ],
+    "en": [
+      "Passwords with authenticator-app codes",
+      "Additional administrator authentication",
+      "Security keys requiring user verification"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "계정 보호 강화",
+        "text": "“MFA 등록뿐 아니라 분실 시 복구와 재설정에도 같은 수준의 확인을 적용하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Strengthening account protection",
+        "text": "Say: “Protect factor recovery and resets as carefully as MFA enrollment and sign-in.”"
+      }
+    ]
+  },
+  "comparison": {
+    "target": "passkey",
+    "rows": [
+      {
+        "label": {
+          "ko": "개념",
+          "en": "Concept"
+        },
+        "values": [
+          {
+            "ko": "서로 다른 인증 요소를 조합하는 방식",
+            "en": "Combining distinct authentication factors"
+          },
+          {
+            "ko": "서비스에 묶인 공개키 인증 자격증명",
+            "en": "A service-bound public-key credential"
+          }
+        ]
+      },
+      {
+        "label": {
+          "ko": "관계",
+          "en": "Relationship"
+        },
+        "values": [
+          {
+            "ko": "코드·보안키 등 여러 수단으로 구현",
+            "en": "Can use codes, security keys and other mechanisms"
+          },
+          {
+            "ko": "키 소유와 PIN·생체 확인 등을 결합할 수 있음",
+            "en": "Can combine key possession with PIN or biometric verification"
+          }
+        ]
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "비밀번호와 PIN을 함께 쓰면 MFA인가요?",
+        "en": "Are a password and a PIN together MFA?"
+      },
+      "fact": {
+        "ko": "둘 다 아는 것에 해당하므로 그것만으로는 서로 다른 요소가 아니에요. 또 일회용 코드 등 모든 MFA가 피싱에 강한 것은 아니에요.",
+        "en": "Both are knowledge factors, so they alone are not distinct factors. Also, not all MFA, including one-time codes, is phishing-resistant."
+      }
+    }
+  ],
+  "keywords": [
+    "authentication",
+    "passkey",
+    "sso",
+    "phishing"
+  ],
+  "related": [
+    {
+      "id": "authentication",
+      "type": "prerequisite"
+    },
+    {
+      "id": "passkey",
+      "type": "related"
+    },
+    {
+      "id": "sso",
+      "type": "related"
+    },
+    {
+      "id": "phishing",
+      "type": "related"
+    }
+  ]
+}

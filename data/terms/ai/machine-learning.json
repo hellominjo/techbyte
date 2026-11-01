@@ -1,0 +1,162 @@
+{
+  "order": 210,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "머신러닝",
+    "en": "ML"
+  },
+  "fullName": {
+    "ko": "기계학습",
+    "en": "Machine Learning"
+  },
+  "description": {
+    "ko": "모든 규칙을 사람이 직접 적는 대신, 컴퓨터가 데이터에서 패턴을 배우게 하는 방법이에요.",
+    "en": "A way for computers to learn patterns from data instead of having people write every rule."
+  },
+  "analogy": {
+    "ko": "과일을 고르는 기준을 일일이 설명하는 대신 여러 과일과 이름을 보여 주며 구별하게 하는 것과 같아요.",
+    "en": "Like teaching fruit recognition by showing examples rather than listing every rule."
+  },
+  "details": {
+    "ko": [
+      "입력과 정답의 관계를 배우는 지도학습, 정답 없이 구조를 찾는 비지도학습, 보상을 통해 행동을 배우는 강화학습 등이 있어요.",
+      "배운 패턴이 새로운 데이터에도 잘 맞아야 해요. 학습 자료에만 잘 맞거나 자료의 편향을 그대로 배우면 실제 서비스에서 성능이 떨어질 수 있어요."
+    ],
+    "en": [
+      "Approaches include supervised learning from labeled examples, unsupervised learning to find structure, and reinforcement learning from rewards.",
+      "Learned patterns need to work on new data. Overfitting to training examples or learning their biases can hurt real-world performance."
+    ]
+  },
+  "background": {
+    "ko": [
+      "스팸이나 추천처럼 경우의 수가 너무 많아 사람이 모든 규칙을 만들기 어려운 문제를 풀기 위해 널리 쓰이게 됐어요."
+    ],
+    "en": [
+      "It became widely used for problems such as spam detection and recommendations, where writing every rule is impractical."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "데이터 준비",
+        "text": "풀려는 문제에 맞는 데이터를 모으고 정리해요."
+      },
+      {
+        "title": "학습",
+        "text": "예측이나 행동이 목표에 가까워지도록 모델을 조정해요."
+      },
+      {
+        "title": "검증",
+        "text": "학습에 쓰지 않은 자료로 성능을 확인해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Prepare data",
+        "text": "Collect and prepare data for the problem."
+      },
+      {
+        "title": "Train",
+        "text": "Adjust the model so predictions or actions better meet the objective."
+      },
+      {
+        "title": "Validate",
+        "text": "Check performance on data not used for training."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "스팸 메일 분류",
+      "구매 이력 기반 추천",
+      "제품 불량 예측"
+    ],
+    "en": [
+      "Classifying spam",
+      "Recommendations from purchase history",
+      "Predicting product defects"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "이탈 고객 예측",
+        "text": "고객 기록을 보고 이탈 가능성을 계산할 때 써요. “머신러닝으로 예측하되, 최근 고객 데이터로 따로 검증하자”라고 말할 수 있어요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Predicting churn",
+        "text": "Use customer records to estimate churn risk. Say: “Use machine learning, and validate it separately on recent customer data.”"
+      }
+    ]
+  },
+  "comparison": {
+    "target": "deep-learning",
+    "rows": [
+      {
+        "label": {
+          "ko": "범위",
+          "en": "Scope"
+        },
+        "values": [
+          {
+            "ko": "데이터에서 패턴을 배우는 방법 전반",
+            "en": "Methods that learn patterns from data"
+          },
+          {
+            "ko": "깊은 신경망을 사용하는 머신러닝의 한 종류",
+            "en": "A subset using deep neural networks"
+          }
+        ]
+      },
+      {
+        "label": {
+          "ko": "대표 방법",
+          "en": "Typical methods"
+        },
+        "values": [
+          {
+            "ko": "선형 회귀, 결정 트리, 신경망 등",
+            "en": "Linear regression, decision trees, neural networks and more"
+          },
+          {
+            "ko": "다층 신경망, 트랜스포머 등",
+            "en": "Multilayer neural networks, transformers and more"
+          }
+        ]
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "머신러닝은 모두 딥러닝인가요?",
+        "en": "Is all machine learning deep learning?"
+      },
+      "fact": {
+        "ko": "딥러닝은 머신러닝의 한 종류예요. 결정 트리나 선형 회귀처럼 깊은 신경망을 쓰지 않는 방법도 있어요.",
+        "en": "Deep learning is one kind of machine learning. Other methods include decision trees and linear regression."
+      }
+    }
+  ],
+  "keywords": [
+    "deep-learning",
+    "training",
+    "evaluation"
+  ],
+  "related": [
+    {
+      "id": "deep-learning",
+      "type": "related"
+    },
+    {
+      "id": "training",
+      "type": "related"
+    },
+    {
+      "id": "evaluation",
+      "type": "related"
+    }
+  ]
+}

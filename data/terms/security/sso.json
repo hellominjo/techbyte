@@ -1,0 +1,130 @@
+{
+  "order": 1270,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "SSO",
+    "en": "SSO"
+  },
+  "fullName": {
+    "ko": "싱글 사인온",
+    "en": "Single Sign-On"
+  },
+  "description": {
+    "ko": "공통 신원 제공자의 로그인 결과를 여러 서비스에서 신뢰해 반복 로그인을 줄이는 방식이에요.",
+    "en": "Using a common identity provider’s sign-in across services to reduce repeated authentication."
+  },
+  "analogy": {
+    "ko": "각 건물에서 새 신분증을 만드는 대신 공통 출입증을 각 건물이 확인하는 것과 같아요.",
+    "en": "Like buildings accepting a shared identity pass instead of issuing separate identities each time."
+  },
+  "details": {
+    "ko": [
+      "서비스가 신원 제공자에게 인증을 맡기고 검증된 결과로 자체 세션을 만들 수 있어요. OpenID Connect나 SAML 같은 프로토콜로 구현할 수 있어요.",
+      "권한과 계정 수명 관리까지 자동으로 해결되는 것은 아니에요. 퇴사자 처리, 세션 만료와 전체 로그아웃의 범위를 별도로 설계해요."
+    ],
+    "en": [
+      "A service can delegate authentication to an identity provider and create its own session from a verified result. Implementations can use OpenID Connect or SAML.",
+      "SSO does not automatically solve permissions or account lifecycle management. Offboarding, expiration and cross-service logout need explicit design."
+    ]
+  },
+  "background": {
+    "ko": [
+      "서비스마다 계정을 관리하고 다시 로그인하는 부담을 줄이고 조직의 인증 정책을 통일하려고 사용해요."
+    ],
+    "en": [
+      "SSO reduces repeated sign-ins and separate account handling while supporting common authentication policies."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "인증 위임",
+        "text": "서비스가 공통 신원 제공자로 사용자를 안내해요."
+      },
+      {
+        "title": "로그인 결과 검증",
+        "text": "기존 로그인 또는 새 인증 결과를 서비스가 검증해요."
+      },
+      {
+        "title": "서비스 이용",
+        "text": "서비스가 자체 권한과 세션 정책에 맞춰 접근을 제공해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Delegate authentication",
+        "text": "The service directs the user to a common identity provider."
+      },
+      {
+        "title": "Verify sign-in results",
+        "text": "The service validates the result from an existing or new sign-in."
+      },
+      {
+        "title": "Use the service",
+        "text": "The service grants access under its own permission and session policies."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "회사 계정으로 여러 업무 도구 접속",
+      "학교 계정의 여러 학습 서비스 이용",
+      "중앙 인증 정책 적용"
+    ],
+    "en": [
+      "Accessing work tools with a company identity",
+      "Using learning services with a school identity",
+      "Applying centralized authentication policies"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "조직 로그인 통합",
+        "text": "“SSO를 연결하면서 퇴사자의 신규 로그인 차단과 기존 세션 종료 범위도 확인하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Unifying organizational sign-in",
+        "text": "Say: “When integrating SSO, check both blocking new sign-ins and terminating existing sessions for departing staff.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "SSO는 여러 곳에서 같은 비밀번호를 쓰는 건가요?",
+        "en": "Does SSO mean reusing one password everywhere?"
+      },
+      "fact": {
+        "ko": "각 서비스에 같은 비밀번호를 저장하는 것과 달라요. 서비스가 신원 제공자의 검증된 인증 결과를 신뢰하는 구조예요.",
+        "en": "It differs from storing the same password at each service. Services trust verified authentication results from an identity provider."
+      }
+    }
+  ],
+  "keywords": [
+    "authentication",
+    "oauth",
+    "mfa",
+    "cookies-and-sessions"
+  ],
+  "related": [
+    {
+      "id": "authentication",
+      "type": "prerequisite"
+    },
+    {
+      "id": "oauth",
+      "type": "related"
+    },
+    {
+      "id": "mfa",
+      "type": "related"
+    },
+    {
+      "id": "cookies-and-sessions",
+      "type": "related"
+    }
+  ]
+}

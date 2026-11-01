@@ -1,0 +1,163 @@
+{
+  "order": 1240,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "암호화",
+    "en": "Encryption"
+  },
+  "description": {
+    "ko": "키를 이용해 데이터를 읽기 어려운 암호문으로 바꾸고, 허용된 키로 복호화하게 하는 방법이에요.",
+    "en": "Using keys to transform data into ciphertext that authorized keys can decrypt."
+  },
+  "analogy": {
+    "ko": "내용을 잠금 상자에 넣고 맞는 열쇠를 가진 쪽만 열게 하는 것과 같아요.",
+    "en": "Like putting information in a locked box that opens with the right key."
+  },
+  "details": {
+    "ko": [
+      "대칭키 방식은 암호화와 복호화에 공유 비밀키를 쓰고, 공개키 방식은 서로 연결된 공개키와 개인키를 활용해요. 실제 시스템에서는 여러 암호 기법을 조합해요.",
+      "저장 데이터와 전송 데이터를 보호할 수 있지만 키 보관과 권한이 중요해요. 암호화만으로 무결성이 항상 보장되는 것은 아니므로 검증된 인증 암호 방식 등을 사용해요."
+    ],
+    "en": [
+      "Symmetric encryption uses a shared secret; public-key encryption uses related public and private keys. Practical systems combine cryptographic techniques.",
+      "Encryption can protect stored and transmitted data, but key custody and access control matter. Encryption alone does not always provide integrity; use established authenticated constructions."
+    ]
+  },
+  "background": {
+    "ko": [
+      "데이터를 보관하거나 전달하는 과정에서 허가되지 않은 사람이 내용을 읽지 못하도록 기밀성을 보호해요."
+    ],
+    "en": [
+      "Encryption protects confidentiality against unauthorized reading during storage or transmission."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "키와 방식 준비",
+        "text": "목적에 맞는 검증된 방식과 키 관리 체계를 정해요."
+      },
+      {
+        "title": "암호화",
+        "text": "평문을 키를 사용해 암호문으로 바꿔요."
+      },
+      {
+        "title": "허용된 복호화",
+        "text": "권한 있는 쪽이 필요한 키로 데이터를 복원하고 유효성을 확인해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Prepare keys and a method",
+        "text": "Choose an established method and appropriate key management."
+      },
+      {
+        "title": "Encrypt",
+        "text": "Transform plaintext into ciphertext using a key."
+      },
+      {
+        "title": "Decrypt with authorization",
+        "text": "Authorized parties recover the data with the required key and validate it."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "저장 파일 보호",
+      "TLS 통신 보호",
+      "백업 데이터의 기밀성 보호"
+    ],
+    "en": [
+      "Protecting stored files",
+      "Protecting communication with TLS",
+      "Protecting backup confidentiality"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "민감 데이터 저장",
+        "text": "“데이터 암호화와 함께 키 접근 권한, 교체와 복구 절차도 정하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Storing sensitive data",
+        "text": "Say: “Define key access, rotation and recovery along with data encryption.”"
+      }
+    ]
+  },
+  "comparison": {
+    "target": "hash",
+    "rows": [
+      {
+        "label": {
+          "ko": "주요 목적",
+          "en": "Primary purpose"
+        },
+        "values": [
+          {
+            "ko": "허용된 쪽만 원문을 읽게 보호",
+            "en": "Protect readable content for authorized parties"
+          },
+          {
+            "ko": "입력의 요약과 일치·변경 확인",
+            "en": "Summarize inputs and support comparison"
+          }
+        ]
+      },
+      {
+        "label": {
+          "ko": "원문 복원",
+          "en": "Recovery"
+        },
+        "values": [
+          {
+            "ko": "맞는 키로 복호화하도록 설계",
+            "en": "Designed for decryption with an appropriate key"
+          },
+          {
+            "ko": "복호화 연산이 없지만 입력 추측은 가능",
+            "en": "No decryption operation, but inputs can be guessed"
+          }
+        ]
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "Base64로 바꾸면 암호화한 건가요?",
+        "en": "Is Base64 encoding encryption?"
+      },
+      "fact": {
+        "ko": "Base64는 표현을 바꾸는 인코딩이라 비밀키 없이 되돌릴 수 있어요. 내용을 숨기는 보안 수단이 아니에요.",
+        "en": "Base64 is an encoding reversible without a secret key, not a confidentiality control."
+      }
+    }
+  ],
+  "keywords": [
+    "hash",
+    "ssl-tls",
+    "personal-information",
+    "storage"
+  ],
+  "related": [
+    {
+      "id": "hash",
+      "type": "compare"
+    },
+    {
+      "id": "ssl-tls",
+      "type": "related"
+    },
+    {
+      "id": "personal-information",
+      "type": "related"
+    },
+    {
+      "id": "storage",
+      "type": "related"
+    }
+  ]
+}

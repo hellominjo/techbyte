@@ -1,0 +1,121 @@
+{
+  "order": 780,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "GitHub",
+    "en": "GitHub"
+  },
+  "description": {
+    "ko": "Git 저장소를 호스팅하고 코드 검토와 이슈 관리 등 협업 기능을 제공하는 플랫폼이에요.",
+    "en": "A platform hosting Git repositories with collaboration features such as code review and issue tracking."
+  },
+  "analogy": {
+    "ko": "각자의 변경 기록을 모아 함께 검토하고 업무를 조율하는 온라인 작업실과 같아요.",
+    "en": "Like an online workshop for sharing changes, reviewing work and coordinating tasks."
+  },
+  "details": {
+    "ko": [
+      "저장소에서 코드를 공유하고, 풀 리퀘스트로 변경을 제안·검토하며, 이슈로 할 일을 관리할 수 있어요.",
+      "Git 자체와는 다른 서비스예요. 공개와 비공개 저장소를 사용할 수 있고, 자동 검사와 배포 같은 작업을 연결할 수도 있어요."
+    ],
+    "en": [
+      "Repositories share code, pull requests propose and review changes, and issues track work.",
+      "GitHub is separate from Git itself. It supports public and private repositories and can connect automated checks and deployment workflows."
+    ]
+  },
+  "background": {
+    "ko": [
+      "코드 이력을 공유하는 데서 더 나아가 변경 논의와 검토, 업무 추적을 한곳에서 하려는 요구를 지원해요."
+    ],
+    "en": [
+      "It supports collaboration beyond shared history by bringing discussion, review and work tracking together."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "저장소 공유",
+        "text": "원격 저장소에 코드를 올리고 접근 권한을 정해요."
+      },
+      {
+        "title": "변경 제안",
+        "text": "브랜치 변경을 풀 리퀘스트로 제안해요."
+      },
+      {
+        "title": "검토와 통합",
+        "text": "검사와 리뷰를 거쳐 변경을 합쳐요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Share a repository",
+        "text": "Publish code to a remote repository and configure access."
+      },
+      {
+        "title": "Propose changes",
+        "text": "Propose branch changes through a pull request."
+      },
+      {
+        "title": "Review and integrate",
+        "text": "Merge changes after checks and review."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "팀 코드 리뷰",
+      "오픈소스 협업",
+      "이슈와 변경 이력 연결"
+    ],
+    "en": [
+      "Team code review",
+      "Open-source collaboration",
+      "Connecting issues with changes"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "팀 협업",
+        "text": "“GitHub 풀 리퀘스트에 변경 이유와 확인 결과를 적어 리뷰하기 쉽게 하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Team collaboration",
+        "text": "Say: “Include the reason for the change and validation results in the pull request.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "GitHub의 저장소는 모두 공개인가요?",
+        "en": "Are all GitHub repositories public?"
+      },
+      "fact": {
+        "ko": "비공개 저장소도 있어요. 실제 공개 범위는 저장소와 조직의 설정 및 권한에 따라 확인해야 해요.",
+        "en": "Private repositories exist. Actual visibility depends on repository and organization settings and access permissions."
+      }
+    }
+  ],
+  "keywords": [
+    "git",
+    "ci-cd",
+    "deployment"
+  ],
+  "related": [
+    {
+      "id": "git",
+      "type": "prerequisite"
+    },
+    {
+      "id": "ci-cd",
+      "type": "related"
+    },
+    {
+      "id": "deployment",
+      "type": "related"
+    }
+  ]
+}

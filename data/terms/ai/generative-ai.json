@@ -1,0 +1,125 @@
+{
+  "order": 200,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "생성형 AI",
+    "en": "Generative AI"
+  },
+  "fullName": {
+    "ko": "생성형 인공지능",
+    "en": "Generative Artificial Intelligence"
+  },
+  "description": {
+    "ko": "학습한 패턴을 바탕으로 글, 이미지, 소리 같은 새로운 콘텐츠를 만드는 AI예요.",
+    "en": "AI that creates new content, such as text, images and sound, from learned patterns."
+  },
+  "analogy": {
+    "ko": "여러 작품을 보며 표현법을 익힌 사람이 주문에 맞춰 새 작품을 만드는 것과 비슷해요.",
+    "en": "Like someone who studies many works and creates a new piece for a brief."
+  },
+  "details": {
+    "ko": [
+      "생성형 AI는 데이터의 패턴을 배워 입력에 어울리는 결과를 만들어요. 글을 다루는 언어 모델뿐 아니라 이미지·음악·영상을 만드는 모델도 포함해요.",
+      "결과는 사실을 조회한 답이나 독창성을 보장하는 작품이 아니에요. 잘못된 정보나 기존 표현과 비슷한 내용이 나올 수 있어 확인과 편집이 필요해요."
+    ],
+    "en": [
+      "Generative AI learns patterns in data and produces outputs suited to an input. It includes language models as well as models that create images, music and video.",
+      "An output is not a verified fact or a guarantee of originality. It can contain errors or resemble existing work, so review and editing matter."
+    ]
+  },
+  "background": {
+    "ko": [
+      "대규모 데이터와 연산 자원을 활용하는 학습 기술이 발전하면서, 정해진 분류나 예측을 넘어 다양한 콘텐츠를 만드는 활용이 넓어졌어요."
+    ],
+    "en": [
+      "Advances in training with large datasets and computing resources expanded AI from classification and prediction to content creation."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "학습",
+        "text": "많은 데이터에서 구조와 표현의 패턴을 익혀요."
+      },
+      {
+        "title": "요청",
+        "text": "원하는 내용과 형식을 프롬프트나 참고 이미지로 전달해요."
+      },
+      {
+        "title": "생성과 검토",
+        "text": "입력에 맞는 결과를 만들고 사람이 정확성과 적절성을 확인해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Train",
+        "text": "Learn patterns of structure and expression from data."
+      },
+      {
+        "title": "Request",
+        "text": "Provide the desired content and format through a prompt or reference image."
+      },
+      {
+        "title": "Generate and review",
+        "text": "Generate an output and have a person check its accuracy and suitability."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "보고서 초안 작성",
+      "상품 소개 이미지 제작",
+      "영상에 넣을 배경음악 생성"
+    ],
+    "en": [
+      "Drafting reports",
+      "Creating product images",
+      "Generating background music for videos"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "캠페인 기획",
+        "text": "아이디어가 필요할 때 써요. 개발자와는 “생성형 AI로 문구 초안을 만들고, 게시 전에는 담당자가 검토하게 하자”라고 이야기할 수 있어요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Campaign planning",
+        "text": "Use it for ideas. Tell developers: “Generate draft copy with AI and have the owner review it before publication.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "생성형 AI는 LLM과 같은 말인가요?",
+        "en": "Is generative AI the same as an LLM?"
+      },
+      "fact": {
+        "ko": "LLM은 주로 언어를 다루는 모델이고, 생성형 AI는 이미지·음성 등도 아우르는 더 넓은 범주예요.",
+        "en": "LLMs primarily handle language; generative AI is a broader category that also includes images and audio."
+      }
+    }
+  ],
+  "keywords": [
+    "machine-learning",
+    "llm",
+    "multimodal-ai"
+  ],
+  "related": [
+    {
+      "id": "machine-learning",
+      "type": "prerequisite"
+    },
+    {
+      "id": "llm",
+      "type": "related"
+    },
+    {
+      "id": "multimodal-ai",
+      "type": "related"
+    }
+  ]
+}

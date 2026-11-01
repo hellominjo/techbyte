@@ -1,0 +1,121 @@
+{
+  "order": 620,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "데이터 거버넌스",
+    "en": "Data Governance"
+  },
+  "description": {
+    "ko": "조직이 데이터를 일관되고 책임 있게 관리·활용하도록 역할, 기준과 의사결정 절차를 정하는 체계예요.",
+    "en": "A framework of roles, standards and decision processes for consistent, accountable data management and use."
+  },
+  "analogy": {
+    "ko": "공용 자료실의 책임자, 분류 규칙과 이용·수정 절차를 함께 정하는 것과 같아요.",
+    "en": "Like defining owners, filing rules and procedures for using and changing a shared archive."
+  },
+  "details": {
+    "ko": [
+      "누가 데이터 정의와 품질에 책임지는지, 누가 어떤 목적으로 접근하는지, 변경을 어떻게 승인하는지 정해요.",
+      "도구 하나나 보안 정책만을 뜻하지 않아요. 업무 담당자와 기술 조직이 품질, 접근, 보존과 공통 지표 등에 관해 지속적으로 협의하는 운영 체계예요."
+    ],
+    "en": [
+      "It defines responsibility for data meaning and quality, who can access it for which purposes, and how changes are approved.",
+      "It is not just a tool or security policy. Business and technical teams continuously coordinate quality, access, retention and shared definitions."
+    ]
+  },
+  "background": {
+    "ko": [
+      "부서별 정의가 다르고 책임자가 불분명하면 숫자를 믿거나 문제를 해결하기 어려워서, 조직 차원의 관리 기준이 필요해졌어요."
+    ],
+    "en": [
+      "Conflicting definitions and unclear ownership make data hard to trust and problems hard to resolve, motivating organization-wide management rules."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "책임 배정",
+        "text": "데이터 소유자와 운영 담당자의 역할을 정해요."
+      },
+      {
+        "title": "기준 수립",
+        "text": "정의, 품질, 접근과 변경 절차를 합의해요."
+      },
+      {
+        "title": "운영과 개선",
+        "text": "준수 상태와 문제를 확인하고 기준을 고쳐요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Assign accountability",
+        "text": "Define roles for data owners and operational stewards."
+      },
+      {
+        "title": "Set standards",
+        "text": "Agree on definitions, quality, access and change procedures."
+      },
+      {
+        "title": "Operate and improve",
+        "text": "Review adherence and issues and improve the rules."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "전사 고객 식별 기준 통일",
+      "핵심 지표 담당자 지정",
+      "데이터 접근과 보존 기준 관리"
+    ],
+    "en": [
+      "Unifying customer identification rules",
+      "Assigning owners to key metrics",
+      "Managing access and retention standards"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "매출 기준 충돌",
+        "text": "“대시보드 수정 전에 매출 정의의 책임자와 변경 절차를 거버넌스로 정하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Conflicting revenue definitions",
+        "text": "Say: “Before changing dashboards, establish ownership and change procedures for the revenue definition.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "거버넌스는 데이터 사용을 막는 절차인가요?",
+        "en": "Is governance a process for blocking data use?"
+      },
+      "fact": {
+        "ko": "신뢰할 기준과 책임을 정해 안전하고 효율적으로 활용하려는 체계예요. 목적에 맞는 접근과 재사용을 돕는 것도 포함해요.",
+        "en": "It aims to enable reliable, responsible and efficient use, including suitable access and reuse."
+      }
+    }
+  ],
+  "keywords": [
+    "metadata",
+    "data-catalog",
+    "data-literacy"
+  ],
+  "related": [
+    {
+      "id": "metadata",
+      "type": "related"
+    },
+    {
+      "id": "data-catalog",
+      "type": "related"
+    },
+    {
+      "id": "data-literacy",
+      "type": "related"
+    }
+  ]
+}

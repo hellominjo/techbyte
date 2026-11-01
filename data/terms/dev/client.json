@@ -1,0 +1,158 @@
+{
+  "order": 700,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "클라이언트",
+    "en": "Client"
+  },
+  "description": {
+    "ko": "서버에 기능이나 데이터를 요청하고 응답을 받아 사용하는 프로그램이나 장치예요.",
+    "en": "A program or device that requests and uses services or data from a server."
+  },
+  "analogy": {
+    "ko": "창구에 주문을 넣고 결과를 받는 손님 역할과 같아요.",
+    "en": "Like a customer placing an order at a service counter and receiving the result."
+  },
+  "details": {
+    "ko": [
+      "웹 브라우저, 모바일 앱이나 서버에 요청을 보내는 다른 프로그램이 클라이언트가 될 수 있어요. 사용자의 기기만을 뜻하지는 않아요.",
+      "클라이언트와 서버는 통신에서의 역할이에요. 같은 프로그램이 한 요청에서는 서버로, 다른 요청에서는 외부 API의 클라이언트로 동작할 수 있어요."
+    ],
+    "en": [
+      "Browsers, mobile apps and other programs sending requests can act as clients. The term is not limited to a user’s device.",
+      "Client and server describe communication roles. A program may serve one request while acting as a client of another API."
+    ]
+  },
+  "background": {
+    "ko": [
+      "화면이나 입력을 다루는 쪽과 공통 데이터·기능을 제공하는 쪽을 나눠 통신하는 구조에서 쓰는 개념이에요."
+    ],
+    "en": [
+      "The concept comes from architectures separating requesters, often handling user interaction, from providers of shared data and services."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "요청 구성",
+        "text": "필요한 주소, 조건과 인증 정보를 준비해요."
+      },
+      {
+        "title": "전송",
+        "text": "통신 규칙에 맞춰 서버로 요청을 보내요."
+      },
+      {
+        "title": "응답 처리",
+        "text": "결과를 화면에 보여 주거나 후속 작업에 사용하고 오류도 처리해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Prepare a request",
+        "text": "Prepare the address, parameters and authentication information."
+      },
+      {
+        "title": "Send",
+        "text": "Send the request using the agreed protocol."
+      },
+      {
+        "title": "Handle the response",
+        "text": "Display or use the result and handle errors."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "웹사이트를 여는 브라우저",
+      "주문을 보내는 모바일 앱",
+      "외부 결제 API를 호출하는 서버"
+    ],
+    "en": [
+      "A browser opening a website",
+      "A mobile app submitting an order",
+      "A server calling a payment API"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "화면 오류 확인",
+        "text": "“클라이언트가 요청을 안 보낸 건지, 서버 응답을 잘못 처리한 건지 나눠 보자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Investigating a screen error",
+        "text": "Say: “Check whether the client failed to send the request or mishandled the server response.”"
+      }
+    ]
+  },
+  "comparison": {
+    "target": "server",
+    "rows": [
+      {
+        "label": {
+          "ko": "통신 역할",
+          "en": "Communication role"
+        },
+        "values": [
+          {
+            "ko": "기능과 데이터를 요청",
+            "en": "Requests services and data"
+          },
+          {
+            "ko": "요청을 받아 처리하고 응답",
+            "en": "Handles requests and returns responses"
+          }
+        ]
+      },
+      {
+        "label": {
+          "ko": "예시",
+          "en": "Example"
+        },
+        "values": [
+          {
+            "ko": "웹 브라우저, 모바일 앱, 외부 API 호출 프로그램",
+            "en": "Browsers, mobile apps and programs calling external APIs"
+          },
+          {
+            "ko": "웹 서버, 데이터 제공 서버",
+            "en": "Web servers and data-serving systems"
+          }
+        ]
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "클라이언트는 프론트엔드와 같은 말인가요?",
+        "en": "Is client the same as frontend?"
+      },
+      "fact": {
+        "ko": "자주 겹치지만 관점이 달라요. 프론트엔드는 사용자 화면 쪽을, 클라이언트는 요청을 보내는 통신 역할을 가리켜요.",
+        "en": "They often overlap, but frontend describes the user-facing layer while client describes a requesting role in communication."
+      }
+    }
+  ],
+  "keywords": [
+    "server",
+    "frontend",
+    "api"
+  ],
+  "related": [
+    {
+      "id": "server",
+      "type": "compare"
+    },
+    {
+      "id": "frontend",
+      "type": "related"
+    },
+    {
+      "id": "api",
+      "type": "related"
+    }
+  ]
+}

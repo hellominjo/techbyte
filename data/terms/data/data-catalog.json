@@ -1,0 +1,158 @@
+{
+  "order": 630,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "데이터 카탈로그",
+    "en": "Data Catalog"
+  },
+  "description": {
+    "ko": "조직에 어떤 데이터가 어디에 있고 어떻게 써야 하는지 찾도록 돕는 목록과 검색 체계예요.",
+    "en": "An inventory and discovery system for finding organizational data and understanding how to use it."
+  },
+  "analogy": {
+    "ko": "책의 위치와 설명, 이용 조건을 찾아볼 수 있는 도서관 검색 목록과 같아요.",
+    "en": "Like a library catalog showing where books are, what they cover and how to access them."
+  },
+  "details": {
+    "ko": [
+      "테이블, 파일과 지표 같은 데이터 자산의 메타데이터를 모아요. 설명, 담당자, 갱신 정보와 계보 등을 검색하거나 확인할 수 있어요.",
+      "카탈로그에 등록됐다고 데이터 품질이나 접근 권한이 자동으로 보장되지는 않아요. 실제 저장소와 연결하고 담당자가 설명과 상태를 관리해야 해요."
+    ],
+    "en": [
+      "A catalog collects metadata about assets such as tables, files and metrics. Users can discover descriptions, owners, refresh details and lineage.",
+      "Catalog registration does not automatically guarantee quality or permission. Connections to actual stores and maintained descriptions are still needed."
+    ]
+  },
+  "background": {
+    "ko": [
+      "데이터가 여러 시스템에 흩어지면 같은 자료를 다시 만들거나 담당자를 찾는 데 시간이 들어, 발견과 이해를 돕는 목록이 필요해졌어요."
+    ],
+    "en": [
+      "Scattered data leads to duplicated work and time spent finding owners, creating a need for discovery and understanding tools."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "자산 수집",
+        "text": "연결된 시스템의 테이블과 파일 정보를 모아요."
+      },
+      {
+        "title": "설명 보강",
+        "text": "업무 의미, 담당자와 품질 상태를 붙여요."
+      },
+      {
+        "title": "검색과 연결",
+        "text": "사용자가 필요한 자산을 찾고 적절한 접근 경로로 이동해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Collect assets",
+        "text": "Collect table and file information from connected systems."
+      },
+      {
+        "title": "Enrich descriptions",
+        "text": "Add business meanings, owners and quality status."
+      },
+      {
+        "title": "Discover and connect",
+        "text": "Users find assets and follow appropriate access paths."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "매출 분석용 테이블 찾기",
+      "데이터 담당자 확인",
+      "지표의 원천과 갱신 시각 확인"
+    ],
+    "en": [
+      "Finding tables for revenue analysis",
+      "Identifying data owners",
+      "Checking metric sources and refresh times"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "분석 자료 탐색",
+        "text": "“새 테이블을 만들기 전에 카탈로그에서 기존 자료와 정의를 확인하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Finding analysis data",
+        "text": "Say: “Check the catalog for existing datasets and definitions before creating a new table.”"
+      }
+    ]
+  },
+  "comparison": {
+    "target": "metadata",
+    "rows": [
+      {
+        "label": {
+          "ko": "뜻",
+          "en": "Meaning"
+        },
+        "values": [
+          {
+            "ko": "데이터 자산을 찾고 이해하도록 돕는 목록·시스템",
+            "en": "An inventory and system for finding and understanding assets"
+          },
+          {
+            "ko": "데이터의 의미와 상태 등을 설명하는 정보",
+            "en": "Information describing data meaning, status and more"
+          }
+        ]
+      },
+      {
+        "label": {
+          "ko": "관계",
+          "en": "Relationship"
+        },
+        "values": [
+          {
+            "ko": "메타데이터를 모아 검색과 탐색에 제공",
+            "en": "Collects metadata for search and discovery"
+          },
+          {
+            "ko": "카탈로그 등 여러 관리 도구에서 활용",
+            "en": "Used by catalogs and other management tools"
+          }
+        ]
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "카탈로그는 데이터를 모두 복사해 두나요?",
+        "en": "Does a catalog copy all the data?"
+      },
+      "fact": {
+        "ko": "주로 데이터의 설명과 위치 정보를 관리해요. 미리보기나 표본을 저장하는 기능은 있을 수 있지만 실제 저장소를 대신하는 개념은 아니에요.",
+        "en": "It primarily manages descriptions and locations. It may keep previews or samples, but it is not a replacement for the underlying storage."
+      }
+    }
+  ],
+  "keywords": [
+    "metadata",
+    "data-governance",
+    "data-warehouse"
+  ],
+  "related": [
+    {
+      "id": "metadata",
+      "type": "prerequisite"
+    },
+    {
+      "id": "data-governance",
+      "type": "related"
+    },
+    {
+      "id": "data-warehouse",
+      "type": "related"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "order": 1210,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "VPN",
+    "en": "VPN"
+  },
+  "fullName": {
+    "ko": "가상 사설망",
+    "en": "Virtual Private Network"
+  },
+  "description": {
+    "ko": "공용망 위에 논리적인 사설 연결을 만들며, 보안 VPN은 그 구간의 통신을 암호화해 보호해요.",
+    "en": "A virtual private connection over a shared network; security VPNs encrypt traffic across that connection."
+  },
+  "analogy": {
+    "ko": "공용 도로 위에 허용된 사람만 이용할 수 있는 보호된 통로를 만드는 것과 비슷해요.",
+    "en": "Like creating a protected passage for authorized users over a public road."
+  },
+  "details": {
+    "ko": [
+      "직원이 외부에서 회사망에 접속하거나 두 사무실의 네트워크를 연결할 때 사용해요. 일반적인 보안 VPN은 인증 후 터널을 만들고 그 안으로 트래픽을 보내요.",
+      "보호되는 범위는 터널 구간이며 어떤 트래픽이 통과하는지는 설정에 따라 달라요. 출구 이후의 통신과 기기 보안, 서비스 로그인은 별도 고려가 필요해요."
+    ],
+    "en": [
+      "VPNs can connect remote staff to company networks or link office networks. Typical security VPNs authenticate peers and carry traffic through an encrypted tunnel.",
+      "Protection covers the tunnel, and routing settings determine which traffic uses it. Beyond the exit, device security and service authentication remain separate concerns."
+    ]
+  },
+  "background": {
+    "ko": [
+      "전용 회선을 직접 구축하지 않고 외부망에서 사설망 자원을 이용하거나 네트워크를 연결하려고 활용해요."
+    ],
+    "en": [
+      "VPNs provide access to private resources or connect networks without requiring dedicated physical links."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "접속과 인증",
+        "text": "허용된 사용자나 장치인지 확인해요."
+      },
+      {
+        "title": "터널 구성",
+        "text": "보호할 연결과 트래픽 경로를 구성해요."
+      },
+      {
+        "title": "전달과 종료",
+        "text": "지정된 트래픽을 전달하고 접속 권한과 상태를 관리해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Connect and authenticate",
+        "text": "Verify the user or device is permitted."
+      },
+      {
+        "title": "Establish a tunnel",
+        "text": "Establish a protected connection and traffic routes."
+      },
+      {
+        "title": "Forward and disconnect",
+        "text": "Forward selected traffic and manage access and session state."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "재택근무자의 사내망 접속",
+      "사무실 간 네트워크 연결",
+      "특정 관리 시스템의 제한된 접속"
+    ],
+    "en": [
+      "Remote access to company networks",
+      "Linking office networks",
+      "Restricted access to management systems"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "원격 업무 접속",
+        "text": "“VPN 접속에도 MFA를 적용하고, 연결 후에는 필요한 시스템만 접근하게 하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Remote work access",
+        "text": "Say: “Require MFA for VPN access and allow only necessary systems after connection.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "VPN이면 완전히 익명이고 모든 위협이 차단되나요?",
+        "en": "Does a VPN provide complete anonymity and block every threat?"
+      },
+      "fact": {
+        "ko": "로그인한 서비스는 사용자를 알 수 있고 VPN 운영자를 신뢰해야 해요. 악성 파일과 피싱, 탈취된 계정 문제를 모두 해결하지는 않아요.",
+        "en": "Logged-in services can still identify users, and the VPN operator must be trusted. VPNs do not solve all malware, phishing or compromised-account risks."
+      }
+    }
+  ],
+  "keywords": [
+    "encryption",
+    "ip-address",
+    "firewall",
+    "mfa"
+  ],
+  "related": [
+    {
+      "id": "encryption",
+      "type": "prerequisite"
+    },
+    {
+      "id": "ip-address",
+      "type": "related"
+    },
+    {
+      "id": "firewall",
+      "type": "related"
+    },
+    {
+      "id": "mfa",
+      "type": "related"
+    }
+  ]
+}

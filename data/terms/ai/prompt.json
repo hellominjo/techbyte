@@ -1,18 +1,158 @@
 {
   "order": 70,
   "updatedAt": "2026-11-01",
-  "term": { "ko": "프롬프트", "en": "Prompt" },
-  "description": {
-    "ko": "AI에게 원하는 걸 알려 주는 질문이나 지시문이에요.",
-    "en": "The question or instruction you give an AI to tell it what you want."
+  "term": {
+    "ko": "프롬프트",
+    "en": "Prompt"
   },
-  "examples": {
-    "ko": ["\"초등학생도 이해하게 설명해 줘\"처럼 대상 정하기", "\"표로 정리해 줘\"처럼 결과 형식 정하기"],
+  "description": {
+    "ko": "AI에게 할 일과 참고할 맥락을 전달하는 질문, 지시와 입력 내용이에요.",
+    "en": "The questions, instructions and input that tell an AI what to do and what context to use."
+  },
+  "analogy": {
+    "ko": "목적, 대상과 참고 자료를 적어 업무를 맡기는 요청서와 같아요.",
+    "en": "Like a work request describing the goal, audience and reference material."
+  },
+  "details": {
+    "ko": [
+      "짧은 질문뿐 아니라 역할, 처리할 자료, 예시, 출력 형식과 제약도 포함할 수 있어요. 멀티모달 모델에는 사진이나 음성을 함께 전달할 수도 있어요.",
+      "사용자가 화면에 쓴 문장만 모델의 입력이 되는 것은 아니에요. 앱은 시스템 지시, 이전 대화와 검색 결과 등을 함께 구성할 수 있고, 지시의 우선순위는 모델과 서비스의 규칙에 따라 달라요."
+    ],
     "en": [
-      "Setting the audience, like \"explain it for a 10-year-old\"",
-      "Setting the format, like \"put it in a table\""
+      "A prompt can include a question, role, material to process, examples, output format and constraints. Multimodal models may also accept images or audio.",
+      "The text a user types may be only part of the input. An application can add system instructions, conversation history and retrieval results; instruction priority depends on the model and service rules."
     ]
   },
+  "background": {
+    "ko": [
+      "다양한 작업을 할 수 있는 모델에는 이번에 무엇을 해야 하는지 알려 줘야 해요. 같은 모델도 전달받는 지시와 자료에 따라 다른 결과를 만들어요."
+    ],
+    "en": [
+      "A general-purpose model needs to know what to do for the current task. Different instructions and material can lead the same model to produce different outputs."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "목표 전달",
+        "text": "무엇을 누구를 위해 할지 구체적으로 적어요."
+      },
+      {
+        "title": "맥락과 기준 제공",
+        "text": "필요한 자료, 좋은 예시와 지켜야 할 조건을 넣어요."
+      },
+      {
+        "title": "결과 확인",
+        "text": "응답을 확인하고 부족한 지시나 자료를 보완해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "State the goal",
+        "text": "Specify the task and intended audience."
+      },
+      {
+        "title": "Supply context and criteria",
+        "text": "Provide relevant material, useful examples and constraints."
+      },
+      {
+        "title": "Review results",
+        "text": "Review the response and improve missing instructions or context."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "“처음 접하는 사람을 위해 전문 용어를 풀어서 설명해 줘”처럼 대상 정하기",
+      "“아래 회의록에서 결정 사항과 담당자별 할 일을 표로 정리해 줘”처럼 작업과 형식 정하기",
+      "“제공된 자료에서 근거를 찾지 못하면 확인이 필요하다고 표시해 줘”처럼 처리 기준 정하기"
+    ],
+    "en": [
+      "Setting an audience: “Explain the technical terms for a beginner.”",
+      "Specifying task and format: “Make a table of decisions and actions by owner from these meeting notes.”",
+      "Setting a rule: “If the supplied material does not support a claim, mark it as needing verification.”"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "회의록 정리",
+        "text": "결과가 모호하면 “프롬프트에 결정 사항, 담당자, 기한을 명시하고, 원문에 없는 항목은 미정으로 표시하게 하자”라고 개발자와 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Organizing meeting notes",
+        "text": "If results are vague, tell developers: “Specify decisions, owners and deadlines in the prompt, and mark anything absent from the source as unspecified.”"
+      }
+    ]
+  },
+  "comparison": {
+    "target": "prompt-engineering",
+    "rows": [
+      {
+        "label": {
+          "ko": "뜻",
+          "en": "Meaning"
+        },
+        "values": [
+          {
+            "ko": "모델에 전달하는 입력 내용",
+            "en": "The input supplied to a model"
+          },
+          {
+            "ko": "그 입력을 설계하고 개선·검증하는 활동",
+            "en": "The practice of designing, improving and testing that input"
+          }
+        ]
+      },
+      {
+        "label": {
+          "ko": "예시",
+          "en": "Example"
+        },
+        "values": [
+          {
+            "ko": "요약 지시문과 참고할 회의록",
+            "en": "Summary instructions and source meeting notes"
+          },
+          {
+            "ko": "지시와 예시를 바꿔 요약 품질을 비교",
+            "en": "Comparing summary quality after changing instructions and examples"
+          }
+        ]
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "프롬프트는 길수록 좋은가요?",
+        "en": "Are longer prompts always better?"
+      },
+      "fact": {
+        "ko": "불필요한 내용과 충돌하는 지시는 오히려 방해가 될 수 있어요. 필요한 맥락과 명확한 기준을 간결하게 전달하는 것이 중요해요.",
+        "en": "Unnecessary content and conflicting instructions can hurt results. Supply relevant context and clear criteria concisely."
+      }
+    },
+    {
+      "myth": {
+        "ko": "금지 사항을 적으면 항상 지켜지나요?",
+        "en": "Will a model always obey a written restriction?"
+      },
+      "fact": {
+        "ko": "지시를 잘못 해석하거나 따르지 못할 수 있어요. 접근 권한이나 필수 출력 형식처럼 중요한 조건은 앱에서도 확인하고 제어해야 해요.",
+        "en": "The model can misinterpret or fail to follow instructions. Important constraints such as permissions and required formats also need application-level checks and controls."
+      }
+    }
+  ],
+  "keywords": [
+    "llm",
+    "prompt-engineering",
+    "zero-shot",
+    "few-shot",
+    "context-window"
+  ],
   "tools": [
     {
       "id": "chatgpt",
@@ -21,7 +161,30 @@
         "en": "Rephrase the same question several ways and compare the answers."
       }
     },
-    { "id": "claude" }
+    {
+      "id": "claude"
+    }
   ],
-  "related": [{ "id": "llm", "type": "prerequisite" }]
+  "related": [
+    {
+      "id": "llm",
+      "type": "prerequisite"
+    },
+    {
+      "id": "prompt-engineering",
+      "type": "compare"
+    },
+    {
+      "id": "zero-shot",
+      "type": "related"
+    },
+    {
+      "id": "few-shot",
+      "type": "related"
+    },
+    {
+      "id": "context-window",
+      "type": "related"
+    }
+  ]
 }

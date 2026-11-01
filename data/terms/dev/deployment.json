@@ -1,0 +1,121 @@
+{
+  "order": 800,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "배포",
+    "en": "Deployment"
+  },
+  "description": {
+    "ko": "새 프로그램이나 변경 결과물을 대상 환경에 설치·반영해 실행할 수 있게 하는 과정이에요.",
+    "en": "Installing or applying software artifacts and changes to a target environment so they can run."
+  },
+  "analogy": {
+    "ko": "완성된 장비를 현장에 설치하고 실제로 작동하는지 확인하는 것과 같아요.",
+    "en": "Like installing finished equipment at a site and checking that it operates."
+  },
+  "details": {
+    "ko": [
+      "빌드 결과물, 설정과 필요한 데이터 변경을 개발·시험·운영 환경 등에 반영해요. 배포 후 정상 동작 확인도 중요한 부분이에요.",
+      "코드를 배포하는 시점과 사용자에게 기능을 공개하는 시점은 다를 수 있어요. 점진 배포나 기능 설정으로 노출을 조절하고 문제가 나면 복구 전략을 사용해요."
+    ],
+    "en": [
+      "Deployment applies artifacts, configuration and necessary data changes to development, test or production environments. Post-deployment checks matter.",
+      "Deployment and user-facing release can happen separately. Gradual rollout or feature controls can manage exposure, with recovery strategies for problems."
+    ]
+  },
+  "background": {
+    "ko": [
+      "개발자의 컴퓨터에서 동작하는 코드를 실제 서비스 환경에 안전하고 반복 가능하게 전달하려고 배포 절차를 마련해요."
+    ],
+    "en": [
+      "Deployment procedures make moving working software into real service environments repeatable and controlled."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "준비",
+        "text": "버전과 환경 설정, 데이터 변경 계획을 확인해요."
+      },
+      {
+        "title": "반영",
+        "text": "대상 환경에 결과물을 설치하거나 교체해요."
+      },
+      {
+        "title": "확인과 대응",
+        "text": "상태와 지표를 확인하고 필요하면 되돌리거나 수정해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Prepare",
+        "text": "Check versions, configuration and data-change plans."
+      },
+      {
+        "title": "Apply",
+        "text": "Install or replace artifacts in the target environment."
+      },
+      {
+        "title": "Verify and respond",
+        "text": "Check health and metrics and roll back or fix when needed."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "운영 서버 새 버전 적용",
+      "시험 환경에 수정본 반영",
+      "웹페이지 정적 파일 게시"
+    ],
+    "en": [
+      "Updating production servers",
+      "Deploying fixes to test environments",
+      "Publishing static website files"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "출시 점검",
+        "text": "“배포 완료 기준에 접속 확인과 주요 기능 검사, 문제 발생 시 복구 방법을 포함하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Checking a release",
+        "text": "Say: “Include reachability, critical-function checks and a recovery plan in the deployment criteria.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "배포와 빌드는 같은가요?",
+        "en": "Are deployment and build the same?"
+      },
+      "fact": {
+        "ko": "빌드는 실행·배포할 결과물을 만들고, 배포는 그 결과물을 대상 환경에 반영하는 과정이에요.",
+        "en": "A build creates runnable or distributable artifacts; deployment applies them to an environment."
+      }
+    }
+  ],
+  "keywords": [
+    "build",
+    "ci-cd",
+    "log"
+  ],
+  "related": [
+    {
+      "id": "build",
+      "type": "compare"
+    },
+    {
+      "id": "ci-cd",
+      "type": "related"
+    },
+    {
+      "id": "log",
+      "type": "related"
+    }
+  ]
+}

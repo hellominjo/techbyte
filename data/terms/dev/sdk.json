@@ -1,0 +1,162 @@
+{
+  "order": 740,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "SDK",
+    "en": "SDK"
+  },
+  "fullName": {
+    "ko": "소프트웨어 개발 키트",
+    "en": "Software Development Kit"
+  },
+  "description": {
+    "ko": "특정 플랫폼이나 기능을 개발하기 쉽게 묶어 제공하는 도구 모음이에요.",
+    "en": "A collection of tools for developing with a particular platform or capability."
+  },
+  "analogy": {
+    "ko": "작업에 필요한 부품, 공구와 사용 설명서를 함께 넣은 조립 키트와 같아요.",
+    "en": "Like an assembly kit containing parts, tools and instructions."
+  },
+  "details": {
+    "ko": [
+      "라이브러리, 문서, 예제와 개발·시험 도구 등을 포함할 수 있어요. 제공 구성은 제품마다 다르고 API 호출을 쉽게 감싸 주는 SDK도 많아요.",
+      "API는 기능을 쓰는 약속이고 SDK는 그 약속을 쉽게 활용하도록 돕는 구현과 도구예요. 지원 언어와 버전, 배포 조건을 확인해야 해요."
+    ],
+    "en": [
+      "An SDK can include libraries, documentation, examples and development or testing tools. Contents vary, and many SDKs simplify API calls.",
+      "An API is a contract for using capabilities; an SDK supplies implementations and tools to use it. Check supported languages, versions and distribution terms."
+    ]
+  },
+  "background": {
+    "ko": [
+      "플랫폼별 통신과 설정을 개발자가 매번 직접 구현하는 부담을 줄이고 올바른 사용을 돕기 위해 제공해요."
+    ],
+    "en": [
+      "SDKs reduce repeated platform-specific integration work and help developers use capabilities correctly."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "선택과 설치",
+        "text": "개발 환경과 맞는 공식 또는 검증된 SDK를 준비해요."
+      },
+      {
+        "title": "설정과 호출",
+        "text": "접속 정보 등을 설정하고 제공 기능을 호출해요."
+      },
+      {
+        "title": "검증과 갱신",
+        "text": "실패 처리와 호환성을 확인하고 버전을 관리해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Choose and install",
+        "text": "Choose an SDK suited to the development environment."
+      },
+      {
+        "title": "Configure and call",
+        "text": "Configure connection details and call the provided capabilities."
+      },
+      {
+        "title": "Validate and update",
+        "text": "Check failure handling and compatibility and manage versions."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "결제 서비스 연동",
+      "모바일 플랫폼 앱 개발",
+      "클라우드 저장소 파일 업로드"
+    ],
+    "en": [
+      "Payment-service integration",
+      "Developing for a mobile platform",
+      "Uploading files to cloud storage"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "외부 서비스 연동",
+        "text": "“SDK가 재시도와 오류를 어떻게 처리하는지 확인하고, 우리가 직접 처리할 부분을 정하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Integrating a service",
+        "text": "Say: “Check how the SDK handles retries and errors and decide what our application must handle.”"
+      }
+    ]
+  },
+  "comparison": {
+    "target": "api",
+    "rows": [
+      {
+        "label": {
+          "ko": "뜻",
+          "en": "Meaning"
+        },
+        "values": [
+          {
+            "ko": "개발을 돕는 코드·문서·도구 묶음",
+            "en": "Code, documentation and tools for development"
+          },
+          {
+            "ko": "프로그램 간 기능 사용의 약속과 인터페이스",
+            "en": "A contract and interface for using program capabilities"
+          }
+        ]
+      },
+      {
+        "label": {
+          "ko": "관계",
+          "en": "Relationship"
+        },
+        "values": [
+          {
+            "ko": "API 사용을 쉽게 감쌀 수 있음",
+            "en": "Can simplify API use"
+          },
+          {
+            "ko": "SDK 없이 직접 사용하는 방식도 가능",
+            "en": "Can often be used without an SDK"
+          }
+        ]
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "SDK가 없으면 API를 못 쓰나요?",
+        "en": "Is an SDK required to use an API?"
+      },
+      "fact": {
+        "ko": "많은 API는 규격에 맞춰 직접 호출할 수 있어요. SDK는 반복 작업을 줄여 주지만 필수인지는 플랫폼마다 달라요.",
+        "en": "Many APIs can be called directly using their specification. SDKs reduce boilerplate; whether one is required depends on the platform."
+      }
+    }
+  ],
+  "keywords": [
+    "api",
+    "library",
+    "framework"
+  ],
+  "related": [
+    {
+      "id": "api",
+      "type": "prerequisite"
+    },
+    {
+      "id": "library",
+      "type": "related"
+    },
+    {
+      "id": "framework",
+      "type": "related"
+    }
+  ]
+}

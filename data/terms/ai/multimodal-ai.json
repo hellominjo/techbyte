@@ -1,0 +1,121 @@
+{
+  "order": 270,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "멀티모달 AI",
+    "en": "Multimodal AI"
+  },
+  "description": {
+    "ko": "글, 이미지, 소리처럼 서로 다른 종류의 정보를 함께 다루는 AI예요.",
+    "en": "AI that works with different kinds of information, such as text, images and audio."
+  },
+  "analogy": {
+    "ko": "설명만 듣는 대신 사진도 보고 소리도 들으며 상황을 파악하는 도우미와 같아요.",
+    "en": "Like a helper that understands a situation by looking and listening as well as reading."
+  },
+  "details": {
+    "ko": [
+      "모달리티는 정보의 종류를 뜻해요. 사진을 보고 질문에 답하거나 음성을 듣고 글로 정리하는 식으로 서로 다른 정보를 연결해요.",
+      "모델마다 지원하는 입력과 출력이 달라요. 이미지를 읽을 수 있어도 이미지를 생성하지 못할 수 있고, 작은 글씨나 복잡한 장면은 잘못 해석할 수 있어요."
+    ],
+    "en": [
+      "A modality is a kind of information. Multimodal AI connects them, for example by answering questions about an image or turning speech into a written summary.",
+      "Supported inputs and outputs vary. A model may read images without generating them, and may misread small text or complex scenes."
+    ]
+  },
+  "background": {
+    "ko": [
+      "실제 업무 정보는 문장에만 있지 않아요. 화면, 도표, 음성 등을 함께 이해해야 하는 요구가 커지며 발전했어요."
+    ],
+    "en": [
+      "Real work involves screens, charts and speech as well as text, creating demand for AI that connects these forms."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "입력 받기",
+        "text": "질문과 함께 사진이나 음성 같은 자료를 받아요."
+      },
+      {
+        "title": "표현 연결",
+        "text": "각 종류의 정보를 모델이 처리할 표현으로 바꾸고 연결해요."
+      },
+      {
+        "title": "응답",
+        "text": "지원하는 형식으로 답이나 결과를 만들어요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Receive inputs",
+        "text": "Receive a question with material such as images or audio."
+      },
+      {
+        "title": "Connect representations",
+        "text": "Encode each modality into representations the model can combine."
+      },
+      {
+        "title": "Respond",
+        "text": "Produce answers or outputs in a supported format."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "화면 오류를 사진으로 설명",
+      "차트 해석",
+      "음성 회의와 발표 자료를 함께 요약"
+    ],
+    "en": [
+      "Explaining an error from a screenshot",
+      "Interpreting charts",
+      "Summarizing meeting audio with presentation material"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "화면 문의",
+        "text": "고객이 화면 사진을 올리면 “멀티모달 AI가 화면을 읽되, 계정 상태는 별도 조회하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Questions about a screen",
+        "text": "When a customer uploads a screenshot, say: “Use multimodal AI to read the screen and look up account status separately.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "멀티모달이면 모든 형식을 입력하고 출력하나요?",
+        "en": "Does multimodal mean every input and output format is supported?"
+      },
+      "fact": {
+        "ko": "아니에요. 입력과 출력의 지원 범위, 파일 크기와 해상도 제한을 각각 확인해야 해요.",
+        "en": "No. Check supported inputs and outputs, file sizes and resolution limits separately."
+      }
+    }
+  ],
+  "keywords": [
+    "generative-ai",
+    "llm",
+    "inference"
+  ],
+  "related": [
+    {
+      "id": "generative-ai",
+      "type": "prerequisite"
+    },
+    {
+      "id": "llm",
+      "type": "related"
+    },
+    {
+      "id": "inference",
+      "type": "related"
+    }
+  ]
+}

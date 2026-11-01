@@ -1,10 +1,10 @@
-import InfoPage from "@/app/ui/info-page";
-import { getPage } from "@/lib/pages";
+import MarkdownInfoPage from "@/app/ui/markdown-info-page";
+import { getMarkdownPage } from "@/lib/pages";
 
-const page = getPage("privacy");
+const content = getMarkdownPage("privacy");
 
-export const metadata = { title: page.title.ko, alternates: { canonical: "/privacy" } };
+export const metadata = { title: "개인정보처리방침", alternates: { canonical: "/privacy" } };
 
 export default function PrivacyPage() {
-  return <InfoPage page={page} />;
+  return <MarkdownInfoPage content={content} />;
 }

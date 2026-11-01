@@ -1,0 +1,183 @@
+{
+  "order": 540,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "데이터 웨어하우스",
+    "en": "DW"
+  },
+  "fullName": {
+    "ko": "데이터 웨어하우스",
+    "en": "Data Warehouse"
+  },
+  "description": {
+    "ko": "여러 곳의 데이터를 분석하기 좋게 통합하고 정리해 두는 저장·분석 체계예요.",
+    "en": "A storage and analysis system that integrates and organizes data from multiple sources for analytics."
+  },
+  "analogy": {
+    "ko": "부서별 장부를 같은 기준으로 맞춰 모아 둔 경영 분석용 자료실과 같아요.",
+    "en": "Like a management analysis archive that combines departmental records under common definitions."
+  },
+  "details": {
+    "ko": [
+      "주문, 고객, 회계 같은 여러 시스템의 데이터를 모아 과거 추이와 조직 전체 현황을 분석해요. 대량 집계와 분석 질의에 맞춰 설계해요.",
+      "실시간 주문 처리를 하는 운영 데이터베이스와 주된 목적이 달라요. 데이터 형식과 적재 주기는 구성에 따라 다르며, 반정형 데이터를 지원하는 제품도 있어요."
+    ],
+    "en": [
+      "A warehouse combines data such as orders, customers and accounting to analyze trends and organization-wide activity. It is designed for aggregation and analytical queries.",
+      "Its primary purpose differs from an operational database processing live orders. Formats and refresh intervals vary, and some products also support semi-structured data."
+    ]
+  },
+  "background": {
+    "ko": [
+      "부서마다 다른 숫자를 보고하거나 운영 시스템에서 무거운 분석을 돌리는 문제를 줄이기 위해 별도 분석 기반을 만들게 됐어요."
+    ],
+    "en": [
+      "Warehouses developed to reduce inconsistent departmental reporting and avoid burdening operational systems with heavy analytics."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "수집",
+        "text": "여러 업무 시스템에서 데이터를 가져와요."
+      },
+      {
+        "title": "기준 통합",
+        "text": "고객 식별자와 매출 기준 같은 차이를 맞춰요."
+      },
+      {
+        "title": "분석 제공",
+        "text": "정리된 테이블을 SQL이나 BI 도구로 분석해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Collect",
+        "text": "Bring in data from business systems."
+      },
+      {
+        "title": "Align definitions",
+        "text": "Align differences such as customer identifiers and revenue definitions."
+      },
+      {
+        "title": "Serve analytics",
+        "text": "Analyze curated tables using SQL or BI tools."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "연도별 매출 추이",
+      "부서 간 통합 지표",
+      "고객별 구매 이력 분석"
+    ],
+    "en": [
+      "Yearly revenue trends",
+      "Cross-department metrics",
+      "Customer purchase-history analysis"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "경영 지표 통합",
+        "text": "“각 시스템의 숫자를 DW에서 같은 기준으로 정리하고, 대시보드는 그 데이터를 보게 하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Unifying management metrics",
+        "text": "Say: “Align system data under common definitions in the DW and use that data for dashboards.”"
+      }
+    ]
+  },
+  "comparison": {
+    "target": "data-lake",
+    "rows": [
+      {
+        "label": {
+          "ko": "중심 목적",
+          "en": "Primary purpose"
+        },
+        "values": [
+          {
+            "ko": "정리된 공통 기준으로 분석과 보고",
+            "en": "Analytics and reporting using curated shared definitions"
+          },
+          {
+            "ko": "다양한 원천을 보관하고 여러 용도로 처리",
+            "en": "Retain diverse sources for multiple uses"
+          }
+        ]
+      },
+      {
+        "label": {
+          "ko": "데이터 준비",
+          "en": "Data preparation"
+        },
+        "values": [
+          {
+            "ko": "분석용 모델과 정의를 중심으로 정리",
+            "en": "Organize around analytical models and definitions"
+          },
+          {
+            "ko": "원본과 정제된 영역을 함께 둘 수 있음",
+            "en": "May contain both raw and curated areas"
+          }
+        ]
+      },
+      {
+        "label": {
+          "ko": "관계",
+          "en": "Relationship"
+        },
+        "values": [
+          {
+            "ko": "레이크 등 다른 저장 기반과 함께 사용 가능",
+            "en": "Can be used alongside lakes and other stores"
+          },
+          {
+            "ko": "웨어하우스 기능과 결합한 구성도 가능",
+            "en": "Can be combined with warehouse capabilities"
+          }
+        ]
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "DW에 모으면 데이터가 모두 실시간이고 정확한가요?",
+        "en": "Does a warehouse make all data real-time and accurate?"
+      },
+      "fact": {
+        "ko": "적재 지연과 원천 오류는 남을 수 있어요. 갱신 주기, 품질 검사와 지표 정의를 함께 관리해야 해요.",
+        "en": "Refresh delays and source errors can remain. Manage update schedules, quality checks and metric definitions."
+      }
+    }
+  ],
+  "keywords": [
+    "database",
+    "data-lake",
+    "etl",
+    "business-intelligence"
+  ],
+  "related": [
+    {
+      "id": "database",
+      "type": "prerequisite"
+    },
+    {
+      "id": "data-lake",
+      "type": "compare"
+    },
+    {
+      "id": "etl",
+      "type": "related"
+    },
+    {
+      "id": "business-intelligence",
+      "type": "related"
+    }
+  ]
+}

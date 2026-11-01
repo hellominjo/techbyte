@@ -1,0 +1,158 @@
+{
+  "order": 810,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "버그",
+    "en": "Bug"
+  },
+  "description": {
+    "ko": "프로그램이 의도한 요구나 기대한 동작과 다르게 작동하게 하는 결함이에요.",
+    "en": "A defect that makes software behave differently from its intended requirements or expected behavior."
+  },
+  "analogy": {
+    "ko": "기계 부품이 잘못 맞물려 특정 상황에서 예상과 다르게 움직이는 것과 같아요.",
+    "en": "Like a misfitted machine part causing unexpected behavior under certain conditions."
+  },
+  "details": {
+    "ko": [
+      "실행이 멈추는 오류뿐 아니라 계산이 틀리거나 저장이 누락되는 문제도 버그예요. 코드, 설정과 구성 요소의 상호작용 등 여러 곳에서 생길 수 있어요.",
+      "먼저 기대 동작과 실제 동작을 구분해야 해요. 명확하지 않은 요구나 새 기능 요청은 결함과 구분해 합의할 필요가 있어요."
+    ],
+    "en": [
+      "Bugs include wrong calculations and lost writes as well as crashes. They can arise from code, configuration or component interactions.",
+      "Establish expected versus actual behavior first. Unclear requirements or new feature requests need clarification rather than automatic treatment as defects."
+    ]
+  },
+  "background": {
+    "ko": [
+      "프로그램의 상태와 입력 조합이 많고 사람이 구현하기 때문에 모든 상황을 미리 완벽히 다루기 어려워요."
+    ],
+    "en": [
+      "Software has many combinations of inputs and states, making it difficult to anticipate every behavior during implementation."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "문제 확인",
+        "text": "실제 동작과 기대 동작의 차이를 적어요."
+      },
+      {
+        "title": "재현",
+        "text": "입력, 순서와 환경을 맞춰 문제를 다시 확인해요."
+      },
+      {
+        "title": "수정 검증",
+        "text": "원인을 수정하고 관련 기능까지 영향을 확인해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Identify the issue",
+        "text": "Describe the gap between actual and expected behavior."
+      },
+      {
+        "title": "Reproduce",
+        "text": "Repeat the problem with matching inputs, steps and environment."
+      },
+      {
+        "title": "Verify a fix",
+        "text": "Fix the cause and check related behavior."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "할인 금액 계산 오류",
+      "버튼 중복 클릭으로 주문 중복",
+      "특정 기기에서 화면 깨짐"
+    ],
+    "en": [
+      "Incorrect discount calculations",
+      "Duplicate orders from repeated clicks",
+      "Broken layouts on specific devices"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "문제 제보",
+        "text": "“안 돼요” 대신 “이 환경에서 이 순서로 하면 기대한 A 대신 B가 나옵니다”라고 알려 주면 원인 파악에 도움이 돼요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Reporting a problem",
+        "text": "Report “In this environment, these steps produce B instead of expected A” rather than only “It does not work.”"
+      }
+    ]
+  },
+  "comparison": {
+    "target": "debugging",
+    "rows": [
+      {
+        "label": {
+          "ko": "뜻",
+          "en": "Meaning"
+        },
+        "values": [
+          {
+            "ko": "의도와 다르게 동작하게 하는 결함",
+            "en": "A defect causing unintended behavior"
+          },
+          {
+            "ko": "문제의 원인을 찾아 수정·확인하는 과정",
+            "en": "The process of locating, fixing and verifying a cause"
+          }
+        ]
+      },
+      {
+        "label": {
+          "ko": "예시",
+          "en": "Example"
+        },
+        "values": [
+          {
+            "ko": "특정 할인율에서 금액이 잘못 계산됨",
+            "en": "A wrong total at a particular discount rate"
+          },
+          {
+            "ko": "계산 경로를 추적하고 수정 후 재검사",
+            "en": "Trace the calculation, fix it and recheck"
+          }
+        ]
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "에러 메시지가 없으면 버그도 없나요?",
+        "en": "Does no error message mean no bug?"
+      },
+      "fact": {
+        "ko": "조용히 잘못된 계산이나 저장이 일어날 수도 있어요. 결과와 업무 규칙을 함께 검사해야 해요.",
+        "en": "Incorrect calculations or writes can happen silently. Check results against business rules too."
+      }
+    }
+  ],
+  "keywords": [
+    "debugging",
+    "log",
+    "deployment"
+  ],
+  "related": [
+    {
+      "id": "debugging",
+      "type": "related"
+    },
+    {
+      "id": "log",
+      "type": "related"
+    },
+    {
+      "id": "deployment",
+      "type": "related"
+    }
+  ]
+}

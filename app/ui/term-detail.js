@@ -116,9 +116,7 @@ export default function TermDetail({
 
   return (
     <div className="pt-4 sm:pt-8">
-      {/* 상단 줄: 왼쪽 뒤로 가기(모바일)·경로 표시(PC), 오른쪽 페이지 복사·인쇄·AI 버튼 */}
       <div className="flex items-center justify-between gap-4 print:hidden">
-        {/* 태블릿·모바일: 뒤로 가기 */}
         <Link
           href="/"
           className="text-[15px] text-muted transition-colors hover:text-foreground lg:hidden"
@@ -126,21 +124,29 @@ export default function TermDetail({
           ← {t.backToList}
         </Link>
 
-        {/* PC: 경로 표시. 두 칸 레이아웃 위에 두어 본문 배지와 사이드바 제목의 높이를 맞춤 */}
-        <nav aria-label="breadcrumb" className="hidden items-center gap-2 text-sm text-muted lg:flex">
-          <Link href="/" className="transition-colors hover:text-foreground">
-            {t.breadcrumbHome}
+        {/* PC: 경로 표시 */}
+        <nav aria-label="breadcrumb" className="hidden items-center gap-2 text-sm text-muted lg:grid lg:grid-cols-[minmax(0,1fr)_600px]">
+          <Link
+          href="/"
+          className="text-[15px] text-muted transition-colors hover:text-foreground"
+          >
+            ← {t.backToList}
           </Link>
-          {category && (
-            <>
-              <span aria-hidden="true">/</span>
-              <Link href="/#categories" className="transition-colors hover:text-foreground">
-                {pick(category.name, lang)}
-              </Link>
-            </>
-          )}
-          <span aria-hidden="true">/</span>
-          <span className="text-foreground">{names.name}</span>
+          <div className="flex items-center justify-end">
+            <Link href="/" className="transition-colors hover:text-foreground">
+              {t.breadcrumbHome}
+            </Link>
+            {category && (
+              <>
+                <span aria-hidden="true" className="mx-1">/</span>
+                <Link href="/#categories" className="transition-colors hover:text-foreground">
+                  {pick(category.name, lang)}
+                </Link>
+              </>
+            )}
+            <span aria-hidden="true" className="mx-1">/</span>
+            <span className="text-foreground">{names.name}</span>
+          </div>
         </nav>
 
         {/* 태블릿·모바일: 상단 줄 오른쪽. PC는 제목 오른쪽에 표시 */}
@@ -316,7 +322,7 @@ export default function TermDetail({
               <ul className="mt-4 flex flex-wrap gap-2">
                 {keywords.map((keyword, i) => {
                   const label = pick(keyword.label, lang);
-                  const chip = "inline-flex h-10 items-center rounded-full bg-surface px-4 text-[15px]";
+                  const chip = "inline-flex h-10 items-center rounded-full border border-line px-4 text-[13px]";
                   return (
                     <li key={keyword.id ?? i}>
                       {keyword.id ? (

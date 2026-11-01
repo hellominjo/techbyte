@@ -1,0 +1,121 @@
+{
+  "order": 300,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "AI 오케스트레이션",
+    "en": "AI Orchestration"
+  },
+  "description": {
+    "ko": "여러 모델, 도구, 작업이 맞물려 돌아가도록 실행 순서와 자원, 상태를 조율하는 일이에요.",
+    "en": "Coordinating execution, resources and state across models, tools and tasks."
+  },
+  "analogy": {
+    "ko": "각 악기의 연주 시점과 전체 흐름을 맞추는 오케스트라 지휘자와 같아요.",
+    "en": "Like a conductor coordinating when instruments play and how the whole piece proceeds."
+  },
+  "details": {
+    "ko": [
+      "요청을 적절한 모델로 보내고, 독립 작업은 함께 실행하며, 결과를 모아 다음 단계로 넘기는 일을 포함해요.",
+      "시간 초과, 재시도, 비용 한도, 권한과 상태 관리도 다뤄요. 여러 에이전트를 조율할 수도 있지만, 반드시 여러 에이전트가 있어야 하는 것은 아니에요."
+    ],
+    "en": [
+      "It includes routing requests to suitable models, running independent tasks in parallel and combining results for later steps.",
+      "It also covers timeouts, retries, cost limits, permissions and state. It can coordinate multiple agents but does not require them."
+    ]
+  },
+  "background": {
+    "ko": [
+      "AI 기능이 여러 서비스와 도구로 확장되면서, 개별 호출뿐 아니라 전체 실행을 관리할 계층이 필요해졌어요."
+    ],
+    "en": [
+      "As AI applications expanded across services and tools, they needed a layer to manage the overall execution."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "작업 배치",
+        "text": "요청에 맞춰 모델과 도구, 의존 관계를 정해요."
+      },
+      {
+        "title": "실행 조율",
+        "text": "순서나 병렬 실행을 관리하고 결과를 전달해요."
+      },
+      {
+        "title": "예외 처리",
+        "text": "실패와 지연을 감지해 재시도하거나 사람에게 넘겨요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Route work",
+        "text": "Select models and tools and identify dependencies."
+      },
+      {
+        "title": "Coordinate execution",
+        "text": "Manage sequential or parallel execution and pass results along."
+      },
+      {
+        "title": "Handle exceptions",
+        "text": "Detect failures and delays, then retry or escalate to a person."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "검색과 요약 작업 연결",
+      "여러 분석 결과 통합",
+      "모델별 요청 배분"
+    ],
+    "en": [
+      "Coordinating search and summarization",
+      "Combining several analyses",
+      "Routing requests across models"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "분석 서비스 운영",
+        "text": "“문서별 분석은 병렬로 돌리고, 실패한 건만 다시 시도하도록 오케스트레이션하자”라고 말할 수 있어요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Operating an analysis service",
+        "text": "Say: “Orchestrate document analyses in parallel and retry only the failed ones.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "오케스트레이션은 여러 AI가 대화하는 건가요?",
+        "en": "Is orchestration just AIs talking to each other?"
+      },
+      "fact": {
+        "ko": "대화도 한 방식이지만, 핵심은 작업 실행과 상태를 조율하는 거예요. 일반 프로그램과 사람의 검토도 함께 관리할 수 있어요.",
+        "en": "Conversation is one possibility; the core is coordinating work and state. Ordinary software and human review can also be included."
+      }
+    }
+  ],
+  "keywords": [
+    "ai-workflow",
+    "ai-agent",
+    "harness-engineering"
+  ],
+  "related": [
+    {
+      "id": "ai-workflow",
+      "type": "prerequisite"
+    },
+    {
+      "id": "ai-agent",
+      "type": "related"
+    },
+    {
+      "id": "harness-engineering",
+      "type": "related"
+    }
+  ]
+}

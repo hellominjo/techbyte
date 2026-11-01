@@ -1,0 +1,162 @@
+{
+  "order": 520,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "관계형 데이터베이스",
+    "en": "RDBMS"
+  },
+  "fullName": {
+    "ko": "관계형 데이터베이스 관리 시스템",
+    "en": "Relational Database Management System"
+  },
+  "description": {
+    "ko": "행과 열로 된 테이블과 그 관계를 바탕으로 데이터를 관리하는 시스템이에요.",
+    "en": "A system that manages data using tables of rows and columns and relationships between them."
+  },
+  "analogy": {
+    "ko": "고객 명부와 주문 장부를 따로 두고 고객 번호로 연결하는 것과 같아요.",
+    "en": "Like keeping customer and order ledgers separately and linking them with customer IDs."
+  },
+  "details": {
+    "ko": [
+      "정확히는 RDBMS가 관계형 데이터베이스를 관리하는 소프트웨어를 뜻해요. 테이블의 행은 개별 기록, 열은 이름이나 금액 같은 항목을 나타내요.",
+      "기본 키와 외래 키, 제약 조건 등으로 연결과 데이터 규칙을 표현해요. 트랜잭션으로 여러 변경을 하나의 단위로 다루며 일관성을 관리할 수 있어요."
+    ],
+    "en": [
+      "Strictly, RDBMS refers to the software managing a relational database. Rows represent records and columns represent fields such as names or amounts.",
+      "Primary keys, foreign keys and constraints express links and rules. Transactions can group changes into a unit to manage consistency."
+    ]
+  },
+  "background": {
+    "ko": [
+      "서로 관련된 데이터를 중복을 줄이며 저장하고, 관계를 이용해 유연하게 조회하려는 목적으로 발전했어요."
+    ],
+    "en": [
+      "Relational systems developed to reduce unnecessary duplication and enable flexible queries across related data."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "테이블 설계",
+        "text": "고객, 주문 같은 대상을 나누고 열과 키를 정해요."
+      },
+      {
+        "title": "규칙과 저장",
+        "text": "자료형과 제약 조건을 확인하며 데이터를 저장해요."
+      },
+      {
+        "title": "연결 조회",
+        "text": "SQL의 조인 등으로 테이블을 연결해 필요한 결과를 구해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Design tables",
+        "text": "Define tables such as customers and orders, with columns and keys."
+      },
+      {
+        "title": "Enforce rules and store",
+        "text": "Store data while checking types and constraints."
+      },
+      {
+        "title": "Query relationships",
+        "text": "Use operations such as SQL joins to retrieve related data."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "회원과 주문 연결",
+      "결제와 잔액 관리",
+      "업무 시스템의 기준 정보 관리"
+    ],
+    "en": [
+      "Linking customers and orders",
+      "Managing payments and balances",
+      "Managing business reference records"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "주문 시스템 설계",
+        "text": "“고객과 주문은 키로 연결하고, 주문 저장과 재고 변경은 트랜잭션 범위를 정하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Designing an order system",
+        "text": "Say: “Link customers and orders with keys and define a transaction boundary for order creation and stock changes.”"
+      }
+    ]
+  },
+  "comparison": {
+    "target": "nosql",
+    "rows": [
+      {
+        "label": {
+          "ko": "데이터 모델",
+          "en": "Data model"
+        },
+        "values": [
+          {
+            "ko": "관계형 테이블과 키",
+            "en": "Relational tables and keys"
+          },
+          {
+            "ko": "문서, 키-값, 그래프 등 제품별 모델",
+            "en": "Product-specific models such as documents, key-value and graphs"
+          }
+        ]
+      },
+      {
+        "label": {
+          "ko": "선택 기준",
+          "en": "Selection criteria"
+        },
+        "values": [
+          {
+            "ko": "관계, 트랜잭션과 조회 요구에 맞춰 검토",
+            "en": "Assess relationships, transactions and query needs"
+          },
+          {
+            "ko": "접근 패턴, 모델과 일관성 요구에 맞춰 검토",
+            "en": "Assess access patterns, models and consistency needs"
+          }
+        ]
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "관계형 데이터베이스는 확장할 수 없나요?",
+        "en": "Can relational databases not scale?"
+      },
+      "fact": {
+        "ko": "복제, 분할과 분산 구조 등으로 확장할 수 있어요. 확장 난이도는 제품과 데이터 구조, 일관성 요구에 따라 달라요.",
+        "en": "They can scale through replication, partitioning and distributed designs. The difficulty depends on the product, data model and consistency requirements."
+      }
+    }
+  ],
+  "keywords": [
+    "database",
+    "sql",
+    "nosql"
+  ],
+  "related": [
+    {
+      "id": "database",
+      "type": "prerequisite"
+    },
+    {
+      "id": "sql",
+      "type": "related"
+    },
+    {
+      "id": "nosql",
+      "type": "compare"
+    }
+  ]
+}

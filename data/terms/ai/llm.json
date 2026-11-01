@@ -1,35 +1,222 @@
 {
   "order": 40,
   "updatedAt": "2026-11-01",
-  "term": { "ko": "대규모 언어 모델", "en": "LLM" },
-  "fullName": { "ko": "대규모 언어 모델", "en": "Large Language Model" },
+  "term": {
+    "ko": "대규모 언어 모델",
+    "en": "LLM"
+  },
+  "fullName": {
+    "ko": "대규모 언어 모델",
+    "en": "Large Language Model"
+  },
   "description": {
-    "ko": "사람의 글을 배워서 글을 읽고 쓰는 AI예요.",
-    "en": "An AI that learned from human writing to read and write text."
+    "ko": "방대한 텍스트 등으로 언어의 패턴을 학습해 글을 처리하고 생성하는 AI 모델이에요.",
+    "en": "An AI model trained on vast amounts of text and other data to process and generate language."
   },
   "analogy": {
-    "ko": "세상의 책을 엄청나게 많이 읽어서, 문장의 다음 말을 아주 자연스럽게 이어 쓸 수 있게 된 사람과 같아요.",
-    "en": "Like someone who has read an enormous number of books and can naturally continue any sentence."
+    "ko": "아주 많은 글에서 표현과 연결 방식을 익혀 새 요청에 맞는 글을 이어 쓰는 도우미와 비슷해요.",
+    "en": "Like a writing assistant that learns expressions and connections from extensive reading and composes text for new requests."
   },
   "details": {
     "ko": [
-      "LLM은 방대한 글을 학습해서 단어와 문장 사이의 패턴을 익혀요. 그래서 질문에 답하고, 글을 요약하고, 번역하는 등 다양한 일을 할 수 있어요.",
-      "다만 학습한 시점 이후의 정보는 모르고, 그럴듯하지만 틀린 내용을 말할 때도 있어요."
+      "대규모 언어 모델은 단어와 문장 사이의 패턴을 배워 질문에 답하고, 요약하고, 번역하거나 코드를 작성할 수 있어요. 많은 생성용 LLM은 앞의 토큰을 바탕으로 다음 토큰을 예측하는 방식으로 학습해요.",
+      "모델과 챗봇 서비스는 구분해야 해요. 서비스는 모델에 검색, 파일 읽기, 도구 사용과 대화 기록 관리 같은 기능을 더해 제공할 수 있어요.",
+      "학습만으로 최신 정보나 비공개 자료를 자동으로 알게 되지는 않아요. 다만 프롬프트, 검색이나 도구로 새 자료를 제공하면 참고해 답할 수 있으며, 그 답도 틀릴 수 있어요."
     ],
     "en": [
-      "An LLM learns patterns between words and sentences from huge amounts of text, so it can answer questions, summarize, translate and more.",
-      "However, it doesn't know about things after its training, and it sometimes says things that sound right but are wrong."
+      "Large language models learn patterns in language to answer questions, summarize, translate and write code. Many generative LLMs train by predicting the next token from preceding tokens.",
+      "A model differs from a chatbot service. A service can add search, file access, tools and conversation-history management around the model.",
+      "Training alone does not provide automatic access to current or private information. New material can be supplied through prompts, retrieval or tools, but answers can still be wrong."
+    ]
+  },
+  "background": {
+    "ko": [
+      "언어 작업마다 별도 규칙이나 모델을 만드는 대신, 많은 데이터로 학습한 하나의 기반 모델을 여러 작업에 활용하려는 흐름에서 발전했어요.",
+      "트랜스포머 구조와 대규모 학습이 널리 활용됐고, 지시를 따르는 추가 학습 등을 거쳐 대화형 서비스로 사용하게 됐어요."
+    ],
+    "en": [
+      "LLMs developed through efforts to use broadly trained base models across language tasks rather than building separate rules or models for each one.",
+      "Transformer architectures and large-scale training became widely used, with additional training such as instruction tuning helping support conversational applications."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "토큰 변환",
+        "text": "지시와 참고 자료를 포함한 입력을 토큰으로 바꿔요."
+      },
+      {
+        "title": "문맥 계산",
+        "text": "학습된 가중치로 토큰 사이의 관계를 계산해 다음 출력 후보를 구해요."
+      },
+      {
+        "title": "반복 생성",
+        "text": "선택한 토큰을 이어 붙이며 종료 조건이나 출력 한도까지 생성을 반복해요."
+      },
+      {
+        "title": "서비스 연결",
+        "text": "필요하면 앱이 도구를 실행하고 그 결과를 다시 모델에 제공해 응답을 이어 가요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Tokenize",
+        "text": "Convert inputs, including instructions and reference material, into tokens."
+      },
+      {
+        "title": "Process context",
+        "text": "Use learned weights to process relationships among tokens and compute candidates for the next output."
+      },
+      {
+        "title": "Generate repeatedly",
+        "text": "Append selected tokens and continue until a stopping condition or output limit is reached."
+      },
+      {
+        "title": "Integrate with the service",
+        "text": "When needed, the application executes tools and supplies results so the model can continue responding."
+      }
     ]
   },
   "examples": {
-    "ko": ["질문에 답해 주는 AI 챗봇", "긴 글 요약과 번역", "이메일·보고서 초안 작성"],
+    "ko": [
+      "질문에 답하는 AI 챗봇의 기반 모델",
+      "긴 문서 요약과 번역",
+      "이메일·보고서·코드 초안 작성"
+    ],
     "en": [
-      "AI chatbots that answer questions",
-      "Summarizing and translating long text",
-      "Drafting emails and reports"
+      "Base models for question-answering chatbots",
+      "Long-document summarization and translation",
+      "Drafting emails, reports and code"
     ]
   },
-  "keywords": ["prompt", "hallucination", "fine-tuning", "rag"],
-  "tools": [{ "id": "chatgpt" }, { "id": "claude" }, { "id": "gemini" }],
-  "related": [{ "id": "prompt", "type": "related" }, { "id": "hallucination", "type": "related" }]
+  "usage": {
+    "ko": [
+      {
+        "title": "사내 챗봇 설계",
+        "text": "“LLM은 질문과 자료를 읽고 답을 만들게 하고, 최신 규정은 검색으로, 개인별 잔여 연차는 인사 시스템 조회로 제공하자”처럼 역할을 나눠 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Designing an internal chatbot",
+        "text": "Say: “Let the LLM compose answers from the question and context, retrieve current policies, and query the HR system for each person’s remaining leave.”"
+      }
+    ]
+  },
+  "comparison": {
+    "target": "generative-ai",
+    "rows": [
+      {
+        "label": {
+          "ko": "범위",
+          "en": "Scope"
+        },
+        "values": [
+          {
+            "ko": "언어를 처리하는 모델 범주",
+            "en": "A category of models that process language"
+          },
+          {
+            "ko": "새 콘텐츠를 만드는 AI 전반",
+            "en": "AI that creates new content"
+          }
+        ]
+      },
+      {
+        "label": {
+          "ko": "대표 결과",
+          "en": "Typical outputs"
+        },
+        "values": [
+          {
+            "ko": "글, 코드와 구조화된 언어 출력",
+            "en": "Text, code and structured language outputs"
+          },
+          {
+            "ko": "글, 이미지, 음악과 영상 등",
+            "en": "Text, images, music, video and more"
+          }
+        ]
+      },
+      {
+        "label": {
+          "ko": "관계",
+          "en": "Relationship"
+        },
+        "values": [
+          {
+            "ko": "생성용 LLM은 생성형 AI의 한 종류",
+            "en": "Generative LLMs are one form of generative AI"
+          },
+          {
+            "ko": "언어 모델 외의 생성 모델도 포함",
+            "en": "Also includes generative models beyond language"
+          }
+        ]
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "LLM은 인터넷을 항상 검색하나요?",
+        "en": "Does an LLM always search the internet?"
+      },
+      "fact": {
+        "ko": "모델 실행 자체가 검색을 뜻하지는 않아요. 앱에 검색 도구가 연결되어 실제로 사용될 때 외부 정보를 가져와요.",
+        "en": "Running a model does not itself perform a search. External information is fetched when the application has and uses a search tool."
+      }
+    },
+    {
+      "myth": {
+        "ko": "질문하면 그 내용을 바로 영구 학습하나요?",
+        "en": "Does asking a question permanently train the model?"
+      },
+      "fact": {
+        "ko": "보통 응답을 만드는 추론 과정은 가중치를 바꾸지 않아요. 서비스의 대화 저장·메모리와 별도의 학습 정책은 각각 확인해야 해요.",
+        "en": "Ordinary inference does not update weights. Conversation storage, application memory and separate training policies are distinct and should be checked individually."
+      }
+    }
+  ],
+  "keywords": [
+    "generative-ai",
+    "transformer",
+    "token",
+    "context-window",
+    "hallucination",
+    "rag"
+  ],
+  "tools": [
+    {
+      "id": "chatgpt"
+    },
+    {
+      "id": "claude"
+    },
+    {
+      "id": "gemini"
+    }
+  ],
+  "related": [
+    {
+      "id": "generative-ai",
+      "type": "prerequisite"
+    },
+    {
+      "id": "transformer",
+      "type": "related"
+    },
+    {
+      "id": "prompt",
+      "type": "related"
+    },
+    {
+      "id": "hallucination",
+      "type": "related"
+    },
+    {
+      "id": "rag",
+      "type": "related"
+    }
+  ]
 }

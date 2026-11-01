@@ -1,0 +1,121 @@
+{
+  "order": 440,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "모델 평가",
+    "en": "Evaluation"
+  },
+  "description": {
+    "ko": "모델이나 AI 시스템이 실제 목적에 맞게 작동하는지 기준과 사례로 확인하는 과정이에요.",
+    "en": "Checking a model or AI system against criteria and examples to see whether it serves its intended purpose."
+  },
+  "analogy": {
+    "ko": "시험 점수뿐 아니라 실습, 속도와 실수 유형까지 보며 업무에 투입할 준비가 됐는지 확인하는 것과 같아요.",
+    "en": "Like checking exam results, practical work, speed and mistake patterns before assigning real work."
+  },
+  "details": {
+    "ko": [
+      "분류 정확도처럼 수치로 계산하는 평가와, 생성된 답의 유용성·근거를 사람이 판단하는 평가가 있어요. 자동 채점과 모델을 이용한 채점도 한계를 확인하며 활용해요.",
+      "모델뿐 아니라 검색, 프롬프트, 도구를 포함한 전체 시스템을 평가해야 해요. 평균 점수와 함께 어려운 사례, 비용, 지연 시간과 실패 유형도 확인해요."
+    ],
+    "en": [
+      "Evaluation can use numerical metrics such as classification accuracy and human judgments of usefulness and grounding. Automated and model-based grading also need validation.",
+      "Evaluate the whole system, including retrieval, prompts and tools. Examine difficult cases, costs, latency and failure patterns alongside averages."
+    ]
+  },
+  "background": {
+    "ko": [
+      "그럴듯한 시연 몇 개만으로는 실제 품질을 알기 어려워, 대표적인 사례와 반복 가능한 기준으로 비교할 필요가 생겼어요."
+    ],
+    "en": [
+      "A few impressive demonstrations cannot establish real quality, so representative cases and repeatable criteria are needed."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "기준 설계",
+        "text": "업무의 성공과 실패를 구분할 기준을 정해요."
+      },
+      {
+        "title": "사례 실행",
+        "text": "학습이나 개선에 직접 쓰지 않은 대표 사례로 시험해요."
+      },
+      {
+        "title": "분석과 추적",
+        "text": "결과를 비교하고 변경 뒤 성능 저하가 없는지 살펴요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Define criteria",
+        "text": "Define what counts as success or failure for the task."
+      },
+      {
+        "title": "Run cases",
+        "text": "Test representative cases kept separate from training or direct tuning."
+      },
+      {
+        "title": "Analyze and track",
+        "text": "Compare results and track regressions after changes."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "챗봇 답변의 근거 확인",
+      "모델 교체 전 품질 비교",
+      "에이전트 작업 완료율 측정"
+    ],
+    "en": [
+      "Checking chatbot grounding",
+      "Comparing quality before switching models",
+      "Measuring agent task completion"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "서비스 변경 검토",
+        "text": "“새 모델을 바로 적용하기 전에 실제 문의 평가셋으로 품질, 비용과 응답 시간을 비교하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Reviewing service changes",
+        "text": "Say: “Before switching models, compare quality, cost and latency on an evaluation set of real inquiries.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "공개 벤치마크 점수가 높으면 우리 서비스에도 최고인가요?",
+        "en": "Does a top public benchmark score mean it is best for our service?"
+      },
+      "fact": {
+        "ko": "데이터와 목표가 다를 수 있어요. 우리 업무에 맞는 평가셋과 사용자 확인이 필요하고, 평가 자료가 학습이나 튜닝에 섞이지 않도록 관리해야 해요.",
+        "en": "Data and goals can differ. Use task-specific evaluation and user feedback, and keep evaluation material separate from training or tuning."
+      }
+    }
+  ],
+  "keywords": [
+    "training",
+    "hallucination",
+    "ai-agent"
+  ],
+  "related": [
+    {
+      "id": "training",
+      "type": "related"
+    },
+    {
+      "id": "hallucination",
+      "type": "related"
+    },
+    {
+      "id": "ai-agent",
+      "type": "related"
+    }
+  ]
+}

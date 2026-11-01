@@ -1,0 +1,162 @@
+{
+  "order": 570,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "ETL",
+    "en": "ETL"
+  },
+  "fullName": {
+    "ko": "추출·변환·적재",
+    "en": "Extract, Transform, Load"
+  },
+  "description": {
+    "ko": "데이터를 추출하고, 목적에 맞게 변환한 뒤, 대상 저장소에 적재하는 과정이에요.",
+    "en": "Extracting data, transforming it for a purpose and loading it into a destination."
+  },
+  "analogy": {
+    "ko": "여러 곳의 식재료를 가져와 손질한 뒤 사용할 주방에 넣어 두는 것과 같아요.",
+    "en": "Like collecting ingredients, preparing them and placing them in the destination kitchen."
+  },
+  "details": {
+    "ko": [
+      "Extract는 원천에서 가져오기, Transform은 정리·형식 변환·통합, Load는 대상에 저장하기를 뜻해요. 웨어하우스에 분석 자료를 공급할 때 많이 쓰여요.",
+      "먼저 적재한 다음 대상 시스템에서 변환하면 ELT라고 해요. ETL은 데이터 파이프라인의 한 방식이며, 모든 파이프라인이 이 순서를 따르지는 않아요."
+    ],
+    "en": [
+      "Extract reads source data, transform cleans and reshapes it, and load writes it to the destination. ETL commonly supplies data warehouses.",
+      "Loading before transforming is called ELT. ETL is one kind of data pipeline, and not every pipeline follows its sequence."
+    ]
+  },
+  "background": {
+    "ko": [
+      "시스템마다 다른 형식과 기준의 데이터를 분석용으로 맞춰 옮기는 반복 작업을 체계화하려고 사용해요."
+    ],
+    "en": [
+      "ETL organizes recurring work that moves data between systems while aligning formats and definitions for analysis."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "추출",
+        "text": "변경된 주문 등 필요한 원천 데이터를 가져와요."
+      },
+      {
+        "title": "변환",
+        "text": "중복을 처리하고 날짜·코드와 집계 기준을 맞춰요."
+      },
+      {
+        "title": "적재",
+        "text": "대상에 저장하고 건수와 오류를 확인해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Extract",
+        "text": "Read required source data, such as changed orders."
+      },
+      {
+        "title": "Transform",
+        "text": "Handle duplicates and align dates, codes and aggregation rules."
+      },
+      {
+        "title": "Load",
+        "text": "Write to the destination and verify counts and errors."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "일별 주문 데이터 통합",
+      "고객 코드 표준화 후 적재",
+      "월별 분석 테이블 생성"
+    ],
+    "en": [
+      "Daily order integration",
+      "Loading customer data after code standardization",
+      "Building monthly analysis tables"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "야간 데이터 갱신",
+        "text": "“ETL이 중간에 실패해도 다시 실행할 때 같은 주문이 두 번 쌓이지 않게 하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Nightly refresh",
+        "text": "Say: “Make rerunning a failed ETL job safe so orders are not loaded twice.”"
+      }
+    ]
+  },
+  "comparison": {
+    "target": "data-pipeline",
+    "rows": [
+      {
+        "label": {
+          "ko": "범위",
+          "en": "Scope"
+        },
+        "values": [
+          {
+            "ko": "추출·변환·적재 순서의 데이터 처리",
+            "en": "Data processing in extract-transform-load order"
+          },
+          {
+            "ko": "데이터 수집·처리·전달을 잇는 전체 흐름",
+            "en": "The broader flow connecting ingestion, processing and delivery"
+          }
+        ]
+      },
+      {
+        "label": {
+          "ko": "관계",
+          "en": "Relationship"
+        },
+        "values": [
+          {
+            "ko": "파이프라인의 한 방식으로 구현 가능",
+            "en": "Can be implemented as one kind of pipeline"
+          },
+          {
+            "ko": "ETL 외에 복사, 스트리밍 등도 포함 가능",
+            "en": "Can include copying, streaming and other patterns"
+          }
+        ]
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "데이터를 옮기면 모두 ETL인가요?",
+        "en": "Is every data movement ETL?"
+      },
+      "fact": {
+        "ko": "단순 복사나 실시간 전달도 있어요. ETL은 추출·변환·적재의 흐름을 뜻하고, 적재 후 변환하는 ELT와도 구분해요.",
+        "en": "Data may simply be copied or streamed. ETL specifically describes extract-transform-load, distinct from ELT’s load-before-transform sequence."
+      }
+    }
+  ],
+  "keywords": [
+    "data-pipeline",
+    "data-preprocessing",
+    "data-warehouse"
+  ],
+  "related": [
+    {
+      "id": "data-pipeline",
+      "type": "related"
+    },
+    {
+      "id": "data-preprocessing",
+      "type": "related"
+    },
+    {
+      "id": "data-warehouse",
+      "type": "related"
+    }
+  ]
+}

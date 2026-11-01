@@ -1,0 +1,121 @@
+{
+  "order": 650,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "데이터 시각화",
+    "en": "Data Visualization"
+  },
+  "description": {
+    "ko": "데이터를 차트나 지도 등 시각적 형태로 표현해 패턴과 차이를 이해하도록 돕는 일이에요.",
+    "en": "Representing data with charts, maps and other visual forms to reveal patterns and differences."
+  },
+  "analogy": {
+    "ko": "숫자로 적힌 길 안내를 한눈에 볼 수 있는 지도로 바꾸는 것과 같아요.",
+    "en": "Like turning written directions into a map you can inspect at a glance."
+  },
+  "details": {
+    "ko": [
+      "추이는 선 그래프, 범주 비교는 막대그래프처럼 질문에 맞는 표현을 골라요. 제목, 단위, 범례와 출처도 해석에 중요한 요소예요.",
+      "축 범위, 구간과 색 선택에 따라 인상이 달라질 수 있어요. 불확실성과 누락도 드러내고, 보기 좋은 것보다 정확하게 읽히는지 확인해요."
+    ],
+    "en": [
+      "Choose a form for the question, such as lines for trends or bars for category comparisons. Titles, units, legends and sources matter too.",
+      "Axes, bins and colors can change impressions. Show uncertainty and missing data where relevant and prioritize accurate interpretation over decoration."
+    ]
+  },
+  "background": {
+    "ko": [
+      "많은 숫자를 표로만 읽으면 변화와 관계를 놓치기 쉬워, 시각적 비교를 통해 이해와 소통을 돕게 됐어요."
+    ],
+    "en": [
+      "Tables alone can hide changes and relationships, so visual comparison helps people understand and communicate data."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "질문과 데이터 확인",
+        "text": "전달할 메시지와 데이터 정의를 확인해요."
+      },
+      {
+        "title": "표현 선택",
+        "text": "비교, 추이와 분포 등에 맞는 차트를 골라요."
+      },
+      {
+        "title": "해석 검토",
+        "text": "축과 라벨을 확인하고 오해 없이 읽히는지 살펴요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Check the question and data",
+        "text": "Check the question, intended message and data definitions."
+      },
+      {
+        "title": "Choose a representation",
+        "text": "Choose a chart for comparison, trends or distributions."
+      },
+      {
+        "title": "Review interpretation",
+        "text": "Check axes and labels and look for misleading interpretations."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "월별 매출 선 그래프",
+      "지역별 수요 지도",
+      "고객별 구매액 분포"
+    ],
+    "en": [
+      "Monthly revenue line charts",
+      "Regional demand maps",
+      "Customer spending distributions"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "대시보드 검토",
+        "text": "“지역 비교는 막대로 보여 주고, 비교 기간과 매출 단위를 차트 안에 적자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Reviewing a dashboard",
+        "text": "Say: “Use bars for regional comparisons and label the period and revenue unit on the chart.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "그래프에서 함께 움직이면 원인과 결과인가요?",
+        "en": "Do variables moving together establish causation?"
+      },
+      "fact": {
+        "ko": "동시에 변하는 관계만 보여 줄 수 있어요. 다른 요인이나 우연을 배제하려면 별도 분석이나 실험이 필요해요.",
+        "en": "A chart may show association only. Further analysis or experiments are needed to rule out other factors or chance."
+      }
+    }
+  ],
+  "keywords": [
+    "data-literacy",
+    "business-intelligence",
+    "structured-data"
+  ],
+  "related": [
+    {
+      "id": "data-literacy",
+      "type": "related"
+    },
+    {
+      "id": "business-intelligence",
+      "type": "related"
+    },
+    {
+      "id": "structured-data",
+      "type": "related"
+    }
+  ]
+}

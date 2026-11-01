@@ -1,0 +1,126 @@
+{
+  "order": 1120,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "스케일링",
+    "en": "Scaling"
+  },
+  "description": {
+    "ko": "처리량과 성능 요구에 맞춰 컴퓨팅 자원의 크기나 개수를 조절하는 일이에요.",
+    "en": "Adjusting resource size or count to match throughput and performance requirements."
+  },
+  "analogy": {
+    "ko": "손님 수에 따라 계산대 성능을 높이거나 계산대 수를 늘리고 줄이는 것과 같아요.",
+    "en": "Like upgrading checkout capacity or changing the number of counters as demand varies."
+  },
+  "details": {
+    "ko": [
+      "수직 확장은 한 자원의 CPU나 메모리를 키우는 방식이고, 수평 확장은 인스턴스 수를 늘리는 방식이에요. 수요가 줄면 자원을 줄여 비용을 관리할 수도 있어요.",
+      "자동 확장은 지표와 정책에 따라 조절해요. 준비 시간, 상한과 상태 저장 방식이 영향을 주며, 데이터베이스 같은 다른 병목이 남으면 효과가 제한될 수 있어요."
+    ],
+    "en": [
+      "Vertical scaling increases resources such as CPU or memory per instance; horizontal scaling adds instances. Capacity can also shrink when demand falls.",
+      "Autoscaling uses metrics and policies. Startup time, limits and state management matter, and other bottlenecks such as databases can limit gains."
+    ]
+  },
+  "background": {
+    "ko": [
+      "서비스 수요는 일정하지 않아, 최대 규모를 항상 유지하거나 부족한 자원으로 버티는 대신 용량을 조절해요."
+    ],
+    "en": [
+      "Demand varies, so systems adjust capacity rather than keeping peak resources permanently or tolerating shortages."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "지표와 한도 설정",
+        "text": "처리량, 지연과 자원 사용량을 보고 조절 기준을 정해요."
+      },
+      {
+        "title": "확장 또는 축소",
+        "text": "자원 크기나 개수를 수동·자동으로 바꿔요."
+      },
+      {
+        "title": "효과 검증",
+        "text": "성능과 비용, 다른 병목의 변화를 확인해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Set metrics and limits",
+        "text": "Define triggers using throughput, latency and resource metrics."
+      },
+      {
+        "title": "Grow or shrink",
+        "text": "Change resource size or count manually or automatically."
+      },
+      {
+        "title": "Verify impact",
+        "text": "Check performance, costs and remaining bottlenecks."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "행사 시간에 앱 인스턴스 증설",
+      "메모리가 필요한 작업의 자원 증대",
+      "야간 유휴 자원 축소"
+    ],
+    "en": [
+      "Adding app instances during an event",
+      "Increasing resources for memory-heavy jobs",
+      "Reducing idle capacity overnight"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "이벤트 준비",
+        "text": "“자동 스케일링의 최소·최대 수와 준비 시간을 정하고, 부하 시험으로 데이터베이스 한계도 확인하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Preparing for an event",
+        "text": "Say: “Define autoscaling bounds and startup time and test database limits under load.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "자동 확장을 켜면 무제한으로 처리되나요?",
+        "en": "Does autoscaling provide unlimited capacity?"
+      },
+      "fact": {
+        "ko": "할당량, 준비 시간과 비용 한도가 있고 앱 구조도 영향을 줘요. 상한과 초과 시 대응을 정해야 해요.",
+        "en": "Quotas, startup delays, budgets and application design impose limits. Define ceilings and overload handling."
+      }
+    }
+  ],
+  "keywords": [
+    "load-balancing",
+    "kubernetes",
+    "serverless",
+    "database"
+  ],
+  "related": [
+    {
+      "id": "load-balancing",
+      "type": "compare"
+    },
+    {
+      "id": "kubernetes",
+      "type": "related"
+    },
+    {
+      "id": "serverless",
+      "type": "related"
+    },
+    {
+      "id": "database",
+      "type": "related"
+    }
+  ]
+}

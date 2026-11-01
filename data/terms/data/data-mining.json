@@ -1,0 +1,126 @@
+{
+  "order": 670,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "데이터 마이닝",
+    "en": "Data Mining"
+  },
+  "description": {
+    "ko": "많은 데이터에서 유용한 패턴, 관계와 규칙을 찾아내는 분석 과정이에요.",
+    "en": "An analytical process for discovering useful patterns, relationships and rules in data."
+  },
+  "analogy": {
+    "ko": "많은 암석을 살펴 쓸모 있는 광물을 찾듯 기록 속에서 의미 있는 패턴을 찾는 일이에요.",
+    "en": "Like searching rock for useful minerals, but looking for meaningful patterns in records."
+  },
+  "details": {
+    "ko": [
+      "함께 구매되는 상품, 비슷한 고객 집단이나 평소와 다른 거래 등을 찾을 수 있어요. 통계, 머신러닝과 데이터베이스 기법을 함께 활용해요.",
+      "발견한 패턴이 우연인지, 다른 데이터에도 적용되는지 확인해야 해요. 상관관계만으로 원인을 단정하거나 민감한 특성을 무리하게 추정하면 안 돼요."
+    ],
+    "en": [
+      "It can identify products bought together, similar customer groups or unusual transactions, using statistics, machine learning and database techniques.",
+      "Discovered patterns need checks for chance and generalization. Correlation alone does not establish cause, and sensitive attributes should not be inferred without justification."
+    ]
+  },
+  "background": {
+    "ko": [
+      "데이터를 저장하는 양이 늘면서 사람이 표를 하나씩 보는 것만으로 찾기 어려운 관계를 체계적으로 탐색하게 됐어요."
+    ],
+    "en": [
+      "As data volumes grew, systematic exploration became necessary to find relationships that manual inspection could miss."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "문제와 자료 준비",
+        "text": "찾을 패턴의 목적을 정하고 데이터를 정리해요."
+      },
+      {
+        "title": "패턴 탐색",
+        "text": "군집, 연관 규칙이나 이상 탐지 등 적절한 방법을 적용해요."
+      },
+      {
+        "title": "검증과 적용",
+        "text": "별도 데이터와 업무 맥락으로 의미를 검증해 활용해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Prepare the problem and data",
+        "text": "Define why the pattern matters and prepare the data."
+      },
+      {
+        "title": "Explore patterns",
+        "text": "Apply methods such as clustering, association rules or anomaly detection."
+      },
+      {
+        "title": "Validate and apply",
+        "text": "Validate patterns on separate data and in business context before use."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "장바구니 상품 연관 분석",
+      "고객 행동 군집 탐색",
+      "이상 거래 후보 탐색"
+    ],
+    "en": [
+      "Market-basket association analysis",
+      "Discovering customer behavior clusters",
+      "Identifying unusual transaction candidates"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "상품 묶음 기획",
+        "text": "“함께 팔리는 패턴은 데이터 마이닝으로 찾되, 묶음 판매 효과는 별도 실험으로 확인하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Planning product bundles",
+        "text": "Say: “Discover co-purchase patterns through data mining, then test whether bundling actually improves results.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "마이닝으로 찾은 패턴은 모두 의미가 있나요?",
+        "en": "Are all discovered patterns meaningful?"
+      },
+      "fact": {
+        "ko": "여러 조합을 살피면 우연한 패턴도 나와요. 별도 검증, 재현성과 실제 활용 가치를 확인해야 해요.",
+        "en": "Searching many combinations can uncover chance patterns. Check independent validation, reproducibility and practical value."
+      }
+    }
+  ],
+  "keywords": [
+    "data-preprocessing",
+    "machine-learning",
+    "business-intelligence",
+    "data-literacy"
+  ],
+  "related": [
+    {
+      "id": "data-preprocessing",
+      "type": "prerequisite"
+    },
+    {
+      "id": "machine-learning",
+      "type": "related"
+    },
+    {
+      "id": "business-intelligence",
+      "type": "related"
+    },
+    {
+      "id": "data-literacy",
+      "type": "related"
+    }
+  ]
+}

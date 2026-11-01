@@ -1,0 +1,163 @@
+{
+  "order": 280,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "AI 에이전트",
+    "en": "AI Agent"
+  },
+  "description": {
+    "ko": "주어진 목표를 이루기 위해 다음 행동을 고르고, 도구를 사용하며 결과에 따라 진행하는 AI 시스템이에요.",
+    "en": "An AI system that chooses actions, uses tools and adapts to results to pursue a goal."
+  },
+  "analogy": {
+    "ko": "업무 목표를 받으면 필요한 자료를 찾고 작업한 뒤 결과를 확인하는 담당자와 비슷해요.",
+    "en": "Like a worker who gathers information, takes action and checks results after receiving a goal."
+  },
+  "details": {
+    "ko": [
+      "일반적인 질의응답을 넘어 검색, 파일 수정, 시스템 조회 같은 행동을 할 수 있어요. 모델뿐 아니라 도구, 실행 환경, 상태 관리가 함께 필요해요.",
+      "자율성의 정도는 시스템마다 달라요. 실행 횟수와 권한을 제한하고, 중요한 행동에는 사람의 확인을 넣어 목표에서 벗어나지 않게 설계해요."
+    ],
+    "en": [
+      "An agent can search, edit files or query systems beyond answering questions. It needs tools, an execution environment and state management as well as a model.",
+      "Autonomy varies by system. Designers can limit actions and permissions and require human review for important steps to keep work aligned with the goal."
+    ]
+  },
+  "background": {
+    "ko": [
+      "답변을 읽고 사람이 매번 다음 작업을 하는 대신, 모델이 도구 결과를 보며 여러 단계를 이어 가도록 만들려는 요구에서 발전했어요."
+    ],
+    "en": [
+      "Agents developed to let models carry out multiple steps using tool feedback rather than requiring a person to act after every response."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "목표 파악",
+        "text": "요청과 제약을 읽고 다음 행동을 정해요."
+      },
+      {
+        "title": "도구 실행",
+        "text": "허용된 도구로 검색하거나 작업해요."
+      },
+      {
+        "title": "확인과 반복",
+        "text": "결과를 보고 다음 행동을 고르거나 종료해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Understand the goal",
+        "text": "Read the request and constraints and choose an action."
+      },
+      {
+        "title": "Use tools",
+        "text": "Search or act with permitted tools."
+      },
+      {
+        "title": "Check and repeat",
+        "text": "Inspect results, then choose another action or stop."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "여러 자료를 조사해 보고서 작성",
+      "코드를 수정하고 검사",
+      "문의 내용을 확인하고 처리안 제안"
+    ],
+    "en": [
+      "Researching sources and writing a report",
+      "Editing and checking code",
+      "Investigating requests and proposing actions"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "업무 위임",
+        "text": "여러 단계를 맡길 때 “에이전트가 자료 조사와 초안 작성까지 하고, 외부 발송은 담당자가 확인하게 하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Delegating work",
+        "text": "For multistep work, say: “Let the agent research and draft, with a person reviewing external messages before sending.”"
+      }
+    ]
+  },
+  "comparison": {
+    "target": "ai-workflow",
+    "rows": [
+      {
+        "label": {
+          "ko": "진행 방식",
+          "en": "Control flow"
+        },
+        "values": [
+          {
+            "ko": "상황과 결과에 따라 다음 행동을 선택",
+            "en": "Chooses actions based on context and results"
+          },
+          {
+            "ko": "사전에 정의한 단계와 조건을 따라 진행",
+            "en": "Follows predefined steps and conditions"
+          }
+        ]
+      },
+      {
+        "label": {
+          "ko": "잘 맞는 작업",
+          "en": "Suitable work"
+        },
+        "values": [
+          {
+            "ko": "진행 경로를 미리 정하기 어려운 작업",
+            "en": "Tasks with paths that are hard to define in advance"
+          },
+          {
+            "ko": "반복 가능하고 절차가 명확한 작업",
+            "en": "Repeatable tasks with clear procedures"
+          }
+        ]
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "챗봇에 이름만 붙이면 에이전트인가요?",
+        "en": "Does naming a chatbot make it an agent?"
+      },
+      "fact": {
+        "ko": "이름보다 목표에 따라 행동을 선택하고 결과를 반영하는 구조가 중요해요. 경계가 엄격히 통일된 용어는 아니라 실제 기능을 확인해야 해요.",
+        "en": "What matters is whether it chooses actions toward a goal and uses feedback. Definitions vary, so inspect the actual capabilities."
+      }
+    }
+  ],
+  "keywords": [
+    "llm",
+    "ai-workflow",
+    "function-calling",
+    "harness-engineering"
+  ],
+  "related": [
+    {
+      "id": "llm",
+      "type": "prerequisite"
+    },
+    {
+      "id": "ai-workflow",
+      "type": "compare"
+    },
+    {
+      "id": "function-calling",
+      "type": "related"
+    },
+    {
+      "id": "harness-engineering",
+      "type": "related"
+    }
+  ]
+}

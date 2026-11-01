@@ -45,6 +45,7 @@ app/                  페이지 라우트와 공통 UI 컴포넌트
   read/               쉽게 읽는 IT 글 페이지
   guides/             용어 가이드 페이지
 content/              Markdown 글과 글 작성 템플릿
+  pages/              소개·개인정보처리방침 (한국어 .md, 영어 .en.md)
   read/               쉽게 읽는 IT 글
   guides/             용어 가이드
 data/                 홈, 소개 페이지, 분류, 도구, 용어 데이터
@@ -79,6 +80,10 @@ terms: api, llm
 - `terms`에는 용어 ID 또는 표시할 문구를 쉼표로 구분해 적습니다. 본문에 `[[terms]]`를 한 줄로 넣으면 해당 위치에 용어 태그가 표시됩니다.
 - 이름이 `_`로 시작하는 Markdown 파일은 목록에 표시되지 않습니다.
 
+### 소개·개인정보처리방침 수정
+
+`content/pages/about.md`, `content/pages/privacy.md`에서 한국어 내용을 수정합니다. 영어 내용은 각각 `about.en.md`, `privacy.en.md`에서 관리합니다. Markdown 제목(`#`)이 페이지 제목으로 표시됩니다. `{{siteName}}`, `{{contactEmail}}`, `{{retentionPeriod}}`, `{{effectiveDate}}`처럼 `site.config.js`에 정의된 표기는 빌드 시 설정값으로 치환됩니다.
+
 ### 용어 추가 및 수정
 
 `data/terms/_template.json`을 참고해 용어 데이터를 `data/terms/{분류 ID}/{용어 ID}.json`에 추가합니다. 분류 ID는 `data/categories.json`에 등록된 ID여야 하며, 파일 이름이 `/terms/{용어 ID}`의 주소가 됩니다. 용어 ID는 모든 분류에서 중복될 수 없습니다.
@@ -90,7 +95,7 @@ terms: api, llm
 - `site.config.js`: 사이트 이름, 설명, 도메인(`siteUrl`), 문의 이메일, 개인정보처리방침 설정을 관리합니다. 배포 전에 실제 서비스 주소로 `siteUrl`을 변경하세요. 이 값은 canonical URL과 sitemap, robots.txt에 사용됩니다.
 - `data/home.json`: 첫 화면에 고정할 오늘의 용어(`todayTerm`), 목록 페이지 크기(`termsPerPage`), 인기 용어 순서(`popularTerms`)를 설정합니다. `todayTerm`을 비우면 한국 시간 기준으로 용어가 매일 바뀝니다.
 - `data/categories.json`: 용어 분류 ID와 다국어 이름을 관리합니다.
-- `data/pages.json`: 소개·문의·개인정보처리방침 페이지 내용을 관리합니다. `{{siteName}}` 같은 표기는 `site.config.js` 값으로 치환됩니다.
+- `data/pages.json`: 문의 페이지의 안내 문구와 문의 유형을 관리합니다.
 - `data/tools.json`: 용어 페이지에서 참조할 외부 도구 목록입니다.
 
 ## 기술 스택

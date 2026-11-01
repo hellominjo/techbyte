@@ -1,11 +1,10 @@
-import InfoPage from "@/app/ui/info-page";
-import { getPage } from "@/lib/pages";
-import { getCategories } from "@/lib/terms";
+import MarkdownInfoPage from "@/app/ui/markdown-info-page";
+import { getMarkdownPage } from "@/lib/pages";
 
-const page = getPage("about");
+const content = getMarkdownPage("about");
 
-export const metadata = { title: page.title.ko, alternates: { canonical: "/about" } };
+export const metadata = { title: "서비스 소개", alternates: { canonical: "/about" } };
 
 export default function AboutPage() {
-  return <InfoPage page={page} categories={getCategories()} />;
+  return <MarkdownInfoPage content={content} className="about-page-markdown" />;
 }

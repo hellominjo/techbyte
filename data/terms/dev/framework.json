@@ -1,0 +1,158 @@
+{
+  "order": 750,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "프레임워크",
+    "en": "Framework"
+  },
+  "description": {
+    "ko": "앱의 기본 구조와 실행 흐름을 제공해 그 안에 필요한 기능을 채워 넣게 하는 개발 기반이에요.",
+    "en": "A development foundation that provides application structure and execution flow for developers to extend."
+  },
+  "analogy": {
+    "ko": "건물의 골조와 배관이 준비된 공간에 필요한 방과 설비를 채우는 것과 같아요.",
+    "en": "Like fitting rooms and equipment into a building with its structural frame and utilities already laid out."
+  },
+  "details": {
+    "ko": [
+      "화면 구성, 요청 처리나 데이터 연결 같은 공통 방식을 제공할 수 있어요. 정해진 규칙에 맞춰 코드를 작성하면 프레임워크가 필요한 시점에 실행해요.",
+      "개발의 일관성과 속도를 높일 수 있지만 구조와 버전의 영향을 받아요. 라이브러리와의 경계는 제품에 따라 겹칠 수 있어요."
+    ],
+    "en": [
+      "A framework may supply common patterns for interfaces, request handling and data access. It invokes application code at defined points.",
+      "It can improve consistency and development speed, but imposes structural and version constraints. The boundary with libraries can overlap."
+    ]
+  },
+  "background": {
+    "ko": [
+      "프로젝트마다 공통 구조를 다시 만드는 일을 줄이고 여러 개발자가 비슷한 방식으로 작업하도록 발전했어요."
+    ],
+    "en": [
+      "Frameworks reduce repeated application scaffolding and help teams work consistently."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "구조 준비",
+        "text": "프로젝트의 기본 구조와 설정을 준비해요."
+      },
+      {
+        "title": "기능 작성",
+        "text": "정해진 확장 지점과 규칙에 맞춰 코드를 넣어요."
+      },
+      {
+        "title": "실행과 관리",
+        "text": "프레임워크가 흐름을 제어하며 기능을 실행해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Set up structure",
+        "text": "Prepare the project structure and configuration."
+      },
+      {
+        "title": "Implement features",
+        "text": "Implement code at defined extension points."
+      },
+      {
+        "title": "Run and maintain",
+        "text": "The framework controls flow and invokes application behavior."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "웹 서비스 요청 처리",
+      "모바일 앱 구조 구성",
+      "반복적인 업무 시스템 개발"
+    ],
+    "en": [
+      "Handling web requests",
+      "Structuring mobile applications",
+      "Building business systems consistently"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "기술 선택",
+        "text": "“기능 목록뿐 아니라 팀 경험과 유지보수, 버전 전환 비용까지 보고 프레임워크를 고르자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Choosing technology",
+        "text": "Say: “Choose a framework based on team experience, maintenance and upgrade costs as well as features.”"
+      }
+    ]
+  },
+  "comparison": {
+    "target": "library",
+    "rows": [
+      {
+        "label": {
+          "ko": "일반적인 제어 흐름",
+          "en": "Typical control flow"
+        },
+        "values": [
+          {
+            "ko": "프레임워크가 앱 코드를 호출",
+            "en": "Framework invokes application code"
+          },
+          {
+            "ko": "앱 코드가 필요한 기능을 호출",
+            "en": "Application code calls capabilities"
+          }
+        ]
+      },
+      {
+        "label": {
+          "ko": "제공 범위",
+          "en": "Typical scope"
+        },
+        "values": [
+          {
+            "ko": "앱의 구조와 공통 실행 규칙",
+            "en": "Application structure and execution conventions"
+          },
+          {
+            "ko": "특정 기능의 재사용 가능한 구현",
+            "en": "Reusable implementation of capabilities"
+          }
+        ]
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "프레임워크가 모든 업무 기능을 만들어 주나요?",
+        "en": "Does a framework implement every business feature?"
+      },
+      "fact": {
+        "ko": "공통 기반을 제공하지만 업무 규칙과 화면, 데이터 설계는 직접 구현하고 검증해야 해요.",
+        "en": "It provides a foundation; business rules, interfaces and data design still require implementation and validation."
+      }
+    }
+  ],
+  "keywords": [
+    "library",
+    "frontend",
+    "backend"
+  ],
+  "related": [
+    {
+      "id": "library",
+      "type": "compare"
+    },
+    {
+      "id": "frontend",
+      "type": "related"
+    },
+    {
+      "id": "backend",
+      "type": "related"
+    }
+  ]
+}

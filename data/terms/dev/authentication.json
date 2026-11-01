@@ -1,0 +1,121 @@
+{
+  "order": 840,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "인증",
+    "en": "Authentication"
+  },
+  "description": {
+    "ko": "사용자나 프로그램이 주장하는 신원이 맞는지 확인하는 과정이에요.",
+    "en": "Verifying the identity claimed by a user or program."
+  },
+  "analogy": {
+    "ko": "입구에서 신분증을 확인하는 것과 같아요. 들어간 뒤 무엇을 할 수 있는지는 별도 권한 문제예요.",
+    "en": "Like checking identification at an entrance; what someone may do afterward is a separate permissions question."
+  },
+  "details": {
+    "ko": [
+      "비밀번호, 일회용 코드, 패스키나 인증서 등으로 신원을 확인할 수 있어요. 로그인 후에는 세션이나 토큰 등으로 인증 결과를 이어 사용하기도 해요.",
+      "인증은 누구인지, 인가는 무엇을 할 수 있는지에 관한 개념이에요. 로그인에 성공해도 다른 사람의 주문을 조회할 권한이 자동으로 생기지는 않아요."
+    ],
+    "en": [
+      "Identity can be verified using passwords, one-time codes, passkeys or certificates. Sessions or tokens may carry the result across later interactions.",
+      "Authentication establishes identity; authorization decides permitted actions. Login does not automatically grant access to another person’s orders."
+    ]
+  },
+  "background": {
+    "ko": [
+      "여러 사용자가 공유하는 서비스에서 사용자별 데이터와 행동을 구분하려면 신원을 확인할 필요가 있어요."
+    ],
+    "en": [
+      "Shared services need identity checks to distinguish users’ data and actions."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "신원 제시",
+        "text": "계정 식별자와 확인 수단을 제시해요."
+      },
+      {
+        "title": "검증",
+        "text": "서비스가 해당 수단이 유효한지 확인해요."
+      },
+      {
+        "title": "인증 결과 활용",
+        "text": "인증 결과를 바탕으로 요청을 처리하되 작업별 권한도 확인해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Present identity",
+        "text": "Provide an account identifier and verification evidence."
+      },
+      {
+        "title": "Verify",
+        "text": "The service validates the evidence."
+      },
+      {
+        "title": "Use the result",
+        "text": "Use the authentication result while also checking permission for each action."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "서비스 로그인",
+      "추가 인증 코드 확인",
+      "서비스 간 인증서 기반 신원 확인"
+    ],
+    "en": [
+      "Service login",
+      "Verifying an additional login code",
+      "Certificate-based service identity checks"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "개인 정보 조회",
+        "text": "“로그인 확인뿐 아니라 이 사용자가 해당 주문을 볼 권한이 있는지도 서버에서 검사하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Accessing personal records",
+        "text": "Say: “Check both login status and whether this user can access that order on the server.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "인증과 인가는 같은가요?",
+        "en": "Are authentication and authorization the same?"
+      },
+      "fact": {
+        "ko": "인증은 신원 확인, 인가는 접근과 행동 허용이에요. 인증된 사용자라도 작업별 권한이 없을 수 있어요.",
+        "en": "Authentication verifies identity; authorization permits access or actions. An authenticated user may still lack permission."
+      }
+    }
+  ],
+  "keywords": [
+    "cookies-and-sessions",
+    "https",
+    "api"
+  ],
+  "related": [
+    {
+      "id": "cookies-and-sessions",
+      "type": "related"
+    },
+    {
+      "id": "https",
+      "type": "related"
+    },
+    {
+      "id": "api",
+      "type": "related"
+    }
+  ]
+}

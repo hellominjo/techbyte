@@ -1,0 +1,121 @@
+{
+  "order": 240,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "트랜스포머",
+    "en": "Transformer"
+  },
+  "description": {
+    "ko": "입력의 여러 부분 사이에서 무엇을 참고할지 계산하는 어텐션을 중심으로 만든 신경망 구조예요.",
+    "en": "A neural-network architecture built around attention, which calculates which parts of the input to draw on."
+  },
+  "analogy": {
+    "ko": "문장을 읽을 때 각 단어가 뜻을 파악하는 데 필요한 다른 단어를 찾아 연결하는 독서 도우미와 비슷해요.",
+    "en": "Like a reading helper that connects each word to other words needed to interpret it."
+  },
+  "details": {
+    "ko": [
+      "셀프 어텐션은 같은 입력 안의 토큰들이 서로 얼마나 관련 있는지 계산해요. 위치 정보도 함께 사용해서 순서에 따른 차이를 다뤄요.",
+      "여러 어텐션과 변환 층을 쌓아 문맥을 반영한 표현을 만들어요. LLM뿐 아니라 이미지·음성 모델에도 쓰이며, 생성 모델은 보통 다음 토큰 예측에 활용해요."
+    ],
+    "en": [
+      "Self-attention computes relationships among tokens within an input. Position information helps account for their order.",
+      "Layers of attention and transformations build contextual representations. Transformers are used in language, image and audio models; generative language models often use them to predict the next token."
+    ]
+  },
+  "background": {
+    "ko": [
+      "2017년 발표된 구조로, 순서를 따라 하나씩 처리하던 방식의 한계를 줄이고 학습 중 병렬 처리를 활용하기 위해 제안됐어요."
+    ],
+    "en": [
+      "Introduced in 2017, the architecture reduced reliance on sequential processing and enabled more parallel computation during training."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "토큰 표현",
+        "text": "입력을 숫자 벡터로 바꾸고 위치 정보를 반영해요."
+      },
+      {
+        "title": "어텐션",
+        "text": "각 토큰이 참고할 수 있는 다른 토큰의 정보를 모아요."
+      },
+      {
+        "title": "출력 계산",
+        "text": "여러 층에서 표현을 변환해 예측이나 생성에 사용해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Represent tokens",
+        "text": "Convert inputs to vectors and incorporate position information."
+      },
+      {
+        "title": "Apply attention",
+        "text": "Gather information from other tokens each token is allowed to attend to."
+      },
+      {
+        "title": "Compute outputs",
+        "text": "Transform representations through layers for prediction or generation."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "문맥에 맞는 번역",
+      "긴 글 요약",
+      "이미지의 특징 분석"
+    ],
+    "en": [
+      "Context-aware translation",
+      "Summarizing long text",
+      "Analyzing image features"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "언어 모델 이해",
+        "text": "모델의 구조를 설명할 때 나와요. “트랜스포머 기반이라도 입력 길이에 따른 비용과 성능은 따로 확인하자”라고 말해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Understanding language models",
+        "text": "The term describes model architecture. Say: “Even with a transformer, check cost and quality at the input lengths we need.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "모든 토큰이 항상 모든 토큰을 보나요?",
+        "en": "Does every token always see every other token?"
+      },
+      "fact": {
+        "ko": "아니에요. 생성용 모델은 보통 미래 토큰을 보지 못하게 막고, 구조에 따라 참고 범위를 제한하기도 해요.",
+        "en": "No. Generative models usually mask future tokens, and some architectures restrict attention further."
+      }
+    }
+  ],
+  "keywords": [
+    "neural-network",
+    "token",
+    "llm"
+  ],
+  "related": [
+    {
+      "id": "neural-network",
+      "type": "prerequisite"
+    },
+    {
+      "id": "token",
+      "type": "related"
+    },
+    {
+      "id": "llm",
+      "type": "related"
+    }
+  ]
+}

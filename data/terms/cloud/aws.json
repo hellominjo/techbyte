@@ -1,0 +1,183 @@
+{
+  "order": 1000,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "AWS",
+    "en": "AWS"
+  },
+  "fullName": {
+    "ko": "아마존 웹 서비스",
+    "en": "Amazon Web Services"
+  },
+  "description": {
+    "ko": "아마존이 컴퓨팅, 저장소와 데이터베이스 등 여러 IT 기능을 제공하는 클라우드 플랫폼이에요.",
+    "en": "Amazon’s cloud platform providing computing, storage, databases and other IT capabilities."
+  },
+  "analogy": {
+    "ko": "필요한 장비와 운영 서비스를 골라 빌릴 수 있는 대형 IT 시설과 같아요.",
+    "en": "Like a large IT facility where you choose equipment and managed services to rent."
+  },
+  "details": {
+    "ko": [
+      "가상 머신, 객체 저장소, 관리형 데이터베이스와 서버리스 실행 등 다양한 서비스를 조합해 앱을 운영해요. AWS는 서비스 모델 하나가 아니라 여러 모델을 아우르는 플랫폼이에요.",
+      "사용할 지역과 서비스, 자원 규모와 접근 권한을 정해야 해요. 요금과 관리 책임은 서비스별로 다르고, 클라우드를 선택해도 앱과 데이터 운영 책임이 모두 사라지지는 않아요."
+    ],
+    "en": [
+      "Applications combine virtual machines, object storage, managed databases, serverless execution and more. AWS spans service models rather than representing just one.",
+      "Choose locations, services, resource sizes and access permissions. Billing and responsibilities vary by service; using cloud does not remove all application and data responsibilities."
+    ]
+  },
+  "background": {
+    "ko": [
+      "서버 장비를 직접 구매·설치하기 전에 필요한 IT 자원을 빠르게 확보하고 규모를 조절하려는 요구를 지원해요."
+    ],
+    "en": [
+      "AWS supports provisioning IT resources quickly and adjusting capacity without first purchasing and installing physical equipment."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "요구와 지역 선택",
+        "text": "앱의 성능, 데이터 위치와 복구 요구를 정해요."
+      },
+      {
+        "title": "서비스 구성",
+        "text": "컴퓨팅, 저장소와 네트워크를 연결하고 권한을 설정해요."
+      },
+      {
+        "title": "운영과 측정",
+        "text": "앱을 배포하고 상태, 사용량과 비용을 확인해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Choose requirements and locations",
+        "text": "Define performance, data-location and recovery requirements."
+      },
+      {
+        "title": "Configure services",
+        "text": "Connect compute, storage and networking and configure access."
+      },
+      {
+        "title": "Operate and measure",
+        "text": "Deploy the application and monitor health, usage and cost."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "웹 서비스 운영 기반",
+      "파일 저장과 데이터 분석",
+      "이벤트 기반 작업 자동화"
+    ],
+    "en": [
+      "Hosting web services",
+      "File storage and analytics",
+      "Event-driven automation"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "클라우드 구성 논의",
+        "text": "“AWS를 쓴다는 결정과 별개로, 어떤 서비스에서 무엇을 관리할지와 비용 한도를 정하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Planning cloud architecture",
+        "text": "Say: “Beyond choosing AWS, define which services to use, what we manage and our cost limits.”"
+      }
+    ]
+  },
+  "comparison": {
+    "target": "azure",
+    "rows": [
+      {
+        "label": {
+          "ko": "제공자",
+          "en": "Provider"
+        },
+        "values": [
+          {
+            "ko": "아마존",
+            "en": "Amazon"
+          },
+          {
+            "ko": "마이크로소프트",
+            "en": "Microsoft"
+          }
+        ]
+      },
+      {
+        "label": {
+          "ko": "공통 범위",
+          "en": "Shared scope"
+        },
+        "values": [
+          {
+            "ko": "컴퓨팅, 저장소, 데이터와 관리형 서비스 등",
+            "en": "Compute, storage, data and managed services"
+          },
+          {
+            "ko": "컴퓨팅, 저장소, 데이터와 관리형 서비스 등",
+            "en": "Compute, storage, data and managed services"
+          }
+        ]
+      },
+      {
+        "label": {
+          "ko": "검토 기준",
+          "en": "Evaluation criteria"
+        },
+        "values": [
+          {
+            "ko": "필요한 기능, 지역, 기존 환경과 운영·비용",
+            "en": "Required capabilities, locations, integration, operations and costs"
+          },
+          {
+            "ko": "같은 요구로 실제 서비스별 지원 범위 비교",
+            "en": "Compare actual services against the same requirements"
+          }
+        ]
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "AWS를 쓰면 서버 운영은 전혀 안 해도 되나요?",
+        "en": "Does AWS eliminate all server operations?"
+      },
+      "fact": {
+        "ko": "선택한 서비스에 따라 달라요. 가상 머신의 운영체제를 직접 관리할 수도 있고, 관리형 서비스를 쓰더라도 앱 설정과 데이터 관리는 필요해요.",
+        "en": "It depends on the service. You may manage virtual-machine operating systems, and managed services still require application and data management."
+      }
+    }
+  ],
+  "keywords": [
+    "cloud",
+    "azure",
+    "iaas",
+    "serverless"
+  ],
+  "related": [
+    {
+      "id": "cloud",
+      "type": "prerequisite"
+    },
+    {
+      "id": "azure",
+      "type": "compare"
+    },
+    {
+      "id": "iaas",
+      "type": "related"
+    },
+    {
+      "id": "serverless",
+      "type": "related"
+    }
+  ]
+}

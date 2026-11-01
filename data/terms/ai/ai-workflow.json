@@ -1,0 +1,121 @@
+{
+  "order": 290,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "AI 워크플로우",
+    "en": "AI Workflow"
+  },
+  "description": {
+    "ko": "AI와 일반 프로그램, 사람의 작업을 정해진 단계와 조건으로 연결한 업무 흐름이에요.",
+    "en": "A work process that connects AI, ordinary software and human tasks through defined steps and conditions."
+  },
+  "analogy": {
+    "ko": "접수, 검토, 승인처럼 순서와 담당이 정해진 업무 절차에 AI를 배치하는 것과 같아요.",
+    "en": "Like placing AI within a procedure with defined intake, review and approval steps."
+  },
+  "details": {
+    "ko": [
+      "문서 추출, 요약, 검토, 저장처럼 각 단계의 입력과 출력을 연결해요. 모든 단계가 AI일 필요는 없고, 조건에 따라 분기하거나 반복할 수도 있어요.",
+      "에이전트가 상황에 맞춰 다음 행동을 고르는 데 비해, 여기서는 미리 정의한 흐름이 중심이에요. 실제 시스템은 두 방식을 섞어 쓰기도 해요."
+    ],
+    "en": [
+      "Connect inputs and outputs across steps such as extraction, summarization, review and storage. Steps need not all use AI, and conditions can control branches and loops.",
+      "A predefined flow is central, whereas an agent chooses actions based on the situation. Real systems can combine both approaches."
+    ]
+  },
+  "background": {
+    "ko": [
+      "AI 한 번의 응답만으로는 업무가 끝나지 않아서, 데이터 처리와 검토 등 앞뒤 절차를 연결할 필요가 생겼어요."
+    ],
+    "en": [
+      "A single AI response rarely completes a business task, creating a need to connect data preparation, review and follow-up steps."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "흐름 정의",
+        "text": "단계, 분기 조건, 담당자와 완료 기준을 정해요."
+      },
+      {
+        "title": "연결",
+        "text": "AI와 시스템의 입력·출력 형식을 맞춰요."
+      },
+      {
+        "title": "운영",
+        "text": "단계별 결과를 기록하고 실패한 작업을 재처리해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Define the flow",
+        "text": "Define steps, branch conditions, owners and completion criteria."
+      },
+      {
+        "title": "Connect steps",
+        "text": "Align input and output formats across AI and other systems."
+      },
+      {
+        "title": "Operate",
+        "text": "Record results and retry or handle failed steps."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "회의록 요약 후 담당자 확인",
+      "문의 분류 후 담당 팀 배정",
+      "문서 추출 후 시스템 등록"
+    ],
+    "en": [
+      "Summarizing minutes for owner review",
+      "Classifying inquiries and assigning teams",
+      "Extracting document data and saving it in a system"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "문의 접수 자동화",
+        "text": "“분류는 AI가 하고, 긴급 건은 바로 담당자에게 보내는 워크플로우로 만들자”라고 이야기할 수 있어요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Automating inquiry intake",
+        "text": "Say: “Build a workflow where AI classifies inquiries and urgent cases go directly to an owner.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "워크플로우는 언제나 일직선인가요?",
+        "en": "Is a workflow always linear?"
+      },
+      "fact": {
+        "ko": "조건 분기, 반복, 병렬 처리도 가능해요. 중요한 점은 실행 흐름과 조건을 사전에 정의한다는 거예요.",
+        "en": "It can include branches, loops and parallel work. The key is that the flow and conditions are defined in advance."
+      }
+    }
+  ],
+  "keywords": [
+    "ai-agent",
+    "ai-orchestration",
+    "evaluation"
+  ],
+  "related": [
+    {
+      "id": "ai-agent",
+      "type": "compare"
+    },
+    {
+      "id": "ai-orchestration",
+      "type": "related"
+    },
+    {
+      "id": "evaluation",
+      "type": "related"
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "order": 420,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "양자화",
+    "en": "Quantization"
+  },
+  "description": {
+    "ko": "모델의 숫자를 더 적은 비트로 표현해 저장 공간과 연산 부담을 줄이는 기법이에요.",
+    "en": "Representing model numbers with fewer bits to reduce storage and computational requirements."
+  },
+  "analogy": {
+    "ko": "소수점이 긴 숫자를 더 짧은 눈금에 맞춰 적어 공간을 아끼는 것과 비슷해요.",
+    "en": "Like recording detailed measurements on a coarser scale to save space."
+  },
+  "details": {
+    "ko": [
+      "가중치나 중간 계산값의 정밀도를 낮춰 메모리 사용량을 줄일 수 있어요. 학습을 마친 뒤 적용하거나, 양자화를 고려하며 학습하는 방식이 있어요.",
+      "지원되는 하드웨어와 실행 방식에 따라 속도가 빨라질 수 있지만 항상 그런 것은 아니에요. 정확도 손실, 변환 비용과 실제 지연 시간을 함께 측정해야 해요."
+    ],
+    "en": [
+      "Reducing the precision of weights or activations can save memory. Quantization can be applied after training or incorporated into training.",
+      "Speed can improve depending on hardware and runtime support, but it is not guaranteed. Measure accuracy loss, conversion overhead and actual latency together."
+    ]
+  },
+  "background": {
+    "ko": [
+      "큰 모델은 메모리를 많이 사용해 작은 기기나 제한된 서버에서 돌리기 어려워, 더 적은 숫자 표현으로 실행하는 방법이 발전했어요."
+    ],
+    "en": [
+      "Large models consume substantial memory, motivating lower-precision representations for constrained devices and servers."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "방식 선택",
+        "text": "모델과 장치가 지원하는 정밀도와 방법을 골라요."
+      },
+      {
+        "title": "변환",
+        "text": "필요하면 보정 데이터를 사용해 숫자 표현을 바꿔요."
+      },
+      {
+        "title": "측정",
+        "text": "품질, 메모리와 속도를 기존 모델과 비교해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Choose a method",
+        "text": "Choose precision and methods supported by the model and device."
+      },
+      {
+        "title": "Convert",
+        "text": "Convert representations, using calibration data when needed."
+      },
+      {
+        "title": "Measure",
+        "text": "Compare quality, memory use and speed with the original model."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "노트북에서 언어 모델 실행",
+      "모바일 모델 메모리 절약",
+      "서버 모델 저장 크기 축소"
+    ],
+    "en": [
+      "Running language models on laptops",
+      "Reducing mobile model memory",
+      "Reducing model storage on servers"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "실행 비용 절감",
+        "text": "“양자화한 모델이 메모리에 들어가는지와 우리 평가셋에서 품질이 유지되는지 같이 보자”라고 말해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Reducing serving costs",
+        "text": "Say: “Check both whether the quantized model fits in memory and whether it preserves quality on our evaluation set.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "양자화는 파일을 압축했다가 똑같이 복원하는 건가요?",
+        "en": "Is quantization lossless file compression?"
+      },
+      "fact": {
+        "ko": "보통 숫자의 표현 정밀도를 줄여 정보가 일부 사라질 수 있어요. 그래서 모델 품질을 다시 평가해야 해요.",
+        "en": "Usually it reduces numerical precision and can lose information, so model quality must be reevaluated."
+      }
+    }
+  ],
+  "keywords": [
+    "inference",
+    "on-device-ai",
+    "evaluation"
+  ],
+  "related": [
+    {
+      "id": "inference",
+      "type": "prerequisite"
+    },
+    {
+      "id": "on-device-ai",
+      "type": "related"
+    },
+    {
+      "id": "evaluation",
+      "type": "related"
+    }
+  ]
+}

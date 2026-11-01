@@ -1,0 +1,130 @@
+{
+  "order": 850,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "마이크로서비스",
+    "en": "MSA"
+  },
+  "fullName": {
+    "ko": "마이크로서비스 아키텍처",
+    "en": "Microservices Architecture"
+  },
+  "description": {
+    "ko": "서비스를 업무 기능별로 나누고 각각 독립적으로 개발·배포할 수 있게 구성하는 아키텍처예요.",
+    "en": "An architecture organizing business capabilities into services that can be developed and deployed independently."
+  },
+  "analogy": {
+    "ko": "한 부서가 모든 일을 맡는 대신 역할이 분명한 여러 팀이 약속한 창구로 협업하는 것과 같아요.",
+    "en": "Like specialized teams cooperating through agreed interfaces rather than one department doing everything."
+  },
+  "details": {
+    "ko": [
+      "주문, 결제와 재고 등을 서비스로 나누고 API나 메시지로 통신해요. 코드 크기보다 업무 경계와 독립적인 변경 가능성이 중요해요.",
+      "부분별 확장과 배포에 유리할 수 있지만 네트워크 장애, 데이터 일관성, 추적과 운영 복잡도가 늘어요. 서비스별 데이터 책임도 명확히 해야 해요."
+    ],
+    "en": [
+      "Services such as orders, payments and inventory communicate through APIs or messages. Business boundaries and independent change matter more than code size.",
+      "Independent scaling and deployment can help, but network failures, consistency, tracing and operations become more complex. Data ownership also needs clear boundaries."
+    ]
+  },
+  "background": {
+    "ko": [
+      "큰 시스템에서 팀마다 다른 속도로 기능을 바꾸고 확장하려는 요구를 지원하기 위해 활용해요."
+    ],
+    "en": [
+      "Microservices support teams needing to change and scale different parts of a large system independently."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "경계 정의",
+        "text": "업무 기능과 데이터 책임에 따라 서비스를 나눠요."
+      },
+      {
+        "title": "통신 계약",
+        "text": "API와 메시지 형식, 실패 처리 방식을 정해요."
+      },
+      {
+        "title": "독립 운영",
+        "text": "서비스별 배포와 감시를 하고 전체 흐름도 추적해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Define boundaries",
+        "text": "Separate services by business capabilities and data ownership."
+      },
+      {
+        "title": "Define contracts",
+        "text": "Define APIs, messages and failure handling."
+      },
+      {
+        "title": "Operate independently",
+        "text": "Deploy and monitor services independently while tracing end-to-end flows."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "주문·결제 서비스 분리",
+      "검색 기능만 별도 확장",
+      "팀별 배포 주기 분리"
+    ],
+    "en": [
+      "Separating order and payment services",
+      "Scaling search independently",
+      "Independent team release schedules"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "시스템 분리 검토",
+        "text": "“작게 나누기보다 독립 배포할 경계와 장애 시 동작, 데이터 책임부터 정하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Considering a split",
+        "text": "Say: “Define independent deployment boundaries, failure behavior and data ownership before splitting services.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "마이크로서비스가 항상 더 좋은가요?",
+        "en": "Are microservices always better?"
+      },
+      "fact": {
+        "ko": "작은 팀이나 단순한 제품에서는 운영 부담이 더 클 수 있어요. 조직 규모와 변경·확장 요구에 맞춰 선택해요.",
+        "en": "Operational overhead can outweigh benefits for small teams or simple products. Choose based on organizational and change requirements."
+      }
+    }
+  ],
+  "keywords": [
+    "backend",
+    "api",
+    "deployment",
+    "log"
+  ],
+  "related": [
+    {
+      "id": "backend",
+      "type": "prerequisite"
+    },
+    {
+      "id": "api",
+      "type": "related"
+    },
+    {
+      "id": "deployment",
+      "type": "related"
+    },
+    {
+      "id": "log",
+      "type": "related"
+    }
+  ]
+}

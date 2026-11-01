@@ -1,0 +1,126 @@
+{
+  "order": 1330,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "인증서",
+    "en": "Digital Certificate"
+  },
+  "description": {
+    "ko": "공개키와 도메인·조직 등 주체 정보를 묶고 발급자의 전자서명으로 확인할 수 있게 한 전자 문서예요.",
+    "en": "An electronic document binding a public key to subject information and signed by an issuer."
+  },
+  "analogy": {
+    "ko": "열쇠가 누구 것인지 적고 신뢰할 발급자가 확인 도장을 찍은 신분증과 같아요.",
+    "en": "Like an identity document stating whose key it is and carrying an issuer’s verification seal."
+  },
+  "details": {
+    "ko": [
+      "여기서는 웹 연결과 시스템 인증 등에 쓰이는 디지털 인증서를 뜻해요. 공개키, 대상 이름, 유효 기간과 발급자 등을 담고 신뢰 체계 안에서 검증해요.",
+      "인증서는 보통 공개할 수 있지만 짝인 개인키는 보호해야 해요. 도메인 검증 인증서가 사이트의 내용이나 사업자의 신뢰성까지 보증하는 것은 아니에요."
+    ],
+    "en": [
+      "Here certificate means digital certificates used in web connections and system authentication. They contain public keys, subject names, validity periods and issuer information for validation in a trust system.",
+      "Certificates are generally public, but their private keys must be protected. A domain-validated certificate does not guarantee trustworthy site content or business conduct."
+    ]
+  },
+  "background": {
+    "ko": [
+      "공개키를 받았을 때 그 키가 의도한 통신 상대의 것인지 확인하려고 주체 정보와 신뢰 가능한 서명을 연결해요."
+    ],
+    "en": [
+      "Certificates help determine whether a received public key belongs to the intended peer by connecting subject information with trusted signatures."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "발급",
+        "text": "신청자가 개인키를 관리하고 발급자가 정책에 맞춰 주체 정보를 확인해 서명해요."
+      },
+      {
+        "title": "제시와 검증",
+        "text": "연결 상대가 이름, 유효 기간과 신뢰 경로 등을 확인해요."
+      },
+      {
+        "title": "키 증명과 수명 관리",
+        "text": "연결 과정에서 키 소유를 증명하고 갱신·폐기와 개인키 보호를 관리해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Issue",
+        "text": "The applicant controls a private key while the issuer verifies subject information under its policy and signs."
+      },
+      {
+        "title": "Present and validate",
+        "text": "The peer checks the name, validity and trust path."
+      },
+      {
+        "title": "Prove key control and manage lifecycle",
+        "text": "Prove key control during the protocol and manage renewal, revocation and private-key protection."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "HTTPS 서버 신원 확인",
+      "서비스 간 상호 TLS 인증",
+      "코드 서명 인증서"
+    ],
+    "en": [
+      "Authenticating HTTPS servers",
+      "Mutual TLS between services",
+      "Code-signing certificates"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "운영 인증서 관리",
+        "text": "“인증서 만료뿐 아니라 개인키 접근과 자동 갱신 실패 알림, 폐기 절차도 관리하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Managing certificates",
+        "text": "Say: “Manage private-key access, renewal-failure alerts and revocation procedures as well as certificate expiry.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "인증서 파일만 있으면 서버 신원을 증명할 수 있나요?",
+        "en": "Is possessing a certificate file enough to prove server identity?"
+      },
+      "fact": {
+        "ko": "인증서는 공개 정보일 수 있어요. 프로토콜에서 대응하는 개인키를 제어한다는 증명과 올바른 인증서 검증이 함께 필요해요.",
+        "en": "The certificate can be public. Identity authentication also requires proof of control of the corresponding private key and correct certificate validation."
+      }
+    }
+  ],
+  "keywords": [
+    "ssl-tls",
+    "encryption",
+    "authentication",
+    "domain"
+  ],
+  "related": [
+    {
+      "id": "ssl-tls",
+      "type": "related"
+    },
+    {
+      "id": "encryption",
+      "type": "related"
+    },
+    {
+      "id": "authentication",
+      "type": "related"
+    },
+    {
+      "id": "domain",
+      "type": "related"
+    }
+  ]
+}

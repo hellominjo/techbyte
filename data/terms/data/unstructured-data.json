@@ -1,0 +1,126 @@
+{
+  "order": 600,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "비정형 데이터",
+    "en": "Unstructured Data"
+  },
+  "description": {
+    "ko": "내용이 미리 정한 행과 열의 틀로 바로 정리되어 있지 않은 데이터예요.",
+    "en": "Data whose content is not directly organized into predefined rows and columns."
+  },
+  "analogy": {
+    "ko": "같은 양식의 신청서 대신 자유롭게 쓴 편지, 사진과 녹음이 모여 있는 것과 같아요.",
+    "en": "Like a collection of free-form letters, photos and recordings rather than standard forms."
+  },
+  "details": {
+    "ko": [
+      "본문 문서, 이미지, 음성과 영상이 대표적이에요. 파일 이름이나 촬영일 같은 구조화된 메타데이터가 붙어 있어도 내용 자체는 비정형일 수 있어요.",
+      "검색과 분석을 위해 텍스트 추출, 음성 인식, 태그나 임베딩 등을 활용해요. JSON이나 XML처럼 키와 계층이 있는 데이터는 흔히 반정형으로 따로 구분해요."
+    ],
+    "en": [
+      "Examples include free-form documents, images, audio and video. Their content can be unstructured even when filenames or capture dates are structured metadata.",
+      "Search and analysis can use text extraction, transcription, tags or embeddings. Formats with keys and hierarchy, such as JSON or XML, are often classified separately as semi-structured."
+    ]
+  },
+  "background": {
+    "ko": [
+      "사람이 만드는 정보의 많은 부분이 고정된 표 밖에 있어서, 이 자료도 검색하고 분석할 필요가 생겼어요."
+    ],
+    "en": [
+      "Much human-created information exists outside fixed tables, creating a need to search and analyze it."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "원본 수집",
+        "text": "파일과 출처, 생성 시점 등 정보를 함께 모아요."
+      },
+      {
+        "title": "내용 추출",
+        "text": "문자 인식이나 음성 인식 등으로 활용할 표현을 만들어요."
+      },
+      {
+        "title": "검색과 분석",
+        "text": "키워드, 임베딩이나 분류 결과로 필요한 내용을 찾아요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Collect originals",
+        "text": "Collect files with source and creation information."
+      },
+      {
+        "title": "Extract content",
+        "text": "Create usable representations through methods such as OCR or transcription."
+      },
+      {
+        "title": "Search and analyze",
+        "text": "Use keywords, embeddings or classifications to find useful content."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "고객 상담 녹음",
+      "자유 형식의 보고서 본문",
+      "제품 사진과 영상"
+    ],
+    "en": [
+      "Customer support recordings",
+      "Free-form report text",
+      "Product photos and videos"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "문서 검색",
+        "text": "“비정형 문서를 검색하려면 본문 추출뿐 아니라 원본 링크와 열람 권한도 함께 관리하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Document search",
+        "text": "Say: “For document search, manage source links and access rights as well as extracting the content.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "비정형은 구조가 전혀 없다는 뜻인가요?",
+        "en": "Does unstructured mean having no structure at all?"
+      },
+      "fact": {
+        "ko": "문서의 제목과 문단, 이미지의 파일 형식처럼 구조는 있어요. 분석할 내용이 고정된 필드에 곧바로 맞지 않는다는 뜻에 가까워요.",
+        "en": "Documents have headings and paragraphs, and images have file formats. The term means their analytical content does not directly fit fixed fields."
+      }
+    }
+  ],
+  "keywords": [
+    "structured-data",
+    "embedding",
+    "metadata",
+    "data-lake"
+  ],
+  "related": [
+    {
+      "id": "structured-data",
+      "type": "compare"
+    },
+    {
+      "id": "embedding",
+      "type": "related"
+    },
+    {
+      "id": "metadata",
+      "type": "related"
+    },
+    {
+      "id": "data-lake",
+      "type": "related"
+    }
+  ]
+}

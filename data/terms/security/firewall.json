@@ -1,0 +1,126 @@
+{
+  "order": 1220,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "방화벽",
+    "en": "Firewall"
+  },
+  "description": {
+    "ko": "네트워크 트래픽을 정해진 규칙에 따라 허용하거나 차단하는 보안 장치나 소프트웨어예요.",
+    "en": "Hardware or software that allows or blocks network traffic according to defined rules."
+  },
+  "analogy": {
+    "ko": "누가 어느 출입구로 어떤 목적으로 드나들 수 있는지 확인하는 출입 관리와 같아요.",
+    "en": "Like access control deciding who can use which entrance and for what purpose."
+  },
+  "details": {
+    "ko": [
+      "주소, 포트, 연결 상태나 애플리케이션 정보 등을 기준으로 판단해요. 호스트 한 대나 네트워크 경계, 클라우드 환경 등에 배치할 수 있어요.",
+      "허용된 연결을 통한 공격이나 앱의 권한 오류까지 모두 막지는 못해요. 웹 요청을 다루는 WAF 등은 검사 범위가 다르므로 역할을 구분해야 해요."
+    ],
+    "en": [
+      "Rules can use addresses, ports, connection state or application information. Firewalls can protect individual hosts, network boundaries or cloud environments.",
+      "Firewalls do not prevent every attack through allowed traffic or every application-permission error. Tools such as WAFs inspect different layers and need distinct roles."
+    ]
+  },
+  "background": {
+    "ko": [
+      "서비스에 불필요한 외부 접근을 줄이고 네트워크 사이의 통신 경계를 통제하려고 사용해요."
+    ],
+    "en": [
+      "Firewalls reduce unnecessary exposure and control communication across network boundaries."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "정책 정의",
+        "text": "필요한 출발지, 목적지와 서비스만 허용하도록 규칙을 정해요."
+      },
+      {
+        "title": "트래픽 검사",
+        "text": "통신의 정보와 상태를 규칙에 대조해요."
+      },
+      {
+        "title": "허용·차단과 검토",
+        "text": "결정을 적용하고 기록과 업무 영향을 검토해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Define policy",
+        "text": "Define allowed sources, destinations and services."
+      },
+      {
+        "title": "Inspect traffic",
+        "text": "Match traffic attributes and state against rules."
+      },
+      {
+        "title": "Allow, block and review",
+        "text": "Apply decisions and review logs and operational effects."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "관리 포트의 접근 제한",
+      "내부 시스템 사이 통신 제한",
+      "서버의 외부 노출 최소화"
+    ],
+    "en": [
+      "Restricting management ports",
+      "Controlling internal system communication",
+      "Reducing server exposure"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "서비스 연결 허용",
+        "text": "“일단 전체를 열지 말고 필요한 출발지와 포트만 허용하고, 예외 규칙의 만료도 정하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Allowing a service connection",
+        "text": "Say: “Allow only required sources and ports rather than opening everything, and give temporary exceptions an expiry.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "방화벽만 있으면 서비스는 안전한가요?",
+        "en": "Does a firewall alone make a service secure?"
+      },
+      "fact": {
+        "ko": "허용된 통신 안에서도 취약점과 계정 도용이 발생할 수 있어요. 인증, 업데이트와 앱 검증 등을 함께 해야 해요.",
+        "en": "Vulnerabilities and stolen accounts can be exploited through permitted traffic. Authentication, updates and application controls are also needed."
+      }
+    }
+  ],
+  "keywords": [
+    "ip-address",
+    "vpn",
+    "authentication",
+    "log"
+  ],
+  "related": [
+    {
+      "id": "ip-address",
+      "type": "prerequisite"
+    },
+    {
+      "id": "vpn",
+      "type": "related"
+    },
+    {
+      "id": "authentication",
+      "type": "related"
+    },
+    {
+      "id": "log",
+      "type": "related"
+    }
+  ]
+}

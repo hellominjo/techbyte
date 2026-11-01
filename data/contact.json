@@ -1,0 +1,23 @@
+{
+  "contact": {
+    "title": { "ko": "문의하기", "en": "Contact" },
+    "inquiryTypes": [
+      { "id": "service", "name": { "ko": "서비스 문의", "en": "Service question" } },
+      { "id": "term-request", "name": { "ko": "용어 추가 요청", "en": "Term request" } },
+      { "id": "correction", "name": { "ko": "잘못된 설명 신고", "en": "Correction" } },
+      { "id": "etc", "name": { "ko": "기타", "en": "Other" } }
+    ],
+    "sections": [
+      {
+        "body": {
+          "ko": [
+            "궁금한 점이나 추가했으면 하는 용어, 잘못된 설명이 있다면 언제든 알려 주세요."
+          ],
+          "en": [
+            "Questions, term requests or corrections are always welcome."
+          ]
+        }
+      }
+    ]
+  }
+}

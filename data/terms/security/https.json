@@ -1,9 +1,0 @@
-{
-  "order": 130,
-  "updatedAt": "2026-11-01",
-  "term": { "ko": "HTTPS", "en": "HTTPS" },
-  "description": {
-    "ko": "웹사이트와 주고받는 내용을 암호로 감싸 엿보지 못하게 하는 방식이에요.",
-    "en": "Wraps what you exchange with a website in encryption so no one can peek."
-  }
-}

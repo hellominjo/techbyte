@@ -1,24 +1,191 @@
 {
   "order": 50,
   "updatedAt": "2026-11-01",
-  "term": { "ko": "파인튜닝", "en": "Fine-tuning" },
+  "term": {
+    "ko": "파인튜닝",
+    "en": "Fine-tuning"
+  },
   "description": {
-    "ko": "AI를 내 용도에 맞게 추가로 가르치는 작업이에요.",
-    "en": "Training an AI further so it fits your specific purpose."
+    "ko": "이미 학습된 AI를 특정 목적에 맞게 추가로 학습시키는 작업이에요.",
+    "en": "Further training an existing model to adapt it to a specific purpose."
   },
   "analogy": {
-    "ko": "일반 의사가 특정 분야를 더 공부해서 전문의가 되는 것과 같아요.",
-    "en": "Like a general doctor studying further to become a specialist."
+    "ko": "기본 업무를 익힌 직원이 우리 회사의 업무 사례로 추가 교육을 받는 것과 같아요.",
+    "en": "Like giving an experienced employee additional training using examples from your company."
   },
   "details": {
     "ko": [
-      "이미 학습된 AI에 특정 분야의 자료를 더 학습시켜서, 그 분야의 말투나 지식에 익숙해지게 만들어요.",
-      "RAG가 답할 때마다 자료를 찾아보는 방식이라면, 파인튜닝은 지식 자체를 AI 안에 새겨 넣는 방식이에요."
+      "이미 학습된 모델에 새 데이터를 학습시켜 전체 또는 일부 가중치를 조정해요. 특정 말투, 출력 형식, 분류 기준이나 전문 분야의 작업 방식을 익히는 데 활용해요.",
+      "RAG가 응답할 때 자료를 찾아 전달한다면, 파인튜닝은 모델 자체의 동작을 바꿔요. 지식에도 영향을 줄 수 있지만, 문서를 정확히 저장하거나 최신 사실을 빠짐없이 기억하게 하는 방법은 아니에요."
     ],
     "en": [
-      "You give an already-trained AI more material from a specific field so it gets used to that field's tone and knowledge.",
-      "If RAG looks things up every time it answers, fine-tuning builds the knowledge into the AI itself."
+      "Fine-tuning updates all or some weights of a pretrained model using additional data. It can adapt tone, output formats, classification criteria or domain-specific task behavior.",
+      "RAG retrieves material at response time; fine-tuning changes model behavior itself. It can affect knowledge, but it is not a way to store documents exactly or guarantee recall of current facts."
     ]
   },
-  "related": [{ "id": "llm", "type": "prerequisite" }, { "id": "rag", "type": "compare" }]
+  "background": {
+    "ko": [
+      "큰 모델을 처음부터 학습하려면 많은 데이터와 비용이 필요해요. 이미 배운 능력을 활용하면서 특정 목적에 맞추기 위해 추가 학습을 사용해요.",
+      "프롬프트나 예시만으로 원하는 결과가 충분히 나오지 않을 때 검토할 수 있어요. 다만 먼저 실패 유형을 살펴 파인튜닝이 해결할 문제인지 확인해야 해요."
+    ],
+    "en": [
+      "Training a large model from scratch needs substantial data and resources. Fine-tuning reuses learned capabilities while adapting them to a particular purpose.",
+      "Consider it when instructions and prompt examples do not achieve the desired results. First inspect failure patterns to see whether training addresses the actual problem."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "학습 자료 준비",
+        "text": "원하는 입력과 좋은 출력 사례를 모으고, 평가용 자료는 따로 남겨 둬요."
+      },
+      {
+        "title": "추가 학습",
+        "text": "기반 모델의 전체 또는 일부 가중치를 조정해 목표 작업에 맞춰요."
+      },
+      {
+        "title": "비교와 적용",
+        "text": "기존 모델과 품질·비용을 비교하고 다른 작업 능력이 떨어지지 않았는지도 확인해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Prepare training data",
+        "text": "Collect inputs with good target outputs and keep evaluation data separate."
+      },
+      {
+        "title": "Train further",
+        "text": "Adjust all or some of the base model’s weights for the target task."
+      },
+      {
+        "title": "Compare and deploy",
+        "text": "Compare quality and cost with the original model and check for regressions on other tasks."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "회사 문체에 맞는 고객 응대 초안",
+      "일관된 항목으로 문서 분류",
+      "전문 분야의 표현과 출력 형식에 맞춘 응답"
+    ],
+    "en": [
+      "Customer-service drafts in a company’s style",
+      "Consistent document classification",
+      "Responses adapted to domain terminology and output formats"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "고객 응대 문체 통일",
+        "text": "상담 답변의 문체가 계속 흔들릴 때 검토해요. 개발자와는 “좋은 응대 사례로 파인튜닝을 시험하되, 최신 환불 규정은 RAG로 따로 제공하자”라고 이야기할 수 있어요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Consistent customer-service style",
+        "text": "Consider it when response style remains inconsistent. Tell developers: “Test fine-tuning on good support examples and supply current refund policies separately through RAG.”"
+      }
+    ]
+  },
+  "comparison": {
+    "target": "rag",
+    "rows": [
+      {
+        "label": {
+          "ko": "바뀌는 대상",
+          "en": "What changes"
+        },
+        "values": [
+          {
+            "ko": "모델의 전체 또는 일부 가중치",
+            "en": "All or some model weights"
+          },
+          {
+            "ko": "응답에 전달하는 참고 자료",
+            "en": "Reference material supplied at response time"
+          }
+        ]
+      },
+      {
+        "label": {
+          "ko": "잘 맞는 목적",
+          "en": "Suitable purpose"
+        },
+        "values": [
+          {
+            "ko": "반복되는 말투·형식·작업 행동 조정",
+            "en": "Adapting recurring style, format and task behavior"
+          },
+          {
+            "ko": "사내 문서나 자주 바뀌는 사실 참고",
+            "en": "Consulting internal documents or changing facts"
+          }
+        ]
+      },
+      {
+        "label": {
+          "ko": "자료 갱신",
+          "en": "Updating information"
+        },
+        "values": [
+          {
+            "ko": "새 자료 반영에 추가 학습이 필요할 수 있음",
+            "en": "May need further training to incorporate new data"
+          },
+          {
+            "ko": "검색 자료를 갱신하되 검색·색인 상태 확인 필요",
+            "en": "Update retrieval sources and check indexing and retrieval"
+          }
+        ]
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "파인튜닝하면 문서 내용을 정확히 외우나요?",
+        "en": "Does fine-tuning memorize documents exactly?"
+      },
+      "fact": {
+        "ko": "모델이 패턴과 지식을 배울 수는 있지만, 원문이나 사실의 정확한 재현을 보장하지 않아요. 최신 정보와 출처가 중요하면 검색이나 데이터 조회도 함께 설계해요.",
+        "en": "It can learn patterns and knowledge, but does not guarantee exact reproduction of documents or facts. Add retrieval or data queries when freshness and sources matter."
+      }
+    },
+    {
+      "myth": {
+        "ko": "학습 자료가 많으면 무조건 좋아지나요?",
+        "en": "Does more training data always help?"
+      },
+      "fact": {
+        "ko": "잘못되거나 일관성 없는 예시는 원치 않는 행동을 강화할 수 있어요. 자료의 품질과 다양성, 별도 평가셋에서의 성능이 중요해요.",
+        "en": "Incorrect or inconsistent examples can reinforce unwanted behavior. Quality, diversity and performance on separate evaluation data matter."
+      }
+    }
+  ],
+  "keywords": [
+    "training",
+    "transfer-learning",
+    "rag",
+    "evaluation"
+  ],
+  "related": [
+    {
+      "id": "training",
+      "type": "prerequisite"
+    },
+    {
+      "id": "transfer-learning",
+      "type": "related"
+    },
+    {
+      "id": "rag",
+      "type": "compare"
+    },
+    {
+      "id": "evaluation",
+      "type": "related"
+    }
+  ]
 }

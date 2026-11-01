@@ -1,0 +1,163 @@
+{
+  "order": 1100,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "쿠버네티스",
+    "en": "Kubernetes"
+  },
+  "description": {
+    "ko": "여러 실행 노드에서 컨테이너 기반 앱의 배치, 복구와 확장을 조율하는 오픈소스 플랫폼이에요.",
+    "en": "An open-source platform coordinating placement, recovery and scaling of containerized applications across nodes."
+  },
+  "analogy": {
+    "ko": "여러 작업장의 작업 수와 배치를 맞추고 중단된 작업을 다시 배정하는 운영 관리자와 같아요.",
+    "en": "Like an operations coordinator balancing work across sites and reassigning interrupted tasks."
+  },
+  "details": {
+    "ko": [
+      "원하는 실행 상태를 선언하면 컨트롤러가 실제 상태와 차이를 줄이도록 동작해요. 하나 이상의 컨테이너를 담는 Pod가 기본 배치 단위이며, 노드들로 클러스터를 구성해요.",
+      "자동 복구와 배포를 도울 수 있지만 앱의 오류나 데이터 복구를 모두 해결하지는 않아요. 관측, 저장소, 권한과 확장 정책을 구성해야 하며 운영 복잡도도 있어요."
+    ],
+    "en": [
+      "Controllers reconcile actual state with declared desired state. Pods, containing one or more containers, are the basic scheduling units within a cluster of nodes.",
+      "It can help automate recovery and deployment but does not solve every application or data failure. Observability, storage, access and scaling policies still require design and operation."
+    ]
+  },
+  "background": {
+    "ko": [
+      "여러 노드에 많은 컨테이너를 배치하고 바뀌는 실행 상태를 수작업으로 관리하기 어려워 조율을 자동화해요."
+    ],
+    "en": [
+      "Kubernetes automates coordination when managing many containers and changing runtime states manually becomes difficult."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "원하는 상태 선언",
+        "text": "이미지, 복제본 수와 필요한 자원을 지정해요."
+      },
+      {
+        "title": "배치와 실행",
+        "text": "실행 가능한 노드에 Pod를 배치해요."
+      },
+      {
+        "title": "상태 조정",
+        "text": "실행 상태를 확인하고 중단된 복제본 등을 다시 만들어요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Declare desired state",
+        "text": "Specify images, replica counts and resource requirements."
+      },
+      {
+        "title": "Schedule and run",
+        "text": "Schedule Pods onto suitable nodes."
+      },
+      {
+        "title": "Reconcile state",
+        "text": "Check state and replace missing replicas when needed."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "여러 서비스의 컨테이너 운영",
+      "복제본 수 조절",
+      "선언된 정책에 따른 점진 배포"
+    ],
+    "en": [
+      "Operating containers across services",
+      "Adjusting replica counts",
+      "Rolling deployments under defined policies"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "운영 플랫폼 검토",
+        "text": "“Kubernetes 도입 전에 서비스 수와 운영 역량을 보고, 관리형 플랫폼으로 충분한지도 비교하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Assessing an operations platform",
+        "text": "Say: “Before adopting Kubernetes, assess service count and operational skills and compare simpler managed platforms.”"
+      }
+    ]
+  },
+  "comparison": {
+    "target": "docker",
+    "rows": [
+      {
+        "label": {
+          "ko": "대표 역할",
+          "en": "Typical role"
+        },
+        "values": [
+          {
+            "ko": "클러스터의 컨테이너 배치와 상태 조율",
+            "en": "Coordinate container placement and state in a cluster"
+          },
+          {
+            "ko": "이미지 빌드·공유와 컨테이너 실행",
+            "en": "Build and share images and run containers"
+          }
+        ]
+      },
+      {
+        "label": {
+          "ko": "함께 쓰는 예",
+          "en": "Combined use"
+        },
+        "values": [
+          {
+            "ko": "호환 이미지를 받아 여러 노드에서 운영",
+            "en": "Operate compatible images across nodes"
+          },
+          {
+            "ko": "앱 이미지를 만들어 레지스트리에 공유",
+            "en": "Build application images and share them through a registry"
+          }
+        ]
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "Kubernetes를 쓰려면 Docker 엔진이 필수인가요?",
+        "en": "Does Kubernetes require Docker Engine?"
+      },
+      "fact": {
+        "ko": "아니에요. Kubernetes는 지원되는 컨테이너 런타임을 사용하며 Docker로 만든 호환 이미지도 실행할 수 있어요.",
+        "en": "No. Kubernetes uses supported container runtimes and can run compatible images built with Docker."
+      }
+    }
+  ],
+  "keywords": [
+    "container",
+    "docker",
+    "scaling",
+    "load-balancing"
+  ],
+  "related": [
+    {
+      "id": "container",
+      "type": "prerequisite"
+    },
+    {
+      "id": "docker",
+      "type": "related"
+    },
+    {
+      "id": "scaling",
+      "type": "related"
+    },
+    {
+      "id": "load-balancing",
+      "type": "related"
+    }
+  ]
+}

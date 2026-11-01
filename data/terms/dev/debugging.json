@@ -1,0 +1,121 @@
+{
+  "order": 890,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "디버깅",
+    "en": "Debugging"
+  },
+  "description": {
+    "ko": "프로그램의 문제를 재현하고 원인을 찾아 수정한 뒤 해결됐는지 확인하는 과정이에요.",
+    "en": "Reproducing a software problem, finding and fixing its cause, and verifying the fix."
+  },
+  "analogy": {
+    "ko": "고장 난 기계에서 증상을 관찰하고 원인 부품을 좁혀 수리하는 것과 같아요.",
+    "en": "Like observing a faulty machine, isolating the cause and repairing it."
+  },
+  "details": {
+    "ko": [
+      "로그, 실행 중의 값과 호출 흐름을 살펴 가설을 확인해요. 디버거로 멈춰 보거나 입력을 줄여 문제를 단순하게 만들 수도 있어요.",
+      "에러 메시지를 없애는 데서 끝나지 않고 원인이 해결됐는지 확인해야 해요. 재현 사례와 관련 동작을 검사해 같은 문제가 다시 생기지 않게 해요."
+    ],
+    "en": [
+      "Use logs, runtime values and call flow to test hypotheses. A debugger can pause execution, and reduced inputs can simplify a failure.",
+      "Removing an error message is not enough: verify that the cause is fixed. Check the reproduction and related behavior to guard against recurrence."
+    ]
+  },
+  "background": {
+    "ko": [
+      "오류의 증상이 나타나는 곳과 실제 원인이 있는 곳이 다를 수 있어, 관찰과 가설 검증으로 좁혀 가는 과정이 필요해요."
+    ],
+    "en": [
+      "Symptoms can appear far from their cause, requiring observation and hypothesis testing to narrow the problem down."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "재현과 관찰",
+        "text": "발생 조건과 실제 실행 상태를 확인해요."
+      },
+      {
+        "title": "가설 검증",
+        "text": "의심 원인을 좁히고 자료로 확인해요."
+      },
+      {
+        "title": "수정과 재검사",
+        "text": "원인을 수정하고 원래 사례와 관련 기능을 다시 확인해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Reproduce and observe",
+        "text": "Identify triggering conditions and runtime state."
+      },
+      {
+        "title": "Test hypotheses",
+        "text": "Narrow suspected causes and check evidence."
+      },
+      {
+        "title": "Fix and recheck",
+        "text": "Fix the cause and recheck the original case and related functions."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "특정 입력에서만 생기는 오류 추적",
+      "느린 요청의 병목 조사",
+      "잘못된 금액의 계산 경로 확인"
+    ],
+    "en": [
+      "Tracing input-specific failures",
+      "Investigating slow-request bottlenecks",
+      "Tracing incorrect calculations"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "문제 조사",
+        "text": "“추측으로 여러 곳을 바꾸기보다 재현 조건과 로그로 원인을 하나씩 확인하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Investigating a problem",
+        "text": "Say: “Use reproduction steps and logs to test causes one at a time rather than changing several things by guesswork.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "디버깅은 디버거를 켜는 것만 뜻하나요?",
+        "en": "Does debugging only mean using a debugger?"
+      },
+      "fact": {
+        "ko": "디버거는 한 도구예요. 로그 분석, 재현 입력 축소와 변경 이력 조사도 디버깅에 포함돼요.",
+        "en": "A debugger is one tool. Log analysis, input reduction and change-history investigation are also debugging."
+      }
+    }
+  ],
+  "keywords": [
+    "bug",
+    "log",
+    "git"
+  ],
+  "related": [
+    {
+      "id": "bug",
+      "type": "prerequisite"
+    },
+    {
+      "id": "log",
+      "type": "related"
+    },
+    {
+      "id": "git",
+      "type": "related"
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 import { Noto_Sans_KR } from "next/font/google";
+import Script from "next/script";
 import { themeInitScript } from "@/lib/theme";
 import { siteValue } from "@/lib/site";
 import SiteHeader from "@/app/ui/site-header";
@@ -22,6 +23,9 @@ export const metadata = {
     template: `%s | ${siteTitle}`,
   },
   description: siteValue("description", "ko"),
+  other: {
+    "google-adsense-account": "ca-pub-9255417524209137",
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -32,10 +36,10 @@ export default function RootLayout({ children }) {
       suppressHydrationWarning
       className={`${notoSansKr.variable} h-full antialiased`}
     >
-      <head>
-        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
-      </head>
       <body className="min-h-full flex flex-col font-sans">
+        <Script id="theme-init" strategy="beforeInteractive">
+          {themeInitScript}
+        </Script>
         {/* 태블릿·모바일은 좁은 단일 칼럼, PC(lg 이상)는 넓은 레이아웃 */}
         <div className="mx-auto flex w-full max-w-3xl flex-1 flex-col px-5 sm:px-8 lg:max-w-6xl lg:px-10">
           <SiteHeader />

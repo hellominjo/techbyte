@@ -1,0 +1,126 @@
+{
+  "order": 870,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "Jenkins",
+    "en": "Jenkins"
+  },
+  "description": {
+    "ko": "빌드, 테스트와 배포 같은 반복 작업을 자동 실행하도록 구성하는 오픈소스 자동화 서버예요.",
+    "en": "An open-source automation server for recurring tasks such as building, testing and deploying software."
+  },
+  "analogy": {
+    "ko": "정해진 조건에 따라 검사·포장·전달 작업을 순서대로 지시하는 작업 관리자와 같아요.",
+    "en": "Like a work coordinator that triggers inspection, packaging and delivery under defined conditions."
+  },
+  "details": {
+    "ko": [
+      "코드 변경이나 일정에 따라 작업을 실행하고 결과와 실행 기록을 모아요. 여러 도구와 플러그인을 연결해 CI/CD를 구성할 수 있어요.",
+      "파이프라인을 Jenkinsfile로 정의해 코드와 함께 관리할 수 있어요. 실제 검사는 테스트 도구 등이 수행하며, Jenkins 자체의 운영과 확장 구성도 관리해야 해요."
+    ],
+    "en": [
+      "Jenkins triggers work from changes or schedules and records results. Tools and plugins can be connected to implement CI/CD.",
+      "A Jenkinsfile can define a pipeline alongside application code. Testing tools perform the checks; Jenkins operation and extensions also require maintenance."
+    ]
+  },
+  "background": {
+    "ko": [
+      "코드를 바꿀 때마다 사람이 빌드와 검사를 반복하는 부담을 줄이고 팀에 실행 결과를 일관되게 공유하려고 사용해요."
+    ],
+    "en": [
+      "Jenkins reduces repetitive manual build and test work and provides consistent execution results to a team."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "작업 정의",
+        "text": "실행 조건과 빌드·검사·배포 단계를 정해요."
+      },
+      {
+        "title": "실행",
+        "text": "실행 환경에서 각 단계의 도구를 호출해요."
+      },
+      {
+        "title": "결과 확인",
+        "text": "성공·실패와 로그를 확인하고 후속 단계 진행을 결정해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Define work",
+        "text": "Define triggers and build, test and deployment stages."
+      },
+      {
+        "title": "Execute",
+        "text": "Invoke each stage’s tools in an execution environment."
+      },
+      {
+        "title": "Inspect results",
+        "text": "Inspect status and logs to decide whether later stages should proceed."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "변경 코드 자동 빌드",
+      "주기적인 테스트 실행",
+      "승인 후 운영 배포"
+    ],
+    "en": [
+      "Building code changes automatically",
+      "Running scheduled tests",
+      "Deploying to production after approval"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "자동화 구성",
+        "text": "“Jenkins 파이프라인에 빌드와 검사를 분리하고, 실패하면 배포 단계가 실행되지 않게 하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Configuring automation",
+        "text": "Say: “Separate build and test stages in Jenkins and stop deployment when checks fail.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "Jenkins를 쓰면 CI/CD가 완성되나요?",
+        "en": "Does installing Jenkins complete CI/CD?"
+      },
+      "fact": {
+        "ko": "도구만으로 완성되지 않아요. 통합 습관, 의미 있는 검사, 배포 기준과 운영 책임을 함께 설계해야 해요.",
+        "en": "The tool alone is insufficient. Integration practices, meaningful checks, deployment criteria and operational ownership must also be designed."
+      }
+    }
+  ],
+  "keywords": [
+    "ci-cd",
+    "build",
+    "deployment",
+    "webhook"
+  ],
+  "related": [
+    {
+      "id": "ci-cd",
+      "type": "prerequisite"
+    },
+    {
+      "id": "build",
+      "type": "related"
+    },
+    {
+      "id": "deployment",
+      "type": "related"
+    },
+    {
+      "id": "webhook",
+      "type": "related"
+    }
+  ]
+}

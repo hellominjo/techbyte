@@ -1,0 +1,121 @@
+{
+  "order": 400,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "전이학습",
+    "en": "Transfer Learning"
+  },
+  "description": {
+    "ko": "한 작업이나 데이터에서 배운 표현과 지식을 다른 작업에 활용하는 방법이에요.",
+    "en": "Reusing representations or knowledge learned from one task or dataset for another."
+  },
+  "analogy": {
+    "ko": "자전거를 타며 익힌 균형 감각이 다른 탈것을 배우는 데 도움이 되는 것과 비슷해요.",
+    "en": "Like using balance learned from cycling to help learn another activity."
+  },
+  "details": {
+    "ko": [
+      "이미 학습된 모델의 특징 추출 부분을 그대로 쓰거나, 일부 또는 전체를 새 데이터로 조정할 수 있어요.",
+      "파인튜닝은 전이학습에 자주 쓰이는 방식이지만 둘이 완전히 같은 말은 아니에요. 가중치를 고정한 채 추출된 특징만 다른 모델에 쓰는 방법도 있어요."
+    ],
+    "en": [
+      "You can reuse a pretrained feature extractor or adapt some or all of a model on new data.",
+      "Fine-tuning is a common transfer-learning method, but not the only one. You can also keep weights frozen and use extracted features in another model."
+    ]
+  },
+  "background": {
+    "ko": [
+      "매번 처음부터 모델을 학습하려면 데이터와 비용이 많이 들어서, 이미 배운 유용한 패턴을 재사용하게 됐어요."
+    ],
+    "en": [
+      "Training from scratch is costly and data-intensive, motivating reuse of useful learned patterns."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "기반 모델 선정",
+        "text": "새 작업과 관련 있는 사전 학습 모델을 골라요."
+      },
+      {
+        "title": "적용",
+        "text": "특징을 재사용하거나 필요한 부분을 추가 학습해요."
+      },
+      {
+        "title": "평가",
+        "text": "새 작업에서도 효과가 있는지 별도 데이터로 확인해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Choose a base",
+        "text": "Choose a pretrained model relevant to the new task."
+      },
+      {
+        "title": "Adapt",
+        "text": "Reuse features or train the parts that need adaptation."
+      },
+      {
+        "title": "Evaluate",
+        "text": "Check effectiveness on separate data from the new task."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "일반 이미지 모델을 제품 검사에 활용",
+      "언어 모델을 문서 분류에 활용",
+      "음성 모델을 특정 환경에 맞게 조정"
+    ],
+    "en": [
+      "Adapting image models to product inspection",
+      "Using language models for document classification",
+      "Adapting speech models to a particular environment"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "데이터가 적은 프로젝트",
+        "text": "“처음부터 학습하기보다 전이학습을 시도하고, 우리 데이터에서도 효과가 있는지 보자”라고 말해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Projects with limited data",
+        "text": "Say: “Try transfer learning before training from scratch, and check whether it helps on our data.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "어떤 모델이든 가져오면 도움이 되나요?",
+        "en": "Does any pretrained model help?"
+      },
+      "fact": {
+        "ko": "새 작업과 너무 다르면 오히려 성능이 나빠질 수도 있어요. 기반 모델의 적합성과 사용 조건을 확인해야 해요.",
+        "en": "A poor match can hurt performance. Check suitability and the model’s terms of use."
+      }
+    }
+  ],
+  "keywords": [
+    "training",
+    "fine-tuning",
+    "deep-learning"
+  ],
+  "related": [
+    {
+      "id": "training",
+      "type": "prerequisite"
+    },
+    {
+      "id": "fine-tuning",
+      "type": "related"
+    },
+    {
+      "id": "deep-learning",
+      "type": "related"
+    }
+  ]
+}

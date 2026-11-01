@@ -1,0 +1,121 @@
+{
+  "order": 260,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "컨텍스트 윈도우",
+    "en": "Context Window"
+  },
+  "description": {
+    "ko": "모델이 한 번의 처리에서 참고할 수 있는 정보의 최대 범위예요.",
+    "en": "The maximum amount of information a model can consider in a single processing context."
+  },
+  "analogy": {
+    "ko": "책상 위에 한꺼번에 펼쳐 놓을 수 있는 자료의 양과 같아요.",
+    "en": "Like the amount of material you can spread across a desk at once."
+  },
+  "details": {
+    "ko": [
+      "시스템 지시, 대화 기록, 문서, 도구 결과 등이 이 범위를 차지해요. 보통 토큰으로 표시하며, 많은 모델에서는 생성할 출력까지 고려해 공간을 배분해야 해요.",
+      "한도를 넘으면 요청이 거절되거나 앱이 일부를 자르거나 요약할 수 있어요. 범위 안에 들어간 정보도 모델이 모두 정확히 활용한다는 보장은 없어요."
+    ],
+    "en": [
+      "System instructions, conversation history, documents and tool results occupy this space. It is usually measured in tokens, and many models require budgeting for generated output too.",
+      "If the limit is exceeded, a request may fail or the application may trim or summarize content. Fitting inside the window does not guarantee perfect use of every detail."
+    ]
+  },
+  "background": {
+    "ko": [
+      "긴 대화와 문서를 다루려면 정보량과 연산 비용을 관리해야 해서, 모델이 한 번에 다룰 수 있는 범위를 구분해요."
+    ],
+    "en": [
+      "Long conversations and documents require managing information volume and computation, so models have a bounded context capacity."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "구성",
+        "text": "지시문, 대화, 참고 자료를 모아요."
+      },
+      {
+        "title": "예산 확인",
+        "text": "입력량과 필요한 출력 공간을 모델 한도와 비교해요."
+      },
+      {
+        "title": "정보 정리",
+        "text": "필요한 내용만 검색하거나 요약해서 전달해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Assemble",
+        "text": "Assemble instructions, conversation and reference material."
+      },
+      {
+        "title": "Check the budget",
+        "text": "Compare input size and required output space with model limits."
+      },
+      {
+        "title": "Manage information",
+        "text": "Retrieve or summarize the information needed."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "회의록 여러 개 함께 분석",
+      "긴 대화 이어 가기",
+      "여러 파일을 참고한 코드 수정"
+    ],
+    "en": [
+      "Analyzing several meeting transcripts",
+      "Continuing long conversations",
+      "Editing code using multiple files"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "문서 분석 설계",
+        "text": "자료가 길 때 “컨텍스트 윈도우에 전부 넣기보다 필요한 부분을 검색해서 넘기자”라고 이야기할 수 있어요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Designing document analysis",
+        "text": "For large document sets, say: “Retrieve relevant sections rather than putting everything in the context window.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "컨텍스트 윈도우가 크면 영구적으로 기억하나요?",
+        "en": "Does a large context window provide permanent memory?"
+      },
+      "fact": {
+        "ko": "현재 처리에서 참고할 공간일 뿐이에요. 장기 기억은 앱이 별도로 저장하고 다시 불러오는 구조가 필요해요.",
+        "en": "It is working context for the current processing. Long-term memory requires the application to store and retrieve information separately."
+      }
+    }
+  ],
+  "keywords": [
+    "token",
+    "rag",
+    "harness-engineering"
+  ],
+  "related": [
+    {
+      "id": "token",
+      "type": "prerequisite"
+    },
+    {
+      "id": "rag",
+      "type": "related"
+    },
+    {
+      "id": "harness-engineering",
+      "type": "related"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "order": 530,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "NoSQL",
+    "en": "NoSQL"
+  },
+  "fullName": {
+    "ko": "NoSQL",
+    "en": "Not Only SQL"
+  },
+  "description": {
+    "ko": "전통적인 관계형 테이블 외의 여러 데이터 모델을 활용하는 데이터베이스 계열이에요.",
+    "en": "A family of databases using various data models beyond traditional relational tables."
+  },
+  "analogy": {
+    "ko": "모든 자료를 같은 장부에 맞추기보다 카드함, 연결 지도 등 용도에 맞는 보관법을 고르는 것과 같아요.",
+    "en": "Like choosing cards, relationship maps or other storage methods rather than fitting everything into one ledger format."
+  },
+  "details": {
+    "ko": [
+      "문서형, 키-값형, 그래프형, 와이드 컬럼형 등 여러 종류가 있어요. 조회 방식과 저장 구조가 달라 하나의 기능 묶음으로 일반화하기 어려워요.",
+      "유연한 구조나 분산 처리가 장점인 제품이 많지만, 스키마·트랜잭션·일관성 보장은 제품과 설정에 따라 달라요. 일부는 SQL과 비슷한 질의도 지원해요."
+    ],
+    "en": [
+      "Types include document, key-value, graph and wide-column stores. Their access patterns and structures differ, so they are not a single uniform feature set.",
+      "Many offer flexible models or distributed operation, but schema, transaction and consistency guarantees vary by product and configuration. Some support SQL-like queries."
+    ]
+  },
+  "background": {
+    "ko": [
+      "웹 서비스에서 다양한 형식과 큰 규모의 데이터를 특정 접근 방식에 맞춰 처리하려는 요구가 커지며 확산됐어요."
+    ],
+    "en": [
+      "NoSQL expanded with demand for varied, large-scale web data and systems optimized for particular access patterns."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "접근 방식 파악",
+        "text": "어떤 데이터를 어떤 키나 관계로 자주 찾는지 정해요."
+      },
+      {
+        "title": "모델 선택",
+        "text": "문서, 키-값이나 그래프 등 맞는 구조를 골라요."
+      },
+      {
+        "title": "규칙과 운영",
+        "text": "검증, 인덱스, 분산 방식과 일관성 조건을 설정해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Identify access patterns",
+        "text": "Determine which keys or relationships queries commonly use."
+      },
+      {
+        "title": "Choose a model",
+        "text": "Choose a suitable model, such as documents, key-value pairs or graphs."
+      },
+      {
+        "title": "Define rules and operate",
+        "text": "Configure validation, indexes, distribution and consistency behavior."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "유형이 다양한 상품 정보",
+      "키로 조회하는 세션 정보",
+      "사용자 관계 그래프"
+    ],
+    "en": [
+      "Varied product records",
+      "Session data accessed by key",
+      "User relationship graphs"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "저장소 선택",
+        "text": "“NoSQL이 필요하다는 말보다 조회 패턴과 트랜잭션 요구를 먼저 적고 제품을 비교하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Choosing a store",
+        "text": "Say: “Define access patterns and transaction requirements before deciding on a NoSQL product.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "NoSQL은 규칙도 트랜잭션도 없나요?",
+        "en": "Does NoSQL have no schema or transactions?"
+      },
+      "fact": {
+        "ko": "아니에요. 검증 규칙과 트랜잭션을 제공하는 제품도 있어요. 이름보다 실제 보장 범위와 제한을 확인해야 해요.",
+        "en": "No. Some products provide validation and transactions. Check actual guarantees and limits rather than relying on the label."
+      }
+    }
+  ],
+  "keywords": [
+    "database",
+    "rdbms",
+    "unstructured-data"
+  ],
+  "related": [
+    {
+      "id": "database",
+      "type": "prerequisite"
+    },
+    {
+      "id": "rdbms",
+      "type": "compare"
+    },
+    {
+      "id": "unstructured-data",
+      "type": "related"
+    }
+  ]
+}

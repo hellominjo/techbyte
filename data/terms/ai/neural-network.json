@@ -1,0 +1,121 @@
+{
+  "order": 230,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "신경망",
+    "en": "Neural Network"
+  },
+  "description": {
+    "ko": "연결된 계산 단위들이 입력을 변환하고, 연결의 세기를 조정하며 패턴을 배우는 모델이에요.",
+    "en": "A model of connected computing units that transforms inputs and learns by adjusting connection strengths."
+  },
+  "analogy": {
+    "ko": "여러 사람이 조금씩 가공한 정보를 다음 사람에게 넘기며 최종 판단을 만드는 조직과 비슷해요.",
+    "en": "Like a team that passes information through several people, each transforming it before a final decision."
+  },
+  "details": {
+    "ko": [
+      "신경망은 입력층, 중간의 은닉층, 출력층 등으로 구성할 수 있어요. 연결마다 가중치가 있고, 학습은 이 숫자들을 조정하는 과정이에요.",
+      "이름은 뇌의 신경세포에서 영감을 받았지만, 실제 뇌를 그대로 재현한 것은 아니에요. 여러 층을 깊게 쌓아 학습하는 접근이 딥러닝이에요."
+    ],
+    "en": [
+      "A neural network can have input, hidden and output layers. Connections have weights, and training adjusts these numbers.",
+      "The name is inspired by neurons, but networks are not replicas of the brain. Training networks with many layers is deep learning."
+    ]
+  },
+  "background": {
+    "ko": [
+      "입력과 출력 사이의 복잡한 관계를 단순한 규칙 하나로 표현하기 어려워, 작은 계산을 연결해 관계를 배우는 방식이 발전했어요."
+    ],
+    "en": [
+      "Neural networks developed as a way to learn complex relationships by combining many small computations."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "입력 변환",
+        "text": "각 계산 단위가 입력에 가중치를 적용해 값을 계산해요."
+      },
+      {
+        "title": "층 통과",
+        "text": "비선형 변환을 거친 값을 다음 층으로 전달해요."
+      },
+      {
+        "title": "학습",
+        "text": "출력의 오차를 바탕으로 가중치를 조정해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Transform inputs",
+        "text": "Each unit computes values using weighted inputs."
+      },
+      {
+        "title": "Pass through layers",
+        "text": "Pass values through nonlinear transformations to the next layer."
+      },
+      {
+        "title": "Learn",
+        "text": "Adjust weights based on output error."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "손글씨 숫자 인식",
+      "음성 인식",
+      "고객 수요 예측"
+    ],
+    "en": [
+      "Recognizing handwritten digits",
+      "Recognizing speech",
+      "Forecasting customer demand"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "모델 선택",
+        "text": "복잡한 입력 관계를 배울 때 검토해요. “신경망과 기존 예측 모델을 같은 데이터로 비교하자”라고 말할 수 있어요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Choosing a model",
+        "text": "Consider it for complex input relationships. Say: “Compare the neural network with our existing prediction model on the same data.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "신경망은 사람처럼 생각하나요?",
+        "en": "Does a neural network think like a person?"
+      },
+      "fact": {
+        "ko": "신경망이라는 이름만으로 사람과 같은 사고나 의식이 있다고 볼 수 없어요. 계산 구조와 관찰된 성능으로 이해하는 편이 정확해요.",
+        "en": "The name does not imply human thought or consciousness. It is better understood through its computations and observed performance."
+      }
+    }
+  ],
+  "keywords": [
+    "machine-learning",
+    "deep-learning",
+    "training"
+  ],
+  "related": [
+    {
+      "id": "machine-learning",
+      "type": "prerequisite"
+    },
+    {
+      "id": "deep-learning",
+      "type": "related"
+    },
+    {
+      "id": "training",
+      "type": "related"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "order": 1250,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "해시",
+    "en": "Hash"
+  },
+  "description": {
+    "ko": "입력을 해시 함수로 계산해 정해진 길이의 요약값으로 나타내는 방식이에요.",
+    "en": "Computing a fixed-length digest of input with a hash function."
+  },
+  "analogy": {
+    "ko": "원문을 다시 펼쳐 읽는 대신 비교에 사용하는 디지털 지문과 비슷해요.",
+    "en": "Like a digital fingerprint used for comparison rather than recovering the original."
+  },
+  "details": {
+    "ko": [
+      "암호학적 해시는 원문 역산과 충돌 찾기가 어렵도록 설계해요. 같은 알고리즘에서 같은 입력은 같은 값을 내지만, 서로 다른 입력이 같은 값을 내는 충돌 가능성 자체가 없어지는 것은 아니에요.",
+      "파일 변경 확인과 서명 등에 쓰여요. 비밀번호 저장에는 빠른 일반 해시만 쓰지 않고 솔트와 비용 조절이 있는 전용 비밀번호 해싱 방식을 사용해요."
+    ],
+    "en": [
+      "Cryptographic hashes are designed to resist inversion and collision finding. The same input produces the same digest, but collisions are not mathematically impossible.",
+      "Hashes support file-change checks and signatures. Password storage uses specialized salted, cost-adjustable password hashing rather than only a fast general-purpose hash."
+    ]
+  },
+  "background": {
+    "ko": [
+      "전체 데이터를 매번 비교하지 않고 요약값으로 확인하거나, 원문을 복원할 필요 없이 일치 여부를 검사하려고 사용해요."
+    ],
+    "en": [
+      "Hashes enable compact comparison and verification when recovering the original is unnecessary."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "함수 선택",
+        "text": "단순 검색용인지 보안용인지 목적에 맞는 함수를 정해요."
+      },
+      {
+        "title": "요약 계산",
+        "text": "입력 바이트에 함수를 적용해 요약값을 만들어요."
+      },
+      {
+        "title": "비교와 검증",
+        "text": "신뢰할 기준값이나 검증 절차와 함께 결과를 확인해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Choose a function",
+        "text": "Select a function suited to lookup, cryptography or another purpose."
+      },
+      {
+        "title": "Compute a digest",
+        "text": "Apply the function to input bytes to produce a digest."
+      },
+      {
+        "title": "Compare and verify",
+        "text": "Use trusted reference values or a verification procedure to check results."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "다운로드 파일의 변경 확인",
+      "디지털 서명에 사용할 요약 생성",
+      "전용 방식으로 비밀번호 일치 검사"
+    ],
+    "en": [
+      "Checking downloaded files for changes",
+      "Producing digests for digital signatures",
+      "Checking passwords with specialized hashing"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "비밀번호 보관",
+        "text": "“복호화할 필요 없는 비밀번호는 전용 해싱과 솔트를 쓰고, 검증된 라이브러리로 처리하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Storing passwords",
+        "text": "Say: “Use a verified library for specialized password hashing with salts, since passwords need not be decrypted.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "해시는 절대로 원문을 알아낼 수 없나요?",
+        "en": "Does hashing make guessing the original impossible?"
+      },
+      "fact": {
+        "ko": "직접 복호화하는 구조는 아니지만 예상 가능한 입력을 대입해 비교할 수 있어요. 전화번호처럼 범위가 좁은 값을 해시했다고 익명정보가 되는 것은 아니에요.",
+        "en": "There is no decryption operation, but likely inputs can be guessed and compared. Hashing a small input space such as phone numbers does not automatically anonymize it."
+      }
+    }
+  ],
+  "keywords": [
+    "encryption",
+    "authentication",
+    "certificate",
+    "personal-information"
+  ],
+  "related": [
+    {
+      "id": "encryption",
+      "type": "compare"
+    },
+    {
+      "id": "authentication",
+      "type": "related"
+    },
+    {
+      "id": "certificate",
+      "type": "related"
+    },
+    {
+      "id": "personal-information",
+      "type": "related"
+    }
+  ]
+}

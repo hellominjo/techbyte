@@ -1,0 +1,162 @@
+{
+  "order": 310,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "MCP",
+    "en": "MCP"
+  },
+  "fullName": {
+    "ko": "모델 컨텍스트 프로토콜",
+    "en": "Model Context Protocol"
+  },
+  "description": {
+    "ko": "AI 앱이 외부 도구와 자료를 공통 방식으로 연결하도록 정한 공개 프로토콜이에요.",
+    "en": "An open protocol for connecting AI applications to external tools and information in a common way."
+  },
+  "analogy": {
+    "ko": "기기마다 다른 선을 새로 만드는 대신 공통 규격의 연결 단자를 쓰는 것과 비슷해요.",
+    "en": "Like using a shared connector specification rather than making a different cable for every device."
+  },
+  "details": {
+    "ko": [
+      "AI 앱 쪽의 클라이언트와 자료·기능을 제공하는 서버가 정해진 방식으로 통신해요. 앱은 서버가 제공하는 도구와 리소스, 프롬프트 등을 활용할 수 있어요.",
+      "MCP는 모델 자체나 에이전트의 판단 방식을 정하지 않아요. 연결을 공통화해도 인증, 접근 권한, 실행 결과 확인은 별도로 설계해야 해요."
+    ],
+    "en": [
+      "Clients in AI applications communicate with servers through a defined protocol. Servers can expose tools, resources and prompts.",
+      "MCP does not define the model or its decision process. Standardized connections still require authentication, permissions and result checks."
+    ]
+  },
+  "background": {
+    "ko": [
+      "AI 앱과 외부 서비스마다 연결 코드를 따로 만드는 부담을 줄이고, 도구와 자료를 여러 앱에서 활용하도록 만들기 위해 등장했어요."
+    ],
+    "en": [
+      "It emerged to reduce custom integrations between each AI application and external service and make capabilities reusable across applications."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "서버 연결",
+        "text": "AI 앱이 필요한 MCP 서버와 연결해요."
+      },
+      {
+        "title": "기능 확인",
+        "text": "서버가 제공하는 도구와 자료의 설명을 확인해요."
+      },
+      {
+        "title": "사용과 응답",
+        "text": "앱이 필요한 요청을 보내고 결과를 모델에 전달해 활용해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Connect a server",
+        "text": "The AI application connects to an MCP server."
+      },
+      {
+        "title": "Discover capabilities",
+        "text": "Discover descriptions of available tools and information."
+      },
+      {
+        "title": "Use and respond",
+        "text": "The application sends a request and provides the result to the model."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "사내 문서 검색 연결",
+      "개발 도구의 이슈 조회",
+      "데이터 조회 기능 제공"
+    ],
+    "en": [
+      "Connecting internal document search",
+      "Reading issues from development tools",
+      "Exposing data-query capabilities"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "사내 도구 연결",
+        "text": "“사내 검색을 MCP 서버로 제공하되, 사용자가 볼 수 있는 문서만 반환하자”라고 이야기할 수 있어요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Connecting internal tools",
+        "text": "Say: “Expose internal search through an MCP server, returning only documents the user can access.”"
+      }
+    ]
+  },
+  "comparison": {
+    "target": "function-calling",
+    "rows": [
+      {
+        "label": {
+          "ko": "역할",
+          "en": "Role"
+        },
+        "values": [
+          {
+            "ko": "AI 앱과 외부 기능·자료 사이의 연결 규격",
+            "en": "A protocol connecting AI apps to external capabilities and information"
+          },
+          {
+            "ko": "모델이 함수와 입력값을 구조화해 요청하는 방식",
+            "en": "A model mechanism for requesting functions with structured arguments"
+          }
+        ]
+      },
+      {
+        "label": {
+          "ko": "함께 사용",
+          "en": "Combined use"
+        },
+        "values": [
+          {
+            "ko": "서버가 도구를 앱에 제공할 수 있음",
+            "en": "Servers can expose tools to an application"
+          },
+          {
+            "ko": "앱이 제공받은 도구를 모델이 요청할 수 있음",
+            "en": "Models can request tools made available by the application"
+          }
+        ]
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "MCP를 연결하면 모든 작업이 자동으로 허용되나요?",
+        "en": "Does connecting MCP authorize every action?"
+      },
+      "fact": {
+        "ko": "아니에요. 서버 연결과 작업 권한은 별개예요. 각 도구의 범위와 사용자 권한, 필요한 승인 절차를 확인해야 해요.",
+        "en": "No. Connecting a server is separate from permission to act. Check tool scope, user access and any required approval."
+      }
+    }
+  ],
+  "keywords": [
+    "ai-agent",
+    "function-calling",
+    "api"
+  ],
+  "related": [
+    {
+      "id": "ai-agent",
+      "type": "prerequisite"
+    },
+    {
+      "id": "function-calling",
+      "type": "related"
+    },
+    {
+      "id": "api",
+      "type": "related"
+    }
+  ]
+}

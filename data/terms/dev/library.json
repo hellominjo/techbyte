@@ -1,0 +1,121 @@
+{
+  "order": 760,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "라이브러리",
+    "en": "Library"
+  },
+  "description": {
+    "ko": "필요할 때 불러 쓸 수 있도록 재사용 가능한 코드를 모아 둔 것이에요.",
+    "en": "Reusable code packaged for applications to call when needed."
+  },
+  "analogy": {
+    "ko": "필요한 작업에 맞춰 꺼내 쓰는 공구함과 같아요.",
+    "en": "Like a toolbox from which you choose a tool for a task."
+  },
+  "details": {
+    "ko": [
+      "날짜 계산, 차트 그리기나 파일 읽기 같은 기능을 직접 다시 만들지 않고 활용해요. 라이브러리 안에는 여러 함수와 클래스 등이 있을 수 있어요.",
+      "보통 앱이 라이브러리를 호출해 기능을 이용해요. 의존성이 늘면 버전 충돌이나 변경 영향이 생길 수 있어 필요성과 관리 상태를 확인해요."
+    ],
+    "en": [
+      "Libraries provide capabilities such as date calculations, charts and file access without rebuilding them. They can contain functions, classes and other code.",
+      "Applications typically call library code. More dependencies can introduce version conflicts or change impacts, so assess their value and maintenance."
+    ]
+  },
+  "background": {
+    "ko": [
+      "자주 쓰는 기능을 검증된 형태로 공유하고 중복 구현을 줄이기 위해 코드를 묶어 재사용해요."
+    ],
+    "en": [
+      "Libraries package common capabilities for reuse, reducing duplication and sharing tested implementations."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "기능 선정",
+        "text": "필요한 기능과 사용 조건을 확인해요."
+      },
+      {
+        "title": "추가와 호출",
+        "text": "프로젝트에 추가하고 코드에서 기능을 불러 써요."
+      },
+      {
+        "title": "검증과 관리",
+        "text": "실제 입력으로 검증하고 버전과 변경 사항을 관리해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Choose functionality",
+        "text": "Check the required functionality and usage terms."
+      },
+      {
+        "title": "Add and call",
+        "text": "Add the library and call its capabilities from application code."
+      },
+      {
+        "title": "Verify and maintain",
+        "text": "Test realistic inputs and manage versions and changes."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "날짜 형식 변환",
+      "데이터 차트 표시",
+      "이미지 파일 처리"
+    ],
+    "en": [
+      "Formatting dates",
+      "Displaying charts",
+      "Processing image files"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "반복 기능 구현",
+        "text": "“직접 구현하기 전에 적합한 라이브러리가 있는지 보고, 필요한 기능만 쓰자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Implementing common functionality",
+        "text": "Say: “Check for a suitable library before implementing this ourselves, and include only what we need.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "라이브러리와 프레임워크는 완전히 다른가요?",
+        "en": "Are libraries and frameworks completely separate?"
+      },
+      "fact": {
+        "ko": "기능과 범위가 겹칠 수 있어요. 보통 내가 호출하는 도구인지, 앱의 실행 흐름을 주도하는 기반인지로 차이를 설명해요.",
+        "en": "Their capabilities can overlap. A common distinction is whether your code calls a tool or the framework directs application flow."
+      }
+    }
+  ],
+  "keywords": [
+    "framework",
+    "sdk",
+    "build"
+  ],
+  "related": [
+    {
+      "id": "framework",
+      "type": "compare"
+    },
+    {
+      "id": "sdk",
+      "type": "related"
+    },
+    {
+      "id": "build",
+      "type": "related"
+    }
+  ]
+}

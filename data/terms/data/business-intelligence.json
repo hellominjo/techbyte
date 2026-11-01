@@ -1,0 +1,130 @@
+{
+  "order": 660,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "비즈니스 인텔리전스",
+    "en": "BI"
+  },
+  "fullName": {
+    "ko": "비즈니스 인텔리전스",
+    "en": "Business Intelligence"
+  },
+  "description": {
+    "ko": "업무 데이터를 분석하고 보고해 조직의 의사결정을 돕는 활동과 시스템이에요.",
+    "en": "Activities and systems that analyze and report business data to support decisions."
+  },
+  "analogy": {
+    "ko": "운전자가 속도와 연료를 보며 판단하듯 조직의 현황을 보여 주는 계기판과 분석 체계예요.",
+    "en": "Like an instrument panel and analysis system that helps an organization navigate its operations."
+  },
+  "details": {
+    "ko": [
+      "매출, 재고와 고객 지표를 보고서나 대시보드로 제공하고, 조건을 바꿔 상세 내용을 살펴볼 수 있게 해요.",
+      "차트 화면만이 아니라 데이터 연결, 지표 정의와 배포 과정도 포함해요. 예측 분석과 함께 쓰일 수 있지만 BI가 반드시 미래를 예측하거나 AI를 사용하는 것은 아니에요."
+    ],
+    "en": [
+      "BI presents revenue, inventory and customer metrics in reports or dashboards and supports drilling into details.",
+      "It includes data connections, metric definitions and report distribution, not just charts. It can incorporate predictive analytics but does not necessarily predict the future or use AI."
+    ]
+  },
+  "background": {
+    "ko": [
+      "부서별로 보고서를 수작업으로 만들면 시간이 들고 기준이 달라져, 반복적인 현황 파악과 분석을 체계화하려고 발전했어요."
+    ],
+    "en": [
+      "BI developed to systematize recurring reporting and analysis when manual departmental reports were slow and inconsistent."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "지표 정의",
+        "text": "업무 질문과 계산 기준을 합의해요."
+      },
+      {
+        "title": "데이터 연결",
+        "text": "신뢰할 저장소에서 데이터를 가져와 분석에 맞춰요."
+      },
+      {
+        "title": "보고와 판단",
+        "text": "대시보드와 보고서를 공유하고 원인을 살펴 판단해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Define metrics",
+        "text": "Agree on business questions and calculation rules."
+      },
+      {
+        "title": "Connect data",
+        "text": "Connect trusted sources and prepare data for analysis."
+      },
+      {
+        "title": "Report and decide",
+        "text": "Share reports and dashboards, investigate changes and make decisions."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "주간 영업 대시보드",
+      "제품별 수익성 보고서",
+      "재고와 품절 현황 분석"
+    ],
+    "en": [
+      "Weekly sales dashboards",
+      "Product profitability reports",
+      "Inventory and stockout analysis"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "주간 성과 공유",
+        "text": "“BI 대시보드의 매출 기준을 회계 기준과 맞추고, 갱신 시각도 보여 주자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Weekly performance reporting",
+        "text": "Say: “Align dashboard revenue with the accounting definition and show when the data was refreshed.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "BI 도구를 도입하면 의사결정이 자동으로 좋아지나요?",
+        "en": "Does adopting BI automatically improve decisions?"
+      },
+      "fact": {
+        "ko": "데이터 품질과 지표 정의가 틀리면 잘못 판단할 수 있어요. 해석 역량과 실제 의사결정 과정에 연결하는 일도 필요해요.",
+        "en": "Poor data or definitions can mislead. Interpretation skills and integration into actual decision processes also matter."
+      }
+    }
+  ],
+  "keywords": [
+    "data-warehouse",
+    "data-visualization",
+    "data-literacy",
+    "data-mining"
+  ],
+  "related": [
+    {
+      "id": "data-warehouse",
+      "type": "related"
+    },
+    {
+      "id": "data-visualization",
+      "type": "related"
+    },
+    {
+      "id": "data-literacy",
+      "type": "related"
+    },
+    {
+      "id": "data-mining",
+      "type": "related"
+    }
+  ]
+}

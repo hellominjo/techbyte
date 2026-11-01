@@ -1,0 +1,130 @@
+{
+  "order": 790,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "CI/CD",
+    "en": "CI/CD"
+  },
+  "fullName": {
+    "ko": "지속적 통합 / 지속적 제공 또는 지속적 배포",
+    "en": "Continuous Integration / Continuous Delivery or Continuous Deployment"
+  },
+  "description": {
+    "ko": "코드 변경을 자주 통합·검증하고 출시 준비나 배포까지 반복 가능하게 만드는 개발 방식이에요.",
+    "en": "Practices for frequently integrating and verifying changes and making release preparation or deployment repeatable."
+  },
+  "analogy": {
+    "ko": "작은 변경이 들어올 때마다 검사하고 포장해 출고 준비를 하는 자동 생산·검사 라인과 같아요.",
+    "en": "Like a line that checks and packages each small change for release."
+  },
+  "details": {
+    "ko": [
+      "CI는 지속적 통합으로, 자주 합치는 변경을 자동 빌드와 테스트로 확인해요. 오류를 늦게 발견하거나 통합이 커지는 문제를 줄이려는 방식이에요.",
+      "CD는 지속적 제공 또는 지속적 배포를 뜻해요. 지속적 제공은 배포 가능한 상태를 유지하되 운영 반영에 승인을 둘 수 있고, 지속적 배포는 검사를 통과한 변경을 운영에 자동 반영해요."
+    ],
+    "en": [
+      "CI, continuous integration, checks frequently integrated changes through automated builds and tests to catch problems earlier.",
+      "CD can mean continuous delivery or continuous deployment. Delivery keeps changes releasable and may retain a production approval; deployment automatically releases passing changes to production."
+    ]
+  },
+  "background": {
+    "ko": [
+      "큰 변경을 오랫동안 모았다가 수작업으로 통합·출시하면 위험과 대기 시간이 커져, 작은 단위로 반복 검증하게 됐어요."
+    ],
+    "en": [
+      "Large, infrequent manual integrations and releases create risk and delay, motivating frequent checks of small changes."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "변경 감지",
+        "text": "코드 공유나 통합을 계기로 작업을 시작해요."
+      },
+      {
+        "title": "빌드와 검사",
+        "text": "실행 결과물을 만들고 테스트와 품질 검사를 해요."
+      },
+      {
+        "title": "제공 또는 배포",
+        "text": "배포 가능한 결과물을 준비하고 정한 승인·자동화 정책에 따라 반영해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Detect changes",
+        "text": "Trigger work when changes are shared or integrated."
+      },
+      {
+        "title": "Build and check",
+        "text": "Build artifacts and run tests and quality checks."
+      },
+      {
+        "title": "Deliver or deploy",
+        "text": "Prepare releasable artifacts and deploy under the chosen approval or automation policy."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "풀 리퀘스트 자동 검사",
+      "검증된 배포 파일 생성",
+      "테스트 환경 자동 반영"
+    ],
+    "en": [
+      "Automated pull-request checks",
+      "Producing verified release artifacts",
+      "Automated test-environment deployment"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "출시 흐름 개선",
+        "text": "“CI/CD에서 검사는 자동화하고 운영 배포는 초기에는 승인 단계를 두자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Improving release flow",
+        "text": "Say: “Automate CI/CD checks and initially keep an approval step for production deployment.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "CI/CD면 모든 변경을 바로 운영에 내보내나요?",
+        "en": "Does CI/CD immediately release every change?"
+      },
+      "fact": {
+        "ko": "지속적 제공은 운영 승인 단계를 둘 수 있어요. CD가 제공인지 배포인지 팀에서 구분해야 해요.",
+        "en": "Continuous delivery can retain a production approval. Teams should clarify which meaning of CD they use."
+      }
+    }
+  ],
+  "keywords": [
+    "git",
+    "build",
+    "deployment",
+    "jenkins"
+  ],
+  "related": [
+    {
+      "id": "git",
+      "type": "prerequisite"
+    },
+    {
+      "id": "build",
+      "type": "related"
+    },
+    {
+      "id": "deployment",
+      "type": "related"
+    },
+    {
+      "id": "jenkins",
+      "type": "related"
+    }
+  ]
+}

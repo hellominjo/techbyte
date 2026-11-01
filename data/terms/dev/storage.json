@@ -1,0 +1,113 @@
+{
+  "order": 910,
+  "updatedAt": "2026-11-01",
+  "term": { "ko": "스토리지", "en": "Storage" },
+  "description": {
+    "ko": "파일과 데이터를 저장하고 필요할 때 읽을 수 있게 하는 장치나 시스템이에요.",
+    "en": "Devices or systems that store files and data and make them available for retrieval."
+  },
+  "analogy": {
+    "ko": "물건의 크기와 꺼내 쓰는 방식에 맞춰 선반과 보관함을 갖춘 창고와 같아요.",
+    "en": "Like a warehouse with shelves and containers suited to what you store and how you retrieve it."
+  },
+  "details": {
+    "ko": [
+      "개발에서 스토리지는 보통 프로그램을 종료한 뒤에도 데이터를 보관하는 저장 장치나 서비스를 가리켜요. PC의 SSD, 서버에 연결한 디스크, 네트워크 파일 저장소와 클라우드 저장 서비스 등이 있어요.",
+      "블록 스토리지는 디스크처럼 데이터 블록을 읽고 쓰고, 파일 스토리지는 폴더와 파일 경로로 접근해요. 객체 스토리지는 데이터와 메타데이터를 객체로 묶어 키로 접근하며 이미지, 영상과 백업 파일 등을 보관하는 데 많이 써요.",
+      "용량뿐 아니라 읽고 쓰는 속도, 동시 요청, 장애 시 데이터 보존, 접근 권한과 비용을 함께 봐야 해요. 데이터베이스도 내부적으로 스토리지를 사용하지만, 데이터의 구조와 조회·변경 규칙을 관리하는 역할을 더해요."
+    ],
+    "en": [
+      "In development, storage usually means devices or services that retain data after a program stops. Examples include PC SSDs, server disks, network file stores and cloud storage services.",
+      "Block storage reads and writes blocks like a disk; file storage uses folders and file paths. Object storage groups data and metadata into objects accessed by keys and is commonly used for images, videos and backup files.",
+      "Consider read and write performance, concurrent requests, durability, access permissions and cost alongside capacity. Databases also use underlying storage, while adding management of data structures, queries and updates."
+    ]
+  },
+  "background": {
+    "ko": [
+      "프로그램의 작업용 메모리만으로는 데이터를 오래 보관하거나 여러 실행 환경에서 공유하기 어려워요. 데이터를 지속적으로 저장하고 규모와 사용 방식에 맞게 제공하려고 다양한 스토리지가 발전했어요."
+    ],
+    "en": [
+      "Working memory alone is not sufficient for durable retention or sharing across execution environments. Different storage systems evolved to preserve data and serve different scales and access patterns."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      { "title": "저장 방식 선택", "text": "데이터의 종류와 접근 방식에 맞춰 블록, 파일이나 객체 등 적절한 저장 방식을 골라요." },
+      { "title": "쓰기와 읽기", "text": "프로그램이 장치나 API를 통해 데이터를 저장하고, 주소나 경로 또는 키로 다시 읽어요." },
+      { "title": "보존과 운영", "text": "접근 권한, 용량과 성능을 관리하고 복제, 백업과 복구 절차를 요구에 맞춰 구성해요." }
+    ],
+    "en": [
+      { "title": "Choose a storage model", "text": "Select block, file or object storage according to the data and access patterns." },
+      { "title": "Write and read", "text": "Applications write through a device interface or API and retrieve data using an address, path or key." },
+      { "title": "Retain and operate", "text": "Manage access, capacity and performance and configure replication, backup and recovery to meet requirements." }
+    ]
+  },
+  "examples": {
+    "ko": ["사용자가 올린 사진과 첨부 파일 보관", "데이터베이스의 데이터 파일 저장", "로그 보관과 백업 파일 저장"],
+    "en": ["Retaining uploaded photos and attachments", "Storing database data files", "Retaining logs and backup files"]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "첨부 파일 기능 설계",
+        "text": "개발자와는 “첨부 파일 원본은 객체 스토리지에 두고, 파일 키와 소유자 정보는 데이터베이스에 저장하자. 다운로드 권한과 삭제·보관 기준도 함께 정하자”라고 이야기할 수 있어요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Designing file attachments",
+        "text": "Tell developers: “Keep attachments in object storage and store their keys and ownership in the database. Define download permissions and retention and deletion rules too.”"
+      }
+    ]
+  },
+  "comparison": {
+    "target": "database",
+    "rows": [
+      {
+        "label": { "ko": "주요 역할", "en": "Primary role" },
+        "values": [
+          { "ko": "데이터를 보관하고 읽기·쓰기 수단 제공", "en": "Retain data and provide read and write access" },
+          { "ko": "조직된 데이터를 조회·변경하고 규칙 관리", "en": "Query and update organized data and manage its rules" }
+        ]
+      },
+      {
+        "label": { "ko": "접근 예시", "en": "Example access" },
+        "values": [
+          { "ko": "블록 주소, 파일 경로와 객체 키 등", "en": "Block addresses, file paths or object keys" },
+          { "ko": "SQL이나 데이터 모델별 조회 API 등", "en": "SQL or data-model-specific query APIs" }
+        ]
+      },
+      {
+        "label": { "ko": "서로의 관계", "en": "Relationship" },
+        "values": [
+          { "ko": "데이터베이스가 사용하는 저장 기반이 될 수 있음", "en": "Can provide the persistence layer used by a database" },
+          { "ko": "스토리지를 활용해 데이터 관리 기능 제공", "en": "Uses storage to provide data-management capabilities" }
+        ]
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": { "ko": "스토리지에 저장하면 백업은 필요 없나요?", "en": "Does storing data eliminate the need for backups?" },
+      "fact": {
+        "ko": "저장과 백업은 달라요. 복제가 있어도 실수로 삭제하거나 잘못 덮어쓴 내용이 함께 반영될 수 있어, 버전 관리와 별도 백업·복구 정책을 확인해야 해요.",
+        "en": "Storage is not the same as backup. Replication can also propagate accidental deletion or overwrites, so check versioning and separate backup and recovery policies."
+      }
+    },
+    {
+      "myth": { "ko": "클라우드 스토리지만 스토리지인가요?", "en": "Does storage mean only cloud storage?" },
+      "fact": {
+        "ko": "로컬 SSD와 디스크, 사내 네트워크 저장소도 포함해요. 이 용어는 특정 위치나 제품이 아니라 데이터를 보관하는 장치와 시스템을 넓게 가리켜요.",
+        "en": "Local SSDs, disks and internal network stores count too. The term broadly covers data-storage devices and systems rather than a particular location or product."
+      }
+    }
+  ],
+  "keywords": ["database", "backend", "cloud", "cache", "metadata"],
+  "related": [
+    { "id": "database", "type": "compare" },
+    { "id": "backend", "type": "related" },
+    { "id": "cloud", "type": "related" },
+    { "id": "cache", "type": "related" },
+    { "id": "metadata", "type": "related" }
+  ]
+}

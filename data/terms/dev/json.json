@@ -1,0 +1,125 @@
+{
+  "order": 730,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "JSON",
+    "en": "JSON"
+  },
+  "fullName": {
+    "ko": "자바스크립트 객체 표기법",
+    "en": "JavaScript Object Notation"
+  },
+  "description": {
+    "ko": "객체, 배열과 기본 값으로 데이터를 표현하는 텍스트 형식이에요.",
+    "en": "A text format representing data as objects, arrays and primitive values."
+  },
+  "analogy": {
+    "ko": "항목 이름표와 값, 목록을 묶어 다른 프로그램에도 읽히게 만든 메모와 같아요.",
+    "en": "Like a note of labeled values and lists written in a format other programs can read."
+  },
+  "details": {
+    "ko": [
+      "객체는 이름과 값의 쌍, 배열은 순서 있는 목록이에요. 문자열, 숫자, 참·거짓과 null을 표현하며 여러 언어에서 읽고 쓸 수 있어요.",
+      "표준 JSON은 키와 문자열에 큰따옴표를 쓰며 주석과 마지막 항목 뒤 쉼표를 허용하지 않아요. 날짜는 보통 합의한 문자열로 표현하고, 유효한 문법과 업무 규칙 검증은 구분해요."
+    ],
+    "en": [
+      "Objects contain name-value pairs and arrays contain ordered lists. JSON supports strings, numbers, booleans and null across many programming languages.",
+      "Standard JSON requires double-quoted keys and strings, without comments or trailing commas. Dates usually use agreed string formats, and syntax validity differs from business-rule validity."
+    ]
+  },
+  "background": {
+    "ko": [
+      "서로 다른 프로그램이 복잡한 설치 없이 데이터를 교환할 수 있는 비교적 간단한 공통 표현이 필요해 널리 쓰이게 됐어요."
+    ],
+    "en": [
+      "JSON became common as a relatively simple shared representation for exchanging data across programs."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "구조 만들기",
+        "text": "항목을 객체나 배열로 구성해요."
+      },
+      {
+        "title": "직렬화와 전송",
+        "text": "데이터를 JSON 텍스트로 바꿔 저장하거나 전달해요."
+      },
+      {
+        "title": "해석과 검증",
+        "text": "받는 쪽이 읽고 항목과 값이 약속에 맞는지 확인해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Build a structure",
+        "text": "Organize fields into objects and arrays."
+      },
+      {
+        "title": "Serialize and send",
+        "text": "Serialize data to JSON text for storage or transfer."
+      },
+      {
+        "title": "Parse and validate",
+        "text": "The receiver parses it and validates fields and values against the contract."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "API 요청과 응답",
+      "프로그램 설정 파일",
+      "서비스 간 이벤트 메시지"
+    ],
+    "en": [
+      "API requests and responses",
+      "Application configuration",
+      "Inter-service event messages"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "API 계약",
+        "text": "“JSON 응답에서 필수 항목, 누락과 null의 의미를 구분해 정하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Defining an API contract",
+        "text": "Say: “Define required fields and distinguish missing fields from null in JSON responses.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "JSON이면 데이터가 정확하고 안전한가요?",
+        "en": "Does valid JSON mean the data is correct and safe?"
+      },
+      "fact": {
+        "ko": "읽을 수 있는 형식이라는 뜻일 뿐이에요. 자료형, 필수 항목, 허용 값과 권한은 별도로 확인해야 해요.",
+        "en": "It only establishes a readable format. Types, required fields, allowed values and permissions still need validation."
+      }
+    }
+  ],
+  "keywords": [
+    "api",
+    "rest-api",
+    "structured-data"
+  ],
+  "related": [
+    {
+      "id": "api",
+      "type": "related"
+    },
+    {
+      "id": "rest-api",
+      "type": "related"
+    },
+    {
+      "id": "structured-data",
+      "type": "related"
+    }
+  ]
+}

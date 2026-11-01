@@ -1,0 +1,121 @@
+{
+  "order": 430,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "온디바이스 AI",
+    "en": "On-device AI"
+  },
+  "description": {
+    "ko": "휴대폰이나 PC 같은 사용자 기기 안에서 AI 모델의 추론을 실행하는 방식이에요.",
+    "en": "Running AI inference on a user device, such as a phone or PC."
+  },
+  "analogy": {
+    "ko": "질문을 멀리 있는 본사로 보내는 대신 현장 담당자가 바로 처리하는 것과 같아요.",
+    "en": "Like having a local worker handle a request rather than sending it to a distant office."
+  },
+  "details": {
+    "ko": [
+      "기기에서 처리하면 네트워크 없이 동작하거나 서버로 보내는 데이터를 줄일 수 있어요. 다만 모델 다운로드나 일부 기능에는 인터넷이 필요할 수도 있어요.",
+      "기기의 메모리, 연산 능력, 배터리와 발열에 제약을 받아요. 서버에서 학습한 모델을 기기에 배포하는 경우가 많으며, 일부 작업만 서버로 보내는 혼합 구성도 가능해요."
+    ],
+    "en": [
+      "Local processing can work without a network and reduce data sent to servers. Model downloads or some features may still need internet access.",
+      "Memory, compute, battery and heat constrain devices. Models are often trained on servers and deployed locally; hybrid systems can send selected tasks to a server."
+    ]
+  },
+  "background": {
+    "ko": [
+      "응답 지연과 네트워크 의존을 줄이고 개인 정보를 기기 안에서 처리하려는 요구가 커지며 발전했어요."
+    ],
+    "en": [
+      "It developed to reduce latency and network dependence and keep more personal data processing on the device."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "모델 준비",
+        "text": "기기에 맞는 모델을 고르고 필요하면 크기를 줄여요."
+      },
+      {
+        "title": "기기 실행",
+        "text": "CPU, GPU나 전용 AI 칩으로 추론해요."
+      },
+      {
+        "title": "환경 확인",
+        "text": "속도와 전력 사용량을 측정하고 서버 연결 범위를 확인해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Prepare a model",
+        "text": "Choose a suitable model and reduce its size if needed."
+      },
+      {
+        "title": "Run locally",
+        "text": "Run inference on a CPU, GPU or dedicated AI processor."
+      },
+      {
+        "title": "Check conditions",
+        "text": "Measure speed and power consumption and check any server communication."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "기기 내 음성 명령 인식",
+      "오프라인 사진 분류",
+      "PC에서 문서 요약"
+    ],
+    "en": [
+      "Local voice-command recognition",
+      "Offline photo classification",
+      "Summarizing documents locally on a PC"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "현장 앱 설계",
+        "text": "“통신이 불안정한 현장에서는 온디바이스로 처리하고, 실제 기기에서 배터리 사용량도 보자”라고 말해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Designing a field app",
+        "text": "Say: “Use on-device processing in areas with poor connectivity and measure battery use on the actual hardware.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "온디바이스면 데이터가 절대 밖으로 안 나가나요?",
+        "en": "Does on-device AI guarantee no data leaves the device?"
+      },
+      "fact": {
+        "ko": "추론이 기기에서 실행된다는 뜻이에요. 로그 전송, 동기화, 서버 보조 기능의 데이터 흐름은 별도로 확인해야 해요.",
+        "en": "It means inference runs locally. Logs, synchronization and server-assisted features can still send data, so check those flows separately."
+      }
+    }
+  ],
+  "keywords": [
+    "inference",
+    "quantization",
+    "cloud"
+  ],
+  "related": [
+    {
+      "id": "inference",
+      "type": "prerequisite"
+    },
+    {
+      "id": "quantization",
+      "type": "related"
+    },
+    {
+      "id": "cloud",
+      "type": "compare"
+    }
+  ]
+}

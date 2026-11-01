@@ -1,0 +1,121 @@
+{
+  "order": 500,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "데이터베이스",
+    "en": "Database"
+  },
+  "description": {
+    "ko": "필요한 정보를 저장하고 찾아 쓰기 좋게 조직한 데이터의 모음이에요.",
+    "en": "An organized collection of data designed for storage and retrieval."
+  },
+  "analogy": {
+    "ko": "자료를 아무 데나 쌓지 않고 분류 기준과 찾는 방법을 정해 둔 자료실과 같아요.",
+    "en": "Like an archive with a filing system and a way to find what you need."
+  },
+  "details": {
+    "ko": [
+      "고객, 주문, 재고처럼 지속적으로 쓰는 정보를 저장해요. 데이터를 읽고 추가·수정·삭제하는 기능은 데이터베이스 관리 시스템(DBMS)이 맡아요.",
+      "일상에서는 데이터베이스와 관리 소프트웨어를 묶어 부르기도 해요. 관계형, 문서형, 그래프형 등 여러 구조가 있으며 목적에 맞게 선택해요."
+    ],
+    "en": [
+      "A database stores ongoing information such as customers, orders and inventory. A database management system, or DBMS, handles reading, inserting, updating and deleting data.",
+      "In everyday use, the term can include the management software. Relational, document and graph models organize data differently for different needs."
+    ]
+  },
+  "background": {
+    "ko": [
+      "파일마다 정보를 따로 보관하면 중복과 불일치가 생기고 여러 사람이 동시에 수정하기 어려워요. 이를 체계적으로 관리하려고 발전했어요."
+    ],
+    "en": [
+      "Separate files can create duplication, inconsistency and conflicts during concurrent changes. Databases developed to manage these problems systematically."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "구조 정하기",
+        "text": "저장할 정보와 데이터 사이의 관계를 정해요."
+      },
+      {
+        "title": "저장과 변경",
+        "text": "관리 시스템을 통해 데이터를 넣고 바꿔요."
+      },
+      {
+        "title": "조회와 관리",
+        "text": "조건에 맞는 정보를 찾고 권한, 백업과 성능을 관리해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Define the structure",
+        "text": "Define what to store and how the data relates."
+      },
+      {
+        "title": "Store and change",
+        "text": "Insert and update data through the management system."
+      },
+      {
+        "title": "Query and manage",
+        "text": "Retrieve matching information and manage access, backups and performance."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "쇼핑몰 주문 기록",
+      "회원 계정 정보",
+      "제품 재고 관리"
+    ],
+    "en": [
+      "Online store order records",
+      "Member account information",
+      "Inventory management"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "주문 정보 관리",
+        "text": "“주문은 데이터베이스에 저장하고, 중복 결제가 생기지 않게 상태 변경을 함께 처리하자”라고 개발자와 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Managing order information",
+        "text": "Tell developers: “Store orders in the database and coordinate status changes to prevent duplicate payments.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "엑셀 파일도 데이터베이스와 똑같나요?",
+        "en": "Is a spreadsheet the same as a database?"
+      },
+      "fact": {
+        "ko": "표로 데이터를 관리할 수 있다는 점은 비슷하지만, 일반적인 데이터베이스 관리 시스템은 동시 접근, 조회, 무결성과 복구를 위한 기능을 별도로 제공해요.",
+        "en": "Both can organize data, but DBMSs provide dedicated capabilities for concurrent access, querying, integrity and recovery."
+      }
+    }
+  ],
+  "keywords": [
+    "rdbms",
+    "nosql",
+    "sql"
+  ],
+  "related": [
+    {
+      "id": "rdbms",
+      "type": "related"
+    },
+    {
+      "id": "nosql",
+      "type": "related"
+    },
+    {
+      "id": "sql",
+      "type": "related"
+    }
+  ]
+}

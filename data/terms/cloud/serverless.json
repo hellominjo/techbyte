@@ -1,0 +1,126 @@
+{
+  "order": 1130,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "서버리스",
+    "en": "Serverless"
+  },
+  "description": {
+    "ko": "제공자가 서버 할당과 기반 운영을 맡아 사용자가 기능과 데이터에 집중하게 하는 실행·서비스 모델이에요.",
+    "en": "A model where the provider handles server allocation and underlying operations so users can focus on application logic and data."
+  },
+  "analogy": {
+    "ko": "차량을 직접 소유·정비하지 않고 필요할 때 운송 서비스를 이용하는 것과 같아요.",
+    "en": "Like using transport on demand instead of owning and maintaining a vehicle."
+  },
+  "details": {
+    "ko": [
+      "서버가 없는 것이 아니라 서버 관리의 많은 부분이 감춰져 있어요. 이벤트로 함수를 실행하는 FaaS가 대표적이며, 서버리스 데이터나 컨테이너 서비스 등으로 범위가 넓어요.",
+      "확장과 과금 방식은 제품에 따라 달라요. 초기 실행 지연, 실행 시간과 동시성 한도, 외부 연결과 상태 저장 방식을 확인해야 해요."
+    ],
+    "en": [
+      "Servers still exist, but much of their management is abstracted away. Event-triggered functions are a common example, alongside serverless data and container services.",
+      "Scaling and billing vary by service. Check startup latency, duration and concurrency limits, external connections and state storage."
+    ]
+  },
+  "background": {
+    "ko": [
+      "상시 서버 용량을 직접 관리하기보다 변화하는 요청과 이벤트에 맞춰 실행 자원을 제공받으려는 요구에서 발전했어요."
+    ],
+    "en": [
+      "Serverless developed to provision execution resources for changing requests and events without directly managing always-on server capacity."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "기능과 트리거 정의",
+        "text": "HTTP 요청이나 파일 업로드 등 실행 계기를 정해요."
+      },
+      {
+        "title": "관리형 실행",
+        "text": "플랫폼이 필요한 환경을 준비해 코드를 실행해요."
+      },
+      {
+        "title": "결과와 상태 관리",
+        "text": "결과를 전달하고 데이터 보존, 재시도와 실행 한도를 관리해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Define logic and triggers",
+        "text": "Define triggers such as HTTP requests or file uploads."
+      },
+      {
+        "title": "Run on managed infrastructure",
+        "text": "The platform supplies an execution environment and runs the code."
+      },
+      {
+        "title": "Manage results and state",
+        "text": "Deliver results and manage persistence, retries and execution limits."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "업로드 이미지의 썸네일 생성",
+      "웹훅 수신 후 후속 처리",
+      "정해진 시각의 데이터 작업"
+    ],
+    "en": [
+      "Generating thumbnails after uploads",
+      "Processing webhook events",
+      "Scheduled data-processing jobs"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "이벤트 처리 설계",
+        "text": "“파일 업로드 처리는 서버리스로 실행하되, 재시도돼도 중복 결과가 생기지 않고 실행 한도 안에 끝나게 하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Designing event processing",
+        "text": "Say: “Process uploads with serverless execution, ensuring retries do not duplicate results and work fits within execution limits.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "서버리스는 항상 싸고 운영할 일도 없나요?",
+        "en": "Is serverless always cheaper and maintenance-free?"
+      },
+      "fact": {
+        "ko": "지속적인 고부하나 연결 비용 등에 따라 다를 수 있어요. 코드와 데이터, 권한, 관측과 비용 관리는 여전히 필요해요.",
+        "en": "Costs depend on sustained load, connections and other factors. Code, data, permissions, observability and costs still need management."
+      }
+    }
+  ],
+  "keywords": [
+    "cloud",
+    "paas",
+    "scaling",
+    "webhook"
+  ],
+  "related": [
+    {
+      "id": "cloud",
+      "type": "prerequisite"
+    },
+    {
+      "id": "paas",
+      "type": "related"
+    },
+    {
+      "id": "scaling",
+      "type": "related"
+    },
+    {
+      "id": "webhook",
+      "type": "related"
+    }
+  ]
+}

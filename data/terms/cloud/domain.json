@@ -1,0 +1,121 @@
+{
+  "order": 1070,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "도메인",
+    "en": "Domain"
+  },
+  "description": {
+    "ko": "인터넷에서 서비스 등을 식별하기 위해 사용하는 계층형 이름이에요.",
+    "en": "A hierarchical name used to identify services and other resources on the internet."
+  },
+  "analogy": {
+    "ko": "숫자로 된 위치 좌표 대신 기억하기 쉬운 이름을 붙인 주소 표지판과 같아요.",
+    "en": "Like a memorable address sign used instead of numerical coordinates."
+  },
+  "details": {
+    "ko": [
+      "example.com과 같은 이름을 쓰며, www.example.com처럼 하위 도메인을 나눌 수 있어요. DNS 레코드로 웹이나 메일 서비스 등에 연결해요.",
+      "도메인 이름은 IP 주소나 URL 전체와 달라요. https://example.com/help에서 도메인은 example.com이며, 경로와 통신 방식은 별도 구성 요소예요."
+    ],
+    "en": [
+      "Names such as example.com can have subdomains such as www.example.com. DNS records connect them to web, mail and other services.",
+      "A domain differs from an IP address or a full URL. In https://example.com/help, example.com is the domain; the scheme and path are separate."
+    ]
+  },
+  "background": {
+    "ko": [
+      "사람이 알아보기 쉬운 이름을 유지하면서 실제 서비스의 위치는 바꿀 수 있도록 이름과 연결 주소를 나눠요."
+    ],
+    "en": [
+      "Separating names from connection addresses lets people keep a recognizable name while service locations change."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "등록과 사용권 관리",
+        "text": "사용 가능한 이름을 등록하고 갱신·관리 책임을 정해요."
+      },
+      {
+        "title": "DNS 설정",
+        "text": "권한 있는 DNS에 서비스 연결 정보를 등록해요."
+      },
+      {
+        "title": "서비스 연결 확인",
+        "text": "이름으로 접속되는지와 필요한 인증서·메일 설정을 확인해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Register and manage rights",
+        "text": "Register an available name and assign renewal and administration responsibilities."
+      },
+      {
+        "title": "Configure DNS",
+        "text": "Publish service connection records through authoritative DNS."
+      },
+      {
+        "title": "Verify the service",
+        "text": "Check access by name and any required certificates or mail configuration."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "회사 웹사이트 이름",
+      "API 전용 하위 도메인",
+      "회사 이메일 주소의 도메인"
+    ],
+    "en": [
+      "A company website name",
+      "An API subdomain",
+      "A company email domain"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "서비스 주소 준비",
+        "text": "“도메인 등록뿐 아니라 DNS 설정, 갱신 담당자와 인증서 준비까지 확인하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Preparing a service address",
+        "text": "Say: “Check DNS, renewal ownership and certificates as well as domain registration.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "도메인을 등록하면 웹사이트가 생기나요?",
+        "en": "Does registering a domain create a website?"
+      },
+      "fact": {
+        "ko": "이름을 사용할 권한을 확보한 것이에요. 웹 콘텐츠와 호스팅, DNS 연결은 따로 준비해야 해요.",
+        "en": "It secures the right to use a name. Website content, hosting and DNS connections still need setup."
+      }
+    }
+  ],
+  "keywords": [
+    "dns",
+    "cdn",
+    "client"
+  ],
+  "related": [
+    {
+      "id": "dns",
+      "type": "related"
+    },
+    {
+      "id": "cdn",
+      "type": "related"
+    },
+    {
+      "id": "client",
+      "type": "related"
+    }
+  ]
+}

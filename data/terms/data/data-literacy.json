@@ -1,0 +1,121 @@
+{
+  "order": 640,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "데이터 리터러시",
+    "en": "Data Literacy"
+  },
+  "description": {
+    "ko": "데이터를 읽고 해석하며 비판적으로 판단하고, 근거를 다른 사람에게 전달하는 역량이에요.",
+    "en": "The ability to read, interpret, critically assess and communicate with data."
+  },
+  "analogy": {
+    "ko": "문장을 읽는 데서 그치지 않고 뜻과 근거를 이해하듯, 숫자의 맥락과 한계까지 읽는 능력이에요.",
+    "en": "Like understanding a text’s meaning and evidence rather than merely reading its words, but applied to data."
+  },
+  "details": {
+    "ko": [
+      "지표의 정의, 분모와 비교 기간, 표본의 대표성을 확인하는 일이 포함돼요. 숫자가 보여 주는 범위와 보여 주지 못하는 범위를 구분해요.",
+      "SQL이나 통계 도구 사용 능력만을 뜻하지 않아요. 적절한 질문을 만들고 상관관계와 인과관계를 구분하며 불확실성을 설명하는 것도 중요해요."
+    ],
+    "en": [
+      "It includes checking metric definitions, denominators, comparison periods and sample representativeness, and recognizing what the data can and cannot show.",
+      "It is more than SQL or tool proficiency. Asking good questions, distinguishing correlation from causation and explaining uncertainty also matter."
+    ]
+  },
+  "background": {
+    "ko": [
+      "누구나 대시보드와 분석 결과를 접하게 되면서, 도구를 다루는 사람뿐 아니라 의사결정자도 데이터를 올바르게 해석할 필요가 커졌어요."
+    ],
+    "en": [
+      "As dashboards and analyses became common, decision-makers as well as technical specialists needed to interpret data responsibly."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "질문 정하기",
+        "text": "어떤 판단을 위해 어떤 근거가 필요한지 정해요."
+      },
+      {
+        "title": "맥락 확인",
+        "text": "정의, 수집 방식, 비교 기준과 한계를 살펴요."
+      },
+      {
+        "title": "판단과 소통",
+        "text": "과장하지 않고 의미와 불확실성을 전달해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Frame a question",
+        "text": "Define the decision and evidence needed."
+      },
+      {
+        "title": "Check context",
+        "text": "Check definitions, collection methods, comparisons and limitations."
+      },
+      {
+        "title": "Reason and communicate",
+        "text": "Communicate meaning and uncertainty without overstatement."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "전환율의 분모 확인",
+      "설문 응답자 편향 살피기",
+      "매출 증가 원인의 근거 구분"
+    ],
+    "en": [
+      "Checking conversion-rate denominators",
+      "Assessing survey-response bias",
+      "Assessing evidence for revenue-growth explanations"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "성과 회의",
+        "text": "“전환율이 올랐다고 하기 전에 방문자 구성이 같았는지와 측정 기준이 바뀌었는지 보자”라고 질문해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Performance review",
+        "text": "Ask: “Before calling this a conversion improvement, did the visitor mix or measurement definition change?”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "통계를 잘해야만 데이터 리터러시가 있나요?",
+        "en": "Does data literacy require advanced statistics?"
+      },
+      "fact": {
+        "ko": "깊은 통계 지식이 도움이 되지만, 기본 정의와 비교 기준을 묻고 근거의 한계를 확인하는 태도도 핵심이에요.",
+        "en": "Advanced statistics helps, but questioning definitions, comparisons and the limits of evidence is also central."
+      }
+    }
+  ],
+  "keywords": [
+    "metadata",
+    "data-visualization",
+    "business-intelligence"
+  ],
+  "related": [
+    {
+      "id": "metadata",
+      "type": "related"
+    },
+    {
+      "id": "data-visualization",
+      "type": "related"
+    },
+    {
+      "id": "business-intelligence",
+      "type": "related"
+    }
+  ]
+}

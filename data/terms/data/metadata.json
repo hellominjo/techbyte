@@ -1,0 +1,121 @@
+{
+  "order": 610,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "메타데이터",
+    "en": "Metadata"
+  },
+  "description": {
+    "ko": "데이터의 의미, 출처, 형식과 관리 상태를 설명하는 데이터예요.",
+    "en": "Data describing the meaning, origin, format and management of other data."
+  },
+  "analogy": {
+    "ko": "책의 내용이 아니라 제목, 저자와 분류 번호를 알려 주는 도서 카드와 같아요.",
+    "en": "Like a library card describing a book’s title, author and classification rather than its contents."
+  },
+  "details": {
+    "ko": [
+      "열의 자료형 같은 기술 정보, 매출의 정의 같은 업무 정보, 갱신 시각과 담당자 같은 운영 정보를 포함할 수 있어요.",
+      "데이터가 어디서 와서 어떤 변환을 거쳤는지 나타내는 계보도 중요해요. 자동 수집한 정보와 사람이 적은 설명을 함께 최신 상태로 관리해요."
+    ],
+    "en": [
+      "Metadata can include technical details such as column types, business definitions such as revenue meaning, and operational details such as refresh times and owners.",
+      "Lineage describes where data came from and how it was transformed. Automatically collected details and human descriptions both need maintenance."
+    ]
+  },
+  "background": {
+    "ko": [
+      "값만 보면 뜻과 신뢰도를 알기 어려워서, 데이터를 해석하고 관리하는 데 필요한 설명을 함께 다루게 됐어요."
+    ],
+    "en": [
+      "Values alone often do not reveal meaning or trustworthiness, so additional descriptions are needed to interpret and manage data."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "항목 정의",
+        "text": "출처, 단위와 담당자 등 필요한 설명 항목을 정해요."
+      },
+      {
+        "title": "수집과 기록",
+        "text": "시스템에서 가져오거나 담당자가 의미를 적어요."
+      },
+      {
+        "title": "연결과 갱신",
+        "text": "실제 데이터와 연결하고 변경 시 설명도 갱신해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Define attributes",
+        "text": "Define needed attributes such as source, unit and owner."
+      },
+      {
+        "title": "Collect and document",
+        "text": "Collect details from systems or have owners document meanings."
+      },
+      {
+        "title": "Link and refresh",
+        "text": "Link descriptions to the data and update them when it changes."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "매출 열의 통화와 계산 기준",
+      "테이블 담당자와 갱신 주기",
+      "이미지의 촬영 시각"
+    ],
+    "en": [
+      "Currency and calculation rules for a revenue field",
+      "Table owners and refresh schedules",
+      "Image capture timestamps"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "지표 해석",
+        "text": "“이 숫자가 원인지 천 원인지 메타데이터에 적고, 세금 포함 여부도 명시하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Interpreting metrics",
+        "text": "Say: “Document whether the values are in won or thousands of won, and whether tax is included.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "메타데이터는 자동으로 모으면 충분한가요?",
+        "en": "Is automatically collected metadata enough?"
+      },
+      "fact": {
+        "ko": "열 이름과 자료형은 모을 수 있어도 업무 의미나 사용 주의점은 사람이 확인해야 할 수 있어요.",
+        "en": "Column names and types can be collected automatically, but business meaning and usage cautions may require human input."
+      }
+    }
+  ],
+  "keywords": [
+    "data-catalog",
+    "data-governance",
+    "data-pipeline"
+  ],
+  "related": [
+    {
+      "id": "data-catalog",
+      "type": "related"
+    },
+    {
+      "id": "data-governance",
+      "type": "related"
+    },
+    {
+      "id": "data-pipeline",
+      "type": "related"
+    }
+  ]
+}

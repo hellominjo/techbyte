@@ -1,0 +1,158 @@
+{
+  "order": 560,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "정형 데이터",
+    "en": "Structured Data"
+  },
+  "description": {
+    "ko": "미리 정한 항목과 자료형에 맞춰 일정한 구조로 정리된 데이터예요.",
+    "en": "Data organized according to predefined fields and types."
+  },
+  "analogy": {
+    "ko": "이름, 날짜, 금액을 정해진 칸에 적는 같은 양식의 신청서와 같아요.",
+    "en": "Like forms with fixed fields for names, dates and amounts."
+  },
+  "details": {
+    "ko": [
+      "주문 번호, 결제일, 금액처럼 각 항목의 의미와 형식이 정해져 있어요. 관계형 테이블이 대표적이지만 저장 장소가 반드시 데이터베이스일 필요는 없어요.",
+      "조건 검색과 집계에 편리하지만 구조가 있다고 정확한 것은 아니에요. 누락, 잘못된 값이나 서로 다른 코드 기준은 따로 검사해야 해요."
+    ],
+    "en": [
+      "Fields such as order ID, payment date and amount have defined meanings and formats. Relational tables are common, but structured data need not live in a database.",
+      "It supports filtering and aggregation, but structure does not guarantee accuracy. Missing values, invalid entries and inconsistent codes still need checks."
+    ]
+  },
+  "background": {
+    "ko": [
+      "많은 기록을 일관되게 처리하고 비교하려면 항목과 형식을 맞춰야 해서 정해진 구조를 사용해요."
+    ],
+    "en": [
+      "Standard fields and formats allow many records to be processed and compared consistently."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "항목 정의",
+        "text": "열의 이름, 자료형과 필수 여부를 정해요."
+      },
+      {
+        "title": "기록과 검증",
+        "text": "정해진 형식으로 값을 넣고 규칙을 검사해요."
+      },
+      {
+        "title": "조회와 집계",
+        "text": "같은 항목을 기준으로 필터링하거나 합산해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Define fields",
+        "text": "Define field names, types and required values."
+      },
+      {
+        "title": "Record and validate",
+        "text": "Enter values in the defined format and validate rules."
+      },
+      {
+        "title": "Query and aggregate",
+        "text": "Filter and aggregate using consistent fields."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "주문 내역 테이블",
+      "직원 인사 기록",
+      "열 형식이 정해진 CSV"
+    ],
+    "en": [
+      "Order tables",
+      "Employee records",
+      "CSV files with defined columns"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "분석 자료 준비",
+        "text": "“매출 금액과 통화 코드를 별도 열로 정형화해서 통화가 섞여 합산되지 않게 하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Preparing analysis data",
+        "text": "Say: “Keep amount and currency in separate structured fields so different currencies are not summed together.”"
+      }
+    ]
+  },
+  "comparison": {
+    "target": "unstructured-data",
+    "rows": [
+      {
+        "label": {
+          "ko": "내용의 틀",
+          "en": "Content organization"
+        },
+        "values": [
+          {
+            "ko": "미리 정한 필드와 자료형",
+            "en": "Predefined fields and types"
+          },
+          {
+            "ko": "내용이 고정된 필드에 바로 맞지 않음",
+            "en": "Content does not directly fit fixed fields"
+          }
+        ]
+      },
+      {
+        "label": {
+          "ko": "대표 예",
+          "en": "Example"
+        },
+        "values": [
+          {
+            "ko": "주문 번호·금액·날짜 테이블",
+            "en": "A table of order IDs, amounts and dates"
+          },
+          {
+            "ko": "문서 본문, 사진과 녹음",
+            "en": "Document text, photos and recordings"
+          }
+        ]
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "JSON은 모두 정형 데이터인가요?",
+        "en": "Is all JSON structured data?"
+      },
+      "fact": {
+        "ko": "JSON은 흔히 반정형 데이터로 분류해요. 키와 계층은 있지만 기록마다 항목이 다를 수 있으며, 엄격한 스키마를 적용할 수도 있어요.",
+        "en": "JSON is often considered semi-structured: keys and nesting exist, but fields can vary across records. A strict schema can also be imposed."
+      }
+    }
+  ],
+  "keywords": [
+    "unstructured-data",
+    "rdbms",
+    "data-preprocessing"
+  ],
+  "related": [
+    {
+      "id": "unstructured-data",
+      "type": "compare"
+    },
+    {
+      "id": "rdbms",
+      "type": "related"
+    },
+    {
+      "id": "data-preprocessing",
+      "type": "related"
+    }
+  ]
+}

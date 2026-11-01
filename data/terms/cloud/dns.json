@@ -1,0 +1,167 @@
+{
+  "order": 1060,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "DNS",
+    "en": "DNS"
+  },
+  "fullName": {
+    "ko": "도메인 이름 시스템",
+    "en": "Domain Name System"
+  },
+  "description": {
+    "ko": "도메인 이름에 연결된 IP 주소 등 정보를 찾아 주는 계층형·분산형 이름 시스템이에요.",
+    "en": "A hierarchical, distributed naming system that looks up information such as IP addresses associated with domain names."
+  },
+  "analogy": {
+    "ko": "사람이 기억하는 이름으로 연락처 정보를 찾는 분산된 주소록과 같아요.",
+    "en": "Like a distributed directory for finding contact details from memorable names."
+  },
+  "details": {
+    "ko": [
+      "도메인을 실제 연결할 주소로 찾는 데 쓰며, 메일 수신 서버나 소유 확인 정보 같은 DNS 레코드도 다뤄요.",
+      "조회 결과는 여러 곳에 캐시될 수 있어요. 레코드를 바꿔도 기존 캐시가 남아 있으면 사용자마다 새 값이 보이는 시점이 다를 수 있어요."
+    ],
+    "en": [
+      "DNS finds addresses for connections and also holds records such as mail routing and domain-verification information.",
+      "Results can be cached in several places. Existing caches can make users observe updates at different times."
+    ]
+  },
+  "background": {
+    "ko": [
+      "변하는 숫자 주소를 사람이 모두 기억하지 않고, 많은 이름을 중앙 목록 하나에 의존하지 않게 관리하려고 사용해요."
+    ],
+    "en": [
+      "DNS avoids requiring people to memorize numerical addresses and distributes naming rather than relying on a single central list."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "조회 요청",
+        "text": "앱이나 기기가 도메인 정보를 리졸버에 요청해요."
+      },
+      {
+        "title": "캐시와 권한 서버 확인",
+        "text": "캐시를 확인하고 필요하면 계층을 따라 해당 도메인의 권한 서버를 찾아요."
+      },
+      {
+        "title": "결과 활용",
+        "text": "반환된 주소 등 정보를 이용해 다음 통신을 진행해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Request a lookup",
+        "text": "A device or application asks a resolver for domain information."
+      },
+      {
+        "title": "Check cache and authoritative data",
+        "text": "Check cached results and, if necessary, follow the hierarchy to the domain’s authoritative servers."
+      },
+      {
+        "title": "Use the result",
+        "text": "Use returned addresses or other records for subsequent communication."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "웹 도메인의 접속 주소 조회",
+      "메일 서버 위치 안내",
+      "서비스 소유 확인용 레코드 등록"
+    ],
+    "en": [
+      "Finding addresses for web domains",
+      "Locating mail servers",
+      "Publishing service-verification records"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "서비스 이전",
+        "text": "“DNS 변경 전에 TTL과 기존 캐시 영향을 확인하고, 전환 중에는 예전 주소도 대응하게 하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Migrating a service",
+        "text": "Say: “Check TTLs and cached records before changing DNS and keep the old endpoint ready during transition.”"
+      }
+    ]
+  },
+  "comparison": {
+    "target": "domain",
+    "rows": [
+      {
+        "label": {
+          "ko": "뜻",
+          "en": "Meaning"
+        },
+        "values": [
+          {
+            "ko": "이름에 연결된 레코드를 조회하는 시스템",
+            "en": "A system for resolving records associated with names"
+          },
+          {
+            "ko": "서비스 등을 식별하는 계층형 이름",
+            "en": "A hierarchical name identifying services or resources"
+          }
+        ]
+      },
+      {
+        "label": {
+          "ko": "예시",
+          "en": "Example"
+        },
+        "values": [
+          {
+            "ko": "example.com의 접속 주소 조회",
+            "en": "Looking up connection addresses for example.com"
+          },
+          {
+            "ko": "example.com이라는 이름",
+            "en": "The name example.com"
+          }
+        ]
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "DNS를 바꾸면 웹사이트 파일도 옮겨지나요?",
+        "en": "Does changing DNS move website files?"
+      },
+      "fact": {
+        "ko": "연결 정보를 바꾸는 것이지 파일을 복사하는 작업은 아니에요. 새 환경의 콘텐츠와 동작은 따로 준비해야 해요.",
+        "en": "It changes connection information, not file placement. Prepare content and application behavior in the new environment separately."
+      }
+    }
+  ],
+  "keywords": [
+    "domain",
+    "cdn",
+    "cache",
+    "load-balancing"
+  ],
+  "related": [
+    {
+      "id": "domain",
+      "type": "prerequisite"
+    },
+    {
+      "id": "cdn",
+      "type": "related"
+    },
+    {
+      "id": "cache",
+      "type": "related"
+    },
+    {
+      "id": "load-balancing",
+      "type": "related"
+    }
+  ]
+}

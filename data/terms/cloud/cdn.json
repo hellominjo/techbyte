@@ -1,0 +1,130 @@
+{
+  "order": 1050,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "CDN",
+    "en": "CDN"
+  },
+  "fullName": {
+    "ko": "콘텐츠 전송 네트워크",
+    "en": "Content Delivery Network"
+  },
+  "description": {
+    "ko": "여러 지역에 분산된 서버를 통해 콘텐츠를 사용자에게 효율적으로 전달하는 네트워크예요.",
+    "en": "A network of distributed servers that delivers content efficiently to users."
+  },
+  "analogy": {
+    "ko": "모든 주문을 본사에서 보내는 대신 지역 물류 거점에서 자주 찾는 상품을 보내는 것과 같아요.",
+    "en": "Like serving popular products from regional depots rather than shipping every order from headquarters."
+  },
+  "details": {
+    "ko": [
+      "이미지, 영상과 웹 자원을 중간 서버에 캐시해 원본 서버의 부담과 전송 지연을 줄일 수 있어요. 요청을 적절한 거점으로 보내며 일부 서비스는 동적 응답 전송도 최적화해요.",
+      "모든 응답을 캐시하면 안 돼요. 사용자별 정보와 갱신 주기를 구분하고, 변경한 파일이 오래 보이지 않도록 만료와 무효화 방식을 정해요."
+    ],
+    "en": [
+      "CDNs can cache images, video and web assets to reduce origin load and latency. Requests route to suitable locations; some services also optimize dynamic delivery.",
+      "Not every response should be cached. Separate personal content and update needs and define expiration and invalidation to avoid stale assets."
+    ]
+  },
+  "background": {
+    "ko": [
+      "사용자가 여러 지역에 있고 콘텐츠 요청이 많아지면서, 원본 한곳에서 모두 전송하는 한계를 줄이려고 발전했어요."
+    ],
+    "en": [
+      "CDNs address the limits of serving geographically distributed users and high request volumes from a single origin."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "원본과 규칙 설정",
+        "text": "콘텐츠 원본과 캐시 대상을 정해요."
+      },
+      {
+        "title": "거점 전달",
+        "text": "사용자 요청을 적절한 분산 서버로 보내요."
+      },
+      {
+        "title": "응답과 갱신",
+        "text": "캐시가 유효하면 전달하고 없거나 만료되면 원본에서 가져와요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Configure origin and rules",
+        "text": "Define the origin and cacheable content."
+      },
+      {
+        "title": "Route to an edge",
+        "text": "Route requests to suitable distributed servers."
+      },
+      {
+        "title": "Respond and refresh",
+        "text": "Serve valid cached content or retrieve it from the origin when needed."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "전 세계 사용자에게 이미지 제공",
+      "영상과 다운로드 파일 전송",
+      "행사 페이지의 정적 자원 배포"
+    ],
+    "en": [
+      "Serving images globally",
+      "Delivering video and downloads",
+      "Distributing event-page assets"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "페이지 속도 개선",
+        "text": "“이미지는 CDN으로 보내되, 개인별 응답은 캐시 범위를 따로 정하고 갱신 방식도 확인하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Improving page speed",
+        "text": "Say: “Deliver images through a CDN, separately define caching for personalized responses and check update behavior.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "CDN을 붙이면 원본 서버는 필요 없나요?",
+        "en": "Does a CDN eliminate the origin server?"
+      },
+      "fact": {
+        "ko": "보통 원본 콘텐츠와 갱신을 제공할 저장소나 서버가 필요해요. CDN의 다른 기능이 원본 역할을 맡는 구성은 있을 수 있어요.",
+        "en": "An origin store or server is usually still needed for content and updates, though other features of a CDN platform can sometimes provide that role."
+      }
+    }
+  ],
+  "keywords": [
+    "cache",
+    "dns",
+    "storage",
+    "load-balancing"
+  ],
+  "related": [
+    {
+      "id": "cache",
+      "type": "prerequisite"
+    },
+    {
+      "id": "dns",
+      "type": "related"
+    },
+    {
+      "id": "storage",
+      "type": "related"
+    },
+    {
+      "id": "load-balancing",
+      "type": "related"
+    }
+  ]
+}

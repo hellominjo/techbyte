@@ -1,0 +1,130 @@
+{
+  "order": 1040,
+  "updatedAt": "2026-11-01",
+  "term": {
+    "ko": "SaaS",
+    "en": "SaaS"
+  },
+  "fullName": {
+    "ko": "서비스형 소프트웨어",
+    "en": "Software as a Service"
+  },
+  "description": {
+    "ko": "제공자가 운영하는 완성된 소프트웨어를 네트워크로 이용하는 방식이에요.",
+    "en": "Using a provider-operated software application over a network."
+  },
+  "analogy": {
+    "ko": "주방을 차리는 대신 운영 중인 식당의 메뉴를 골라 이용하는 것과 같아요.",
+    "en": "Like choosing from a restaurant’s menu instead of setting up a kitchen."
+  },
+  "details": {
+    "ko": [
+      "사용자는 기능과 계정, 조직 설정을 관리하고 제공자는 앱과 기반 환경을 운영해요. 웹이나 전용 앱으로 이용하며 요금 방식은 구독형 등 여러 형태가 있어요.",
+      "완성된 제품이라도 데이터 소유권, 접근 권한과 내보내기 방식은 확인해야 해요. 기능 설정과 연동은 가능해도 원하는 대로 내부 코드를 바꾸지는 못할 수 있어요."
+    ],
+    "en": [
+      "Users manage accounts, features and organizational settings while the provider operates the application and infrastructure. Access can be through web or dedicated apps, with subscription and other pricing models.",
+      "Even with a finished product, check data ownership, permissions and export options. Configuration and integrations may be supported while arbitrary internal code changes are not."
+    ]
+  },
+  "background": {
+    "ko": [
+      "조직마다 같은 업무 소프트웨어를 설치·갱신하는 부담을 줄이고 공통 기능을 바로 사용하려는 수요에서 확산됐어요."
+    ],
+    "en": [
+      "SaaS expanded to reduce repeated installation and maintenance and make common business capabilities readily available."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "서비스 선택",
+        "text": "업무 기능, 사용 조건과 데이터 처리 범위를 확인해요."
+      },
+      {
+        "title": "조직 설정",
+        "text": "계정과 권한, 연동과 업무 설정을 구성해요."
+      },
+      {
+        "title": "이용과 관리",
+        "text": "기능을 이용하고 사용자·데이터와 계약을 관리해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Choose a service",
+        "text": "Check features, terms and data-handling scope."
+      },
+      {
+        "title": "Configure the organization",
+        "text": "Set up accounts, permissions, integrations and workflows."
+      },
+      {
+        "title": "Use and manage",
+        "text": "Use the application and manage users, data and agreements."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "온라인 협업 문서",
+      "고객 관계 관리 서비스",
+      "온라인 업무·프로젝트 관리"
+    ],
+    "en": [
+      "Online collaborative documents",
+      "Hosted customer-relationship management",
+      "Online work and project management"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "업무 도구 도입",
+        "text": "“SaaS 기능만 보지 말고 계정 권한과 퇴사자 처리, 데이터 내보내기도 확인하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Adopting a business tool",
+        "text": "Say: “Check account permissions, offboarding and data export alongside SaaS features.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "SaaS는 모두 웹사이트에서만 쓰나요?",
+        "en": "Is SaaS used only through websites?"
+      },
+      "fact": {
+        "ko": "전용 데스크톱·모바일 앱이나 API로 이용할 수도 있어요. 핵심은 제공자가 앱을 운영해 서비스로 제공한다는 점이에요.",
+        "en": "Dedicated desktop or mobile apps and APIs can also be used. The key is provider-operated application delivery as a service."
+      }
+    }
+  ],
+  "keywords": [
+    "cloud",
+    "paas",
+    "api",
+    "authentication"
+  ],
+  "related": [
+    {
+      "id": "cloud",
+      "type": "prerequisite"
+    },
+    {
+      "id": "paas",
+      "type": "compare"
+    },
+    {
+      "id": "api",
+      "type": "related"
+    },
+    {
+      "id": "authentication",
+      "type": "related"
+    }
+  ]
+}
