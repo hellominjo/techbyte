@@ -2,7 +2,7 @@
 title: AI 뉴스가 쉬워지는 핵심 용어 10개
 description: 뉴스에 자주 등장하는 AI 용어, 이제 어렵지 않게 이해해 보세요.
 date: 2026-10-30
-order: 60
+order: 35
 terms: 생성형 AI, llm, 토큰, prompt, 멀티모달, rag, hallucination, fine-tuning, AI 에이전트, 추론
 ---
 

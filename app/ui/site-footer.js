@@ -12,8 +12,9 @@ const LINKS = [
 
 // 텍스트 로고 (brandName)
 function Logo({ name }) {
+  const { lang, t } = useLang();
   return (
-    <Link href="/" className="shrink-0 text-lg font-bold tracking-tight">
+    <Link href={siteValue("authorUrl", lang)}  className="shrink-0 text-lg font-bold tracking-tight" target="_blank" rel="noopener noreferrer">
       {name}
     </Link>
   );

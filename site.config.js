@@ -2,6 +2,7 @@
 const siteConfig = {
   // 실제 서비스 주소 (끝에 / 없이). sitemap.xml, robots.txt, 검색엔진용 대표 주소(canonical)에 쓰임
   siteUrl: "https://zerofound.io",
+  authorUrl: "https://zerofound.studio",
   // 서비스 이름
   siteName: { ko: "ZEROFOUND", en: "ZEROFOUND" },
   tagline: { ko: "TECHBYTE", en: "TECHBYTE" },

@@ -2,7 +2,7 @@
 title: 클라우드를 처음 배울 때 알아야 할 용어 10개
 description: 서버를 빌려 쓴다는 게 무슨 뜻일까요? 클라우드 입문자가 가장 먼저 만나는 용어를 순서대로 정리했어요.
 date: 2026-10-28
-order: 30
+order: 25
 terms: cloud, server, 가상 머신, 컨테이너, 쿠버네티스, 서버리스, SaaS·PaaS·IaaS, 리전, 오토스케일링, CDN
 ---
 

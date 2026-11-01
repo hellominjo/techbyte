@@ -111,7 +111,7 @@ export default function PostView({ section, basePath, post, adjacent }) {
                 <Chip
                   chip={chip}
                   lang={lang}
-                  className="inline-flex h-10 items-center rounded-full border border-line px-4 text-[15px]"
+                  className="inline-flex h-10 items-center rounded-full border border-line px-4 text-[13px]"
                 />
               </li>
             ))}

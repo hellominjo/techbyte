@@ -2,7 +2,7 @@
 title: 개발자와 대화할 때 꼭 알아야 할 IT 용어 10개
 description: 회의에서 자주 오가는 개발 용어를 알면 요청은 정확해지고, 일정 이야기는 훨씬 수월해져요.
 date: 2026-10-29
-order: 50
+order: 30
 terms: api, frontend, backend, server, 데이터베이스, 배포, 버그, 리팩터링, 기술 부채, 레거시
 ---
 
