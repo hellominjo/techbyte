@@ -1,0 +1,9 @@
+{
+  "order": 140,
+  "updatedAt": "2026-11-01",
+  "term": { "ko": "피싱", "en": "Phishing" },
+  "description": {
+    "ko": "진짜처럼 꾸민 문자나 사이트로 개인정보를 빼내려는 속임수예요.",
+    "en": "A trick that uses fake messages or sites to steal personal information."
+  }
+}

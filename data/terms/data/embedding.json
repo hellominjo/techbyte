@@ -1,0 +1,14 @@
+{
+  "order": 80,
+  "updatedAt": "2026-11-01",
+  "term": { "ko": "임베딩", "en": "Embedding" },
+  "description": {
+    "ko": "글이나 이미지의 의미를 컴퓨터가 비교할 수 있는 숫자 목록으로 바꾸는 거예요.",
+    "en": "Turning the meaning of text or images into a list of numbers a computer can compare."
+  },
+  "analogy": {
+    "ko": "도서관 책마다 주제를 나타내는 좌표를 붙여서, 비슷한 책끼리 가까이 꽂아 두는 것과 같아요.",
+    "en": "Like giving every library book coordinates by topic, so similar books sit close together."
+  },
+  "related": [{ "id": "vector-db", "type": "related" }, { "id": "rag", "type": "related" }]
+}

@@ -1,0 +1,27 @@
+{
+  "order": 70,
+  "updatedAt": "2026-11-01",
+  "term": { "ko": "프롬프트", "en": "Prompt" },
+  "description": {
+    "ko": "AI에게 원하는 걸 알려 주는 질문이나 지시문이에요.",
+    "en": "The question or instruction you give an AI to tell it what you want."
+  },
+  "examples": {
+    "ko": ["\"초등학생도 이해하게 설명해 줘\"처럼 대상 정하기", "\"표로 정리해 줘\"처럼 결과 형식 정하기"],
+    "en": [
+      "Setting the audience, like \"explain it for a 10-year-old\"",
+      "Setting the format, like \"put it in a table\""
+    ]
+  },
+  "tools": [
+    {
+      "id": "chatgpt",
+      "note": {
+        "ko": "같은 질문을 여러 방식으로 바꿔 물으며 답이 어떻게 달라지는지 비교해 보세요.",
+        "en": "Rephrase the same question several ways and compare the answers."
+      }
+    },
+    { "id": "claude" }
+  ],
+  "related": [{ "id": "llm", "type": "prerequisite" }]
+}

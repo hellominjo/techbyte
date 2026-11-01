@@ -1,0 +1,24 @@
+{
+  "order": 50,
+  "updatedAt": "2026-11-01",
+  "term": { "ko": "파인튜닝", "en": "Fine-tuning" },
+  "description": {
+    "ko": "AI를 내 용도에 맞게 추가로 가르치는 작업이에요.",
+    "en": "Training an AI further so it fits your specific purpose."
+  },
+  "analogy": {
+    "ko": "일반 의사가 특정 분야를 더 공부해서 전문의가 되는 것과 같아요.",
+    "en": "Like a general doctor studying further to become a specialist."
+  },
+  "details": {
+    "ko": [
+      "이미 학습된 AI에 특정 분야의 자료를 더 학습시켜서, 그 분야의 말투나 지식에 익숙해지게 만들어요.",
+      "RAG가 답할 때마다 자료를 찾아보는 방식이라면, 파인튜닝은 지식 자체를 AI 안에 새겨 넣는 방식이에요."
+    ],
+    "en": [
+      "You give an already-trained AI more material from a specific field so it gets used to that field's tone and knowledge.",
+      "If RAG looks things up every time it answers, fine-tuning builds the knowledge into the AI itself."
+    ]
+  },
+  "related": [{ "id": "llm", "type": "prerequisite" }, { "id": "rag", "type": "compare" }]
+}

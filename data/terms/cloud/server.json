@@ -1,0 +1,10 @@
+{
+  "order": 120,
+  "updatedAt": "2026-11-01",
+  "term": { "ko": "서버", "en": "Server" },
+  "description": {
+    "ko": "요청을 받으면 필요한 정보를 꺼내 주는 항상 켜져 있는 컴퓨터예요.",
+    "en": "An always-on computer that hands out information when asked."
+  },
+  "related": [{ "id": "cloud", "type": "related" }]
+}

@@ -1,0 +1,10 @@
+{
+  "order": 100,
+  "updatedAt": "2026-11-01",
+  "term": { "ko": "프론트엔드", "en": "Frontend" },
+  "description": {
+    "ko": "웹사이트에서 사용자 눈에 보이고 직접 만지는 부분이에요.",
+    "en": "The part of a website that users see and interact with."
+  },
+  "related": [{ "id": "backend", "type": "compare" }]
+}

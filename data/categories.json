@@ -1,0 +1,19 @@
+{
+  "categories": [
+    { "id": "ai", "icon": "chip", "name": { "ko": "AI", "en": "AI" } },
+    { "id": "data", "icon": "database", "name": { "ko": "데이터", "en": "Data" } },
+    {
+      "id": "dev",
+      "icon": "code",
+      "name": { "ko": "개발", "en": "Development" },
+      "shortName": { "en": "Dev" }
+    },
+    { "id": "cloud", "icon": "cloud", "name": { "ko": "클라우드", "en": "Cloud" } },
+    {
+      "id": "security",
+      "icon": "shield",
+      "name": { "ko": "인터넷·보안", "en": "Internet & Security" },
+      "shortName": { "ko": "보안", "en": "Security" }
+    }
+  ]
+}

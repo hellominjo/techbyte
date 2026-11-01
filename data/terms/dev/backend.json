@@ -1,0 +1,10 @@
+{
+  "order": 110,
+  "updatedAt": "2026-11-01",
+  "term": { "ko": "백엔드", "en": "Backend" },
+  "description": {
+    "ko": "눈에 보이지 않는 곳에서 데이터를 저장하고 처리하는 부분이에요.",
+    "en": "The behind-the-scenes part that stores and processes data."
+  },
+  "related": [{ "id": "frontend", "type": "compare" }, { "id": "server", "type": "related" }]
+}

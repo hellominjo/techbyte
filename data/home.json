@@ -1,0 +1,15 @@
+{
+  "todayTerm": "rag",
+  "termsPerPage": 6,
+  "popularTerms": [
+    "llm",
+    "api",
+    "rag",
+    "vector-db",
+    "fine-tuning",
+    "prompt",
+    "embedding",
+    "cloud",
+    "hallucination"
+  ]
+}

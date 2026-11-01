@@ -1,0 +1,275 @@
+{
+  "about": {
+    "title": {
+      "ko": "서비스 소개",
+      "en": "About"
+    },
+    "sections": [
+      {
+        "body": {
+          "ko": [
+            "{{brandName}}는 뉴스, 회의, 업무 메신저에서 불쑥 마주치는 낯선 IT 용어를 누구나 이해할 수 있는 말로 풀어 주는 용어 사전이에요. 어려운 정의를 나열하는 대신, 전공 지식이 없어도 한 번 읽으면 감이 오도록 설명합니다."
+          ],
+          "en": [
+            "{{brandName}} is a glossary that explains the unfamiliar IT terms you run into in the news, meetings and work chats, in words anyone can understand. Instead of listing difficult definitions, we explain things so they click in one read, no technical background needed."
+          ]
+        }
+      },
+      {
+        "type": "cards",
+        "heading": {
+          "ko": "용어 하나에 이만큼 담았어요",
+          "en": "What every term includes"
+        },
+        "items": [
+          {
+            "icon": "text",
+            "title": {
+              "ko": "한 줄 요약",
+              "en": "One-line summary"
+            },
+            "text": {
+              "ko": "핵심을 한 문장으로 먼저 알려 드려요.",
+              "en": "The core idea in a single sentence."
+            }
+          },
+          {
+            "icon": "lightbulb",
+            "title": {
+              "ko": "쉽게 비유하면",
+              "en": "Think of it like this"
+            },
+            "text": {
+              "ko": "익숙한 일상 장면에 빗대어 감을 잡아요.",
+              "en": "A familiar everyday comparison."
+            }
+          },
+          {
+            "icon": "book",
+            "title": {
+              "ko": "조금 더 자세히",
+              "en": "A little more detail"
+            },
+            "text": {
+              "ko": "원리가 궁금할 때 한 걸음 더 들어가요.",
+              "en": "How it works, one step deeper."
+            }
+          },
+          {
+            "icon": "list",
+            "title": {
+              "ko": "활용 예시",
+              "en": "Where it's used"
+            },
+            "text": {
+              "ko": "실제로 어디에 쓰이는지 보여 드려요.",
+              "en": "Real-world places you'll see it."
+            }
+          },
+          {
+            "icon": "link",
+            "title": {
+              "ko": "함께 보면 좋은 용어",
+              "en": "Related terms"
+            },
+            "text": {
+              "ko": "먼저 알면 좋은 용어, 자주 비교되는 용어를 이어 드려요.",
+              "en": "What to learn first and what it's often compared with."
+            }
+          },
+          {
+            "icon": "wrench",
+            "title": {
+              "ko": "써 보면 좋은 도구",
+              "en": "Tools to try"
+            },
+            "text": {
+              "ko": "직접 경험하며 이해할 수 있는 도구를 소개해요.",
+              "en": "Tools that help it click by trying."
+            }
+          }
+        ]
+      },
+      {
+        "type": "steps",
+        "heading": {
+          "ko": "이렇게 이용해 보세요",
+          "en": "How to use it"
+        },
+        "items": [
+          {
+            "title": {
+              "ko": "검색하거나 분류를 골라요",
+              "en": "Search or pick a category"
+            },
+            "text": {
+              "ko": "한글·영어 모두 검색되고, 정식 명칭과 설명까지 함께 찾아 드려요.",
+              "en": "Search in Korean or English, including full names and descriptions."
+            }
+          },
+          {
+            "title": {
+              "ko": "한 줄 요약과 비유로 감을 잡아요",
+              "en": "Get the gist"
+            },
+            "text": {
+              "ko": "요약과 비유만 읽어도 대화에서 바로 쓸 수 있을 만큼 이해돼요.",
+              "en": "The summary and analogy alone are enough to follow a conversation."
+            }
+          },
+          {
+            "title": {
+              "ko": "이어진 용어로 넓혀 가요",
+              "en": "Follow the links"
+            },
+            "text": {
+              "ko": "꼬리표를 따라 다음 개념으로 자연스럽게 넘어가요.",
+              "en": "Labels guide you naturally to the next idea."
+            }
+          },
+          {
+            "title": {
+              "ko": "오늘의 용어로 매일 하나씩",
+              "en": "One a day"
+            },
+            "text": {
+              "ko": "메인 화면의 '오늘의 IT 용어'와 '많이 찾는 용어'에서 시작해 보세요.",
+              "en": "Start with \"Today's IT term\" and \"Popular IT terms\" on the home page."
+            }
+          }
+        ]
+      },
+      {
+        "type": "categories",
+        "heading": {
+          "ko": "이런 분야를 다뤄요",
+          "en": "Topics we cover"
+        }
+      },
+      {
+        "type": "checklist",
+        "heading": {
+          "ko": "누구나 편하게",
+          "en": "Comfortable for everyone"
+        },
+        "items": [
+          {
+            "ko": "회원가입 없이 바로 이용",
+            "en": "No sign-up needed"
+          },
+          {
+            "ko": "PC·모바일 어디서든",
+            "en": "Works on desktop and mobile"
+          },
+          {
+            "ko": "한국어 / 영어 전환",
+            "en": "Korean / English"
+          },
+          {
+            "ko": "눈이 편한 다크 모드",
+            "en": "Easy-on-the-eyes dark mode"
+          }
+        ]
+      },
+      {
+        "type": "cta",
+        "heading": {
+          "ko": "함께 만들어 가요",
+          "en": "Build it with us"
+        },
+        "text": {
+          "ko": "궁금한데 아직 없는 용어나 잘못된 설명을 발견했다면 알려 주세요. 보내 주신 의견으로 용어를 계속 늘려 갑니다.",
+          "en": "Missing a term or spotted a mistake? Let us know. We keep adding terms based on your feedback."
+        },
+        "link": {
+          "href": "/contact",
+          "label": {
+            "ko": "문의하기",
+            "en": "Contact us"
+          }
+        }
+      }
+    ]
+  },
+  "privacy": {
+    "title": { "ko": "개인정보처리방침", "en": "Privacy Policy" },
+    "sections": [
+      {
+        "body": {
+          "ko": [
+            "{{siteName}}(이하 '서비스')는 이용자의 개인정보를 소중히 여기며, 관련 법령을 준수합니다."
+          ],
+          "en": [
+            "{{siteName}} (the \"Service\") values your privacy and complies with applicable laws."
+          ]
+        }
+      },
+      {
+        "heading": { "ko": "1. 수집하는 개인정보", "en": "1. Information we collect" },
+        "body": {
+          "ko": [
+            "서비스는 회원가입 없이 이용할 수 있으며, 이름·연락처 등 개인을 식별할 수 있는 정보를 수집하지 않습니다.",
+            "문의 메일을 보내 주시는 경우, 답변을 위해 보내 주신 이메일 주소와 문의 내용을 보관합니다."
+          ],
+          "en": [
+            "The Service can be used without signing up, and we do not collect personally identifiable information such as names or phone numbers.",
+            "If you email us, we keep your email address and message in order to reply."
+          ]
+        }
+      },
+      {
+        "heading": { "ko": "2. 브라우저 저장 정보", "en": "2. Data stored in your browser" },
+        "body": {
+          "ko": [
+            "화면 모드(다크/라이트)와 언어 설정을 기억하기 위해 이용자의 브라우저(로컬 스토리지)에 설정값을 저장합니다. 이 정보는 서버로 전송되지 않으며, 브라우저 설정에서 언제든 삭제할 수 있습니다."
+          ],
+          "en": [
+            "To remember your display mode (dark/light) and language, we save these settings in your browser's local storage. This data is never sent to our servers and can be deleted at any time in your browser settings."
+          ]
+        }
+      },
+      {
+        "heading": { "ko": "3. 보관 기간", "en": "3. Retention" },
+        "body": {
+          "ko": ["문의 내용은 답변 완료 후 {{retentionPeriod}} 동안 보관한 뒤 파기합니다."],
+          "en": ["Inquiries are kept for {{retentionPeriod}} after we reply, then deleted."]
+        }
+      },
+      {
+        "heading": { "ko": "4. 문의처", "en": "4. Contact" },
+        "body": {
+          "ko": ["개인정보 관련 문의: {{contactEmail}}"],
+          "en": ["Privacy inquiries: {{contactEmail}}"]
+        }
+      },
+      {
+        "heading": { "ko": "시행일", "en": "Effective date" },
+        "body": {
+          "ko": ["이 방침은 {{effectiveDate}}부터 적용됩니다."],
+          "en": ["This policy is effective as of {{effectiveDate}}."]
+        }
+      }
+    ]
+  },
+  "contact": {
+    "title": { "ko": "문의하기", "en": "Contact" },
+    "inquiryTypes": [
+      { "id": "service", "name": { "ko": "서비스 문의", "en": "Service question" } },
+      { "id": "term-request", "name": { "ko": "용어 추가 요청", "en": "Term request" } },
+      { "id": "correction", "name": { "ko": "잘못된 설명 신고", "en": "Correction" } },
+      { "id": "etc", "name": { "ko": "기타", "en": "Other" } }
+    ],
+    "sections": [
+      {
+        "body": {
+          "ko": [
+            "궁금한 점이나 추가했으면 하는 용어, 잘못된 설명이 있다면 언제든 알려 주세요."
+          ],
+          "en": [
+            "Questions, term requests or corrections are always welcome."
+          ]
+        }
+      }
+    ]
+  }
+}

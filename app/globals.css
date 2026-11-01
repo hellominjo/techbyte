@@ -1,26 +1,147 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
 :root {
+  color-scheme: light;
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #111111;
+  --muted: #555555;
+  --placeholder: #9a9a9a;
+  --surface: #f4f4f5;
+  --surface-hover: #e9e9eb;
+  --line: #e5e5e5;
+  --accent: #1d7a68;
+  --box-analogy: #f1f8f6; /* 쉽게 비유하면 */
+  --box-examples: #f1f1f1; /* 활용 예시 */
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-muted: var(--muted);
+  --color-placeholder: var(--placeholder);
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-box-analogy: var(--box-analogy);
+  --color-box-examples: var(--box-examples);
+  --font-sans: var(--font-noto-sans-kr), system-ui, sans-serif;}
+
+/* 다크 테마: <html data-theme="dark"> 일 때 적용 */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --background: #0f0f10;
+  --foreground: #f2f2f2;
+  --muted: #a3a3a3;
+  --placeholder: #6b6b6b;
+  --surface: #1c1c1e;
+  --surface-hover: #2a2a2d;
+  --line: #2a2a2a;
+  --accent: #5cc6b0;
+  --box-analogy: #15201e; /* 쉽게 비유하면 */
+  --box-examples: #272727; /* 활용 예시 */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Tailwind v4는 버튼 커서를 default로 두므로 손가락 커서로 지정 */
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  word-break: keep-all;
+}
+
+/* 마크다운 글 본문 (content/*.md → 쉽게 읽는 IT, 용어 가이드). 용어 상세 페이지와 같은 톤 */
+@layer components {
+  .markdown {
+    font-size: 1rem;
+    line-height: 2;
+    color: color-mix(in oklab, var(--foreground) 85%, transparent);
+  }
+  .markdown > * + * {
+    margin-top: 1rem;
+  }
+  .markdown h2 {
+    margin-top: 2.5rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    line-height: 1.4;
+    color: var(--foreground);
+  }
+  .markdown h3 {
+    margin-top: 2rem;
+    font-size: 1.0625rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: var(--foreground);
+  }
+  .markdown strong {
+    font-weight: 700;
+    color: var(--foreground);
+  }
+  .markdown a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  .markdown ul,
+  .markdown ol {
+    padding-left: 1.25rem;
+  }
+  .markdown ul {
+    list-style: disc;
+  }
+  .markdown ol {
+    list-style: decimal;
+  }
+  .markdown li + li {
+    margin-top: 0.25rem;
+  }
+  /* 인용(>)은 '쉽게 비유하면' 박스와 같은 모양. 첫 줄을 **굵게** 쓰면 박스 제목처럼 보임 */
+  .markdown blockquote {
+    border-radius: 0.75rem;
+    background: var(--box-analogy);
+    padding: 1.25rem 1.5rem;
+  }
+  .markdown blockquote > * + * {
+    margin-top: 0.5rem;
+  }
+  .markdown table {
+    width: 100%;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+  }
+  .markdown th,
+  .markdown td {
+    padding: 0.75rem 0.75rem 0.75rem 0;
+    text-align: left;
+    vertical-align: top;
+  }
+  .markdown thead th {
+    font-weight: 700;
+    color: var(--foreground);
+  }
+  .markdown tbody tr {
+    border-top: 1px solid var(--line);
+  }
+  .markdown code {
+    border-radius: 0.375rem;
+    background: var(--surface);
+    padding: 0.125rem 0.375rem;
+    font-size: 0.875em;
+  }
+  .markdown hr {
+    margin: 2.5rem 0;
+    border-color: var(--line);
+  }
 }

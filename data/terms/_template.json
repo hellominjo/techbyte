@@ -1,0 +1,57 @@
+{
+  "order": 1000,
+  "updatedAt": "2026-11-01",
+  "term": { "ko": "용어 이름 (필수)", "en": "Term name" },
+  "fullName": { "ko": "정식 명칭 (선택, 없으면 이 줄 삭제)", "en": "Full name" },
+  "description": { "ko": "한 줄 요약 (필수)", "en": "One-line summary" },
+  "analogy": { "ko": "쉽게 비유하면 (선택)", "en": "Analogy" },
+  "details": {
+    "ko": ["조금 더 자세히: 문단 1", "문단 2"],
+    "en": ["Paragraph 1", "Paragraph 2"]
+  },
+  "background": {
+    "ko": ["왜 생겼나요: 문단 1", "문단 2"],
+    "en": ["Paragraph 1", "Paragraph 2"]
+  },
+  "howItWorks": {
+    "ko": [
+      { "title": "1단계 제목", "text": "설명" },
+      { "title": "2단계 제목", "text": "설명" },
+      { "title": "3단계 제목", "text": "설명" }
+    ],
+    "en": [
+      { "title": "Step 1", "text": "Description" },
+      { "title": "Step 2", "text": "Description" },
+      { "title": "Step 3", "text": "Description" }
+    ]
+  },
+  "examples": {
+    "ko": ["활용 예시 1", "활용 예시 2", "활용 예시 3"],
+    "en": ["Example 1", "Example 2", "Example 3"]
+  },
+  "usage": {
+    "ko": [
+      { "title": "이렇게 쓰여요: 장면 제목", "text": "실제 상황과 개발자와 대화할 때 쓰는 말 ('○○로 처리하자'처럼)" }
+    ],
+    "en": [{ "title": "Scene title", "text": "A real situation and how you'd say it to developers" }]
+  },
+  "comparison": {
+    "target": "비교할-용어-id",
+    "rows": [
+      {
+        "label": { "ko": "비교 항목", "en": "Aspect" },
+        "values": [{ "ko": "이 용어", "en": "This term" }, { "ko": "비교 용어", "en": "Other term" }]
+      }
+    ]
+  },
+  "misconceptions": [
+    { "myth": { "ko": "흔한 오해?", "en": "Myth?" }, "fact": { "ko": "사실은…", "en": "Actually…" } }
+  ],
+  "keywords": ["관련-용어-id", "또는 그냥 글자"],
+  "tools": [{ "id": "chatgpt", "note": { "ko": "이 용어와 관련한 도구 설명 (선택)", "en": "Note" } }],
+  "related": [
+    { "id": "먼저-알면-좋은-용어-id", "type": "prerequisite" },
+    { "id": "자주-비교되는-용어-id", "type": "compare" },
+    { "id": "관련-있는-용어-id", "type": "related" }
+  ]
+}

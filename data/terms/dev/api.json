@@ -1,0 +1,25 @@
+{
+  "order": 10,
+  "updatedAt": "2026-11-01",
+  "term": { "ko": "응용 프로그램 인터페이스", "en": "API" },
+  "fullName": { "ko": "응용 프로그램 인터페이스", "en": "Application Programming Interface" },
+  "description": {
+    "ko": "프로그램끼리 서로 기능을 빌려 쓰게 해 주는 주문 창구예요.",
+    "en": "An ordering window that lets programs borrow each other's features."
+  },
+  "analogy": {
+    "ko": "식당에서 손님이 주방에 직접 들어가지 않고, 메뉴판을 보고 점원에게 주문하는 것과 같아요.",
+    "en": "Like ordering from a waiter using a menu instead of walking into the kitchen yourself."
+  },
+  "details": {
+    "ko": [
+      "프로그램은 다른 프로그램의 내부 구조를 몰라도, 정해진 규칙에 맞춰 요청만 보내면 원하는 결과를 받을 수 있어요.",
+      "예를 들어 날씨 앱은 기상청 API에 '오늘 서울 날씨'를 요청해서 받은 정보를 화면에 보여 줘요."
+    ],
+    "en": [
+      "A program can get what it needs from another program just by sending a request in an agreed format, without knowing how it works inside.",
+      "For example, a weather app asks a weather service's API for today's forecast and shows the answer on screen."
+    ]
+  },
+  "related": [{ "id": "backend", "type": "related" }, { "id": "server", "type": "related" }]
+}

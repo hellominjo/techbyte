@@ -1,0 +1,35 @@
+{
+  "order": 40,
+  "updatedAt": "2026-11-01",
+  "term": { "ko": "대규모 언어 모델", "en": "LLM" },
+  "fullName": { "ko": "대규모 언어 모델", "en": "Large Language Model" },
+  "description": {
+    "ko": "사람의 글을 배워서 글을 읽고 쓰는 AI예요.",
+    "en": "An AI that learned from human writing to read and write text."
+  },
+  "analogy": {
+    "ko": "세상의 책을 엄청나게 많이 읽어서, 문장의 다음 말을 아주 자연스럽게 이어 쓸 수 있게 된 사람과 같아요.",
+    "en": "Like someone who has read an enormous number of books and can naturally continue any sentence."
+  },
+  "details": {
+    "ko": [
+      "LLM은 방대한 글을 학습해서 단어와 문장 사이의 패턴을 익혀요. 그래서 질문에 답하고, 글을 요약하고, 번역하는 등 다양한 일을 할 수 있어요.",
+      "다만 학습한 시점 이후의 정보는 모르고, 그럴듯하지만 틀린 내용을 말할 때도 있어요."
+    ],
+    "en": [
+      "An LLM learns patterns between words and sentences from huge amounts of text, so it can answer questions, summarize, translate and more.",
+      "However, it doesn't know about things after its training, and it sometimes says things that sound right but are wrong."
+    ]
+  },
+  "examples": {
+    "ko": ["질문에 답해 주는 AI 챗봇", "긴 글 요약과 번역", "이메일·보고서 초안 작성"],
+    "en": [
+      "AI chatbots that answer questions",
+      "Summarizing and translating long text",
+      "Drafting emails and reports"
+    ]
+  },
+  "keywords": ["prompt", "hallucination", "fine-tuning", "rag"],
+  "tools": [{ "id": "chatgpt" }, { "id": "claude" }, { "id": "gemini" }],
+  "related": [{ "id": "prompt", "type": "related" }, { "id": "hallucination", "type": "related" }]
+}

@@ -1,0 +1,10 @@
+{
+  "order": 90,
+  "updatedAt": "2026-11-01",
+  "term": { "ko": "벡터 데이터베이스", "en": "Vector database" },
+  "description": {
+    "ko": "의미가 비슷한 자료를 빠르게 찾을 수 있도록 임베딩을 저장해 두는 데이터베이스예요.",
+    "en": "A database that stores embeddings so you can quickly find material with similar meaning."
+  },
+  "related": [{ "id": "embedding", "type": "prerequisite" }, { "id": "rag", "type": "related" }]
+}

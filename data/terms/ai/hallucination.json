@@ -1,0 +1,14 @@
+{
+  "order": 60,
+  "updatedAt": "2026-11-01",
+  "term": { "ko": "환각", "en": "Hallucination" },
+  "description": {
+    "ko": "AI가 틀린 내용을 그럴듯하게 지어내는 현상이에요.",
+    "en": "When an AI confidently makes up something that isn't true."
+  },
+  "analogy": {
+    "ko": "모르는 질문을 받은 사람이 모른다고 하지 않고, 아는 척 그럴듯하게 둘러대는 것과 같아요.",
+    "en": "Like someone who, instead of admitting they don't know, gives a confident but made-up answer."
+  },
+  "related": [{ "id": "llm", "type": "prerequisite" }, { "id": "rag", "type": "related" }]
+}

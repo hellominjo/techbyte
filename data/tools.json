@@ -1,0 +1,40 @@
+{
+  "tools": [
+    {
+      "id": "chatgpt",
+      "name": "ChatGPT",
+      "url": "https://chatgpt.com",
+      "description": {
+        "ko": "질문에 답하고 글을 써 주는 대화형 AI예요.",
+        "en": "A conversational AI that answers questions and writes text."
+      }
+    },
+    {
+      "id": "claude",
+      "name": "Claude",
+      "url": "https://claude.ai",
+      "description": {
+        "ko": "긴 문서를 읽고 정리하거나 글을 써 주는 대화형 AI예요.",
+        "en": "A conversational AI that reads long documents, summarizes and writes."
+      }
+    },
+    {
+      "id": "gemini",
+      "name": "Gemini",
+      "url": "https://gemini.google.com",
+      "description": {
+        "ko": "구글이 만든 대화형 AI예요.",
+        "en": "A conversational AI made by Google."
+      }
+    },
+    {
+      "id": "perplexity",
+      "name": "Perplexity",
+      "url": "https://www.perplexity.ai",
+      "description": {
+        "ko": "웹을 검색해서 출처와 함께 답해 주는 AI 검색 서비스예요.",
+        "en": "An AI search service that answers with sources from the web."
+      }
+    }
+  ]
+}

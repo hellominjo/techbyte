@@ -1,0 +1,14 @@
+{
+  "order": 30,
+  "updatedAt": "2026-11-01",
+  "term": { "ko": "클라우드", "en": "Cloud" },
+  "description": {
+    "ko": "내 컴퓨터 대신 인터넷 너머의 컴퓨터를 빌려 쓰는 방식이에요.",
+    "en": "Renting computers over the internet instead of using your own."
+  },
+  "analogy": {
+    "ko": "집에 발전기를 두는 대신 전력 회사의 전기를 쓴 만큼만 요금을 내는 것과 같아요.",
+    "en": "Like paying the power company for the electricity you use instead of running your own generator."
+  },
+  "related": [{ "id": "server", "type": "prerequisite" }]
+}
