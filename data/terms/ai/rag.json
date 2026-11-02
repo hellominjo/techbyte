@@ -1,8 +1,18 @@
 {
   "order": 20,
-  "updatedAt": "2026-11-01",
-  "term": { "ko": "검색 증강 생성", "en": "RAG" },
-  "fullName": { "ko": "검색 증강 생성", "en": "Retrieval-Augmented Generation" },
+  "updatedAt": "2026-11-02",
+  "term": {
+    "ko": "검색 증강 생성",
+    "en": "RAG"
+  },
+  "fullName": {
+    "ko": "검색 증강 생성",
+    "en": "Retrieval-Augmented Generation"
+  },
+  "definition": {
+    "ko": "RAG(Retrieval-Augmented Generation, 검색 증강 생성)는 외부 정보 검색과 언어 모델의 텍스트 생성을 결합하는 방식이에요. 질문과 관련된 문서나 정보를 찾아 모델에 제공하고, 모델은 학습한 지식과 검색된 자료를 함께 활용해 답변을 만들어요. 회사 내부 문서나 갱신되는 정보를 참고하도록 구성할 수 있지만, 검색과 해석이 잘못되면 답도 틀릴 수 있어요. ",
+    "en": "RAG (Retrieval-Augmented Generation) combines external information retrieval with language-model text generation. Relevant documents or information are retrieved and supplied to the model, which generates an answer using both learned knowledge and the retrieved material. This can make internal documents or updated information available at response time, but retrieval and interpretation errors can still produce incorrect answers."
+  },
   "description": {
     "ko": "AI가 답하기 전에 관련 자료를 먼저 찾아보고, 그 내용을 바탕으로 답하는 방식이에요.",
     "en": "A way for AI to look up relevant material first and answer based on it."
@@ -33,10 +43,22 @@
   },
   "howItWorks": {
     "ko": [
-      { "title": "자료 준비", "text": "문서를 작은 조각으로 나누고, 각 조각의 의미를 숫자 목록(임베딩)으로 바꿔 벡터 데이터베이스에 저장해 둬요." },
-      { "title": "검색", "text": "질문이 들어오면 질문도 같은 방식으로 숫자로 바꾼 뒤, 의미가 가장 가까운 문서 조각 몇 개를 찾아요." },
-      { "title": "전달", "text": "찾은 조각을 질문과 함께 프롬프트에 넣어 AI에게 건네요. '아래 자료를 참고해서 답해 줘'라고 부탁하는 셈이에요." },
-      { "title": "답변", "text": "AI는 건네받은 자료를 읽고 답을 만들어요. 어떤 문서를 참고했는지 출처를 함께 보여 줄 수도 있어요." }
+      {
+        "title": "자료 준비",
+        "text": "문서를 작은 조각으로 나누고, 각 조각의 의미를 숫자 목록(임베딩)으로 바꿔 벡터 데이터베이스에 저장해 둬요."
+      },
+      {
+        "title": "검색",
+        "text": "질문이 들어오면 질문도 같은 방식으로 숫자로 바꾼 뒤, 의미가 가장 가까운 문서 조각 몇 개를 찾아요."
+      },
+      {
+        "title": "전달",
+        "text": "찾은 조각을 질문과 함께 프롬프트에 넣어 AI에게 건네요. '아래 자료를 참고해서 답해 줘'라고 부탁하는 셈이에요."
+      },
+      {
+        "title": "답변",
+        "text": "AI는 건네받은 자료를 읽고 답을 만들어요. 어떤 문서를 참고했는지 출처를 함께 보여 줄 수도 있어요."
+      }
     ],
     "en": [
       {
@@ -58,7 +80,11 @@
     ]
   },
   "examples": {
-    "ko": ["회사 내부 자료를 참고해 답하는 사내 챗봇", "최신 뉴스나 문서를 반영하는 정보 검색 AI", "교재나 강의 자료를 활용하는 학습 도우미"],
+    "ko": [
+      "회사 내부 자료를 참고해 답하는 사내 챗봇",
+      "최신 뉴스나 문서를 반영하는 정보 검색 AI",
+      "교재나 강의 자료를 활용하는 학습 도우미"
+    ],
     "en": [
       "An internal chatbot that answers from company documents",
       "An AI search tool that reflects the latest news and documents",
@@ -83,37 +109,79 @@
     "target": "fine-tuning",
     "rows": [
       {
-        "label": { "ko": "방법", "en": "How" },
+        "label": {
+          "ko": "방법",
+          "en": "How"
+        },
         "values": [
-          { "ko": "답할 때 자료를 찾아 함께 넘겨줌", "en": "Finds material and passes it along at answer time" },
-          { "ko": "모델에 자료를 추가로 학습시킴", "en": "Trains the model further on the material" }
+          {
+            "ko": "답할 때 자료를 찾아 함께 넘겨줌",
+            "en": "Finds material and passes it along at answer time"
+          },
+          {
+            "ko": "모델에 자료를 추가로 학습시킴",
+            "en": "Trains the model further on the material"
+          }
         ]
       },
       {
-        "label": { "ko": "최신 정보 반영", "en": "Keeping up to date" },
+        "label": {
+          "ko": "최신 정보 반영",
+          "en": "Keeping up to date"
+        },
         "values": [
-          { "ko": "문서만 바꾸면 바로 반영", "en": "Update the documents and it's reflected right away" },
-          { "ko": "다시 학습해야 반영", "en": "Needs retraining" }
+          {
+            "ko": "문서만 바꾸면 바로 반영",
+            "en": "Update the documents and it's reflected right away"
+          },
+          {
+            "ko": "다시 학습해야 반영",
+            "en": "Needs retraining"
+          }
         ]
       },
       {
-        "label": { "ko": "비용·시간", "en": "Cost and time" },
+        "label": {
+          "ko": "비용·시간",
+          "en": "Cost and time"
+        },
         "values": [
-          { "ko": "비교적 적게 듦", "en": "Relatively low" },
-          { "ko": "학습할 때마다 많이 듦", "en": "High, every time you train" }
+          {
+            "ko": "비교적 적게 듦",
+            "en": "Relatively low"
+          },
+          {
+            "ko": "학습할 때마다 많이 듦",
+            "en": "High, every time you train"
+          }
         ]
       },
       {
-        "label": { "ko": "출처 확인", "en": "Sources" },
+        "label": {
+          "ko": "출처 확인",
+          "en": "Sources"
+        },
         "values": [
-          { "ko": "참고한 문서를 보여 줄 수 있음", "en": "Can show which documents were used" },
-          { "ko": "어디서 배운 내용인지 알기 어려움", "en": "Hard to tell where knowledge came from" }
+          {
+            "ko": "참고한 문서를 보여 줄 수 있음",
+            "en": "Can show which documents were used"
+          },
+          {
+            "ko": "어디서 배운 내용인지 알기 어려움",
+            "en": "Hard to tell where knowledge came from"
+          }
         ]
       },
       {
-        "label": { "ko": "잘 맞는 경우", "en": "Best for" },
+        "label": {
+          "ko": "잘 맞는 경우",
+          "en": "Best for"
+        },
         "values": [
-          { "ko": "자주 바뀌는 지식, 사내 문서", "en": "Frequently changing knowledge, internal documents" },
+          {
+            "ko": "자주 바뀌는 지식, 사내 문서",
+            "en": "Frequently changing knowledge, internal documents"
+          },
           {
             "ko": "말투·형식, 전문 분야 표현 익히기",
             "en": "Learning a tone, format or field-specific language"
@@ -124,21 +192,32 @@
   },
   "misconceptions": [
     {
-      "myth": { "ko": "RAG를 쓰면 환각이 완전히 사라진다?", "en": "RAG completely eliminates hallucinations?" },
+      "myth": {
+        "ko": "RAG를 쓰면 환각이 완전히 사라진다?",
+        "en": "RAG completely eliminates hallucinations?"
+      },
       "fact": {
         "ko": "환각을 크게 줄여 주지만 없애 주지는 못해요. 검색이 엉뚱한 문서를 가져오거나 AI가 자료를 잘못 해석하면 여전히 틀린 답이 나올 수 있어요. 그래서 출처를 함께 보여 줘서 사람이 확인할 수 있게 만드는 경우가 많아요.",
         "en": "It greatly reduces them, but doesn't eliminate them. If search brings back the wrong documents or the AI misreads the material, wrong answers can still happen. That's why many services show sources so people can check."
       }
     },
     {
-      "myth": { "ko": "RAG를 하면 AI가 새로운 지식을 배운다?", "en": "With RAG, the AI learns new knowledge?" },
+      "myth": {
+        "ko": "RAG를 하면 AI가 새로운 지식을 배운다?",
+        "en": "With RAG, the AI learns new knowledge?"
+      },
       "fact": {
         "ko": "AI 자체는 아무것도 새로 배우지 않아요. 질문할 때마다 자료를 옆에 펼쳐 줄 뿐이라, 자료를 빼면 다시 모르는 상태로 돌아가요. 지식을 모델 안에 새기는 건 파인튜닝 쪽이에요.",
         "en": "The AI itself learns nothing new. It's just handed open material for each question, so without the material it's back to not knowing. Building knowledge into the model is what fine-tuning does."
       }
     }
   ],
-  "keywords": ["llm", "vector-db", "embedding", "fine-tuning"],
+  "keywords": [
+    "llm",
+    "vector-db",
+    "embedding",
+    "fine-tuning"
+  ],
   "tools": [
     {
       "id": "chatgpt",
@@ -156,8 +235,17 @@
     }
   ],
   "related": [
-    { "id": "llm", "type": "prerequisite" },
-    { "id": "fine-tuning", "type": "compare" },
-    { "id": "hallucination", "type": "related" }
+    {
+      "id": "llm",
+      "type": "prerequisite"
+    },
+    {
+      "id": "fine-tuning",
+      "type": "compare"
+    },
+    {
+      "id": "hallucination",
+      "type": "related"
+    }
   ]
 }

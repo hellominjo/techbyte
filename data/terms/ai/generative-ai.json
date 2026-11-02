@@ -1,6 +1,6 @@
 {
   "order": 200,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "생성형 AI",
     "en": "Generative AI"
@@ -8,6 +8,10 @@
   "fullName": {
     "ko": "생성형 인공지능",
     "en": "Generative Artificial Intelligence"
+  },
+  "definition": {
+    "ko": "생성형 AI는 학습 데이터의 구조와 패턴을 바탕으로 입력에 맞는 글, 이미지, 음성이나 영상 등의 콘텐츠를 생성하는 인공지능의 범주예요. 언어 모델뿐 아니라 이미지와 소리를 만드는 다양한 모델을 포함해요. 결과를 새로 구성한다는 점이 특징이지만, 생성된 내용의 사실성이나 독창성, 사용 적합성이 자동으로 보장되는 것은 아니에요.",
+    "en": "Generative AI is a category of artificial intelligence that produces content such as text, images, audio or video from learned data patterns and an input. It includes language models and other generative models. Producing new outputs does not automatically guarantee factual accuracy, originality or suitability for use."
   },
   "description": {
     "ko": "학습한 패턴을 바탕으로 글, 이미지, 소리 같은 새로운 콘텐츠를 만드는 AI예요.",

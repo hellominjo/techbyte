@@ -1,6 +1,6 @@
 {
   "order": 790,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "CI/CD",
     "en": "CI/CD"
@@ -8,6 +8,10 @@
   "fullName": {
     "ko": "지속적 통합 / 지속적 제공 또는 지속적 배포",
     "en": "Continuous Integration / Continuous Delivery or Continuous Deployment"
+  },
+  "definition": {
+    "ko": "CI/CD는 변경을 자주 통합하고 자동으로 검증해 출시 가능한 상태나 운영 배포로 이어 가는 개발 방식이에요. CI는 지속적 통합이고, CD는 승인 후 배포할 수 있는 상태를 유지하는 지속적 제공 또는 검사를 통과한 변경을 자동 반영하는 지속적 배포를 뜻해요. 자동화 도구만이 아니라 통합 습관과 의미 있는 검사, 배포·복구 기준이 함께 필요해요.",
+    "en": "CI/CD combines frequent integration and automated verification with releasable software or production deployment. CI means continuous integration; CD can mean continuous delivery with a release decision or continuous deployment of passing changes. Beyond tools, it requires integration practices, meaningful checks and deployment and recovery criteria."
   },
   "description": {
     "ko": "코드 변경을 자주 통합·검증하고 출시 준비나 배포까지 반복 가능하게 만드는 개발 방식이에요.",

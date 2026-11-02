@@ -1,6 +1,6 @@
 {
   "order": 1260,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "OAuth",
     "en": "OAuth"
@@ -8,6 +8,10 @@
   "fullName": {
     "ko": "OAuth",
     "en": "OAuth"
+  },
+  "definition": {
+    "ko": "OAuth는 앱에 비밀번호를 전달하지 않고 제한된 자원 접근 권한을 위임하는 인가 프레임워크예요. OAuth 2.0에서는 인가 서버가 발급한 접근 토큰을 앱이 사용하고, 자원 서버가 유효성과 허용 범위를 확인해요. 사용자 신원 확인 자체가 주목적은 아니며, 로그인에는 OpenID Connect 같은 인증 계층과 그에 맞는 검증을 함께 사용해요.",
+    "en": "OAuth is an authorization framework for delegated resource access without giving an application a user’s password. In OAuth 2.0, applications use authorization-server-issued access tokens that resource servers validate for permitted access. User authentication is not its main role; sign-in uses a layer such as OpenID Connect with appropriate validation."
   },
   "description": {
     "ko": "앱에 비밀번호를 넘기지 않고 정해진 범위의 자원 접근 권한을 위임하는 프레임워크예요.",

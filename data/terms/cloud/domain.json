@@ -1,9 +1,13 @@
 {
   "order": 1070,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "도메인",
     "en": "Domain"
+  },
+  "definition": {
+    "ko": "도메인은 인터넷의 이름 공간에서 서비스와 자원 등을 식별하는 계층형 이름이에요. 등록한 이름 아래에 하위 도메인을 구성하고 DNS 레코드로 웹이나 메일 등의 연결 정보를 제공할 수 있어요. IP 주소나 URL 전체와는 다르며, 이름 등록만으로 웹 콘텐츠나 실행 환경이 만들어지는 것은 아니에요.",
+    "en": "A domain is a hierarchical name in the internet namespace used to identify services and resources. Subdomains and DNS records can supply web or mail connection information. It differs from an IP address or complete URL, and registration alone does not create content or hosting."
   },
   "description": {
     "ko": "인터넷에서 서비스 등을 식별하기 위해 사용하는 계층형 이름이에요.",

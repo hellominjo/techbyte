@@ -1,9 +1,13 @@
 {
   "order": 220,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "딥러닝",
     "en": "Deep Learning"
+  },
+  "definition": {
+    "ko": "딥러닝은 여러 층으로 구성된 신경망을 학습시켜 데이터의 표현과 복잡한 관계를 익히는 머신러닝 방법이에요. 각 층이 입력을 변환하고 학습 과정에서 가중치를 조정하면서, 작업에 유용한 특징을 함께 배워요. 이미지·음성·언어의 인식과 생성 등에 널리 쓰이지만, 모든 문제에서 다른 방법보다 우수하거나 적은 자원으로 학습되는 것은 아니에요.",
+    "en": "Deep learning is machine learning that trains multilayer neural networks to learn representations and complex relationships in data. Layers transform inputs, while weight updates help learn features useful for the task. It is widely used for recognition and generation in vision, audio and language, but is not superior or resource-efficient for every problem."
   },
   "description": {
     "ko": "여러 층으로 쌓은 신경망이 데이터의 복잡한 패턴을 배우는 머신러닝 방법이에요.",

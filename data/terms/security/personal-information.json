@@ -1,0 +1,130 @@
+{
+  "order": 1310,
+  "updatedAt": "2026-11-02",
+  "term": {
+    "ko": "개인정보",
+    "en": "Personal Information"
+  },
+  "definition": {
+    "ko": "개인정보는 살아 있는 개인을 직접 알아볼 수 있거나 다른 정보와 쉽게 결합해 알아볼 수 있는 정보예요. 이름과 연락처뿐 아니라 식별자와 위치·행동 기록 등도 맥락에 따라 해당할 수 있어요. 이름 삭제나 해시 변환만으로 익명화되는 것은 아니고, 가명정보도 개인정보에 해당할 수 있어 이용 목적과 접근·보존·삭제를 함께 관리해야 해요.",
+    "en": "Personal information identifies a living person directly or when readily combined with other information. Identifiers, location and behavior records can qualify alongside names and contact details, depending on context. Removing names or hashing does not automatically anonymize data; pseudonymized information may remain personal, requiring purpose, access and lifecycle management."
+  },
+  "description": {
+    "ko": "살아 있는 개인을 알아볼 수 있거나 다른 정보와 쉽게 결합해 알아볼 수 있는 정보예요.",
+    "en": "Information that identifies a living individual, directly or when readily combined with other information."
+  },
+  "analogy": {
+    "ko": "이름표 하나뿐 아니라 여러 단서를 맞춰 특정 사람을 알아보게 하는 퍼즐 조각도 포함돼요.",
+    "en": "Like both a name tag and puzzle pieces that can identify someone when combined."
+  },
+  "details": {
+    "ko": [
+      "이름과 연락처뿐 아니라 위치·접속 기록이나 식별자 등도 맥락과 결합 가능성에 따라 개인정보가 될 수 있어요. 한 항목만 보고 기계적으로 판단하지 않아요.",
+      "가명처리해도 추가 정보로 개인을 연결할 수 있으면 개인정보일 수 있어요. 업무에서는 수집 목적과 최소 항목, 접근과 보존·삭제 기준을 함께 관리해요."
+    ],
+    "en": [
+      "Beyond names and contact details, location, access records or identifiers can be personal information depending on context and linkability.",
+      "Pseudonymized information can remain personal information when additional data can reconnect it to someone. Manage purpose, minimum fields, access, retention and deletion together."
+    ]
+  },
+  "background": {
+    "ko": [
+      "여러 서비스의 데이터가 결합되면 개인의 행동과 관계가 드러날 수 있어, 식별 가능성과 이용 맥락을 고려해 다뤄요."
+    ],
+    "en": [
+      "Combining service data can reveal individuals’ behavior and relationships, making identifiability and usage context important."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "식별 가능성 확인",
+        "text": "직접 식별과 다른 자료와의 결합 가능성을 살펴요."
+      },
+      {
+        "title": "처리 범위 설계",
+        "text": "목적에 필요한 항목, 접근 권한과 이용 범위를 정해요."
+      },
+      {
+        "title": "수명 관리",
+        "text": "보관, 제공과 삭제 과정에서도 식별과 노출 위험을 관리해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Assess identifiability",
+        "text": "Assess direct identification and linkage with other data."
+      },
+      {
+        "title": "Define processing scope",
+        "text": "Define necessary fields, access and usage for the purpose."
+      },
+      {
+        "title": "Manage the lifecycle",
+        "text": "Manage identification and exposure risks through storage, sharing and deletion."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "회원 연락처",
+      "개인과 연결되는 구매 내역",
+      "상황에 따라 식별 가능한 위치·접속 기록"
+    ],
+    "en": [
+      "Member contact details",
+      "Purchase records linked to a person",
+      "Location or access records that can identify someone in context"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "분석 데이터 제공",
+        "text": "“이름만 지우지 말고 조합하면 개인을 찾을 수 있는 항목도 살피고, 분석 목적에 필요한 범위만 제공하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Sharing analysis data",
+        "text": "Say: “Beyond removing names, assess identifying combinations and share only what the analysis needs.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "이름을 지우거나 값을 해시하면 익명정보인가요?",
+        "en": "Does removing names or hashing values anonymize data?"
+      },
+      "fact": {
+        "ko": "다른 정보와 연결하거나 값을 추측해 개인을 알아볼 수 있으면 그렇지 않아요. 가명처리와 익명화는 구분해야 해요.",
+        "en": "Not if linkage or guessing can still identify someone. Pseudonymization and anonymization are distinct."
+      }
+    }
+  ],
+  "keywords": [
+    "encryption",
+    "hash",
+    "data-governance",
+    "metadata"
+  ],
+  "related": [
+    {
+      "id": "encryption",
+      "type": "related"
+    },
+    {
+      "id": "hash",
+      "type": "related"
+    },
+    {
+      "id": "data-governance",
+      "type": "related"
+    },
+    {
+      "id": "metadata",
+      "type": "related"
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "order": 1015,
+  "updatedAt": "2026-11-02",
+  "term": {
+    "ko": "GCP",
+    "en": "GCP"
+  },
+  "fullName": {
+    "ko": "구글 클라우드 플랫폼",
+    "en": "Google Cloud Platform"
+  },
+  "definition": {
+    "ko": "GCP(Google Cloud Platform)는 구글이 제공하는 컴퓨팅, 저장소와 데이터 처리 등의 클라우드 서비스 플랫폼을 가리키는 이름이에요. Google Cloud의 인프라와 관리형 서비스를 조합해 앱과 분석 환경을 구성할 수 있어요. 특정 서비스 모델 하나나 단일 제품을 뜻하지 않으며, 선택한 서비스에 따라 운영 책임과 지원 범위, 비용 구조가 달라요.",
+    "en": "GCP (Google Cloud Platform) names Google’s platform of cloud services for computing, storage and data processing. Applications and analytical environments can combine Google Cloud infrastructure and managed services. It is neither one product nor one service model; responsibilities, capabilities and costs depend on the services selected."
+  },
+  "description": {
+    "ko": "구글이 앱 실행, 저장소와 데이터 처리 등을 서비스로 제공하는 클라우드 플랫폼이에요.",
+    "en": "Google’s cloud platform for application execution, storage, data processing and related services."
+  },
+  "analogy": {
+    "ko": "필요한 장비와 관리 서비스를 골라 조합하는 IT 시설 단지와 같아요.",
+    "en": "Like an IT facility where you select and combine equipment and managed services."
+  },
+  "details": {
+    "ko": [
+      "가상 머신과 관리형 실행 환경, 저장소와 데이터 서비스 등을 목적에 맞춰 조합해요. AWS나 Azure처럼 여러 수준의 서비스를 제공하며 하나의 고정된 운영 방식으로만 사용하지는 않아요.",
+      "프로젝트는 자원과 설정 등을 조직하는 기본 단위예요. 개발·시험·운영 환경의 분리와 권한, 비용 추적 경계를 설계할 때 활용할 수 있어요. 프로젝트가 같다고 자원의 위치나 접근 조건까지 모두 같아지는 것은 아니에요.",
+      "자원의 배치 위치와 장애 대응, 서비스별 제약을 확인해야 해요. 관리형 서비스를 선택해도 앱과 데이터, 접근 설정과 사용량을 관리하는 책임은 남아요."
+    ],
+    "en": [
+      "Combine virtual machines, managed runtimes, storage and data services for a purpose. Like AWS and Azure, it spans service types rather than prescribing one operational model.",
+      "Projects organize resources and settings and can help separate environments, permissions and cost tracking. Sharing a project does not make all resource locations or access conditions identical.",
+      "Check resource locations, failure handling and service constraints. Managed offerings still leave application, data, access and usage responsibilities."
+    ]
+  },
+  "background": {
+    "ko": [
+      "팀이 물리 장비부터 직접 구축하기보다 필요한 IT 자원을 빠르게 확보하고 관리형 기능을 조합하도록 제공해요. 데이터 처리와 앱 운영 등 목적별로 관리 범위와 확장 방식을 선택할 수 있어요."
+    ],
+    "en": [
+      "The platform lets teams provision IT resources and combine managed capabilities rather than first building physical infrastructure. Teams can choose management and scaling approaches for applications and data workloads."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "목적과 관리 경계 정하기",
+        "text": "앱의 처리량과 데이터 요구를 정하고 프로젝트·권한과 운영 책임을 나눠요."
+      },
+      {
+        "title": "서비스 연결과 배포",
+        "text": "필요한 실행 환경과 저장소를 구성하고 네트워크·접근 설정을 확인해 앱을 반영해요."
+      },
+      {
+        "title": "운영과 사용량 확인",
+        "text": "성능과 오류, 사용량과 비용을 관찰하고 복구와 자원 정리를 관리해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Define goals and boundaries",
+        "text": "Define workload and data requirements and establish project, access and operational boundaries."
+      },
+      {
+        "title": "Connect services and deploy",
+        "text": "Configure runtimes and storage, check networking and access and deploy the application."
+      },
+      {
+        "title": "Operate and review usage",
+        "text": "Monitor performance, errors, usage and costs and manage recovery and resource cleanup."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "웹·모바일 앱의 서버 기능 운영",
+      "파일 저장과 데이터 분석 환경 구성",
+      "컨테이너 기반 서비스 실행"
+    ],
+    "en": [
+      "Hosting backend capabilities for web and mobile apps",
+      "Building file-storage and analytics environments",
+      "Running container-based services"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "플랫폼 선택",
+        "text": "“GCP라는 이름만으로 고르기보다 필요한 기능과 데이터 위치, 팀 운영 역량과 전체 비용을 같은 조건에서 비교하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Choosing a platform",
+        "text": "Say: “Compare required features, data locations, operational skills and total costs under the same requirements rather than choosing by platform name.”"
+      }
+    ]
+  },
+  "comparison": {
+    "target": "aws",
+    "rows": [
+      {
+        "label": {
+          "ko": "제공자",
+          "en": "Provider"
+        },
+        "values": [
+          {
+            "ko": "구글",
+            "en": "Google"
+          },
+          {
+            "ko": "아마존",
+            "en": "Amazon"
+          }
+        ]
+      },
+      {
+        "label": {
+          "ko": "공통 범위",
+          "en": "Shared scope"
+        },
+        "values": [
+          {
+            "ko": "컴퓨팅, 저장소, 데이터와 관리형 서비스 등",
+            "en": "Compute, storage, data and managed services"
+          },
+          {
+            "ko": "컴퓨팅, 저장소, 데이터와 관리형 서비스 등",
+            "en": "Compute, storage, data and managed services"
+          }
+        ]
+      },
+      {
+        "label": {
+          "ko": "검토 기준",
+          "en": "Evaluation criteria"
+        },
+        "values": [
+          {
+            "ko": "실제 서비스별 지원 환경과 운영·비용 비교",
+            "en": "Compare actual service support, operations and costs"
+          },
+          {
+            "ko": "동일한 요구를 기준으로 개별 서비스 비교",
+            "en": "Compare individual services against the same requirements"
+          }
+        ]
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "GCP는 데이터 분석에만 쓰나요?",
+        "en": "Is GCP only for data analytics?"
+      },
+      "fact": {
+        "ko": "앱 실행과 저장소, 네트워크와 관리형 데이터 등 여러 용도로 활용해요. 적합성은 목적과 개별 서비스의 지원 범위로 판단해요.",
+        "en": "It serves application execution, storage, networking and managed data needs. Assess suitability by workload and actual service support."
+      }
+    },
+    {
+      "myth": {
+        "ko": "GCP로 옮기면 운영과 비용 관리가 필요 없나요?",
+        "en": "Does moving to GCP eliminate operational and cost management?"
+      },
+      "fact": {
+        "ko": "관리 범위는 선택한 서비스에 따라 달라요. 앱 오류와 데이터, 권한과 복구, 남아 있는 자원의 비용을 계속 확인해야 해요.",
+        "en": "Responsibilities vary by service. Application errors, data, permissions, recovery and ongoing resource charges still require attention."
+      }
+    }
+  ],
+  "keywords": [
+    "cloud",
+    "aws",
+    "azure",
+    "iaas",
+    "paas",
+    "container",
+    "storage"
+  ],
+  "related": [
+    {
+      "id": "cloud",
+      "type": "prerequisite"
+    },
+    {
+      "id": "aws",
+      "type": "compare"
+    },
+    {
+      "id": "azure",
+      "type": "related"
+    },
+    {
+      "id": "iaas",
+      "type": "related"
+    },
+    {
+      "id": "paas",
+      "type": "related"
+    },
+    {
+      "id": "container",
+      "type": "related"
+    },
+    {
+      "id": "storage",
+      "type": "related"
+    }
+  ]
+}

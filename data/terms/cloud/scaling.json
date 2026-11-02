@@ -1,9 +1,13 @@
 {
   "order": 1120,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "스케일링",
     "en": "Scaling"
+  },
+  "definition": {
+    "ko": "스케일링은 수요와 성능 요구에 맞춰 자원의 크기나 개수를 늘리거나 줄이는 일이에요. 한 자원의 CPU·메모리를 조절하는 수직 방식과 인스턴스 수를 조절하는 수평 방식이 있으며 수동 또는 자동으로 수행할 수 있어요. 준비 시간과 한도, 비용과 다른 시스템의 병목 때문에 확장 효과가 제한될 수 있어 실제 부하로 검증해야 해요.",
+    "en": "Scaling changes resource size or count to meet demand and performance requirements. Vertical scaling adjusts per-instance CPU or memory; horizontal scaling adjusts instance counts, manually or automatically. Startup delays, limits, costs and other bottlenecks can constrain gains, requiring realistic load validation."
   },
   "description": {
     "ko": "처리량과 성능 요구에 맞춰 컴퓨팅 자원의 크기나 개수를 조절하는 일이에요.",

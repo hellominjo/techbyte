@@ -1,9 +1,13 @@
 {
   "order": 70,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "프롬프트",
     "en": "Prompt"
+  },
+  "definition": {
+    "ko": "프롬프트는 모델이 이번 요청에서 무엇을 수행할지 판단하고 응답하도록 제공하는 입력 내용이에요. 질문과 지시뿐 아니라 참고 자료, 예시와 출력 조건을 포함할 수 있고, 모델이 지원하면 이미지나 음성도 함께 사용할 수 있어요. 사용자가 직접 작성한 문장 외에 앱이 붙이는 시스템 지시, 대화 기록과 도구 결과도 모델 입력의 일부가 될 수 있어요.",
+    "en": "A prompt is input that guides a model’s behavior and response for a request. It can include questions, instructions, references, examples and output constraints, plus images or audio when supported. Application-supplied system instructions, conversation history and tool results may form part of the model input alongside the user’s text."
   },
   "description": {
     "ko": "AI에게 할 일과 참고할 맥락을 전달하는 질문, 지시와 입력 내용이에요.",

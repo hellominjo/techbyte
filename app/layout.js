@@ -1,5 +1,6 @@
 import { Noto_Sans_KR } from "next/font/google";
 import Script from "next/script";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { themeInitScript } from "@/lib/theme";
 import { siteValue } from "@/lib/site";
 import SiteHeader from "@/app/ui/site-header";
@@ -47,6 +48,8 @@ export default function RootLayout({ children }) {
           <SiteFooter />
         </div>
       </body>
+      {/* Google tag (gtag.js) */}
+      <GoogleAnalytics gaId="G-89E2E9CLHR" />
     </html>
   );
 }

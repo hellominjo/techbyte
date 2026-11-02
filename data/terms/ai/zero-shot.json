@@ -1,9 +1,13 @@
 {
   "order": 340,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "제로샷",
     "en": "Zero-shot"
+  },
+  "definition": {
+    "ko": "제로샷은 새로운 작업의 예시 없이 설명이나 지시를 바탕으로 작업을 수행하는 접근이에요. LLM 프롬프팅에서는 원하는 분류나 요약의 입력·출력 예시를 넣지 않고 작업 기준만 전달하는 방식을 주로 뜻해요. 현재 프롬프트에 예시가 없다는 의미이며, 모델이 사전 학습에서 유사한 내용을 전혀 접하지 않았거나 아무 학습도 하지 않았다는 뜻은 아니에요.",
+    "en": "Zero-shot approaches perform a task from descriptions or instructions without task examples. In LLM prompting, this usually means specifying criteria without worked input-output examples for classification, summarization or similar tasks. It describes the current prompt, not proof that the model never encountered related material or had no prior training."
   },
   "description": {
     "ko": "프롬프트에 정답 예시를 주지 않고 설명이나 지시만으로 작업을 시키는 방식이에요.",

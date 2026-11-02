@@ -1,6 +1,6 @@
 {
   "order": 730,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "JSON",
     "en": "JSON"
@@ -8,6 +8,10 @@
   "fullName": {
     "ko": "자바스크립트 객체 표기법",
     "en": "JavaScript Object Notation"
+  },
+  "definition": {
+    "ko": "JSON(JavaScript Object Notation)은 객체와 배열, 문자열·숫자·불리언·null 등으로 데이터를 표현하는 텍스트 형식이에요. 여러 언어에서 읽고 쓸 수 있어 API 교환과 설정 파일 등에 활용해요. 유효한 문법이라고 업무 규칙까지 맞는 것은 아니며, 필수 항목과 자료형, 허용 값을 별도로 검증해야 해요.",
+    "en": "JSON (JavaScript Object Notation) represents data as text using objects, arrays, strings, numbers, booleans and null. It supports cross-language exchange such as APIs and configuration. Valid syntax does not imply valid business data; required fields, types and allowed values still need checks."
   },
   "description": {
     "ko": "객체, 배열과 기본 값으로 데이터를 표현하는 텍스트 형식이에요.",

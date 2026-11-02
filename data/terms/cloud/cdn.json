@@ -1,6 +1,6 @@
 {
   "order": 1050,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "CDN",
     "en": "CDN"
@@ -8,6 +8,10 @@
   "fullName": {
     "ko": "콘텐츠 전송 네트워크",
     "en": "Content Delivery Network"
+  },
+  "definition": {
+    "ko": "CDN(Content Delivery Network)은 여러 지역의 분산 서버를 통해 콘텐츠를 효율적으로 전달하는 네트워크예요. 요청을 적절한 거점으로 보내고 캐시 등을 활용해 지연과 원본 서버 부담을 줄이며, 제공 방식에 따라 동적 전송도 최적화할 수 있어요. 모든 응답을 캐시할 수 있는 것은 아니므로 개인별 정보와 갱신·만료 규칙을 구분해야 해요.",
+    "en": "A CDN (Content Delivery Network) delivers content through distributed servers. Routing to suitable locations and caching can reduce latency and origin load, while some services also optimize dynamic delivery. Not every response is cacheable, so personalized content and refresh and expiration rules require appropriate treatment."
   },
   "description": {
     "ko": "여러 지역에 분산된 서버를 통해 콘텐츠를 사용자에게 효율적으로 전달하는 네트워크예요.",

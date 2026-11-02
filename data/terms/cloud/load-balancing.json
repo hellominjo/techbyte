@@ -1,9 +1,13 @@
 {
   "order": 1110,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "로드 밸런싱",
     "en": "Load Balancing"
+  },
+  "definition": {
+    "ko": "로드 밸런싱은 들어오는 요청이나 작업을 정책에 따라 여러 처리 대상으로 분배하는 방식이에요. 연결 수와 가중치, 상태 확인 등을 활용해 대상을 선택하고 응답하지 않는 곳을 제외할 수 있어요. 자원을 새로 만드는 스케일링과는 다른 역할이며, 세션 상태와 긴 연결, 대상별 처리 능력을 함께 고려해야 해요.",
+    "en": "Load balancing distributes requests or work across targets under a routing policy. Selection can use connection counts, weights and health checks to avoid unhealthy targets. It differs from scaling capacity and must account for session state, long-lived connections and target capabilities."
   },
   "description": {
     "ko": "들어오는 요청이나 작업을 여러 처리 대상으로 나눠 보내는 방식이에요.",

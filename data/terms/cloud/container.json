@@ -1,9 +1,13 @@
 {
   "order": 1080,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "컨테이너",
     "en": "Container"
+  },
+  "definition": {
+    "ko": "컨테이너는 이미지에 담긴 앱과 의존성을 격리된 실행 단위로 구동하는 방식이에요. 일반적인 운영체제 컨테이너는 호스트 커널을 공유하면서 프로세스와 자원을 격리하고, 이미지는 실행 파일과 설정의 틀을 제공해요. 환경 차이를 줄일 수 있지만 운영체제·CPU 호환성과 네트워크·권한, 영속 데이터 저장은 별도로 고려해야 해요.",
+    "en": "A container runs an application and dependencies from an image as an isolated execution unit. Typical OS containers share a host kernel while isolating processes and resources; images provide runtime files and configuration templates. They reduce environment differences but still require compatibility, networking, permissions and persistence design."
   },
   "description": {
     "ko": "앱과 필요한 실행 구성 요소를 이미지로 묶어, 격리된 프로세스로 실행하는 방식이에요.",

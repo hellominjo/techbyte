@@ -1,9 +1,13 @@
 {
   "order": 240,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "트랜스포머",
     "en": "Transformer"
+  },
+  "definition": {
+    "ko": "트랜스포머는 어텐션을 중심으로 입력 요소 사이의 관계를 계산하는 신경망 구조예요. 토큰의 표현에 위치 정보를 반영하고, 여러 어텐션과 변환 층을 통해 문맥에 따른 표현을 만들어요. 언어뿐 아니라 이미지와 음성 처리에도 활용되며, 생성용 모델에서는 미래 토큰을 보지 못하도록 하는 등 구조와 작업에 따라 참고할 수 있는 범위가 달라요.",
+    "en": "A transformer is a neural-network architecture centered on attention to compute relationships among input elements. It incorporates positional information and transforms representations through attention and other layers. Transformers handle language, images and audio; attention scope varies by design and task, including masking future tokens in generative models."
   },
   "description": {
     "ko": "입력의 여러 부분 사이에서 무엇을 참고할지 계산하는 어텐션을 중심으로 만든 신경망 구조예요.",

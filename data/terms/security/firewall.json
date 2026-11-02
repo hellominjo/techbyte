@@ -1,9 +1,13 @@
 {
   "order": 1220,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "방화벽",
     "en": "Firewall"
+  },
+  "definition": {
+    "ko": "방화벽은 네트워크 통신을 정해진 정책에 따라 허용하거나 차단하는 장치나 소프트웨어예요. 주소와 포트, 연결 상태나 애플리케이션 정보 등을 검사해 호스트나 네트워크 사이의 접근을 통제해요. 검사 범위는 제품과 구성에 따라 다르며, 허용된 통신 안의 모든 공격이나 앱의 권한 오류를 막아 주는 것은 아니에요.",
+    "en": "A firewall is hardware or software that permits or blocks network communication under a policy. It can inspect addresses, ports, connection state or application information to control access across hosts or networks. Inspection varies by implementation; permitted traffic can still carry attacks or application authorization errors."
   },
   "description": {
     "ko": "네트워크 트래픽을 정해진 규칙에 따라 허용하거나 차단하는 보안 장치나 소프트웨어예요.",

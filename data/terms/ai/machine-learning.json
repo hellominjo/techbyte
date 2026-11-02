@@ -1,6 +1,6 @@
 {
   "order": 210,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "머신러닝",
     "en": "ML"
@@ -8,6 +8,10 @@
   "fullName": {
     "ko": "기계학습",
     "en": "Machine Learning"
+  },
+  "definition": {
+    "ko": "머신러닝은 사람이 모든 처리 규칙을 직접 작성하는 대신 데이터와 학습 목표를 바탕으로 모델의 예측이나 행동을 개선하는 방법이에요. 정답 예시를 활용하는 지도학습, 구조를 찾는 비지도학습과 보상으로 행동을 배우는 강화학습 등이 있어요. 학습 자료를 잘 맞히는 것만으로는 충분하지 않으며, 새로운 입력에서도 유용한 패턴을 적용할 수 있는지가 중요해요.",
+    "en": "Machine learning improves model predictions or behavior from data and learning objectives rather than hand-coding every rule. It includes supervised learning from labeled examples, unsupervised structure discovery and reinforcement learning from rewards. Success requires useful performance on new inputs, not merely fitting training data."
   },
   "description": {
     "ko": "모든 규칙을 사람이 직접 적는 대신, 컴퓨터가 데이터에서 패턴을 배우게 하는 방법이에요.",

@@ -1,9 +1,13 @@
 {
   "order": 60,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "환각",
     "en": "Hallucination"
+  },
+  "definition": {
+    "ko": "환각은 AI가 사실과 다르거나 제공된 자료로 뒷받침되지 않는 내용을 그럴듯한 출력으로 만드는 현상이에요. 존재하지 않는 출처를 제시하거나 원문에 없는 내용을 요약에 넣는 경우가 대표적이에요. 생성된 문장의 자연스러움과 근거의 정확성이 어긋나는 문제이며, 사람처럼 사실을 알면서 속이려는 의도가 있다고 단정하는 표현은 아니에요.",
+    "en": "Hallucination occurs when AI produces plausible content that is false or unsupported by supplied material. Examples include fabricated sources and summaries adding claims absent from the original. It reflects a gap between fluent output and accurate grounding, not proof of a human-like intention to deceive."
   },
   "description": {
     "ko": "AI가 사실과 다르거나 근거 없는 내용을 그럴듯하게 만들어 내는 현상이에요.",

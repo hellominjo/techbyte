@@ -1,9 +1,13 @@
 {
   "order": 820,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "캐시",
     "en": "Cache"
+  },
+  "definition": {
+    "ko": "캐시는 다시 사용할 가능성이 있는 데이터나 계산 결과를 저장해 원본 접근과 반복 계산을 줄이는 기법이에요. 브라우저와 서버, 중간 네트워크 등에서 지연과 부하를 낮출 수 있어요. 저장한 값이 원본보다 오래될 수 있으므로 키와 유효 기간, 변경 시 무효화 규칙을 정하고 사용자별 데이터의 공유 범위를 관리해야 해요.",
+    "en": "Caching stores reusable data or results to avoid repeated source access and computation. It can reduce latency and load in browsers, servers and intermediaries. Entries can become stale, requiring appropriate keys, expiration, invalidation and separation of user-specific data."
   },
   "description": {
     "ko": "다시 필요할 가능성이 있는 데이터나 계산 결과를 가까운 곳에 보관해 재사용하는 방식이에요.",

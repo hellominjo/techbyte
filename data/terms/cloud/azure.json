@@ -1,6 +1,6 @@
 {
   "order": 1010,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "Azure",
     "en": "Azure"
@@ -8,6 +8,10 @@
   "fullName": {
     "ko": "마이크로소프트 애저",
     "en": "Microsoft Azure"
+  },
+  "definition": {
+    "ko": "Azure는 마이크로소프트가 제공하는 클라우드 플랫폼으로, 앱 실행과 데이터 저장·분석 등 다양한 IT 기능을 서비스로 제공해요. 가상 머신과 관리형 플랫폼 등을 선택하고 기존 시스템과 연결할 수 있으며, 윈도 환경에만 한정되지 않아요. 실제 지원 환경과 자원 구성, 운영 책임과 비용은 개별 서비스 기준으로 확인해야 해요.",
+    "en": "Azure is Microsoft’s cloud platform providing application execution, data storage, analytics and other IT capabilities as services. It offers virtual machines and managed platforms with existing-system integration and is not limited to Windows. Supported environments, configuration, responsibilities and costs depend on each service."
   },
   "description": {
     "ko": "마이크로소프트가 컴퓨팅, 저장소와 데이터·AI 기능 등을 제공하는 클라우드 플랫폼이에요.",

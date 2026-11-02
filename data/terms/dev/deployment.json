@@ -1,9 +1,13 @@
 {
   "order": 800,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "배포",
     "en": "Deployment"
+  },
+  "definition": {
+    "ko": "배포는 프로그램 결과물과 필요한 설정·변경을 시험이나 운영 등 대상 환경에 반영하는 과정이에요. 결과물을 만드는 빌드와 구분되며, 배포 시점과 사용자에게 기능을 공개하는 시점도 다를 수 있어요. 반영 후 상태와 주요 기능을 확인하고 문제가 생겼을 때 중단·복구할 기준을 함께 설계해야 해요.",
+    "en": "Deployment applies software artifacts and required configuration or changes to a target such as test or production. It differs from building artifacts and may precede user-facing release. Health and critical behavior need verification, together with criteria for stopping or recovering from problems."
   },
   "description": {
     "ko": "새 프로그램이나 변경 결과물을 대상 환경에 설치·반영해 실행할 수 있게 하는 과정이에요.",

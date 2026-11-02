@@ -87,8 +87,8 @@ export default function SiteHeader() {
           <span className="mt-0.5 text-[19px] font-bold tracking-tight">
             {siteValue("siteName", lang)}
           </span>
-          {/* 분야별 보기 카드와 같은 연회색 테두리 + 검정 굵은 글씨 */}
-          <span className="rounded-lg border border-line px-2 py-0.5 text-xs font-medium text-mutedtracking-tight">
+          {/*TECHBYTE */}
+          <span className="py-0.5 text-xs font-medium text-foreground/85 tracking-tight">
             {siteValue("tagline", lang)}
           </span>
         </Link>

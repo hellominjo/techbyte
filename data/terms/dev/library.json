@@ -1,9 +1,13 @@
 {
   "order": 760,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "라이브러리",
     "en": "Library"
+  },
+  "definition": {
+    "ko": "라이브러리는 앱이 필요한 기능을 호출해 사용하도록 묶은 재사용 가능한 코드예요. 함수와 클래스 등으로 날짜 계산, 파일 처리와 차트 표시 같은 반복 기능을 제공할 수 있어요. 보통 앱이 실행 흐름을 유지하며 기능을 호출한다는 점에서 프레임워크와 구분하지만 경계는 겹칠 수 있고, 버전·의존성과 사용 조건을 관리해야 해요.",
+    "en": "A library packages reusable code that applications call for capabilities such as dates, files or charts. Functions and classes provide repeatable implementations. Applications usually retain control flow, unlike a framework, though boundaries can overlap; versions, dependencies and usage terms require management."
   },
   "description": {
     "ko": "필요할 때 불러 쓸 수 있도록 재사용 가능한 코드를 모아 둔 것이에요.",

@@ -1,9 +1,13 @@
 {
   "order": 1090,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "Docker",
     "en": "Docker"
+  },
+  "definition": {
+    "ko": "Docker는 컨테이너 이미지를 빌드하고 공유하며 컨테이너를 실행하도록 돕는 도구와 플랫폼이에요. Dockerfile로 이미지 제작 과정을 정의하고 레지스트리로 배포해 같은 실행 기반을 전달할 수 있어요. 컨테이너라는 개념 자체와는 다르고, 실제 앱 운영에는 별도의 설정과 네트워크, 저장소와 권한 관리가 필요해요.",
+    "en": "Docker is a toolset and platform for building and sharing container images and running containers. Dockerfiles define image preparation and registries distribute images. It is not synonymous with containers themselves; application operation still needs configuration, networking, storage and access management."
   },
   "description": {
     "ko": "컨테이너 이미지를 만들고 공유하며 컨테이너를 실행하도록 돕는 도구와 플랫폼이에요.",

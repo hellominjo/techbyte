@@ -1,9 +1,13 @@
 {
   "order": 280,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "AI 에이전트",
     "en": "AI Agent"
+  },
+  "definition": {
+    "ko": "AI 에이전트는 주어진 목표를 이루기 위해 상황을 파악하고, 다음 행동을 선택하며, 도구 실행 결과를 반영해 작업을 이어 가는 시스템이에요. 언어 모델뿐 아니라 도구, 실행 환경과 상태 관리가 함께 작동해요. 정해진 절차만 따르는 구성과 달리 행동 경로를 상황에 맞게 고를 수 있지만, 자율성의 범위와 권한, 종료 조건은 설계에 따라 달라요.",
+    "en": "An AI agent is a system that observes its context, selects actions toward a goal and uses tool results to continue its work. It combines a model with tools, an execution environment and state management. Unlike a purely predefined process, it can choose its path dynamically, while autonomy, permissions and stopping conditions depend on its design."
   },
   "description": {
     "ko": "주어진 목표를 이루기 위해 다음 행동을 고르고, 도구를 사용하며 결과에 따라 진행하는 AI 시스템이에요.",

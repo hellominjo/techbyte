@@ -1,0 +1,171 @@
+{
+  "order": 1230,
+  "updatedAt": "2026-11-02",
+  "term": {
+    "ko": "SSL/TLS",
+    "en": "SSL/TLS"
+  },
+  "fullName": {
+    "ko": "보안 소켓 계층 / 전송 계층 보안",
+    "en": "Secure Sockets Layer / Transport Layer Security"
+  },
+  "definition": {
+    "ko": "SSL/TLS는 통신 상대 확인과 전송 데이터의 기밀성·무결성 보호를 위한 프로토콜 계열을 가리켜요. 현재는 폐기된 SSL의 후속인 TLS를 사용하며, 인증서와 키 설정 과정 등을 거쳐 보호된 통신을 제공해요. HTTPS는 HTTP를 TLS로 보호하는 방식이고, 연결 보호가 저장된 데이터의 안전이나 사이트 운영자의 신뢰성까지 보증하지는 않아요.",
+    "en": "SSL/TLS names protocols for peer authentication and transport confidentiality and integrity. Modern systems use TLS, the successor to obsolete SSL, establishing keys and typically validating certificates. HTTPS is HTTP protected by TLS; transport protection does not guarantee stored-data security or trustworthy operators."
+  },
+  "description": {
+    "ko": "통신 상대를 확인하고 전송 중인 데이터의 기밀성과 무결성을 보호하는 프로토콜 계열이에요.",
+    "en": "Protocols for authenticating peers and protecting data confidentiality and integrity in transit."
+  },
+  "analogy": {
+    "ko": "받는 곳을 확인한 뒤 내용을 잠그고 위조 여부를 확인하며 주고받는 봉인 우편과 비슷해요.",
+    "en": "Like sealed correspondence that checks the recipient and protects against reading and alteration."
+  },
+  "details": {
+    "ko": [
+      "현재는 SSL의 후속인 TLS를 사용해요. SSL은 오래되어 폐기된 방식이지만 관행적으로 SSL 인증서라는 이름이 남아 있어요.",
+      "연결 과정에서 인증서와 키 교환 등을 이용하고 이후 데이터를 암호화해요. HTTPS는 HTTP를 TLS로 보호하는 방식이며, TLS는 다른 응용 프로토콜에도 쓰여요."
+    ],
+    "en": [
+      "Modern systems use TLS, SSL’s successor. SSL is obsolete, although the term SSL certificate remains common.",
+      "Connection establishment uses certificates and key exchange before encrypted data transfer. HTTPS is HTTP protected by TLS; other application protocols can use TLS too."
+    ]
+  },
+  "background": {
+    "ko": [
+      "암호화하지 않은 통신은 경로에서 읽거나 바뀔 수 있어, 통신 상대의 확인과 전송 보호를 공통 방식으로 제공하려고 발전했어요."
+    ],
+    "en": [
+      "TLS provides common mechanisms for peer authentication and transport protection against reading and modification along the network path."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "핸드셰이크",
+        "text": "지원 방식과 서버 인증서 등을 확인하며 연결 조건을 맞춰요."
+      },
+      {
+        "title": "키 설정",
+        "text": "이후 통신을 보호할 키를 설정해요."
+      },
+      {
+        "title": "보호된 통신",
+        "text": "데이터를 암호화하고 변조를 탐지하며 전달해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Handshake",
+        "text": "Negotiate connection parameters and validate information such as the server certificate."
+      },
+      {
+        "title": "Establish keys",
+        "text": "Establish keys to protect subsequent traffic."
+      },
+      {
+        "title": "Protected communication",
+        "text": "Transmit encrypted data with protection against tampering."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "웹사이트 HTTPS 연결",
+      "앱과 API 사이 통신",
+      "메일 등 다른 서비스의 전송 보호"
+    ],
+    "en": [
+      "HTTPS website connections",
+      "Application-to-API communication",
+      "Protecting transport for email and other services"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "연결 보호 점검",
+        "text": "“SSL이라는 이름만 보지 말고 실제 TLS 설정과 인증서 검증, 갱신 상태를 확인하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Reviewing transport protection",
+        "text": "Say: “Check actual TLS configuration, certificate validation and renewal rather than relying on the SSL label.”"
+      }
+    ]
+  },
+  "comparison": {
+    "target": "certificate",
+    "rows": [
+      {
+        "label": {
+          "ko": "정체",
+          "en": "What it is"
+        },
+        "values": [
+          {
+            "ko": "통신을 보호하는 프로토콜 계열",
+            "en": "Protocols for protecting communication"
+          },
+          {
+            "ko": "공개키와 주체 정보를 연결한 서명 문서",
+            "en": "A signed document binding a public key to subject information"
+          }
+        ]
+      },
+      {
+        "label": {
+          "ko": "관계",
+          "en": "Relationship"
+        },
+        "values": [
+          {
+            "ko": "핸드셰이크에서 인증서 등을 이용해 상대 확인",
+            "en": "Can use certificates during peer authentication"
+          },
+          {
+            "ko": "TLS에서 신뢰와 키 연결을 확인하는 데 사용",
+            "en": "Supports trust and key binding in TLS"
+          }
+        ]
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "SSL과 TLS는 둘 다 지금 써도 되나요?",
+        "en": "Are SSL and TLS both suitable for current use?"
+      },
+      "fact": {
+        "ko": "SSL은 폐기된 방식이에요. 실제 연결에는 적절히 설정된 지원 가능한 TLS를 사용하고, 이름과 실제 프로토콜을 구분해야 해요.",
+        "en": "SSL is obsolete. Use appropriately configured, supported TLS and distinguish the label from the actual protocol."
+      }
+    }
+  ],
+  "keywords": [
+    "encryption",
+    "certificate",
+    "hash",
+    "client"
+  ],
+  "related": [
+    {
+      "id": "encryption",
+      "type": "prerequisite"
+    },
+    {
+      "id": "certificate",
+      "type": "related"
+    },
+    {
+      "id": "hash",
+      "type": "related"
+    },
+    {
+      "id": "client",
+      "type": "related"
+    }
+  ]
+}

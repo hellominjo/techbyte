@@ -1,9 +1,13 @@
 {
   "order": 550,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "데이터 레이크",
     "en": "Data Lake"
+  },
+  "definition": {
+    "ko": "데이터 레이크는 정형·반정형·비정형 등 다양한 데이터를 원형에 가깝게 보관하고 여러 목적에 맞게 처리하도록 마련한 저장 기반이에요. 원본, 정제와 분석용 영역을 함께 구성할 수 있으며 분석이나 모델 학습에 활용해요. 단순히 파일을 모았다고 바로 활용 가능한 것은 아니므로 메타데이터, 품질과 접근 관리, 처리 체계가 필요해요.",
+    "en": "A data lake retains varied structured, semi-structured and unstructured data near its original form for different processing needs. It can include raw, cleaned and curated areas for analytics or model training. Storing files alone does not make them usable; metadata, quality, access management and processing capabilities are also needed."
   },
   "description": {
     "ko": "다양한 형식의 데이터를 원형에 가깝게 넓게 보관하고 필요에 맞춰 처리하는 저장 기반이에요.",

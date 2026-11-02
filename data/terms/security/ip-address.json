@@ -1,6 +1,6 @@
 {
   "order": 1200,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "IP 주소",
     "en": "IP Address"
@@ -8,6 +8,10 @@
   "fullName": {
     "ko": "인터넷 프로토콜 주소",
     "en": "Internet Protocol Address"
+  },
+  "definition": {
+    "ko": "IP 주소는 IP 네트워크에서 인터페이스를 식별하고 패킷을 목적지로 전달하는 데 사용하는 주소예요. IPv4와 IPv6 체계가 있으며 공개적으로 라우팅되는 주소와 내부망 용도의 주소 등을 구분해요. 한 장치가 여러 주소를 갖거나 여러 장치가 공인 주소를 공유할 수 있으므로 특정 사람의 영구 신원이나 정확한 물리 위치와 같은 뜻은 아니에요.",
+    "en": "An IP address identifies an interface and supports packet routing on IP networks. IPv4 and IPv6 include addresses with different scopes, such as public routing and private use. Devices can have multiple addresses or share public addresses, so an IP is not a permanent personal identity or precise physical location."
   },
   "description": {
     "ko": "IP 네트워크에서 통신할 인터페이스의 위치를 식별하고 패킷을 전달하는 데 쓰는 주소예요.",

@@ -1,0 +1,130 @@
+{
+  "order": 1320,
+  "updatedAt": "2026-11-02",
+  "term": {
+    "ko": "패스키",
+    "en": "Passkey"
+  },
+  "definition": {
+    "ko": "패스키는 서비스에 연결된 공개키 인증 자격증명으로, 공유 비밀번호를 전송하지 않고 로그인하도록 하는 방식이에요. 인증기가 개인키로 요청에 서명하고 서비스가 공개키로 검증하며, PIN이나 생체 확인으로 키 사용을 승인할 수 있어요. 서비스에 묶인 특성으로 일반적인 자격증명 탈취 피싱에 강하지만, 기기와 동기화 제공자, 계정 복구의 보안도 중요해요.",
+    "en": "A passkey is a service-bound public-key credential for sign-in without transmitting a shared password. An authenticator signs challenges with a private key and the service verifies with a public key; PINs or biometrics can authorize key use. Service binding resists typical credential phishing, while device, sync-provider and account-recovery security remain important."
+  },
+  "description": {
+    "ko": "서비스에 연결된 공개키·개인키 쌍으로 비밀번호 없이 로그인하게 하는 인증 자격증명이에요.",
+    "en": "A public-key credential bound to a service for signing in without a password."
+  },
+  "analogy": {
+    "ko": "비밀번호를 말하는 대신 해당 문에만 맞는 열쇠가 있다는 사실을 잠금장치에 증명하는 것과 같아요.",
+    "en": "Like proving possession of a key bound to a particular door instead of speaking a password."
+  },
+  "details": {
+    "ko": [
+      "서비스는 공개키를 보관하고 인증기는 개인키로 로그인 요청에 서명해요. 기기에서 PIN이나 생체 확인으로 사용을 승인하며, 생체 정보 자체를 웹사이트에 보내는 방식은 아니에요.",
+      "자격증명이 서비스에 연결되어 일반적인 가짜 사이트의 자격증명 탈취에 강해요. 기기에 묶인 패스키와 제공자 계정으로 동기화되는 패스키가 있어 복구·분실 정책은 구분해야 해요."
+    ],
+    "en": [
+      "The service stores a public key and an authenticator signs challenges with the private key. A device PIN or biometrics can authorize use; the website does not receive the biometric itself.",
+      "Service binding resists typical credential-harvesting sites. Passkeys can be device-bound or synced through a provider, with different loss and recovery arrangements."
+    ]
+  },
+  "background": {
+    "ko": [
+      "재사용되는 비밀번호와 피싱으로 탈취되는 비밀값에 대한 의존을 줄이고 공개키 인증을 쉽게 사용하도록 발전했어요."
+    ],
+    "en": [
+      "Passkeys make public-key authentication easier to use while reducing reliance on reusable passwords and phishable shared secrets."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "등록",
+        "text": "인증기가 키 쌍을 만들고 서비스가 공개키를 등록해요."
+      },
+      {
+        "title": "사용자 확인과 서명",
+        "text": "로그인 시 인증기가 서비스에 맞는 요청을 확인하고 필요한 사용자 확인 후 서명해요."
+      },
+      {
+        "title": "검증",
+        "text": "서비스가 공개키로 서명을 검증해 로그인을 처리해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Register",
+        "text": "An authenticator creates a key pair and the service registers the public key."
+      },
+      {
+        "title": "Verify the user and sign",
+        "text": "The authenticator checks the service-bound request and signs after required user verification."
+      },
+      {
+        "title": "Verify",
+        "text": "The service verifies the signature using the public key and completes sign-in."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "기기 잠금 해제로 웹 로그인",
+      "보안키에 저장한 패스키 사용",
+      "지원 제공자를 통한 기기 간 동기화"
+    ],
+    "en": [
+      "Signing in after device unlock",
+      "Using a passkey on a security key",
+      "Syncing passkeys through a supported provider"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "로그인 방식 개선",
+        "text": "“패스키를 도입하면서 기기 분실과 계정 복구, 기존 인증 수단의 우회 위험도 함께 점검하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Improving sign-in",
+        "text": "Say: “When adding passkeys, review device loss, account recovery and bypass risks in fallback authentication.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "패스키는 지문을 서버에 저장하는 건가요?",
+        "en": "Does a passkey store fingerprints on the server?"
+      },
+      "fact": {
+        "ko": "서버는 공개키를 사용해 서명을 검증해요. 지문·얼굴·PIN은 보통 인증기에서 키 사용을 확인하며, 패스키 보관과 동기화는 제공자별로 달라요.",
+        "en": "Servers verify signatures with public keys. Biometrics or PINs typically authorize key use on the authenticator; storage and sync depend on the provider."
+      }
+    }
+  ],
+  "keywords": [
+    "authentication",
+    "mfa",
+    "phishing",
+    "encryption"
+  ],
+  "related": [
+    {
+      "id": "authentication",
+      "type": "prerequisite"
+    },
+    {
+      "id": "mfa",
+      "type": "related"
+    },
+    {
+      "id": "phishing",
+      "type": "related"
+    },
+    {
+      "id": "encryption",
+      "type": "related"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "order": 740,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "SDK",
     "en": "SDK"
@@ -8,6 +8,10 @@
   "fullName": {
     "ko": "소프트웨어 개발 키트",
     "en": "Software Development Kit"
+  },
+  "definition": {
+    "ko": "SDK(Software Development Kit)는 특정 플랫폼이나 기능의 개발을 돕기 위해 제공하는 코드와 문서, 도구의 모음이에요. 라이브러리와 예제, 시험 도구 등을 포함할 수 있으며 API 호출의 반복 구현을 줄여 주기도 해요. 기능 사용의 약속인 API와는 다르고, 실제 구성과 지원 언어·버전, 오류 처리 범위는 제공자와 제품에 따라 달라요.",
+    "en": "An SDK (Software Development Kit) bundles code, documentation and tools for a platform or capability. It may include libraries, examples and testing tools and reduce repeated API integration work. Unlike an API contract, it supplies implementations and assistance; contents, languages, versions and error handling vary."
   },
   "description": {
     "ko": "특정 플랫폼이나 기능을 개발하기 쉽게 묶어 제공하는 도구 모음이에요.",

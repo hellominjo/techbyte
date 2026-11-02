@@ -1,9 +1,13 @@
 {
   "order": 650,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "데이터 시각화",
     "en": "Data Visualization"
+  },
+  "definition": {
+    "ko": "데이터 시각화는 수치와 범주, 관계를 차트나 지도 같은 시각적 표현으로 바꾸어 탐색과 소통을 돕는 일이에요. 비교, 추이와 분포 등 질문에 맞는 표현을 선택하고 단위와 축, 범례와 출처를 함께 구성해요. 시각적 패턴이 원인이나 정확한 결론을 보장하지는 않으므로, 표현의 왜곡과 데이터의 한계를 확인해야 해요.",
+    "en": "Data visualization represents values, categories and relationships through charts, maps and other visuals for exploration and communication. Choose forms suited to comparisons, trends or distributions and include units, axes, legends and sources. Visual patterns do not prove causation or correctness; check misleading presentation and data limitations."
   },
   "description": {
     "ko": "데이터를 차트나 지도 등 시각적 형태로 표현해 패턴과 차이를 이해하도록 돕는 일이에요.",

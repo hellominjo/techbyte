@@ -1,10 +1,205 @@
 {
   "order": 90,
-  "updatedAt": "2026-11-01",
-  "term": { "ko": "벡터 데이터베이스", "en": "Vector database" },
-  "description": {
-    "ko": "의미가 비슷한 자료를 빠르게 찾을 수 있도록 임베딩을 저장해 두는 데이터베이스예요.",
-    "en": "A database that stores embeddings so you can quickly find material with similar meaning."
+  "updatedAt": "2026-11-02",
+  "term": {
+    "ko": "벡터 데이터베이스",
+    "en": "Vector database"
   },
-  "related": [{ "id": "embedding", "type": "prerequisite" }, { "id": "rag", "type": "related" }]
+  "definition": {
+    "ko": "벡터 데이터베이스는 숫자 벡터를 ID와 메타데이터 등에 연결해 저장하고, 유사한 벡터를 효율적으로 검색하는 데이터 관리 시스템이에요. 임베딩으로 표현한 질문과 자료를 비교해 후보를 찾으며, 많은 벡터를 다룰 때 검색 인덱스를 활용해요. 전용 제품뿐 아니라 기존 데이터베이스나 검색엔진의 기능으로 제공되기도 하고, 유사 후보 검색과 언어 모델의 답변 생성은 별도 역할이에요.",
+    "en": "A vector database stores numerical vectors linked to IDs and metadata and retrieves similar vectors efficiently. It compares embedded queries with stored representations and uses indexes at scale. Capabilities may be offered by dedicated products, conventional databases or search engines; retrieving candidates is distinct from generating answers with a language model."
+  },
+  "description": {
+    "ko": "벡터를 저장하고 색인해, 입력과 유사한 항목을 찾도록 돕는 데이터베이스예요.",
+    "en": "A database that stores and indexes vectors to retrieve items similar to an input."
+  },
+  "analogy": {
+    "ko": "자료의 좌표를 관리하고, 질문의 좌표 근처에 있는 자료를 찾아 주는 지도 안내소와 같아요.",
+    "en": "Like a map service that tracks item coordinates and finds material near a query’s location."
+  },
+  "details": {
+    "ko": [
+      "임베딩 벡터와 항목 ID, 출처나 분류 같은 메타데이터를 저장해요. 질문도 호환되는 임베딩으로 바꿔 가까운 벡터를 찾고, 연결된 원문이나 정보를 활용해요.",
+      "벡터가 많으면 전부 비교하는 비용이 커져, 인덱스로 검색을 빠르게 해요. 근사 최근접 이웃 검색은 속도와 메모리 등을 개선하는 대신 가장 가까운 항목을 일부 놓칠 수 있어요.",
+      "전용 제품뿐 아니라 기존 관계형 데이터베이스나 검색엔진의 벡터 기능도 활용할 수 있어요. 지원되는 필터, 키워드 결합 검색과 갱신 방식은 제품마다 달라요."
+    ],
+    "en": [
+      "Store embeddings with item IDs and metadata such as sources or categories. Convert a query into a compatible embedding, find nearby vectors and use the associated content.",
+      "Comparing every vector becomes expensive at scale, so indexes accelerate retrieval. Approximate nearest-neighbor methods trade some retrieval accuracy for benefits such as speed and memory efficiency.",
+      "Vector capabilities can exist in dedicated products, relational databases or search engines. Filtering, hybrid keyword search and update behavior vary by implementation."
+    ]
+  },
+  "background": {
+    "ko": [
+      "문서와 이미지 등을 임베딩으로 표현하는 활용이 늘면서, 많은 벡터를 저장·갱신하고 유사한 항목을 빠르게 찾는 관리 기능이 필요해졌어요."
+    ],
+    "en": [
+      "As embedding-based applications expanded, systems needed to store and update large vector collections and efficiently retrieve similar items."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "저장과 색인",
+        "text": "자료의 벡터를 ID와 메타데이터에 연결해 저장하고 검색용 인덱스를 만들어요."
+      },
+      {
+        "title": "질문과 조건 적용",
+        "text": "호환되는 질문 벡터와 분류·기간 같은 조건을 전달하고, 사용자 권한도 검색 흐름에서 적용해요."
+      },
+      {
+        "title": "검색과 후처리",
+        "text": "유사한 후보를 찾고 필요하면 다시 순위를 매겨 원문을 전달해요. 검색 지연과 필요한 문서를 찾는 비율을 함께 평가해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Store and index",
+        "text": "Store vectors with IDs and metadata and build a retrieval index."
+      },
+      {
+        "title": "Apply queries and conditions",
+        "text": "Provide a compatible query vector and filters such as category or date, and enforce user access in the retrieval flow."
+      },
+      {
+        "title": "Retrieve and refine",
+        "text": "Retrieve similar candidates, optionally rerank them and return source content. Evaluate both latency and retrieval of relevant documents."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "RAG의 참고 문서 후보 검색",
+      "비슷한 이미지와 상품 찾기",
+      "관련 콘텐츠 추천"
+    ],
+    "en": [
+      "Retrieving reference candidates for RAG",
+      "Finding similar images and products",
+      "Recommending related content"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "권한 있는 문서 검색",
+        "text": "“벡터 검색에 문서 권한과 유효 기간을 반영하고, 삭제·갱신 시 벡터와 원문 연결도 함께 정리하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Retrieving authorized documents",
+        "text": "Say: “Apply document permissions and validity rules to vector retrieval, and keep vectors and source links synchronized on updates and deletion.”"
+      }
+    ]
+  },
+  "comparison": {
+    "target": "rdbms",
+    "rows": [
+      {
+        "label": {
+          "ko": "중심 기능",
+          "en": "Main focus"
+        },
+        "values": [
+          {
+            "ko": "벡터 유사도로 가까운 후보 검색",
+            "en": "Find nearby candidates using vector similarity"
+          },
+          {
+            "ko": "테이블의 관계와 조건으로 데이터 조회·변경",
+            "en": "Query and update tables through relations and conditions"
+          }
+        ]
+      },
+      {
+        "label": {
+          "ko": "대표 질문",
+          "en": "Typical query"
+        },
+        "values": [
+          {
+            "ko": "이 질문과 의미가 가까운 문서는?",
+            "en": "Which documents are semantically similar to this query?"
+          },
+          {
+            "ko": "이 회원의 지난달 주문 합계는?",
+            "en": "What is this member’s order total for last month?"
+          }
+        ]
+      },
+      {
+        "label": {
+          "ko": "서로의 관계",
+          "en": "Relationship"
+        },
+        "values": [
+          {
+            "ko": "관계형 시스템의 기능으로 제공될 수도 있음",
+            "en": "Can be implemented within a relational system"
+          },
+          {
+            "ko": "벡터 기능을 추가해 함께 활용할 수 있음",
+            "en": "Can incorporate vector capabilities alongside relational operations"
+          }
+        ]
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "벡터 데이터베이스가 답변까지 만들어 주나요?",
+        "en": "Does a vector database generate the answer?"
+      },
+      "fact": {
+        "ko": "기본 역할은 유사한 항목을 찾아 주는 것이에요. RAG에서는 검색된 자료를 언어 모델에 전달해 답을 만드는 단계를 따로 구성해요. 제품에 통합 기능이 있어도 두 역할은 구분돼요.",
+        "en": "Its core role is retrieval. RAG separately supplies retrieved content to a language model for answer generation. Integrated products may combine these distinct roles."
+      }
+    },
+    {
+      "myth": {
+        "ko": "도입하면 키워드 검색과 기존 DB는 필요 없나요?",
+        "en": "Does it replace keyword search and existing databases?"
+      },
+      "fact": {
+        "ko": "정확한 식별자 검색, 조건 집계와 거래 처리는 다른 방식이 더 적합할 수 있어요. 키워드 검색과 결합하거나 기존 데이터베이스와 역할을 나눌 수 있어요.",
+        "en": "Exact identifiers, aggregations and transactions can favor other methods. Vector search can be combined with keyword search or used alongside existing databases."
+      }
+    }
+  ],
+  "keywords": [
+    "embedding",
+    "database",
+    "rdbms",
+    "rag",
+    "metadata",
+    "evaluation"
+  ],
+  "related": [
+    {
+      "id": "embedding",
+      "type": "prerequisite"
+    },
+    {
+      "id": "database",
+      "type": "prerequisite"
+    },
+    {
+      "id": "rdbms",
+      "type": "compare"
+    },
+    {
+      "id": "rag",
+      "type": "related"
+    },
+    {
+      "id": "metadata",
+      "type": "related"
+    },
+    {
+      "id": "evaluation",
+      "type": "related"
+    }
+  ]
 }

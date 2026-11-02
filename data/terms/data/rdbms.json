@@ -1,6 +1,6 @@
 {
   "order": 520,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "관계형 데이터베이스",
     "en": "RDBMS"
@@ -8,6 +8,10 @@
   "fullName": {
     "ko": "관계형 데이터베이스 관리 시스템",
     "en": "Relational Database Management System"
+  },
+  "definition": {
+    "ko": "관계형 데이터베이스는 데이터를 행과 열로 구성된 테이블에 표현하고, 키와 제약 조건 등을 통해 관계와 규칙을 관리하는 방식이에요. 이를 관리하는 소프트웨어를 정확히는 관계형 데이터베이스 관리 시스템(RDBMS)이라고 해요. SQL 질의와 조인, 트랜잭션 등을 활용해 연결된 정보를 조회·변경할 수 있으며, 확장과 일관성의 구체적인 보장은 제품과 구성에 따라 달라요.",
+    "en": "Relational databases represent data in tables of rows and columns, using keys and constraints to manage relationships and rules. RDBMS precisely names the software managing such databases. SQL, joins and transactions support queries and changes across related data, with scalability and consistency guarantees depending on the product and configuration."
   },
   "description": {
     "ko": "행과 열로 된 테이블과 그 관계를 바탕으로 데이터를 관리하는 시스템이에요.",

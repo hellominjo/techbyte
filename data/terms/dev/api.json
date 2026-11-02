@@ -1,8 +1,18 @@
 {
   "order": 10,
-  "updatedAt": "2026-11-01",
-  "term": { "ko": "응용 프로그램 인터페이스", "en": "API" },
-  "fullName": { "ko": "응용 프로그램 인터페이스", "en": "Application Programming Interface" },
+  "updatedAt": "2026-11-02",
+  "term": {
+    "ko": "응용 프로그램 인터페이스",
+    "en": "API"
+  },
+  "fullName": {
+    "ko": "응용 프로그램 인터페이스",
+    "en": "Application Programming Interface"
+  },
+  "definition": {
+    "ko": "API(Application Programming Interface)는 프로그램이 다른 프로그램의 기능이나 데이터에 접근하도록 정한 인터페이스예요. 요청할 작업과 입력, 결과와 오류의 형식을 약속해 내부 구현을 몰라도 기능을 사용할 수 있게 해요. 네트워크로 호출하는 웹 API뿐 아니라 라이브러리와 운영체제의 인터페이스도 포함하며, 접근 권한과 실제 처리 책임은 별도로 설계해야 해요.",
+    "en": "An API (Application Programming Interface) defines how software accesses another component’s capabilities or data. It specifies operations, inputs, outputs and errors without exposing internal implementation. APIs include web, library and operating-system interfaces; access control and execution responsibilities still require design."
+  },
   "description": {
     "ko": "프로그램끼리 서로 기능을 빌려 쓰게 해 주는 주문 창구예요.",
     "en": "An ordering window that lets programs borrow each other's features."
@@ -13,13 +23,227 @@
   },
   "details": {
     "ko": [
-      "프로그램은 다른 프로그램의 내부 구조를 몰라도, 정해진 규칙에 맞춰 요청만 보내면 원하는 결과를 받을 수 있어요.",
-      "예를 들어 날씨 앱은 기상청 API에 '오늘 서울 날씨'를 요청해서 받은 정보를 화면에 보여 줘요."
+      "API는 무엇을 요청할 수 있는지, 어떤 입력이 필요한지와 결과·오류를 어떻게 표현할지 정해요. 내부 구현을 몰라도 이 약속을 따라 기능을 사용할 수 있지만, 허용된 범위와 조건을 충족해야 해요.",
+      "웹 API는 네트워크로 요청과 응답을 주고받는 대표적인 형태예요. HTTP 메서드와 주소, 헤더와 본문 등을 사용하고 JSON으로 데이터를 교환하는 경우가 많지만, 모든 API가 HTTP나 JSON을 쓰는 것은 아니에요.",
+      "서비스 내부의 화면과 백엔드를 연결하거나 외부 결제·지도 기능을 연동할 때 활용해요. 인증과 작업별 권한, 호출 한도와 시간 초과, 변경 시 호환성을 함께 설계해야 해요.",
+      "응답이 오지 않았다고 처리가 실패했다고 단정할 수는 없어요. 결제나 주문 생성처럼 상태를 바꾸는 요청은 결과 조회와 중복 방지 규칙을 확인한 뒤 재시도해야 해요."
     ],
     "en": [
-      "A program can get what it needs from another program just by sending a request in an agreed format, without knowing how it works inside.",
-      "For example, a weather app asks a weather service's API for today's forecast and shows the answer on screen."
+      "An API defines available operations, required inputs and result and error formats. Callers can use capabilities without knowing the implementation, but must meet the applicable permissions and conditions.",
+      "Web APIs exchange requests and responses over a network, commonly using HTTP methods, addresses, headers and bodies, often with JSON. Not every API uses HTTP or JSON.",
+      "APIs connect interfaces to backends and integrate external capabilities such as payments and maps. Design authentication, per-operation authorization, rate limits, timeouts and compatibility.",
+      "A missing response does not prove an operation failed. Before retrying state-changing requests such as payments or order creation, check result lookup and duplicate-prevention rules."
     ]
   },
-  "related": [{ "id": "backend", "type": "related" }, { "id": "server", "type": "related" }]
+  "background": {
+    "ko": [
+      "다른 프로그램의 내부를 직접 수정하거나 저장 구조에 의존하면 변경 때마다 연결이 깨지기 쉬워요. 기능 사용의 약속을 인터페이스로 나눠 구성 요소가 협력하고 독립적으로 바뀔 수 있게 해요."
+    ],
+    "en": [
+      "Direct dependence on another program’s internals or storage can make integration fragile. Defined interfaces let components cooperate while limiting dependence on implementation changes."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "사용 규칙 확인",
+        "text": "문서에서 기능, 입력·응답 형식, 인증과 오류 처리 규칙을 확인해요."
+      },
+      {
+        "title": "요청 구성",
+        "text": "호출하는 프로그램이 필요한 값과 인증 정보를 정해진 방식으로 전달해요."
+      },
+      {
+        "title": "검증과 처리",
+        "text": "제공하는 쪽이 입력과 권한을 확인하고 데이터를 조회하거나 업무를 처리해요."
+      },
+      {
+        "title": "응답과 후속 처리",
+        "text": "결과나 오류를 받아 화면을 갱신하거나 다음 작업을 진행해요. 시간 초과와 재시도도 구분해 처리해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Check the contract",
+        "text": "Check documented operations, input and response formats, authentication and error rules."
+      },
+      {
+        "title": "Prepare a request",
+        "text": "The caller supplies required values and credentials under the contract."
+      },
+      {
+        "title": "Validate and execute",
+        "text": "The provider validates input and permissions and performs retrieval or business operations."
+      },
+      {
+        "title": "Handle the response",
+        "text": "Use results or errors to update the interface or continue work, explicitly handling timeouts and retries."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "날씨 데이터를 받아 앱에 표시",
+      "결제 서비스에 승인 요청",
+      "주문 내역 조회와 배송 상태 확인",
+      "운영체제가 제공하는 파일 읽기 기능 사용"
+    ],
+    "en": [
+      "Displaying weather data in an app",
+      "Requesting payment authorization",
+      "Retrieving orders and delivery status",
+      "Using operating-system file-access capabilities"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "화면에 새 항목 추가",
+        "text": "개발자와는 “배송 예정일을 보여 주려면 기존 API 응답에 그 항목이 있는지 확인하고, 값이 없거나 조회가 실패했을 때 화면도 정하자”라고 이야기해요."
+      },
+      {
+        "title": "외부 결제 연동",
+        "text": "“결제 API가 시간 초과되면 무조건 다시 요청하지 말고, 처리 결과 조회와 중복 결제 방지 규칙을 확인하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Adding an interface field",
+        "text": "Tell developers: “Check whether the existing API returns an estimated delivery date, and define the interface for missing values and failed requests.”"
+      },
+      {
+        "title": "Integrating payments",
+        "text": "Say: “If the payment API times out, check status lookup and duplicate-prevention rules before retrying.”"
+      }
+    ]
+  },
+  "comparison": {
+    "target": "sdk",
+    "rows": [
+      {
+        "label": {
+          "ko": "뜻",
+          "en": "Meaning"
+        },
+        "values": [
+          {
+            "ko": "기능을 사용하는 약속과 인터페이스",
+            "en": "The contract and interface for using capabilities"
+          },
+          {
+            "ko": "개발을 돕는 코드·문서·도구 묶음",
+            "en": "A bundle of development code, documentation and tools"
+          }
+        ]
+      },
+      {
+        "label": {
+          "ko": "역할 예시",
+          "en": "Example role"
+        },
+        "values": [
+          {
+            "ko": "주문 조회에 필요한 입력과 응답 규칙 정의",
+            "en": "Define inputs and outputs for order lookup"
+          },
+          {
+            "ko": "그 API 호출을 쉽게 하는 함수와 예제 제공",
+            "en": "Provide helper functions and examples for API calls"
+          }
+        ]
+      },
+      {
+        "label": {
+          "ko": "서로의 관계",
+          "en": "Relationship"
+        },
+        "values": [
+          {
+            "ko": "규격에 맞춰 직접 호출할 수 있는 경우도 많음",
+            "en": "Can often be called directly under its specification"
+          },
+          {
+            "ko": "API를 감싸 반복 구현을 줄일 수 있음",
+            "en": "Can wrap APIs to reduce repetitive integration work"
+          }
+        ]
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "API는 인터넷으로 연결하는 것만 말하나요?",
+        "en": "Are APIs only internet connections?"
+      },
+      "fact": {
+        "ko": "웹 API 외에 라이브러리와 운영체제 API도 있어요. 핵심은 프로그램이 기능을 사용하는 인터페이스라는 점이에요.",
+        "en": "Library and operating-system APIs also exist. The core concept is an interface through which software uses capabilities."
+      }
+    },
+    {
+      "myth": {
+        "ko": "API가 있으면 누구나 모든 데이터를 볼 수 있나요?",
+        "en": "Does an API let anyone see all data?"
+      },
+      "fact": {
+        "ko": "공개 범위와 인증·권한 정책에 따라 달라요. 로그인한 사용자라도 개별 데이터와 작업에 대한 권한 검사가 필요해요.",
+        "en": "Access depends on exposure and authentication and authorization policies. Signed-in users still need permission for each resource and action."
+      }
+    },
+    {
+      "myth": {
+        "ko": "API와 REST API는 같은 말인가요?",
+        "en": "Are API and REST API the same?"
+      },
+      "fact": {
+        "ko": "REST API는 REST 원칙을 따르는 API의 한 종류예요. API 전체가 REST이거나 JSON을 사용해야 하는 것은 아니에요.",
+        "en": "A REST API is one kind following REST principles. APIs in general need not follow REST or use JSON."
+      }
+    }
+  ],
+  "keywords": [
+    "client",
+    "server",
+    "backend",
+    "rest-api",
+    "json",
+    "sdk",
+    "authentication",
+    "webhook"
+  ],
+  "related": [
+    {
+      "id": "client",
+      "type": "related"
+    },
+    {
+      "id": "server",
+      "type": "related"
+    },
+    {
+      "id": "backend",
+      "type": "related"
+    },
+    {
+      "id": "rest-api",
+      "type": "related"
+    },
+    {
+      "id": "json",
+      "type": "related"
+    },
+    {
+      "id": "sdk",
+      "type": "compare"
+    },
+    {
+      "id": "authentication",
+      "type": "related"
+    },
+    {
+      "id": "webhook",
+      "type": "related"
+    }
+  ]
 }

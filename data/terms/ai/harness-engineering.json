@@ -1,9 +1,13 @@
 {
   "order": 360,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "하네스 엔지니어링",
     "en": "Harness Engineering"
+  },
+  "definition": {
+    "ko": "하네스 엔지니어링은 AI 에이전트의 모델 주변에 실행 루프, 도구 연결, 상태 저장과 검증 구조를 설계하는 일이에요. 긴 작업의 진행을 이어 가고 실패에서 복구하며 완료 여부를 확인하도록 컨텍스트와 권한, 실행 조건을 관리해요. 프롬프트의 문구를 개선하는 것보다 넓은 실행 환경을 다루는 개념이며, 발전 중인 용어라 포함 범위는 팀과 시스템마다 달라요.",
+    "en": "Harness engineering designs the execution loop, tool integration, state storage and checks surrounding an AI agent’s model. It manages context, permissions and execution conditions to preserve progress, recover from failures and verify completion. Its scope extends beyond prompt wording and varies across teams and systems as the term evolves."
   },
   "description": {
     "ko": "AI 에이전트가 작업을 꾸준히 수행하도록 주변 실행 환경과 제어 장치를 설계하는 일이에요.",

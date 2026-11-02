@@ -1,9 +1,13 @@
 {
   "order": 270,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "멀티모달 AI",
     "en": "Multimodal AI"
+  },
+  "definition": {
+    "ko": "멀티모달 AI는 텍스트, 이미지와 음성처럼 서로 다른 종류의 정보를 연결해 처리하는 인공지능이에요. 각 정보의 표현을 함께 활용해 사진에 관한 질문에 답하거나 음성을 글로 정리하는 등의 작업을 수행해요. 지원하는 입력과 출력의 조합은 모델마다 다르므로, 이미지를 이해하는 기능이 있다고 이미지 생성이나 모든 형식의 처리가 가능한 것은 아니에요.",
+    "en": "Multimodal AI processes connected information across modalities such as text, images and audio. It uses their representations together for tasks such as answering image questions or summarizing speech in text. Input and output combinations vary by model; understanding images does not imply image generation or support for every format."
   },
   "description": {
     "ko": "글, 이미지, 소리처럼 서로 다른 종류의 정보를 함께 다루는 AI예요.",

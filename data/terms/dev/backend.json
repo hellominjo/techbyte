@@ -1,10 +1,189 @@
 {
   "order": 110,
-  "updatedAt": "2026-11-01",
-  "term": { "ko": "백엔드", "en": "Backend" },
-  "description": {
-    "ko": "눈에 보이지 않는 곳에서 데이터를 저장하고 처리하는 부분이에요.",
-    "en": "The behind-the-scenes part that stores and processes data."
+  "updatedAt": "2026-11-02",
+  "term": {
+    "ko": "백엔드",
+    "en": "Backend"
   },
-  "related": [{ "id": "frontend", "type": "compare" }, { "id": "server", "type": "related" }]
+  "definition": {
+    "ko": "백엔드는 서비스의 업무 규칙을 적용하고 데이터와 외부 기능을 처리하는 내부 애플리케이션 영역이에요. API 요청뿐 아니라 예약 작업과 이벤트를 처리할 수 있으며 권한 검증, 일관성과 오류 처리 등을 담당해요. 요청을 받는 프로그램이나 장치를 뜻하는 서버와는 역할의 관점이 다르고, 하나의 백엔드가 여러 실행 환경에 나뉠 수도 있어요.",
+    "en": "The backend is the application layer applying business rules and handling data and external capabilities. It can process APIs, scheduled jobs and events while managing authorization, consistency and errors. It describes an application responsibility rather than a serving program or host and can span multiple execution environments."
+  },
+  "description": {
+    "ko": "사용자 요청에 업무 규칙을 적용하고 데이터와 외부 시스템을 처리하는 서비스의 내부 기능이에요.",
+    "en": "The service layer that applies business rules and manages data and external integrations for requests."
+  },
+  "analogy": {
+    "ko": "주문을 받아 재료와 조리 조건을 확인하고 음식을 만드는 식당의 주방과 같아요.",
+    "en": "Like a restaurant kitchen that validates an order, checks ingredients and prepares the food."
+  },
+  "details": {
+    "ko": [
+      "로그인 확인, 주문 저장과 포인트 계산 등 서비스의 업무 처리를 맡아요. API 요청뿐 아니라 예약 작업이나 메시지·이벤트를 받아 실행하는 기능도 포함할 수 있어요.",
+      "데이터베이스와 저장소, 결제 같은 외부 기능을 연결해요. 입력과 권한을 검증하고 여러 변경의 일관성, 중복 요청과 오류 처리도 설계해야 해요.",
+      "백엔드는 처리 역할이고 서버는 요청을 제공받아 처리하는 프로그램이나 실행 장치를 가리켜요. 하나의 백엔드가 여러 서버나 관리형 실행 환경에 나뉘어 동작할 수 있어요."
+    ],
+    "en": [
+      "Backend work includes authentication, order persistence and point calculations. It can handle scheduled jobs and events as well as API requests.",
+      "It integrates databases, storage and services such as payments. Responsibilities include input validation, authorization, consistency across changes, duplicate requests and failures.",
+      "Backend describes an application responsibility; server describes a serving program or its host. A backend can span multiple servers or managed execution environments."
+    ]
+  },
+  "background": {
+    "ko": [
+      "여러 화면과 사용자가 같은 업무 규칙과 데이터를 이용하려면 공통 처리가 필요해요. 화면에만 의존하지 않고 서비스가 요청의 유효성과 처리 결과를 관리하도록 역할을 나눠요."
+    ],
+    "en": [
+      "Shared rules and data need common processing across users and interfaces. Services validate requests and manage results rather than relying solely on the UI."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "요청과 권한 확인",
+        "text": "입력 형식, 사용자 권한과 필요한 업무 조건을 확인해요."
+      },
+      {
+        "title": "업무 처리",
+        "text": "계산을 수행하고 데이터나 외부 서비스를 조회·변경해요."
+      },
+      {
+        "title": "응답과 기록",
+        "text": "결과나 오류를 반환하고 후속 작업과 조사에 필요한 기록을 남겨요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Validate requests and access",
+        "text": "Check input formats, permissions and business preconditions."
+      },
+      {
+        "title": "Execute business logic",
+        "text": "Perform calculations and read or change data and external services."
+      },
+      {
+        "title": "Respond and record",
+        "text": "Return results or errors and record information needed for follow-up and investigation."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "주문 생성과 취소 처리",
+      "회원 인증과 데이터 접근 검증",
+      "정기 정산과 알림 작업"
+    ],
+    "en": [
+      "Creating and cancelling orders",
+      "Authentication and data-access checks",
+      "Scheduled settlement and notification jobs"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "결제 완료 처리",
+        "text": "“결제 알림이 재전송돼도 주문 상태와 포인트가 한 번만 반영되도록 백엔드에서 검증하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Handling completed payments",
+        "text": "Say: “Ensure the backend applies order updates and points only once even when payment notifications are retried.”"
+      }
+    ]
+  },
+  "comparison": {
+    "target": "frontend",
+    "rows": [
+      {
+        "label": {
+          "ko": "중심 역할",
+          "en": "Primary responsibility"
+        },
+        "values": [
+          {
+            "ko": "업무 규칙과 데이터 처리",
+            "en": "Business rules and data processing"
+          },
+          {
+            "ko": "사용자 화면과 상호작용",
+            "en": "User interfaces and interactions"
+          }
+        ]
+      },
+      {
+        "label": {
+          "ko": "문제 예시",
+          "en": "Example failure"
+        },
+        "values": [
+          {
+            "ko": "잘못된 금액 계산이나 저장 누락",
+            "en": "Incorrect calculations or missing writes"
+          },
+          {
+            "ko": "로딩 표시 누락이나 입력 동작 오류",
+            "en": "Missing loading indicators or broken input behavior"
+          }
+        ]
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "백엔드는 데이터베이스와 같은 말인가요?",
+        "en": "Is backend the same as database?"
+      },
+      "fact": {
+        "ko": "데이터베이스는 정보를 보관·조회하는 구성 요소예요. 백엔드는 이를 활용하며 업무 규칙, 권한과 외부 연동 등 더 넓은 처리를 맡아요.",
+        "en": "A database is a component for storing and querying data. The backend uses it within broader business logic, access checks and integrations."
+      }
+    },
+    {
+      "myth": {
+        "ko": "백엔드 문제는 화면과 관계없나요?",
+        "en": "Are backend issues unrelated to the interface?"
+      },
+      "fact": {
+        "ko": "API 응답 형식과 처리 상태가 화면 동작에 영향을 줘요. 화면과 서버 중 한쪽으로 단정하지 말고 요청부터 응답 표시까지 흐름을 확인해요.",
+        "en": "Response formats and processing states affect UI behavior. Inspect the request-to-display flow rather than assuming only one side is responsible."
+      }
+    }
+  ],
+  "keywords": [
+    "frontend",
+    "server",
+    "api",
+    "database",
+    "authentication",
+    "log"
+  ],
+  "related": [
+    {
+      "id": "frontend",
+      "type": "compare"
+    },
+    {
+      "id": "server",
+      "type": "related"
+    },
+    {
+      "id": "api",
+      "type": "related"
+    },
+    {
+      "id": "database",
+      "type": "related"
+    },
+    {
+      "id": "authentication",
+      "type": "related"
+    },
+    {
+      "id": "log",
+      "type": "related"
+    }
+  ]
 }

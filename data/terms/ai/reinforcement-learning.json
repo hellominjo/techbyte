@@ -1,9 +1,13 @@
 {
   "order": 410,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "강화학습",
     "en": "Reinforcement Learning"
+  },
+  "definition": {
+    "ko": "강화학습은 행동의 결과로 얻는 보상을 바탕으로 행동을 선택하는 정책을 개선하는 머신러닝 방법이에요. 환경과 상호작용하거나 수집된 경험을 활용해 누적 보상을 높이는 방향으로 학습하며, 새로운 행동의 탐색과 기존 전략의 활용을 고려해요. 좋은 보상 점수가 실제 목적 달성과 같지는 않으므로, 보상 설계와 별도의 성능 검증이 중요해요.",
+    "en": "Reinforcement learning improves an action-selection policy using rewards from outcomes. It learns toward higher cumulative reward through interaction or collected experience, considering exploration and use of existing strategies. High reward does not necessarily establish real goal achievement, making reward design and independent validation important."
   },
   "description": {
     "ko": "환경에서 행동한 결과로 받는 보상을 바탕으로 더 나은 행동 방식을 배우는 방법이에요.",

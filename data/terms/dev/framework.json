@@ -1,9 +1,13 @@
 {
   "order": 750,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "프레임워크",
     "en": "Framework"
+  },
+  "definition": {
+    "ko": "프레임워크는 앱의 기본 구조와 공통 실행 규칙을 제공하고 개발자가 정해진 확장 지점에 기능을 구현하도록 하는 기반이에요. 요청 처리나 화면 구성 등 반복 작업을 표준화하고 필요한 시점에 앱 코드를 호출할 수 있어요. 라이브러리와 범위가 겹칠 수 있지만 보통 실행 흐름을 주도하는 정도로 구분하며, 구조와 지원 환경의 제약도 고려해야 해요.",
+    "en": "A framework supplies application structure and execution conventions, letting developers implement behavior at defined extension points. It standardizes recurring tasks and can invoke application code. Its scope may overlap with libraries; control of application flow is a common distinction, with architectural and compatibility constraints to consider."
   },
   "description": {
     "ko": "앱의 기본 구조와 실행 흐름을 제공해 그 안에 필요한 기능을 채워 넣게 하는 개발 기반이에요.",

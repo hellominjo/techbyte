@@ -1,6 +1,6 @@
 {
   "order": 1060,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "DNS",
     "en": "DNS"
@@ -8,6 +8,10 @@
   "fullName": {
     "ko": "도메인 이름 시스템",
     "en": "Domain Name System"
+  },
+  "definition": {
+    "ko": "DNS(Domain Name System)는 계층적으로 구성된 이름과 관련 정보를 분산해 관리·조회하는 시스템이에요. 도메인에 연결된 IP 주소뿐 아니라 메일 경로와 서비스 확인용 정보 등도 레코드로 제공해요. 조회 결과가 캐시될 수 있어 변경이 보이는 시점은 달라질 수 있으며, 이름 조회 자체가 콘텐츠 전송이나 사이트의 신뢰성을 보장하는 것은 아니에요.",
+    "en": "DNS (Domain Name System) distributes management and lookup of hierarchical names and records. Records can supply IP addresses, mail routing and service-verification information. Cached results can delay visible updates; resolving a name neither transfers website content nor guarantees site trustworthiness."
   },
   "description": {
     "ko": "도메인 이름에 연결된 IP 주소 등 정보를 찾아 주는 계층형·분산형 이름 시스템이에요.",

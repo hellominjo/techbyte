@@ -1,6 +1,6 @@
 {
   "order": 1210,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "VPN",
     "en": "VPN"
@@ -8,6 +8,10 @@
   "fullName": {
     "ko": "가상 사설망",
     "en": "Virtual Private Network"
+  },
+  "definition": {
+    "ko": "VPN(Virtual Private Network)은 공유 네트워크 위에 논리적인 사설 연결을 구성하는 방식이에요. 일반적인 보안 VPN은 접속 상대를 인증하고 터널 구간을 암호화해 원격 사내망 접속이나 네트워크 간 연결에 활용해요. 보호되는 트래픽과 구간은 설정에 달려 있으며, 기기 보안이나 서비스 인증을 대신하거나 완전한 익명성을 보장하지는 않아요.",
+    "en": "A VPN (Virtual Private Network) creates a logical private connection over a shared network. Typical security VPNs authenticate peers and encrypt a tunnel for remote access or network links. Covered traffic and boundaries depend on configuration; VPNs do not replace device security or service authentication or guarantee complete anonymity."
   },
   "description": {
     "ko": "공용망 위에 논리적인 사설 연결을 만들며, 보안 VPN은 그 구간의 통신을 암호화해 보호해요.",

@@ -1,10 +1,189 @@
 {
   "order": 120,
-  "updatedAt": "2026-11-01",
-  "term": { "ko": "서버", "en": "Server" },
-  "description": {
-    "ko": "요청을 받으면 필요한 정보를 꺼내 주는 항상 켜져 있는 컴퓨터예요.",
-    "en": "An always-on computer that hands out information when asked."
+  "updatedAt": "2026-11-02",
+  "term": {
+    "ko": "서버",
+    "en": "Server"
   },
-  "related": [{ "id": "cloud", "type": "related" }]
+  "definition": {
+    "ko": "서버는 다른 프로그램의 요청을 받아 데이터나 기능을 제공하는 프로그램 또는 이를 실행하는 컴퓨터를 뜻해요. 클라이언트와 서버는 통신의 역할이므로 한 프로그램이 요청을 받으면서 다른 서비스에는 요청을 보내기도 해요. 물리 장비와 가상·관리형 환경 모두에서 실행될 수 있고, 항상 켜져 있어야 하거나 전용 대형 컴퓨터여야 한다는 뜻은 아니에요.",
+    "en": "A server is a program providing data or capabilities in response to requests, or its host computer. Client and server describe communication roles; one program can receive requests and call another service. Servers run in physical, virtual or managed environments and need not always run or use large dedicated hardware."
+  },
+  "description": {
+    "ko": "다른 프로그램의 요청을 받아 데이터나 기능을 제공하는 프로그램, 또는 그것을 실행하는 컴퓨터예요.",
+    "en": "A program that handles requests and provides data or capabilities, or the computer running it."
+  },
+  "analogy": {
+    "ko": "손님의 요청을 받아 결과를 내주는 창구와 같아요. 창구 역할을 말할 때도 있고 창구가 있는 시설을 말할 때도 있어요.",
+    "en": "Like a service counter: the word can describe the serving role or the facility that houses it."
+  },
+  "details": {
+    "ko": [
+      "웹 서버, 앱 서버와 데이터베이스 서버처럼 제공하는 기능에 따라 부를 수 있어요. 클라이언트는 요청하는 역할이고 서버는 그 요청을 받는 역할이라, 같은 프로그램이 둘 다 맡을 수도 있어요.",
+      "물리 장비뿐 아니라 가상 머신과 컨테이너 등에서도 서버 프로그램이 실행돼요. 컴퓨터 한 대에서 여러 서버 프로그램이 돌거나 여러 대가 한 서비스를 나눠 처리할 수 있어요.",
+      "사용자 요청을 받도록 계속 운영하는 경우가 많지만 항상 켜져 있어야 한다는 정의는 아니에요. 개발용 서버는 잠시 실행할 수 있고, 서버리스도 제공자가 관리하는 실행 자원을 사용해요."
+    ],
+    "en": [
+      "Names such as web, application and database server reflect the capability served. Client and server are communication roles, and one program can perform both.",
+      "Server programs can run on physical machines, virtual machines or containers. One host can run several servers, and several hosts can jointly serve one application.",
+      "Servers often operate continuously, but being always on is not definitional. A development server can run temporarily, and serverless systems still use provider-managed execution resources."
+    ]
+  },
+  "background": {
+    "ko": [
+      "각 기기가 데이터를 따로 관리하는 대신 여러 클라이언트가 공통 기능과 정보를 이용하도록 요청·응답 역할을 나눠요."
+    ],
+    "en": [
+      "Client-server designs separate requesters from shared providers so multiple clients can use common capabilities and information."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "접속 준비",
+        "text": "프로그램을 실행하고 주소, 포트와 접근 규칙 등을 설정해요."
+      },
+      {
+        "title": "요청 처리",
+        "text": "통신 규칙에 따라 요청을 받아 필요한 처리를 하거나 다른 구성 요소로 전달해요."
+      },
+      {
+        "title": "응답과 운영",
+        "text": "결과를 돌려주고 상태, 지연과 오류를 관찰하며 자원과 복구를 관리해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Prepare to accept requests",
+        "text": "Run the program and configure addressing, ports and access rules."
+      },
+      {
+        "title": "Handle requests",
+        "text": "Receive requests under a protocol and process or forward them to other components."
+      },
+      {
+        "title": "Respond and operate",
+        "text": "Return results and manage health, latency, errors, resources and recovery."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "웹페이지와 정적 파일 제공",
+      "주문 API 요청 처리",
+      "데이터베이스 조회 요청 처리"
+    ],
+    "en": [
+      "Serving web pages and static files",
+      "Handling order API requests",
+      "Handling database queries"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "접속 장애 조사",
+        "text": "“서버가 안 된다는 말에서 더 나아가 접속 자체가 실패하는지, 요청 처리에서 오류가 나는지 나눠서 보자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Investigating connectivity failures",
+        "text": "Say: “Distinguish a connection failure from a request-processing error rather than only saying the server is down.”"
+      }
+    ]
+  },
+  "comparison": {
+    "target": "client",
+    "rows": [
+      {
+        "label": {
+          "ko": "통신 역할",
+          "en": "Communication role"
+        },
+        "values": [
+          {
+            "ko": "요청을 받아 기능과 결과 제공",
+            "en": "Receives requests and provides results"
+          },
+          {
+            "ko": "요청을 보내고 결과 활용",
+            "en": "Sends requests and uses results"
+          }
+        ]
+      },
+      {
+        "label": {
+          "ko": "예시",
+          "en": "Example"
+        },
+        "values": [
+          {
+            "ko": "웹 서버와 API 서버",
+            "en": "Web and API servers"
+          },
+          {
+            "ko": "브라우저, 모바일 앱과 외부 API 호출 프로그램",
+            "en": "Browsers, mobile apps and programs calling external APIs"
+          }
+        ]
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "서버는 반드시 거대한 물리 컴퓨터인가요?",
+        "en": "Must a server be a large physical computer?"
+      },
+      "fact": {
+        "ko": "일반 컴퓨터에서도 서버 프로그램을 실행할 수 있어요. 필요한 성능과 안정성에 따라 물리 장비나 가상·관리형 환경 등을 선택해요.",
+        "en": "An ordinary computer can run a server program. Physical, virtual or managed environments are chosen according to performance and reliability requirements."
+      }
+    },
+    {
+      "myth": {
+        "ko": "서버와 클라우드는 같은 말인가요?",
+        "en": "Are server and cloud the same?"
+      },
+      "fact": {
+        "ko": "서버는 요청에 응답하는 프로그램이나 장치이고 클라우드는 IT 자원을 제공받는 방식이에요. 서버를 클라우드에서 운영할 수 있지만 두 개념은 같지 않아요.",
+        "en": "A server is a serving program or host; cloud is a model for obtaining IT resources. Servers can run in the cloud, but the terms are not equivalent."
+      }
+    }
+  ],
+  "keywords": [
+    "client",
+    "backend",
+    "cloud",
+    "container",
+    "load-balancing",
+    "scaling"
+  ],
+  "related": [
+    {
+      "id": "client",
+      "type": "compare"
+    },
+    {
+      "id": "backend",
+      "type": "related"
+    },
+    {
+      "id": "cloud",
+      "type": "related"
+    },
+    {
+      "id": "container",
+      "type": "related"
+    },
+    {
+      "id": "load-balancing",
+      "type": "related"
+    },
+    {
+      "id": "scaling",
+      "type": "related"
+    }
+  ]
 }

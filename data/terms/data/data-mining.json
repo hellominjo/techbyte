@@ -1,9 +1,13 @@
 {
   "order": 670,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "데이터 마이닝",
     "en": "Data Mining"
+  },
+  "definition": {
+    "ko": "데이터 마이닝은 많은 데이터에서 유용한 패턴과 관계, 규칙을 발견하는 분석 과정이에요. 통계와 머신러닝 등을 활용해 연관 구매, 고객 군집이나 이상 징후 같은 구조를 탐색해요. 발견된 관계가 실제 원인이나 일반적인 법칙이라는 보장은 없으므로, 별도 자료에서의 재현성과 업무적 가치를 검증해야 해요.",
+    "en": "Data mining discovers useful patterns, relationships and rules in large datasets. Statistical and machine-learning methods can explore associations, clusters and anomalies. Discovered relationships do not establish causation or universal rules, so validate reproducibility on separate data and practical business value."
   },
   "description": {
     "ko": "많은 데이터에서 유용한 패턴, 관계와 규칙을 찾아내는 분석 과정이에요.",

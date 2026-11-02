@@ -1,9 +1,13 @@
 {
   "order": 1100,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "쿠버네티스",
     "en": "Kubernetes"
+  },
+  "definition": {
+    "ko": "Kubernetes는 컨테이너 기반 앱을 여러 노드에 배치하고 원하는 실행 상태를 유지하도록 조율하는 오픈소스 플랫폼이에요. 하나 이상의 컨테이너를 담는 Pod를 배치 단위로 사용하고 컨트롤러가 실제 상태를 선언된 상태에 맞추도록 동작해요. 배포와 복구·확장을 도울 수 있지만 앱 오류나 데이터 복구까지 모두 해결하지는 않아 운영 정책과 관측 체계가 필요해요.",
+    "en": "Kubernetes is an open-source platform that schedules containerized workloads across nodes and reconciles their state. Pods containing one or more containers are scheduled, and controllers move actual state toward declared targets. It supports deployment, recovery and scaling but does not solve every application or data failure; operational policies and observability remain necessary."
   },
   "description": {
     "ko": "여러 실행 노드에서 컨테이너 기반 앱의 배치, 복구와 확장을 조율하는 오픈소스 플랫폼이에요.",

@@ -1,6 +1,6 @@
 {
   "order": 1000,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "AWS",
     "en": "AWS"
@@ -8,6 +8,10 @@
   "fullName": {
     "ko": "아마존 웹 서비스",
     "en": "Amazon Web Services"
+  },
+  "definition": {
+    "ko": "AWS(Amazon Web Services)는 아마존이 제공하는 클라우드 서비스 플랫폼이에요. 컴퓨팅, 저장소와 네트워크부터 데이터베이스와 관리형 실행 환경까지 여러 기능을 조합해 서비스를 운영할 수 있어요. 특정 서비스 모델 하나를 뜻하지 않으며, 자원과 지역 선택, 접근 권한과 데이터 관리 등 사용자가 맡는 범위는 선택한 서비스에 따라 달라요.",
+    "en": "AWS (Amazon Web Services) is Amazon’s cloud services platform. It combines capabilities from compute, storage and networking to databases and managed runtimes. It spans service models rather than representing one; choices of resources, locations, permissions and data responsibilities depend on the services selected."
   },
   "description": {
     "ko": "아마존이 컴퓨팅, 저장소와 데이터베이스 등 여러 IT 기능을 제공하는 클라우드 플랫폼이에요.",

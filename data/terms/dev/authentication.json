@@ -1,9 +1,13 @@
 {
   "order": 840,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "인증",
     "en": "Authentication"
+  },
+  "definition": {
+    "ko": "인증은 사용자나 프로그램이 주장하는 신원이 맞는지 검증하는 과정이에요. 비밀번호, 패스키와 인증서 등으로 확인하고 세션이나 토큰을 통해 인증 결과를 후속 요청에 연결할 수 있어요. 누구인지 확인하는 인증과 무엇을 할 수 있는지 결정하는 인가는 다르므로, 로그인에 성공해도 작업별 권한을 별도로 확인해야 해요.",
+    "en": "Authentication verifies a user’s or program’s claimed identity. Passwords, passkeys or certificates can establish identity, with sessions or tokens carrying results into later requests. It differs from authorization, which determines permitted actions; successful sign-in does not remove per-action access checks."
   },
   "description": {
     "ko": "사용자나 프로그램이 주장하는 신원이 맞는지 확인하는 과정이에요.",

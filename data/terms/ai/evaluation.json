@@ -1,9 +1,13 @@
 {
   "order": 440,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "모델 평가",
     "en": "Evaluation"
+  },
+  "definition": {
+    "ko": "모델 평가는 AI 모델이나 전체 시스템의 결과가 정해진 목적과 기준을 충족하는지 확인하는 과정이에요. 별도로 마련한 사례에 대해 정확성, 유용성, 근거와 작업 성공 여부 등을 측정하고 비용과 지연 시간도 함께 볼 수 있어요. 공개 벤치마크나 평균 점수만으로 실제 품질을 단정하지 않고, 업무에 맞는 사례와 실패 유형을 확인하는 것이 중요해요.",
+    "en": "Evaluation checks whether an AI model or system meets defined goals and criteria. It uses separate cases to assess accuracy, usefulness, grounding or task success and may include cost and latency. Public benchmarks and averages alone cannot establish real-world quality; task-specific cases and failure patterns matter."
   },
   "description": {
     "ko": "모델이나 AI 시스템이 실제 목적에 맞게 작동하는지 기준과 사례로 확인하는 과정이에요.",

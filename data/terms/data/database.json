@@ -1,9 +1,13 @@
 {
   "order": 500,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "데이터베이스",
     "en": "Database"
+  },
+  "definition": {
+    "ko": "데이터베이스는 정보를 일정한 구조와 규칙에 따라 조직해 보관하고 찾아 쓰도록 만든 데이터의 모음이에요. 데이터베이스 관리 시스템(DBMS)이 조회와 추가·수정·삭제, 접근과 동시 처리 등을 관리해요. 관계형, 문서형과 그래프형 등 여러 데이터 모델이 있으며, 저장 장치 자체와는 구분되지만 일상에서는 관리 소프트웨어까지 묶어 부르기도 해요.",
+    "en": "A database is an organized collection of data structured for storage and retrieval. A database management system (DBMS) manages queries, changes, access and concurrent operations. Data models include relational, document and graph approaches; the term differs from underlying storage, though everyday usage can include the management software."
   },
   "description": {
     "ko": "필요한 정보를 저장하고 찾아 쓰기 좋게 조직한 데이터의 모음이에요.",

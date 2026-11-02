@@ -1,6 +1,6 @@
 {
   "order": 540,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "데이터 웨어하우스",
     "en": "DW"
@@ -8,6 +8,10 @@
   "fullName": {
     "ko": "데이터 웨어하우스",
     "en": "Data Warehouse"
+  },
+  "definition": {
+    "ko": "데이터 웨어하우스(DW)는 여러 원천의 데이터를 공통 기준으로 통합·정리해 분석과 보고에 제공하는 저장·분석 체계예요. 과거 이력과 조직 전체 지표를 살피는 대량 조회·집계에 적합하도록 구성하며, 일상적인 주문 처리 등 운영 데이터베이스와 주된 목적이 달라요. 통합된 데이터도 원천 오류와 갱신 지연이 있을 수 있어 정의와 품질, 반영 시점을 관리해야 해요.",
+    "en": "A data warehouse integrates and curates data from multiple sources under shared definitions for analytics and reporting. It supports historical analysis and large aggregations, with a different primary purpose from operational databases. Source errors and refresh delays can remain, requiring definition, quality and freshness management."
   },
   "description": {
     "ko": "여러 곳의 데이터를 분석하기 좋게 통합하고 정리해 두는 저장·분석 체계예요.",

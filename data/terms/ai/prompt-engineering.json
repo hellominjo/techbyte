@@ -1,9 +1,13 @@
 {
   "order": 330,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "프롬프트 엔지니어링",
     "en": "Prompt Engineering"
+  },
+  "definition": {
+    "ko": "프롬프트 엔지니어링은 모델에 전달할 지시, 맥락과 예시를 설계하고 결과를 평가하며 개선하는 활동이에요. 작업 목표와 출력 형식, 판단 기준을 명확히 하고 대표적인 입력에서 원하는 동작이 나오는지 비교해요. 모델 가중치를 조정하는 학습과는 구분되며, 프롬프트만으로 부정확한 자료나 도구와 모델의 한계를 모두 해결할 수는 없어요.",
+    "en": "Prompt engineering designs, evaluates and improves instructions, context and examples supplied to a model. It clarifies objectives, output formats and criteria and compares behavior on representative inputs. It differs from training model weights and cannot by itself resolve every data, tool or model limitation."
   },
   "description": {
     "ko": "원하는 결과가 나오도록 AI에 줄 지시와 예시, 맥락을 설계하고 검증하는 일이에요.",

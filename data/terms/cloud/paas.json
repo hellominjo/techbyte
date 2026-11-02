@@ -1,6 +1,6 @@
 {
   "order": 1030,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "PaaS",
     "en": "PaaS"
@@ -8,6 +8,10 @@
   "fullName": {
     "ko": "서비스형 플랫폼",
     "en": "Platform as a Service"
+  },
+  "definition": {
+    "ko": "PaaS(Platform as a Service)는 앱을 개발·배포·실행할 플랫폼을 서비스로 제공하는 모델이에요. 제공자가 인프라와 운영체제, 실행 환경의 상당 부분을 관리하고 사용자는 주로 앱 코드와 설정, 데이터를 관리해요. 기반 운영 부담을 줄이는 대신 지원 언어와 실행 방식 등의 제약을 확인해야 하며, 앱 운영 책임이 모두 없어지는 것은 아니에요.",
+    "en": "PaaS (Platform as a Service) supplies a platform for developing, deploying and running applications. Providers manage infrastructure, operating systems and much of the runtime; users mainly manage code, configuration and data. It reduces platform operations while introducing support constraints and retaining application responsibilities."
   },
   "description": {
     "ko": "앱을 개발·실행할 플랫폼을 제공받고 주로 코드와 데이터에 집중하는 방식이에요.",

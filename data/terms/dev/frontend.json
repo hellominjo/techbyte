@@ -1,10 +1,184 @@
 {
   "order": 100,
-  "updatedAt": "2026-11-01",
-  "term": { "ko": "프론트엔드", "en": "Frontend" },
-  "description": {
-    "ko": "웹사이트에서 사용자 눈에 보이고 직접 만지는 부분이에요.",
-    "en": "The part of a website that users see and interact with."
+  "updatedAt": "2026-11-02",
+  "term": {
+    "ko": "프론트엔드",
+    "en": "Frontend"
   },
-  "related": [{ "id": "backend", "type": "compare" }]
+  "definition": {
+    "ko": "프론트엔드는 사용자가 접하는 화면과 상호작용을 구현하는 애플리케이션 영역이에요. 시각적 배치뿐 아니라 입력과 상태 관리, 로딩과 오류 안내, 접근성과 API 연동도 포함해요. 웹에서는 일부 화면을 서버에서 구성할 수도 있으므로 모든 관련 코드가 브라우저에서만 실행된다는 뜻은 아니며, 화면 검증이 서버의 권한 검사를 대신하지는 않아요.",
+    "en": "The frontend implements user-facing interfaces and interactions, including layout, input and state, loading and errors, accessibility and API integration. Some web rendering can occur on the server, so not every related computation runs in the browser. Interface validation does not replace server-side authorization."
+  },
+  "description": {
+    "ko": "웹사이트나 앱에서 사용자가 보고 조작하는 화면과 상호작용을 구현하는 부분이에요.",
+    "en": "The part of a website or application that implements user-facing interfaces and interactions."
+  },
+  "analogy": {
+    "ko": "식당의 홀과 메뉴판처럼 손님이 서비스를 접하고 주문하는 공간과 같아요.",
+    "en": "Like a restaurant’s dining area and menu, where customers interact with the service."
+  },
+  "details": {
+    "ko": [
+      "버튼과 입력창의 모양뿐 아니라 화면 전환, 입력 상태, 로딩과 오류 안내도 다뤄요. 웹에서는 HTML, CSS와 JavaScript 등을 활용하며 접근성과 다양한 화면 크기도 고려해요.",
+      "API로 받은 데이터를 화면에 표현하고 사용자의 행동을 처리 요청으로 연결해요. 화면에서 입력을 검사해도 서버는 권한과 업무 규칙을 다시 검증해야 해요.",
+      "웹에서는 일부 화면을 서버에서 미리 만들어 전달할 수도 있어요. 프론트엔드는 사용자 경험의 역할 구분이고, 모든 관련 코드가 반드시 브라우저에서만 실행된다는 뜻은 아니에요."
+    ],
+    "en": [
+      "Frontend work includes navigation, input state, loading and error messages as well as visual controls. Web frontends use technologies such as HTML, CSS and JavaScript and consider accessibility and screen sizes.",
+      "A frontend presents data from APIs and turns user actions into requests. Client-side input checks do not replace server-side authorization and business validation.",
+      "Some web interfaces are rendered on the server before delivery. Frontend describes a user-experience responsibility, not a guarantee that every related computation runs only in the browser."
+    ]
+  },
+  "background": {
+    "ko": [
+      "같은 데이터와 기능도 어떻게 보여 주고 조작하게 하느냐에 따라 사용성이 달라져요. 사용자와 시스템 사이의 접점을 일관되게 구현하는 역할이 필요해요."
+    ],
+    "en": [
+      "How users see and interact with the same data and capabilities changes usability. Frontend engineering provides a coherent interface between people and systems."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "화면 구성",
+        "text": "구조와 스타일을 적용해 화면을 만들고 현재 상태를 표시해요."
+      },
+      {
+        "title": "행동과 요청 처리",
+        "text": "입력과 클릭에 반응하고 필요하면 API에 요청을 보내요."
+      },
+      {
+        "title": "상태 갱신",
+        "text": "응답에 맞춰 화면을 바꾸고 대기·실패·재시도 상태도 안내해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Compose the interface",
+        "text": "Build the interface and show its current state."
+      },
+      {
+        "title": "Handle actions and requests",
+        "text": "Respond to input and clicks and call APIs when needed."
+      },
+      {
+        "title": "Update state",
+        "text": "Update the interface from results and communicate pending, failed and retry states."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "상품 목록과 검색 필터 화면",
+      "회원가입 입력과 오류 안내",
+      "기기 크기에 맞춘 화면 배치"
+    ],
+    "en": [
+      "Product listings and search filters",
+      "Sign-up forms and validation feedback",
+      "Layouts adapted to device sizes"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "주문 버튼 설계",
+        "text": "“버튼 모양뿐 아니라 처리 중 표시와 실패 시 재시도를 정하고, 중복 주문 방지는 백엔드와 함께 확인하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Designing an order button",
+        "text": "Say: “Define loading and retry behavior as well as appearance, and coordinate duplicate-order prevention with the backend.”"
+      }
+    ]
+  },
+  "comparison": {
+    "target": "backend",
+    "rows": [
+      {
+        "label": {
+          "ko": "중심 역할",
+          "en": "Primary responsibility"
+        },
+        "values": [
+          {
+            "ko": "사용자 화면과 상호작용",
+            "en": "User interfaces and interactions"
+          },
+          {
+            "ko": "업무 규칙과 데이터 처리",
+            "en": "Business rules and data processing"
+          }
+        ]
+      },
+      {
+        "label": {
+          "ko": "주문 예시",
+          "en": "Order example"
+        },
+        "values": [
+          {
+            "ko": "상품 선택과 처리 상태 표시",
+            "en": "Product selection and status display"
+          },
+          {
+            "ko": "가격·재고 검증과 주문 기록",
+            "en": "Price and stock validation and order persistence"
+          }
+        ]
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "프론트엔드는 디자인을 꾸미기만 하나요?",
+        "en": "Is frontend just visual styling?"
+      },
+      "fact": {
+        "ko": "입력과 상태 관리, 성능과 접근성, API 연동 등도 포함해요. 사용자가 기능을 실제로 이용할 수 있도록 동작을 구현하는 일이에요.",
+        "en": "It also includes state management, performance, accessibility and API integration, implementing behavior that makes features usable."
+      }
+    },
+    {
+      "myth": {
+        "ko": "화면에서 버튼을 숨기면 권한도 차단되나요?",
+        "en": "Does hiding a button enforce permissions?"
+      },
+      "fact": {
+        "ko": "화면 제어는 사용 경험을 돕지만 요청 자체를 막는 보안 경계는 아니에요. 서버에서 작업별 권한을 확인해야 해요.",
+        "en": "UI controls guide users but are not an authorization boundary. Servers must enforce permissions for each action."
+      }
+    }
+  ],
+  "keywords": [
+    "backend",
+    "client",
+    "api",
+    "framework",
+    "deployment"
+  ],
+  "related": [
+    {
+      "id": "backend",
+      "type": "compare"
+    },
+    {
+      "id": "client",
+      "type": "related"
+    },
+    {
+      "id": "api",
+      "type": "related"
+    },
+    {
+      "id": "framework",
+      "type": "related"
+    },
+    {
+      "id": "deployment",
+      "type": "related"
+    }
+  ]
 }

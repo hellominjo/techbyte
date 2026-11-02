@@ -1,9 +1,13 @@
 {
   "order": 560,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "정형 데이터",
     "en": "Structured Data"
+  },
+  "definition": {
+    "ko": "정형 데이터는 미리 정한 항목과 자료형, 관계 등 구조에 맞춰 조직한 데이터예요. 주문 번호와 날짜, 금액처럼 각 필드의 의미와 형식이 일정해 조건 검색과 집계에 활용하기 좋아요. 관계형 테이블이 대표적이지만 특정 저장소에만 한정되지 않으며, 구조가 있어도 누락과 잘못된 값 등 품질 문제는 따로 점검해야 해요.",
+    "en": "Structured data follows predefined fields, types and relationships. Consistent fields such as order IDs, dates and amounts make filtering and aggregation convenient. Relational tables are a common example, but no particular storage system is required; missing and incorrect values still need quality checks."
   },
   "description": {
     "ko": "미리 정한 항목과 자료형에 맞춰 일정한 구조로 정리된 데이터예요.",

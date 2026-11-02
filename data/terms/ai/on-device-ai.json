@@ -1,9 +1,13 @@
 {
   "order": 430,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "온디바이스 AI",
     "en": "On-device AI"
+  },
+  "definition": {
+    "ko": "온디바이스 AI는 휴대폰, PC나 다른 단말기의 연산 자원으로 AI 추론을 실행하는 방식이에요. 원격 서버로 모든 입력을 보내지 않고 처리해 지연과 네트워크 의존을 줄일 수 있지만, 기기의 메모리와 전력·발열에 제약을 받아요. 모델은 서버에서 학습해 배포할 수도 있고 일부 기능만 원격으로 처리할 수도 있으므로, 기기 내 실행이 모든 데이터의 외부 전송 금지를 뜻하지는 않아요.",
+    "en": "On-device AI runs inference using a phone, PC or other endpoint’s compute resources. Local processing can reduce latency and network dependence but faces memory, power and thermal limits. Models may be trained remotely and some tasks may remain server-assisted, so local inference does not mean that no data ever leaves the device."
   },
   "description": {
     "ko": "휴대폰이나 PC 같은 사용자 기기 안에서 AI 모델의 추론을 실행하는 방식이에요.",

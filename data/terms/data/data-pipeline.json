@@ -1,9 +1,13 @@
 {
   "order": 580,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "데이터 파이프라인",
     "en": "Data Pipeline"
+  },
+  "definition": {
+    "ko": "데이터 파이프라인은 원천 데이터가 수집·처리·저장·전달 단계를 거치도록 연결한 작업 체계예요. 일정에 따라 묶어서 처리하는 배치나 계속 들어오는 이벤트를 처리하는 스트리밍 등으로 구성할 수 있어요. 데이터 이동뿐 아니라 단계 의존성, 검증과 실패 복구를 관리하며, ETL은 이런 파이프라인을 구성하는 한 방식이에요.",
+    "en": "A data pipeline connects tasks that ingest, process, store and deliver source data. It can use scheduled batches or continuous event streams. Alongside movement, it manages dependencies, validation and recovery; ETL is one approach to implementing such a pipeline."
   },
   "description": {
     "ko": "데이터가 수집부터 처리와 전달까지 이어서 흐르도록 연결한 작업 체계예요.",

@@ -1,9 +1,13 @@
 {
   "order": 290,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "AI 워크플로우",
     "en": "AI Workflow"
+  },
+  "definition": {
+    "ko": "AI 워크플로우는 AI의 판단이나 생성 기능을 일반 프로그램과 사람의 작업에 연결해 놓은 업무 처리 흐름이에요. 각 단계의 입력과 출력, 실행 조건을 정의하고 필요에 따라 분기와 반복, 병렬 처리를 구성해요. 미리 정한 흐름을 중심으로 실행한다는 점에서 다음 행동을 상황에 따라 고르는 에이전트와 구분되지만, 하나의 시스템에서 함께 사용할 수도 있어요.",
+    "en": "An AI workflow connects AI decisions or generation with ordinary software and human tasks. Inputs, outputs and execution conditions define its stages, which can branch, loop or run in parallel. Its emphasis on predefined control flow distinguishes it from an agent choosing actions dynamically, though both can be combined in one system."
   },
   "description": {
     "ko": "AI와 일반 프로그램, 사람의 작업을 정해진 단계와 조건으로 연결한 업무 흐름이에요.",

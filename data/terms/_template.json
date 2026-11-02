@@ -45,7 +45,7 @@
     ]
   },
   "misconceptions": [
-    { "myth": { "ko": "흔한 오해?", "en": "Myth?" }, "fact": { "ko": "사실은…", "en": "Actually…" } }
+    { "myth": { "ko": "알고 쓰는 기술", "en": "Myth?" }, "fact": { "ko": "사실은…", "en": "Actually…" } }
   ],
   "keywords": ["관련-용어-id", "또는 그냥 글자"],
   "tools": [{ "id": "chatgpt", "note": { "ko": "이 용어와 관련한 도구 설명 (선택)", "en": "Note" } }],

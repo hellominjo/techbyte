@@ -1,6 +1,6 @@
 {
   "order": 1270,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "SSO",
     "en": "SSO"
@@ -8,6 +8,10 @@
   "fullName": {
     "ko": "싱글 사인온",
     "en": "Single Sign-On"
+  },
+  "definition": {
+    "ko": "SSO(Single Sign-On)는 공통 신원 제공자의 인증 결과를 여러 서비스가 신뢰해 반복 로그인을 줄이는 방식이에요. 서비스는 OpenID Connect나 SAML 등의 프로토콜로 결과를 검증하고 자체 세션과 권한 정책에 맞춰 이용을 제공할 수 있어요. 같은 비밀번호를 여러 곳에 저장하는 것과 다르며, 계정 해지와 기존 세션 종료가 모든 서비스에 자동 적용된다는 보장은 없어요.",
+    "en": "SSO (Single Sign-On) lets services trust a common identity provider to reduce repeated sign-ins. Services validate results through protocols such as OpenID Connect or SAML and apply their own session and permission policies. It differs from password reuse and does not guarantee automatic offboarding or session termination across every service."
   },
   "description": {
     "ko": "공통 신원 제공자의 로그인 결과를 여러 서비스에서 신뢰해 반복 로그인을 줄이는 방식이에요.",

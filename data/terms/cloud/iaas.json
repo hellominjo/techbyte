@@ -1,6 +1,6 @@
 {
   "order": 1020,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "IaaS",
     "en": "IaaS"
@@ -8,6 +8,10 @@
   "fullName": {
     "ko": "서비스형 인프라",
     "en": "Infrastructure as a Service"
+  },
+  "definition": {
+    "ko": "IaaS(Infrastructure as a Service)는 연산, 저장소와 네트워크 등 인프라 자원을 서비스로 제공하는 모델이에요. 제공자는 물리 장비와 기반 가상화 등을 관리하고, 사용자는 보통 운영체제와 실행 환경, 앱과 데이터를 구성·관리해요. 직접 장비를 구매하지 않고 제어 범위를 확보할 수 있지만, 상세 관리 경계는 서비스 계약에 따라 달라요.",
+    "en": "IaaS (Infrastructure as a Service) provides compute, storage and networking as services. Providers manage physical infrastructure and underlying virtualization, while users typically configure and manage operating systems, runtimes, applications and data. It offers control without purchasing hardware, with exact boundaries depending on agreements."
   },
   "description": {
     "ko": "컴퓨팅, 네트워크와 저장소 같은 인프라 자원을 서비스로 제공받는 방식이에요.",

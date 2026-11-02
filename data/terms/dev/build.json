@@ -1,9 +1,13 @@
 {
   "order": 880,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "빌드",
     "en": "Build"
+  },
+  "definition": {
+    "ko": "빌드는 소스 코드와 자원, 의존성을 실행하거나 배포할 수 있는 결과물로 변환·구성하는 과정이에요. 컴파일과 파일 묶기, 최적화와 패키징 등을 포함할 수 있지만 단계는 언어와 플랫폼마다 달라요. 대상 환경에 반영하는 배포와는 구분되며, 빌드 성공만으로 업무 기능의 정확성까지 검증된 것은 아니에요.",
+    "en": "A build transforms and assembles source code, resources and dependencies into runnable or distributable artifacts. It may include compilation, bundling, optimization and packaging, depending on language and platform. Building differs from deploying artifacts, and build success does not establish correct business behavior."
   },
   "description": {
     "ko": "소스 코드와 자원을 실행하거나 배포할 수 있는 결과물로 만드는 과정이에요.",

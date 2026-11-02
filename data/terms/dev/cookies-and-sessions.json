@@ -1,9 +1,13 @@
 {
   "order": 830,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "쿠키와 세션",
     "en": "Cookies and Sessions"
+  },
+  "definition": {
+    "ko": "쿠키는 브라우저가 보관하고 적용 범위와 정책에 맞는 요청에 보내는 데이터이며, 세션은 여러 요청에 걸쳐 유지하는 이용 상태예요. 대표적인 로그인 구성은 서버가 상태를 저장하고 브라우저의 쿠키에 담긴 세션 ID로 그 상태를 찾는 방식이에요. 둘은 같은 개념이 아니고 모든 세션이 이 구조를 쓰는 것도 아니므로, 저장 위치와 만료·로그아웃 규칙을 구분해야 해요.",
+    "en": "Cookies are browser-held data sent with requests under scope and policy rules; sessions maintain interaction state across requests. A common login design stores state on the server and locates it using a cookie-held session ID. They are distinct concepts, and session designs vary, requiring explicit storage, expiration and logout rules."
   },
   "description": {
     "ko": "쿠키는 브라우저가 보관해 요청에 보내는 작은 데이터이고, 세션은 여러 요청에 걸쳐 유지하는 이용 상태예요.",

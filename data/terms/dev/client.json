@@ -1,9 +1,13 @@
 {
   "order": 700,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "클라이언트",
     "en": "Client"
+  },
+  "definition": {
+    "ko": "클라이언트는 서버에 기능이나 데이터를 요청하고 응답을 사용하는 프로그램이나 장치의 역할을 말해요. 브라우저와 모바일 앱뿐 아니라 외부 API를 호출하는 서버 프로그램도 해당할 수 있어요. 사용자 화면을 뜻하는 프론트엔드와 자주 겹치지만 같은 개념은 아니며, 한 프로그램이 통신에 따라 클라이언트와 서버 역할을 모두 맡을 수 있어요.",
+    "en": "A client is a program or device acting as a requester and consumer of server capabilities or data. Browsers, mobile apps and server programs calling APIs can all be clients. It overlaps with but differs from frontend, and one program can serve some requests while acting as a client for others."
   },
   "description": {
     "ko": "서버에 기능이나 데이터를 요청하고 응답을 받아 사용하는 프로그램이나 장치예요.",

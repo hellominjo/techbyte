@@ -1,9 +1,13 @@
 {
   "order": 1130,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "서버리스",
     "en": "Serverless"
+  },
+  "definition": {
+    "ko": "서버리스는 제공자가 서버 할당과 기반 운영의 많은 부분을 맡는 실행·서비스 모델이에요. 이벤트 기반 함수 실행뿐 아니라 관리형 데이터와 컨테이너 서비스 등에도 적용되며 사용자는 기능과 데이터에 집중할 수 있어요. 서버가 실제로 없다는 뜻은 아니고, 확장·과금과 실행 한도는 서비스별로 달라 앱과 권한, 상태와 비용 관리는 여전히 필요해요.",
+    "en": "Serverless delegates much server allocation and underlying operation to a provider. It applies to event-driven functions and managed data or container services, letting users focus on logic and data. Servers still exist, and scaling, billing and limits vary; applications, permissions, state and costs still require management."
   },
   "description": {
     "ko": "제공자가 서버 할당과 기반 운영을 맡아 사용자가 기능과 데이터에 집중하게 하는 실행·서비스 모델이에요.",

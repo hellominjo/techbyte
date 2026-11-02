@@ -1,9 +1,13 @@
 {
   "order": 590,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "데이터 전처리",
     "en": "Data Preprocessing"
+  },
+  "definition": {
+    "ko": "데이터 전처리는 분석이나 모델 학습 전에 데이터를 사용 목적에 맞게 정리하고 변환하는 과정이에요. 누락과 중복 처리, 형식과 단위 통일, 범주 인코딩과 수치 변환 등을 포함할 수 있어요. 처리 규칙은 데이터의 업무적 의미에 맞춰야 하며, 모델 평가에 사용할 정보가 학습 과정에 새어 들어가지 않도록 변환 기준을 적용하는 범위도 관리해야 해요.",
+    "en": "Data preprocessing prepares and transforms data for analysis or training. It can handle missing values and duplicates, align formats and units, encode categories and transform numbers. Rules should respect business meaning, and fitting transformations must avoid leaking evaluation information into training."
   },
   "description": {
     "ko": "분석이나 모델 학습에 쓰기 전에 데이터를 목적에 맞게 정리하고 변환하는 과정이에요.",

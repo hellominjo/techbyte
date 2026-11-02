@@ -1,9 +1,13 @@
 {
   "order": 320,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "함수 호출",
     "en": "Function Calling"
+  },
+  "definition": {
+    "ko": "함수 호출은 모델이 사용 가능한 기능의 설명과 입력 형식을 바탕으로 함수 이름과 인수를 구조화해 요청하는 방식이에요. 앱이나 실행 환경이 요청을 검증하고 실제 함수를 실행한 뒤 결과를 모델에 제공할 수 있어요. 모델이 실행 요청을 만드는 것과 외부 시스템의 동작을 실제로 수행하는 것은 구분되며, 권한과 입력값의 검사는 실행하는 쪽에서 책임져야 해요.",
+    "en": "Function calling lets a model request a capability through a structured function name and arguments based on supplied descriptions and schemas. The application or runtime validates and executes the request and can return results to the model. Generating a call differs from carrying out an external action; the execution layer must enforce permissions and validate inputs."
   },
   "description": {
     "ko": "모델이 외부 기능을 쓰도록 함수 이름과 입력값을 정해진 형식으로 요청하는 방식이에요.",

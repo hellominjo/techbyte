@@ -1,14 +1,237 @@
 {
   "order": 30,
-  "updatedAt": "2026-11-01",
-  "term": { "ko": "클라우드", "en": "Cloud" },
+  "updatedAt": "2026-11-02",
+  "term": {
+    "ko": "클라우드",
+    "en": "Cloud"
+  },
+  "definition": {
+    "ko": "클라우드는 컴퓨팅, 저장소와 소프트웨어 같은 IT 자원을 네트워크로 필요에 따라 제공받는 방식이에요. 공유된 자원을 소프트웨어로 할당·해제하고 사용량에 맞춰 조절하는 특징이 있으며, 조직 전용으로 구성할 수도 있어요. 외부 컴퓨터에 접속하는 것만을 뜻하지 않고, 서비스 모델에 따라 제공자와 사용자의 관리 책임과 과금 방식이 달라요.",
+    "en": "Cloud computing delivers IT resources such as compute, storage and software over a network on demand. It supports software-managed provisioning, release and adjustment of pooled resources, including organization-dedicated deployments. It is more than remote access; responsibilities and billing depend on the service model."
+  },
   "description": {
-    "ko": "내 컴퓨터 대신 인터넷 너머의 컴퓨터를 빌려 쓰는 방식이에요.",
-    "en": "Renting computers over the internet instead of using your own."
+    "ko": "컴퓨팅, 저장소와 소프트웨어 같은 IT 자원을 네트워크로 필요에 맞게 제공받는 방식이에요.",
+    "en": "Accessing computing, storage, software and other IT resources over a network as needed."
   },
   "analogy": {
-    "ko": "집에 발전기를 두는 대신 전력 회사의 전기를 쓴 만큼만 요금을 내는 것과 같아요.",
-    "en": "Like paying the power company for the electricity you use instead of running your own generator."
+    "ko": "집에 발전기를 마련하는 대신 전력 회사의 전기를 이용하는 것과 비슷해요. 다만 실제 요금은 자원과 계약 방식에 따라 달라요.",
+    "en": "Like using electricity from a utility instead of owning a generator, although actual charges depend on resources and contracts."
   },
-  "related": [{ "id": "server", "type": "prerequisite" }]
+  "details": {
+    "ko": [
+      "물리 장비를 직접 구매하는 대신 관리 화면이나 API로 자원을 할당하고 사용할 수 있어요. 가상 머신뿐 아니라 앱 실행 환경, 데이터베이스와 완성된 업무 소프트웨어도 클라우드로 제공될 수 있어요.",
+      "어디까지 제공자가 관리하느냐에 따라 IaaS, PaaS와 SaaS 등으로 나눠요. AWS와 Azure는 여러 종류의 서비스를 제공하는 플랫폼이며, 클라우드 자체와 같은 뜻은 아니에요.",
+      "외부 제공자의 자원을 함께 이용하는 퍼블릭 클라우드 외에 조직 전용의 프라이빗 클라우드와 이를 결합한 구성도 있어요. 단순히 멀리 있는 컴퓨터에 접속한다고 모두 클라우드인 것은 아니며, 자원의 공동 활용과 필요에 따른 할당·해제 등이 중요한 특징이에요.",
+      "자원 준비와 규모 조절이 편리해질 수 있지만 운영 책임이 모두 없어지지는 않아요. 서비스별로 앱과 데이터, 권한과 복구의 책임을 나눠야 하고, 자원 유지 시간과 저장량·전송량 등 비용도 관리해야 해요."
+    ],
+    "en": [
+      "Resources can be provisioned through a console or API instead of purchasing physical equipment. Offerings can include virtual machines, application platforms, databases and complete business software.",
+      "Models such as IaaS, PaaS and SaaS differ in how much the provider manages. AWS and Azure are platforms offering multiple service types, not synonyms for cloud itself.",
+      "Public clouds share provider resources across customers; private clouds serve a single organization, and combinations are possible. Remote access alone does not make a system a cloud: resource pooling and on-demand provisioning and release are important characteristics.",
+      "Provisioning and scaling can become easier, but operational responsibility does not disappear. Define responsibilities for applications, data, access and recovery, and manage charges such as resource time, storage and data transfer."
+    ]
+  },
+  "background": {
+    "ko": [
+      "장비를 미리 구매하면 준비에 시간이 걸리고 수요 변화에 맞춰 용량을 조절하기도 어려워요. 너무 많이 마련하면 자원이 남고, 부족하면 서비스 처리에 제약이 생겨요.",
+      "클라우드는 공유된 자원을 소프트웨어로 관리하고 필요한 시점에 할당해 이런 준비와 조절을 더 유연하게 하려는 방식이에요."
+    ],
+    "en": [
+      "Buying infrastructure in advance takes time and makes changing capacity difficult. Overprovisioning leaves idle resources, while underprovisioning can constrain service.",
+      "Cloud systems manage pooled resources through software and allocate them on demand to make provisioning and adjustment more flexible."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "요구와 관리 범위 정하기",
+        "text": "앱의 처리량과 데이터 보관·복구 요구를 정하고, 직접 관리할 부분과 제공받을 서비스를 골라요."
+      },
+      {
+        "title": "자원 할당과 연결",
+        "text": "관리 화면이나 API로 실행 환경과 저장소 등을 준비하고 네트워크, 권한과 필요한 설정을 연결해요."
+      },
+      {
+        "title": "사용과 규모 조절",
+        "text": "앱이나 업무 기능을 실행하고 수요에 맞춰 자원을 늘리거나 줄여요. 자동 조절을 쓰려면 정책과 한도를 정해야 해요."
+      },
+      {
+        "title": "운영과 비용 관리",
+        "text": "상태와 사용량을 관찰하고 복구를 점검하며, 필요 없어진 자원과 남아 있는 저장·연결 비용을 확인해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Define requirements and responsibilities",
+        "text": "Establish capacity, retention and recovery requirements and decide which layers to manage versus consume as services."
+      },
+      {
+        "title": "Provision and connect",
+        "text": "Prepare runtimes and storage through a console or API and configure networking, access and settings."
+      },
+      {
+        "title": "Use and adjust capacity",
+        "text": "Run applications or business services and adjust resources to demand. Automated adjustment requires policies and limits."
+      },
+      {
+        "title": "Manage operations and costs",
+        "text": "Monitor health and usage, check recovery readiness and review unused resources and ongoing storage or connection charges."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "웹·모바일 앱의 서버 기능 운영",
+      "사진·백업과 분석 데이터 보관",
+      "네트워크로 이용하는 문서·협업 소프트웨어"
+    ],
+    "en": [
+      "Hosting backend functions for web and mobile apps",
+      "Storing photos, backups and analytical data",
+      "Using hosted document and collaboration software"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "새 서비스의 운영 환경 준비",
+        "text": "개발자와는 “클라우드에서 실행 환경을 준비하되, 예상 이용량과 데이터 위치, 우리가 맡을 관리 범위와 비용 한도를 먼저 정하자”라고 이야기할 수 있어요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Preparing a service environment",
+        "text": "Tell developers: “Provision the environment in the cloud, after defining expected usage, data locations, our operational responsibilities and cost limits.”"
+      }
+    ]
+  },
+  "comparison": {
+    "target": "iaas",
+    "rows": [
+      {
+        "label": {
+          "ko": "범위",
+          "en": "Scope"
+        },
+        "values": [
+          {
+            "ko": "IT 자원을 네트워크로 제공하는 폭넓은 방식",
+            "en": "A broad model for delivering IT resources over a network"
+          },
+          {
+            "ko": "인프라 자원을 제공하는 클라우드 서비스 모델",
+            "en": "A cloud service model supplying infrastructure resources"
+          }
+        ]
+      },
+      {
+        "label": {
+          "ko": "제공 예",
+          "en": "Examples"
+        },
+        "values": [
+          {
+            "ko": "인프라, 앱 플랫폼과 완성된 소프트웨어 등",
+            "en": "Infrastructure, application platforms and complete software"
+          },
+          {
+            "ko": "가상 머신, 연결된 저장소와 네트워크 등",
+            "en": "Virtual machines, attached storage and networking"
+          }
+        ]
+      },
+      {
+        "label": {
+          "ko": "관리 책임",
+          "en": "Management responsibilities"
+        },
+        "values": [
+          {
+            "ko": "선택한 서비스 모델과 계약에 따라 달라짐",
+            "en": "Depends on the service model and agreement"
+          },
+          {
+            "ko": "보통 사용자가 운영체제와 앱·데이터 관리",
+            "en": "Users typically manage operating systems, applications and data"
+          }
+        ]
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "클라우드는 항상 더 저렴한가요?",
+        "en": "Is cloud always cheaper?"
+      },
+      "fact": {
+        "ko": "사용 패턴과 계약, 운영 인력과 전송 비용 등에 따라 달라요. 앱을 멈춰도 디스크나 다른 자원에 비용이 남을 수 있어 전체 구성을 봐야 해요.",
+        "en": "Costs depend on usage, agreements, staffing and data transfer. Stopping an application can leave storage and other charges, so assess the full setup."
+      }
+    },
+    {
+      "myth": {
+        "ko": "클라우드에 올리면 장애와 데이터 손실이 없어지나요?",
+        "en": "Does cloud eliminate outages and data loss?"
+      },
+      "fact": {
+        "ko": "장애와 잘못된 설정, 실수로 인한 삭제는 여전히 가능해요. 필요한 가용성과 백업·복구 방식을 정하고 실제 복원이 되는지 확인해야 해요.",
+        "en": "Failures, misconfiguration and accidental deletion remain possible. Define availability, backup and recovery requirements and verify restoration."
+      }
+    },
+    {
+      "myth": {
+        "ko": "클라우드와 온라인 저장 공간은 같은 말인가요?",
+        "en": "Is cloud just online file storage?"
+      },
+      "fact": {
+        "ko": "저장소는 클라우드가 제공할 수 있는 자원 중 하나예요. 연산, 네트워크와 앱 플랫폼·소프트웨어까지 더 넓은 기능을 포함해요.",
+        "en": "Storage is one cloud resource. Cloud can also provide computing, networking, application platforms and software."
+      }
+    }
+  ],
+  "keywords": [
+    "aws",
+    "azure",
+    "iaas",
+    "paas",
+    "saas",
+    "storage",
+    "scaling",
+    "serverless"
+  ],
+  "related": [
+    {
+      "id": "aws",
+      "type": "related"
+    },
+    {
+      "id": "azure",
+      "type": "related"
+    },
+    {
+      "id": "iaas",
+      "type": "related"
+    },
+    {
+      "id": "paas",
+      "type": "related"
+    },
+    {
+      "id": "saas",
+      "type": "related"
+    },
+    {
+      "id": "storage",
+      "type": "related"
+    },
+    {
+      "id": "scaling",
+      "type": "related"
+    },
+    {
+      "id": "serverless",
+      "type": "related"
+    }
+  ]
 }

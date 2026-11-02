@@ -1,6 +1,6 @@
 {
   "order": 310,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "MCP",
     "en": "MCP"
@@ -8,6 +8,10 @@
   "fullName": {
     "ko": "모델 컨텍스트 프로토콜",
     "en": "Model Context Protocol"
+  },
+  "definition": {
+    "ko": "MCP(Model Context Protocol)는 AI 애플리케이션과 외부 도구·자료를 연결하기 위한 공개 프로토콜이에요. 클라이언트와 서버가 정해진 방식으로 통신하며 서버의 도구, 리소스와 프롬프트 같은 기능을 제공받을 수 있어요. 모델의 판단이나 실행 흐름 자체를 정하는 규격은 아니며, 연결을 표준화해도 사용자 인증과 접근 권한, 실행 결과 검증은 별도로 설계해야 해요.",
+    "en": "MCP (Model Context Protocol) is an open protocol connecting AI applications with external tools and information. Clients and servers communicate through defined interfaces for capabilities such as tools, resources and prompts. MCP does not define model decisions or application control flow; authentication, permissions and result validation still require design."
   },
   "description": {
     "ko": "AI 앱이 외부 도구와 자료를 공통 방식으로 연결하도록 정한 공개 프로토콜이에요.",

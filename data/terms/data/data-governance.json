@@ -1,9 +1,13 @@
 {
   "order": 620,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "데이터 거버넌스",
     "en": "Data Governance"
+  },
+  "definition": {
+    "ko": "데이터 거버넌스는 조직이 데이터를 일관되고 책임 있게 관리·활용하도록 역할과 기준, 의사결정 절차를 정하는 체계예요. 정의와 품질의 책임자, 접근과 변경 절차, 보존 기준 등을 합의하고 운영 과정에서 점검해요. 특정 도구나 보안 규칙만을 뜻하지 않으며, 업무 조직과 기술 조직이 데이터를 둘러싼 책임과 판단을 지속적으로 조율하는 활동을 포함해요.",
+    "en": "Data governance defines roles, standards and decision processes for consistent and accountable data management and use. It establishes ownership of definitions and quality, access and change procedures and retention rules, then reviews them in operation. It extends beyond a tool or security policy to ongoing coordination between business and technical teams."
   },
   "description": {
     "ko": "조직이 데이터를 일관되고 책임 있게 관리·활용하도록 역할, 기준과 의사결정 절차를 정하는 체계예요.",

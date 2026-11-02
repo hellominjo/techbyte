@@ -1,6 +1,6 @@
 {
   "order": 530,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "NoSQL",
     "en": "NoSQL"
@@ -8,6 +8,10 @@
   "fullName": {
     "ko": "NoSQL",
     "en": "Not Only SQL"
+  },
+  "definition": {
+    "ko": "NoSQL은 전통적인 관계형 테이블 외의 여러 데이터 모델을 활용하는 데이터베이스 계열을 가리키는 말이에요. 문서형, 키-값형, 그래프형과 와이드 컬럼형 등이 있으며 데이터 구조와 접근 패턴에 맞춰 선택해요. 하나의 통일된 기능 규격은 아니므로 스키마, 트랜잭션과 일관성 보장은 제품마다 다르고, SQL과 비슷한 질의를 지원하는 경우도 있어요.",
+    "en": "NoSQL describes database families using data models beyond traditional relational tables, including document, key-value, graph and wide-column models. Selection depends on structure and access patterns. It is not one uniform specification: schemas, transactions and consistency guarantees vary, and some systems support SQL-like queries."
   },
   "description": {
     "ko": "전통적인 관계형 테이블 외의 여러 데이터 모델을 활용하는 데이터베이스 계열이에요.",

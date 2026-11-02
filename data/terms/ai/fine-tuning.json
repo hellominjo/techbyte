@@ -1,9 +1,13 @@
 {
   "order": 50,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "파인튜닝",
     "en": "Fine-tuning"
+  },
+  "definition": {
+    "ko": "파인튜닝은 사전 학습된 모델을 출발점으로 삼아 특정 작업이나 데이터에 맞도록 전체 또는 일부 가중치를 추가로 조정하는 학습 과정이에요. 원하는 출력 예시나 학습 신호를 통해 말투, 형식과 작업 행동 등을 바꿀 수 있어요. 응답 시 참고 자료를 전달하는 방식과 달리 모델 파라미터가 변하지만, 학습 자료의 사실을 정확하게 저장하거나 최신 정보를 빠짐없이 재현한다는 보장은 없어요.",
+    "en": "Fine-tuning further trains a pretrained model by updating all or some weights for particular data or tasks. Examples or other learning signals can adapt style, format and behavior. Unlike supplying references at response time, it changes model parameters, but does not guarantee exact storage or complete recall of facts from the training material."
   },
   "description": {
     "ko": "이미 학습된 AI를 특정 목적에 맞게 추가로 학습시키는 작업이에요.",

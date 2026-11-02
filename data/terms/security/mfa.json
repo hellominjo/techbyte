@@ -1,6 +1,6 @@
 {
   "order": 1280,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "MFA",
     "en": "MFA"
@@ -8,6 +8,10 @@
   "fullName": {
     "ko": "다중요소 인증",
     "en": "Multi-Factor Authentication"
+  },
+  "definition": {
+    "ko": "MFA(Multi-Factor Authentication)는 아는 것, 가진 것과 생체 특성 등 서로 다른 종류의 요소 둘 이상으로 신원을 확인하는 방식이에요. 여러 화면을 거치는 것 자체와는 다르며, 하나의 인증기가 키 소유와 PIN·생체 확인을 결합할 수도 있어요. 방식마다 피싱 저항성이 다르고 복구 절차가 우회 경로가 될 수 있어 등록과 재설정도 함께 보호해야 해요.",
+    "en": "MFA (Multi-Factor Authentication) verifies identity with at least two distinct factor types, such as knowledge, possession and inherence. It is not merely multiple screens, and one authenticator can combine key possession with PIN or biometric verification. Phishing resistance varies and recovery can bypass protection, so enrollment and resets also need safeguards."
   },
   "description": {
     "ko": "서로 다른 종류의 인증 요소를 둘 이상 조합해 신원을 확인하는 방식이에요.",

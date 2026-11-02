@@ -1,9 +1,227 @@
 {
   "order": 140,
-  "updatedAt": "2026-11-01",
-  "term": { "ko": "피싱", "en": "Phishing" },
+  "updatedAt": "2026-11-02",
+  "term": {
+    "ko": "피싱",
+    "en": "Phishing"
+  },
+  "definition": {
+    "ko": "피싱은 신뢰할 만한 사람이나 기관을 사칭해 정보 제공, 송금이나 위험한 실행을 유도하는 사회공학 공격이에요. 이메일과 문자, 메신저와 전화, QR코드 등 여러 경로를 쓰며 실제 탈취된 계정이나 정교한 문장도 이용할 수 있어요. 표시 이름이나 HTTPS만으로 진위를 판단할 수 없으므로 민감한 요청은 기존에 알고 있는 공식 경로로 별도 확인하는 것이 중요해요.",
+    "en": "Phishing is social engineering that impersonates trusted parties to induce disclosure, payments or harmful execution. It uses email, text, messaging, calls or QR codes and may exploit compromised accounts and polished wording. Display names and HTTPS do not establish legitimacy; sensitive requests require independent verification through a known official channel."
+  },
   "description": {
-    "ko": "진짜처럼 꾸민 문자나 사이트로 개인정보를 빼내려는 속임수예요.",
-    "en": "A trick that uses fake messages or sites to steal personal information."
-  }
+    "ko": "믿을 만한 사람이나 기관을 사칭해 정보 입력, 송금이나 위험한 행동을 유도하는 속임수예요.",
+    "en": "Impersonation that tricks people into revealing information, transferring money or taking harmful actions."
+  },
+  "analogy": {
+    "ko": "진짜 담당자처럼 꾸민 사람이 급한 일을 내세워 열쇠나 돈을 요구하는 것과 같아요.",
+    "en": "Like someone posing as a trusted official and urgently asking for keys or money."
+  },
+  "details": {
+    "ko": [
+      "이메일과 문자, 메신저, 전화나 QR코드 등 여러 경로를 이용해요. 가짜 로그인 화면에 비밀번호를 입력하게 하거나, 악성 첨부파일 실행과 결제 정보 변경을 유도할 수 있어요.",
+      "문자 메시지를 이용한 피싱은 스미싱, 음성을 이용한 피싱은 비싱 또는 보이스피싱이라고 해요. 특정 개인이나 조직의 업무 맥락을 이용하는 표적형 피싱도 있어요.",
+      "로고, 표시 이름과 자연스러운 문장만으로 진위를 판단할 수 없어요. 실제 계정이 탈취돼 아는 사람에게서 메시지가 올 수도 있어, 민감한 요청은 원래 알고 있던 공식 경로로 확인해요."
+    ],
+    "en": [
+      "Phishing can arrive through email, text, messaging, calls or QR codes. It may direct users to fake logins, malicious attachments or fraudulent payment changes.",
+      "SMS-based phishing is called smishing, voice-based phishing is vishing, and targeted phishing can exploit a particular person’s or organization’s work context.",
+      "Logos, display names and fluent wording do not establish authenticity. Compromised accounts can send messages from familiar contacts, so verify sensitive requests through a known official channel."
+    ]
+  },
+  "background": {
+    "ko": [
+      "피싱은 사람의 신뢰와 긴급함을 이용하는 사회공학 공격이에요. 기술적 보호가 있어도 사용자가 정보를 넘기거나 실행을 허용하도록 유도하면 피해가 생길 수 있어요."
+    ],
+    "en": [
+      "Phishing is social engineering that exploits trust and urgency. Technical protections can be undermined by persuading people to disclose information or authorize harmful actions."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "신뢰 사칭",
+        "text": "은행, 배송 업체나 업무 담당자처럼 보이는 연락이 도착해요."
+      },
+      {
+        "title": "긴급한 행동 요구",
+        "text": "계정 정지나 결제 문제 등을 내세워 링크 클릭, 정보 입력이나 송금을 재촉해요."
+      },
+      {
+        "title": "독립적인 확인",
+        "text": "메시지의 링크·전화번호 대신 알고 있는 공식 앱이나 직접 찾은 연락처로 요청을 확인해요."
+      },
+      {
+        "title": "신고와 피해 대응",
+        "text": "의심 연락을 신고하고, 입력·실행·송금한 내용에 따라 계정 보호와 기기 점검 등 대응을 진행해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Impersonate trust",
+        "text": "A message appears to come from a bank, delivery service or colleague."
+      },
+      {
+        "title": "Pressure for action",
+        "text": "An alleged account or payment problem pressures the recipient to click, disclose data or transfer funds."
+      },
+      {
+        "title": "Verify independently",
+        "text": "Verify using a known official app or independently obtained contact details rather than links or numbers in the message."
+      },
+      {
+        "title": "Report and respond",
+        "text": "Report suspicious contact and respond according to whether information was entered, files were run or money was transferred."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "배송지 수정을 요구하는 가짜 택배 문자",
+      "계정 만료를 내세운 가짜 로그인 안내",
+      "거래처 담당자를 사칭한 입금 계좌 변경 요청",
+      "정상 안내물 위에 덧붙인 가짜 QR코드"
+    ],
+    "en": [
+      "Fake delivery texts requesting address updates",
+      "Fake account-expiration login notices",
+      "Payment-account changes impersonating a business contact",
+      "Fraudulent QR codes placed over legitimate notices"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "의심스러운 업무 요청",
+        "text": "“메일 속 번호로 확인하지 말고 기존 거래처 연락처로 계좌 변경을 확인하자. 의심 메일은 조직의 신고 절차로 전달하자”라고 이야기해요."
+      },
+      {
+        "title": "이미 행동한 경우",
+        "text": "비밀번호를 입력했다면 신뢰할 수 있는 기기에서 공식 서비스로 접속해 비밀번호를 변경하고 세션·복구 설정을 점검해요. 파일 실행이나 앱 설치가 있었다면 보안 담당자에게 알리고 기기 점검을 받아요. 송금했다면 금융기관에 신속히 연락해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Suspicious work requests",
+        "text": "Say: “Verify the account change through our existing contact, not the number in the email, and report the suspicious message through our organization’s process.”"
+      },
+      {
+        "title": "After taking action",
+        "text": "If credentials were entered, use a trusted device to access the official service, change the password and review sessions and recovery settings. Report executed files or installed apps to security staff for device assessment. Contact the financial institution promptly if money was sent."
+      }
+    ]
+  },
+  "comparison": {
+    "target": "ransomware",
+    "rows": [
+      {
+        "label": {
+          "ko": "핵심 개념",
+          "en": "Core concept"
+        },
+        "values": [
+          {
+            "ko": "사칭으로 행동을 유도하는 속임수",
+            "en": "Impersonation that induces harmful actions"
+          },
+          {
+            "ko": "데이터나 시스템을 잠그고 금전을 요구하는 악성 소프트웨어",
+            "en": "Malware that denies access and demands payment"
+          }
+        ]
+      },
+      {
+        "label": {
+          "ko": "서로의 관계",
+          "en": "Relationship"
+        },
+        "values": [
+          {
+            "ko": "악성 파일 실행을 유도해 감염 경로가 될 수 있음",
+            "en": "Can induce execution of malware and become an infection route"
+          },
+          {
+            "ko": "피싱 외에 취약점이나 탈취 계정으로도 침투 가능",
+            "en": "Can also enter through vulnerabilities or stolen accounts"
+          }
+        ]
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "HTTPS나 자물쇠 표시가 있으면 진짜 사이트인가요?",
+        "en": "Does HTTPS or a lock icon prove a site is legitimate?"
+      },
+      "fact": {
+        "ko": "연결이 암호화된다는 뜻이지 운영자의 신뢰성을 보장하지 않아요. 가짜 사이트도 인증서를 사용할 수 있어요.",
+        "en": "It indicates connection protection, not trustworthy operators. Fraudulent sites can also have certificates."
+      }
+    },
+    {
+      "myth": {
+        "ko": "오타가 없고 아는 사람이 보냈으면 믿어도 되나요?",
+        "en": "Can I trust fluent messages from familiar contacts?"
+      },
+      "fact": {
+        "ko": "정교한 문장과 실제 탈취 계정을 이용할 수 있어요. 평소와 다른 송금·로그인·파일 실행 요구는 별도 경로로 확인해요.",
+        "en": "Attackers can use polished text and compromised accounts. Verify unusual payment, sign-in or file-execution requests independently."
+      }
+    },
+    {
+      "myth": {
+        "ko": "링크를 한 번 눌렀다면 무조건 계정이 탈취된 건가요?",
+        "en": "Does one click always mean the account is compromised?"
+      },
+      "fact": {
+        "ko": "클릭만 했는지, 정보를 입력했는지, 파일을 실행했는지에 따라 위험과 대응이 달라요. 단정하지 말고 행동과 시각을 기록해 점검하되 추가 입력과 실행은 멈춰요.",
+        "en": "Risk and response depend on whether a link was opened, information entered or software run. Record actions and times for assessment and stop further input or execution."
+      }
+    },
+    {
+      "myth": {
+        "ko": "MFA를 켜면 모든 피싱을 막나요?",
+        "en": "Does MFA stop all phishing?"
+      },
+      "fact": {
+        "ko": "일회용 코드도 가짜 사이트에서 탈취될 수 있어요. 패스키 같은 피싱 저항성 수단이 도움이 되지만 기기와 복구 경로 관리도 필요해요.",
+        "en": "One-time codes can be phished too. Phishing-resistant methods such as passkeys help, while devices and recovery paths still need protection."
+      }
+    }
+  ],
+  "keywords": [
+    "personal-information",
+    "authentication",
+    "mfa",
+    "passkey",
+    "certificate",
+    "ransomware"
+  ],
+  "related": [
+    {
+      "id": "personal-information",
+      "type": "related"
+    },
+    {
+      "id": "authentication",
+      "type": "related"
+    },
+    {
+      "id": "mfa",
+      "type": "related"
+    },
+    {
+      "id": "passkey",
+      "type": "related"
+    },
+    {
+      "id": "certificate",
+      "type": "related"
+    },
+    {
+      "id": "ransomware",
+      "type": "compare"
+    }
+  ]
 }

@@ -1,9 +1,13 @@
 {
   "order": 390,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "모델 학습",
     "en": "Training"
+  },
+  "definition": {
+    "ko": "모델 학습은 데이터와 학습 목표에서 얻은 신호를 이용해 모델의 가중치 등 파라미터를 조정하는 과정이에요. 예측과 목표 사이의 차이를 나타내는 손실 등을 줄이도록 반복해서 갱신하며, 정답 예시나 데이터 자체에서 만든 신호, 보상 등을 활용할 수 있어요. 학습된 모델로 새 입력의 결과를 계산하는 추론과 구분되며, 학습에 쓰지 않은 자료로 일반화 성능을 확인해야 해요.",
+    "en": "Training adjusts model parameters such as weights using signals from data and a learning objective. Repeated updates optimize objectives such as reducing loss, using labels, self-supervised signals or rewards. It differs from inference on new inputs; generalization must be checked using data not used for training."
   },
   "description": {
     "ko": "데이터와 학습 목표를 바탕으로 모델의 내부 숫자를 조정하는 과정이에요.",

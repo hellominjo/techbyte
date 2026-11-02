@@ -1,6 +1,6 @@
 {
   "order": 720,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "REST API",
     "en": "REST API"
@@ -8,6 +8,10 @@
   "fullName": {
     "ko": "표현 상태 전이 방식의 응용 프로그램 인터페이스",
     "en": "Representational State Transfer Application Programming Interface"
+  },
+  "definition": {
+    "ko": "REST API는 자원을 일관된 인터페이스로 다루는 REST 아키텍처 원칙을 따르는 API예요. 웹에서는 자원을 URL로 식별하고 HTTP 메서드와 상태 코드, 자원의 표현을 활용하는 방식이 흔해요. 클라이언트·서버 분리와 무상태 요청, 캐시 등 제약을 포함하며, JSON을 주고받는 것만으로 모든 REST 원칙을 충족하는 것은 아니에요.",
+    "en": "A REST API follows REST architectural principles for a uniform resource interface. Web implementations commonly identify resources by URLs and use HTTP methods, status codes and representations. REST includes client-server separation, stateless requests and caching; exchanging JSON alone does not establish full conformance."
   },
   "description": {
     "ko": "자원을 일관된 인터페이스로 다루는 REST 설계 원칙을 따르는 API예요.",

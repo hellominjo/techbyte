@@ -1,9 +1,13 @@
 {
   "order": 1330,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "인증서",
     "en": "Digital Certificate"
+  },
+  "definition": {
+    "ko": "디지털 인증서는 공개키와 도메인·조직 등 주체 정보를 연결하고 발급자의 전자서명으로 확인하게 한 전자 문서예요. 통신 상대는 대상 이름과 유효 기간, 신뢰 경로 등을 검증하고 프로토콜에서 대응하는 개인키의 제어 증명도 확인해요. 인증서 자체는 공개될 수 있으며, 도메인 확인 인증서가 사이트의 내용이나 사업자의 신뢰성까지 보증하는 것은 아니에요.",
+    "en": "A digital certificate binds a public key to subject information such as a domain or organization under an issuer’s signature. Peers validate names, validity and trust paths and verify control of the corresponding private key through the protocol. Certificates can be public, and domain validation does not guarantee trustworthy content or operators."
   },
   "description": {
     "ko": "공개키와 도메인·조직 등 주체 정보를 묶고 발급자의 전자서명으로 확인할 수 있게 한 전자 문서예요.",

@@ -1,6 +1,6 @@
 {
   "order": 510,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "SQL",
     "en": "SQL"
@@ -8,6 +8,10 @@
   "fullName": {
     "ko": "구조화 질의 언어",
     "en": "Structured Query Language"
+  },
+  "definition": {
+    "ko": "SQL(Structured Query Language)은 데이터의 조회와 변경, 구조와 권한 정의 등에 사용하는 선언형 언어예요. 관계형 데이터베이스와 분석 시스템 등에서 필요한 결과와 조건을 표현하면 시스템이 실행 방법을 정해 처리해요. 데이터베이스 제품 이름이 아니며, 표준 개념을 공유하더라도 세부 문법과 함수, 지원 범위는 시스템마다 다를 수 있어요.",
+    "en": "SQL (Structured Query Language) is a declarative language for querying and changing data and defining structures and permissions. Relational and analytical systems plan execution from statements describing desired results and conditions. SQL is not a database product; syntax, functions and support can differ across implementations."
   },
   "description": {
     "ko": "데이터베이스에 원하는 데이터를 조회하거나 변경하도록 요청하는 언어예요.",

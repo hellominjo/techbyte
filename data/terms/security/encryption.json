@@ -1,9 +1,13 @@
 {
   "order": 1240,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "암호화",
     "en": "Encryption"
+  },
+  "definition": {
+    "ko": "암호화는 키를 사용해 평문을 암호문으로 바꾸고 허용된 키로 복호화하도록 하는 기밀성 보호 기법이에요. 공유 비밀키를 쓰는 대칭키 방식과 공개키·개인키를 활용하는 방식 등이 있으며 실제 시스템은 여러 기법을 조합해요. 키와 접근 권한 관리가 중요하고, 암호화만으로 변조 방지까지 항상 보장되는 것은 아니므로 목적에 맞는 검증된 방식을 사용해야 해요.",
+    "en": "Encryption transforms plaintext into ciphertext for decryption with appropriate keys. Approaches include shared-secret symmetric encryption and public/private-key methods, often combined in practical systems. Key and access management matter, and encryption alone does not always provide integrity; use established constructions suited to the purpose."
   },
   "description": {
     "ko": "키를 이용해 데이터를 읽기 어려운 암호문으로 바꾸고, 허용된 키로 복호화하게 하는 방법이에요.",

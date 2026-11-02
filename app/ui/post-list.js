@@ -53,7 +53,7 @@ function Pagination({ basePath, page, totalPages, t }) {
 
 // 마크다운 글 목록 (쉽게 읽는 IT, 용어 가이드 공통). 영어 버전이 없는 글은 한국어로 표시
 // 페이지가 2개 이상일 때만 아래에 페이지 번호 표시
-export default function PostList({ section, basePath, posts, page = 1, totalPages = 1 }) {
+export default function PostList({ section, basePath, posts, page = 1, totalPages = 1, totalPosts = posts.length }) {
   const { lang, t } = useLang();
 
   return (
@@ -66,28 +66,32 @@ export default function PostList({ section, basePath, posts, page = 1, totalPage
       </p>
 
       {posts.length > 0 ? (
-        <ul className="mt-10 border-t border-line">
-          {posts.map((post) => {
-            const meta = (lang === "en" && post.en) || post.ko;
-            return (
-              <li key={post.slug} className="border-b border-line">
-                <Link href={`${basePath}/${post.slug}`} className="group block py-6">
-                  <h2 className="text-xl font-bold tracking-tight group-hover:underline group-hover:underline-offset-4">
-                    {meta.title}
-                  </h2>
-                  {meta.description && (
-                    <p className="mt-2 text-base leading-relaxed text-muted">{meta.description}</p>
-                  )}
-                  {meta.date && (
-                    <time dateTime={meta.date} className="mt-2 block text-xs text-placeholder">
-                      {meta.date}
-                    </time>
-                  )}
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
+        <>
+          {/* 전체 글 수 (모든 페이지 합계) */}
+          <p className="mt-10 text-sm text-muted">{t.postCount.replace("{count}", totalPosts)}</p>
+          <ul className="mt-3 border-t border-line">
+            {posts.map((post) => {
+              const meta = (lang === "en" && post.en) || post.ko;
+              return (
+                <li key={post.slug} className="border-b border-line">
+                  <Link href={`${basePath}/${post.slug}`} className="group block py-6">
+                    <h2 className="text-xl font-bold tracking-tight group-hover:underline group-hover:underline-offset-4">
+                      {meta.title}
+                    </h2>
+                    {meta.description && (
+                      <p className="mt-2 text-base leading-relaxed text-muted">{meta.description}</p>
+                    )}
+                    {meta.date && (
+                      <time dateTime={meta.date} className="mt-2 block text-xs text-placeholder">
+                        {meta.date}
+                      </time>
+                    )}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </>
       ) : (
         <p className="mt-10 border-t border-line py-16 text-center text-muted">{t.noPosts}</p>
       )}

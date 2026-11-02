@@ -1,9 +1,13 @@
 {
   "order": 350,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "퓨샷",
     "en": "Few-shot"
+  },
+  "definition": {
+    "ko": "퓨샷은 적은 수의 사례를 활용해 새로운 작업의 수행을 돕는 접근이에요. LLM 프롬프팅에서는 몇 개의 입력·출력 예시를 프롬프트에 넣어 판단 기준과 형식을 보여 주는 방식을 주로 뜻해요. 이 경우 모델 가중치를 바꾸지 않고 주어진 맥락에서 예시를 활용하므로 파인튜닝과 다르며, 더 넓은 머신러닝 분야에서는 적은 학습 자료로 적응하는 의미로도 사용해요.",
+    "en": "Few-shot approaches use a small number of examples to support a task. In LLM prompting, this usually means including a few input-output examples to demonstrate criteria and format. This uses context without updating weights, unlike fine-tuning; in broader machine learning, few-shot can also mean adaptation from a small training set."
   },
   "description": {
     "ko": "프롬프트에 몇 개의 입력·출력 예시를 넣어 원하는 작업 방식을 보여 주는 방법이에요.",

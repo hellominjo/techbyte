@@ -1,0 +1,163 @@
+{
+  "order": 20,
+  "updatedAt": "2026-11-01",
+  "term": { "ko": "검색 증강 생성", "en": "RAG" },
+  "fullName": { "ko": "검색 증강 생성", "en": "Retrieval-Augmented Generation" },
+  "description": {
+    "ko": "AI가 답하기 전에 관련 자료를 먼저 찾아보고, 그 내용을 바탕으로 답하는 방식이에요.",
+    "en": "A way for AI to look up relevant material first and answer based on it."
+  },
+  "analogy": {
+    "ko": "시험을 볼 때 기억에만 의존하지 않고, 교과서를 펴 놓고 찾아보면서 답을 쓰는 오픈북 시험과 같아요.",
+    "en": "Like an open-book exam: instead of relying on memory alone, you look things up in the textbook while writing answers."
+  },
+  "details": {
+    "ko": [
+      "AI는 배운 시점까지의 내용만 알고, 회사 내부 문서처럼 공개되지 않은 자료는 알지 못해요. 그래서 모르는 내용을 물으면 틀린 답을 지어내기도 합니다.",
+      "RAG는 질문을 받으면 먼저 관련 문서를 찾아 AI에게 함께 건네줍니다. AI는 그 문서를 읽고 답하기 때문에 최신 정보도 반영할 수 있고, 어디서 나온 내용인지 출처를 함께 보여 줄 수도 있어요."
+    ],
+    "en": [
+      "An AI only knows what it learned up to a certain point, and it can't see private material like a company's internal documents. So when asked about something it doesn't know, it may make up a wrong answer.",
+      "With RAG, the system first finds related documents and hands them to the AI along with the question. Because the AI answers after reading them, it can reflect up-to-date information and even show where the answer came from."
+    ]
+  },
+  "background": {
+    "ko": [
+      "ChatGPT 같은 대규모 언어 모델(LLM)은 학습을 마친 시점까지의 글만 알고 있어요. 그 뒤에 나온 뉴스나 회사 내부 문서처럼 공개되지 않은 자료는 알 방법이 없죠. 그래서 모르는 질문을 받으면 그럴듯하지만 틀린 답을 지어내기도 하는데, 이를 '환각'이라고 불러요.",
+      "새로운 내용을 가르치려고 모델을 다시 학습시키는 방법도 있지만, 시간과 비용이 많이 들고 자료가 바뀔 때마다 반복해야 해요. RAG는 2020년 메타(당시 페이스북) 연구진이 발표한 방식으로, 모델은 그대로 두고 필요한 자료를 그때그때 찾아서 건네주자는 아이디어에서 출발했어요."
+    ],
+    "en": [
+      "Large language models (LLMs) like ChatGPT only know text from before their training ended. They have no way of knowing later news or private material like a company's internal documents. So when asked something they don't know, they may make up a plausible but wrong answer, which is called a \"hallucination\".",
+      "You could retrain the model to teach it new things, but that takes a lot of time and money, and you'd have to repeat it every time the material changes. RAG, introduced by Meta (then Facebook) researchers in 2020, started from a simple idea: leave the model as it is and hand it the material it needs, when it needs it."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      { "title": "자료 준비", "text": "문서를 작은 조각으로 나누고, 각 조각의 의미를 숫자 목록(임베딩)으로 바꿔 벡터 데이터베이스에 저장해 둬요." },
+      { "title": "검색", "text": "질문이 들어오면 질문도 같은 방식으로 숫자로 바꾼 뒤, 의미가 가장 가까운 문서 조각 몇 개를 찾아요." },
+      { "title": "전달", "text": "찾은 조각을 질문과 함께 프롬프트에 넣어 AI에게 건네요. '아래 자료를 참고해서 답해 줘'라고 부탁하는 셈이에요." },
+      { "title": "답변", "text": "AI는 건네받은 자료를 읽고 답을 만들어요. 어떤 문서를 참고했는지 출처를 함께 보여 줄 수도 있어요." }
+    ],
+    "en": [
+      {
+        "title": "Prepare",
+        "text": "Documents are split into small chunks, and each chunk's meaning is turned into a list of numbers (an embedding) stored in a vector database."
+      },
+      {
+        "title": "Search",
+        "text": "When a question comes in, it's turned into numbers the same way, and the chunks closest in meaning are found."
+      },
+      {
+        "title": "Hand over",
+        "text": "The chunks are added to the prompt along with the question, like saying \"answer using the material below\"."
+      },
+      {
+        "title": "Answer",
+        "text": "The AI reads the material and writes an answer, and can also show which documents it used."
+      }
+    ]
+  },
+  "examples": {
+    "ko": ["회사 내부 자료를 참고해 답하는 사내 챗봇", "최신 뉴스나 문서를 반영하는 정보 검색 AI", "교재나 강의 자료를 활용하는 학습 도우미"],
+    "en": [
+      "An internal chatbot that answers from company documents",
+      "An AI search tool that reflects the latest news and documents",
+      "A study helper that uses textbooks and lecture notes"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "사내 규정 챗봇",
+        "text": "직원이 챗봇에 '내가 남은 연차가 몇 개야?'라고 물으면, RAG가 등록된 취업 규칙 문서에서 연차 일수가 적힌 조항을 먼저 검색해요. 다만 '내 남은 일수'는 사람마다 달라서 문서에는 없죠. 그래서 개발자와는 'RAG로 연차 규정 조항을 찾고, 남은 일수는 인사 시스템 API로 조회해서 같이 넘기자'처럼 역할을 나눠서 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Company policy chatbot",
+        "text": "When an employee asks the chatbot \"How many vacation days do I have left?\", RAG first searches the registered employment rules for the clause on annual leave. But \"my remaining days\" differs per person and isn't in any document. So you'd tell the developers something like: \"Use RAG to find the leave policy clause, and fetch the remaining days from the HR system API.\""
+      }
+    ]
+  },
+  "comparison": {
+    "target": "fine-tuning",
+    "rows": [
+      {
+        "label": { "ko": "방법", "en": "How" },
+        "values": [
+          { "ko": "답할 때 자료를 찾아 함께 넘겨줌", "en": "Finds material and passes it along at answer time" },
+          { "ko": "모델에 자료를 추가로 학습시킴", "en": "Trains the model further on the material" }
+        ]
+      },
+      {
+        "label": { "ko": "최신 정보 반영", "en": "Keeping up to date" },
+        "values": [
+          { "ko": "문서만 바꾸면 바로 반영", "en": "Update the documents and it's reflected right away" },
+          { "ko": "다시 학습해야 반영", "en": "Needs retraining" }
+        ]
+      },
+      {
+        "label": { "ko": "비용·시간", "en": "Cost and time" },
+        "values": [
+          { "ko": "비교적 적게 듦", "en": "Relatively low" },
+          { "ko": "학습할 때마다 많이 듦", "en": "High, every time you train" }
+        ]
+      },
+      {
+        "label": { "ko": "출처 확인", "en": "Sources" },
+        "values": [
+          { "ko": "참고한 문서를 보여 줄 수 있음", "en": "Can show which documents were used" },
+          { "ko": "어디서 배운 내용인지 알기 어려움", "en": "Hard to tell where knowledge came from" }
+        ]
+      },
+      {
+        "label": { "ko": "잘 맞는 경우", "en": "Best for" },
+        "values": [
+          { "ko": "자주 바뀌는 지식, 사내 문서", "en": "Frequently changing knowledge, internal documents" },
+          {
+            "ko": "말투·형식, 전문 분야 표현 익히기",
+            "en": "Learning a tone, format or field-specific language"
+          }
+        ]
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": { "ko": "RAG를 쓰면 환각이 완전히 사라진다?", "en": "RAG completely eliminates hallucinations?" },
+      "fact": {
+        "ko": "환각을 크게 줄여 주지만 없애 주지는 못해요. 검색이 엉뚱한 문서를 가져오거나 AI가 자료를 잘못 해석하면 여전히 틀린 답이 나올 수 있어요. 그래서 출처를 함께 보여 줘서 사람이 확인할 수 있게 만드는 경우가 많아요.",
+        "en": "It greatly reduces them, but doesn't eliminate them. If search brings back the wrong documents or the AI misreads the material, wrong answers can still happen. That's why many services show sources so people can check."
+      }
+    },
+    {
+      "myth": { "ko": "RAG를 하면 AI가 새로운 지식을 배운다?", "en": "With RAG, the AI learns new knowledge?" },
+      "fact": {
+        "ko": "AI 자체는 아무것도 새로 배우지 않아요. 질문할 때마다 자료를 옆에 펼쳐 줄 뿐이라, 자료를 빼면 다시 모르는 상태로 돌아가요. 지식을 모델 안에 새기는 건 파인튜닝 쪽이에요.",
+        "en": "The AI itself learns nothing new. It's just handed open material for each question, so without the material it's back to not knowing. Building knowledge into the model is what fine-tuning does."
+      }
+    }
+  ],
+  "keywords": ["llm", "vector-db", "embedding", "fine-tuning"],
+  "tools": [
+    {
+      "id": "chatgpt",
+      "note": {
+        "ko": "RAG 개념을 물어보며 이해하고, 예시 코드를 받아 볼 수 있어요.",
+        "en": "Ask about RAG concepts and get example code."
+      }
+    },
+    {
+      "id": "perplexity",
+      "note": {
+        "ko": "검색한 자료를 바탕으로 출처와 함께 답하는 RAG 방식을 직접 경험해 볼 수 있어요.",
+        "en": "Experience RAG firsthand: answers built from search results, with sources."
+      }
+    }
+  ],
+  "related": [
+    { "id": "llm", "type": "prerequisite" },
+    { "id": "fine-tuning", "type": "compare" },
+    { "id": "hallucination", "type": "related" }
+  ]
+}

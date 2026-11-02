@@ -1,9 +1,13 @@
 {
   "order": 260,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "컨텍스트 윈도우",
     "en": "Context Window"
+  },
+  "definition": {
+    "ko": "컨텍스트 윈도우는 모델이 한 번의 처리에서 함께 참고할 수 있는 정보량의 범위이며, 보통 토큰 수로 표시해요. 지시문, 대화 기록, 참고 문서와 도구 결과 등이 공간을 차지하고, 모델에 따라 생성할 출력 공간도 함께 고려해야 해요. 현재 요청을 처리하기 위한 범위이므로 영구 기억과 다르며, 한도 안에 들어간 정보도 모두 정확하게 활용된다는 보장은 없어요.",
+    "en": "A context window is the amount of information a model can consider within a processing context, usually measured in tokens. Instructions, conversation history, documents and tool results occupy it, and output capacity may also need budgeting. It is not permanent memory, and fitting material within the limit does not guarantee accurate use of every detail."
   },
   "description": {
     "ko": "모델이 한 번의 처리에서 참고할 수 있는 정보의 최대 범위예요.",

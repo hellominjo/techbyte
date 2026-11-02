@@ -1,9 +1,13 @@
 {
   "order": 810,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "버그",
     "en": "Bug"
+  },
+  "definition": {
+    "ko": "버그는 프로그램이 의도한 요구나 기대 동작과 다르게 작동하게 하는 결함이에요. 실행 중단뿐 아니라 잘못된 계산과 저장 누락, 특정 조건의 화면 오류도 포함해요. 증상과 원인은 다를 수 있으므로 입력과 환경, 재현 순서와 기대 결과를 구분해 확인하며, 요구가 불분명한 경우에는 정상 동작의 기준부터 합의해야 해요.",
+    "en": "A bug is a defect causing software to differ from intended requirements or expected behavior. It includes crashes, wrong calculations, missing writes and condition-specific interface failures. Symptoms may differ from causes, so establish inputs, environment, reproduction steps and expectations; unclear requirements need clarification first."
   },
   "description": {
     "ko": "프로그램이 의도한 요구나 기대한 동작과 다르게 작동하게 하는 결함이에요.",

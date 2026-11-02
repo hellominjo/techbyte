@@ -1,9 +1,13 @@
 {
   "order": 890,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "디버깅",
     "en": "Debugging"
+  },
+  "definition": {
+    "ko": "디버깅은 프로그램 문제의 발생 조건을 재현하고 실행 증거를 통해 원인을 좁혀 수정·검증하는 과정이에요. 로그와 호출 흐름, 실행 중 값, 변경 이력과 디버거 등을 활용할 수 있어요. 오류 메시지를 없애는 것만이 목적은 아니며 원래 실패 사례와 관련 동작이 제대로 작동하는지 다시 확인해야 해요.",
+    "en": "Debugging reproduces a software problem, uses execution evidence to isolate its cause and verifies a fix. It can use logs, call flow, runtime values, history and debuggers. Removing an error message is insufficient; recheck the original failure and related behavior."
   },
   "description": {
     "ko": "프로그램의 문제를 재현하고 원인을 찾아 수정한 뒤 해결됐는지 확인하는 과정이에요.",

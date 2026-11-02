@@ -1,6 +1,6 @@
 {
   "order": 570,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "ETL",
     "en": "ETL"
@@ -8,6 +8,10 @@
   "fullName": {
     "ko": "추출·변환·적재",
     "en": "Extract, Transform, Load"
+  },
+  "definition": {
+    "ko": "ETL은 원천에서 데이터를 추출하고(Extract), 목적에 맞게 변환한 뒤(Transform), 대상 저장소에 적재하는(Load) 처리 방식이에요. 서로 다른 시스템의 형식과 기준을 맞춰 분석 등에 사용할 데이터를 전달할 때 활용해요. 데이터 파이프라인의 한 방식이며, 적재한 뒤 대상에서 변환하는 ELT와는 순서가 다르고 재실행 시의 중복·누락 관리도 중요해요.",
+    "en": "ETL extracts data from sources, transforms it for a purpose and loads it into a destination. It aligns formats and definitions across systems for uses such as analytics. It is one pipeline approach, distinct from ELT’s load-before-transform sequence, and requires handling duplicates and gaps during reruns."
   },
   "description": {
     "ko": "데이터를 추출하고, 목적에 맞게 변환한 뒤, 대상 저장소에 적재하는 과정이에요.",

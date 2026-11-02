@@ -1,9 +1,13 @@
 {
   "order": 780,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "GitHub",
     "en": "GitHub"
+  },
+  "definition": {
+    "ko": "GitHub는 Git 저장소를 호스팅하고 변경 검토와 이슈 관리 등 협업 기능을 제공하는 플랫폼이에요. 풀 리퀘스트로 변경을 제안·검토하고 검사 결과와 논의를 연결해 통합할 수 있어요. Git이라는 버전 관리 도구 자체와는 다르며, 저장소의 공개 여부와 접근 권한은 설정과 정책에 따라 관리해요.",
+    "en": "GitHub hosts Git repositories and provides collaboration such as review and issue tracking. Pull requests connect proposed changes, discussion and checks before integration. It is separate from Git itself, and repository visibility and access depend on configuration and policy."
   },
   "description": {
     "ko": "Git 저장소를 호스팅하고 코드 검토와 이슈 관리 등 협업 기능을 제공하는 플랫폼이에요.",

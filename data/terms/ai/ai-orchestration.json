@@ -1,9 +1,13 @@
 {
   "order": 300,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "AI 오케스트레이션",
     "en": "AI Orchestration"
+  },
+  "definition": {
+    "ko": "AI 오케스트레이션은 모델, 도구와 개별 작업이 하나의 업무를 수행하도록 실행 순서와 데이터 전달, 자원과 상태를 조율하는 일이에요. 요청에 맞는 모델을 고르고, 독립 작업을 병렬로 실행하거나, 실패한 단계를 재시도하는 기능을 포함할 수 있어요. 여러 에이전트를 관리하는 경우도 있지만, 일반 프로그램과 사람의 검토를 연결하는 구성에도 적용돼요.",
+    "en": "AI orchestration coordinates execution order, data flow, resources and state across models, tools and tasks that perform a workflow. It can route requests to models, run independent tasks in parallel and retry failed stages. It may coordinate multiple agents, but also applies to systems combining ordinary software and human review."
   },
   "description": {
     "ko": "여러 모델, 도구, 작업이 맞물려 돌아가도록 실행 순서와 자원, 상태를 조율하는 일이에요.",

@@ -1,9 +1,13 @@
 {
   "order": 230,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "신경망",
     "en": "Neural Network"
+  },
+  "definition": {
+    "ko": "신경망은 여러 계산 단위를 연결해 입력을 출력으로 변환하고, 학습을 통해 가중치 등 파라미터를 조정하는 모델이에요. 층별 계산과 비선형 변환을 조합해 복잡한 관계를 표현하며, 깊은 다층 신경망을 활용하는 학습이 딥러닝이에요. 뇌의 신경세포에서 영감을 받은 이름이지만 실제 뇌를 그대로 재현하거나 사람과 같은 의식을 뜻하는 것은 아니에요.",
+    "en": "A neural network connects computational units to transform inputs into outputs, adjusting parameters such as weights through training. Layered computations and nonlinear transformations represent complex relationships; deep learning uses deep multilayer networks. The neuron-inspired name does not imply a replica of the brain or human-like consciousness."
   },
   "description": {
     "ko": "연결된 계산 단위들이 입력을 변환하고, 연결의 세기를 조정하며 패턴을 배우는 모델이에요.",

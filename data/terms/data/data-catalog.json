@@ -1,9 +1,13 @@
 {
   "order": 630,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "데이터 카탈로그",
     "en": "Data Catalog"
+  },
+  "definition": {
+    "ko": "데이터 카탈로그는 조직의 데이터 자산에 관한 메타데이터를 모아 발견과 이해를 돕는 목록·검색 체계예요. 테이블과 파일, 지표의 위치와 의미, 담당자와 갱신 상태 등을 연결해 필요한 자료를 찾고 적절한 이용 경로를 확인하게 해요. 실제 데이터를 모두 복사한 저장소와는 다르며, 등록된 설명의 최신성이나 데이터 접근 권한은 별도로 관리해야 해요.",
+    "en": "A data catalog collects metadata about organizational data assets to support discovery and understanding. It connects locations, meanings, owners and refresh status for tables, files and metrics so users can find material and appropriate access paths. It is not a copy of all underlying data, and metadata freshness and access permissions need separate management."
   },
   "description": {
     "ko": "조직에 어떤 데이터가 어디에 있고 어떻게 써야 하는지 찾도록 돕는 목록과 검색 체계예요.",

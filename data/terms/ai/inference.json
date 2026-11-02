@@ -1,9 +1,13 @@
 {
   "order": 380,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "추론",
     "en": "Inference"
+  },
+  "definition": {
+    "ko": "추론은 학습된 모델을 실행해 새로운 입력에 대한 예측이나 출력 결과를 계산하는 과정이에요. 분류와 수치 예측, 문장 생성 모두 포함하며, 일반적으로 이미 학습한 가중치를 사용하고 요청마다 이를 갱신하지는 않아요. 여기서의 inference는 모델 실행 단계라는 뜻으로, 논리적인 여러 단계를 거쳐 문제를 푸는 reasoning과 구분해요.",
+    "en": "Inference runs a trained model to compute predictions or outputs for new inputs, including classification, numerical forecasts and text generation. It normally uses learned weights without updating them on each request. Here inference means model execution, distinct from reasoning as multistep problem solving."
   },
   "description": {
     "ko": "학습된 모델을 사용해 새 입력에 대한 예측이나 결과를 계산하는 과정이에요.",

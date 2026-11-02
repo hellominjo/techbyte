@@ -1,9 +1,13 @@
 {
   "order": 600,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "비정형 데이터",
     "en": "Unstructured Data"
+  },
+  "definition": {
+    "ko": "비정형 데이터는 분석할 내용이 미리 정한 행과 열의 필드에 바로 맞춰져 있지 않은 데이터예요. 자유 형식 문서, 이미지와 음성·영상 등이 대표적이며 검색과 분석을 위해 추출, 인식이나 임베딩 같은 처리를 거칠 수 있어요. 파일 형식이나 문단 구조가 전혀 없다는 뜻은 아니고, 키와 계층이 있는 JSON 같은 반정형 데이터와도 흔히 구분해요.",
+    "en": "Unstructured data has content that does not directly fit predefined tabular fields. Examples include free-form documents, images, audio and video, often processed with extraction, recognition or embeddings for analysis. The term does not mean an absence of file or document structure and is commonly distinguished from semi-structured formats such as JSON."
   },
   "description": {
     "ko": "내용이 미리 정한 행과 열의 틀로 바로 정리되어 있지 않은 데이터예요.",

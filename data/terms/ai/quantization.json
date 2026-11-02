@@ -1,9 +1,13 @@
 {
   "order": 420,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "term": {
     "ko": "양자화",
     "en": "Quantization"
+  },
+  "definition": {
+    "ko": "양자화는 모델의 가중치나 중간 계산값을 더 적은 비트의 수치 표현으로 바꾸는 기법이에요. 메모리와 저장 공간을 줄이고 지원 환경에서는 연산 부담도 낮출 수 있으며, 학습 후 적용하거나 양자화를 고려해 학습할 수 있어요. 정밀도 감소에 따른 품질 변화가 생길 수 있고 속도 개선도 하드웨어와 구현에 달려 있어, 실제 작업과 장치에서 확인해야 해요.",
+    "en": "Quantization represents weights or activations with fewer bits. It can reduce memory and storage and lower computational costs on supported systems, either after training or through quantization-aware training. Lower precision can change quality, and speedups depend on hardware and implementation, requiring measurement on the target task and device."
   },
   "description": {
     "ko": "모델의 숫자를 더 적은 비트로 표현해 저장 공간과 연산 부담을 줄이는 기법이에요.",

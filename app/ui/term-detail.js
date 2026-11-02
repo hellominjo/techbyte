@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useLang } from "@/app/ui/language";
 import PageActions from "@/app/ui/page-actions";
+import ShareActions from "@/app/ui/share-actions";
 import { pick, pickList } from "@/lib/i18n";
 import { siteValue } from "@/lib/site";
 import { termToMarkdown } from "@/lib/term-markdown";
@@ -93,6 +94,7 @@ export default function TermDetail({
 }) {
   const { lang, t } = useLang();
   const names = getTermNames(term, lang);
+  const definition = pick(term.definition, lang).trim();
   const analogy = pick(term.analogy, lang);
   const background = pickList(term.background, lang);
   const steps = pickList(term.howItWorks, lang);
@@ -194,6 +196,14 @@ export default function TermDetail({
           <p className="mt-8 text-xl font-semibold leading-relaxed tracking-tight sm:text-2xl">
             {pick(term.description, lang)}
           </p>
+
+          {/* 용어 정의 */}
+          {definition && (
+            <section className="mt-8">
+              {/* <SectionLabel>{t.definition}</SectionLabel> */}
+              <p className="mt-3 text-base leading-loose text-foreground/85">{definition}</p>
+            </section>
+          )}
 
           {analogy && (
             <div className="mt-8">
@@ -316,9 +326,13 @@ export default function TermDetail({
             </section>
           )}
 
-          {keywords.length > 0 && (
+          {/* 관련 용어 제목 줄 오른쪽에 인쇄 / 링크 공유 아이콘. 관련 용어가 없으면 아이콘만 오른쪽에 */}
+          {keywords.length > 0 ? (
             <section className="mt-10">
-              <SectionLabel>{t.keywords}</SectionLabel>
+              <div className="flex items-center justify-between gap-4">
+                <SectionLabel>{t.keywords}</SectionLabel>
+                <ShareActions url={url} text={t.shareActions} />
+              </div>
               <ul className="mt-4 flex flex-wrap gap-2">
                 {keywords.map((keyword, i) => {
                   const label = pick(keyword.label, lang);
@@ -340,6 +354,8 @@ export default function TermDetail({
                 })}
               </ul>
             </section>
+          ) : (
+            <ShareActions url={url} text={t.shareActions} className="mt-10 justify-end" />
           )}
 
           {/* 태블릿·모바일: 본문 아래 목록. PC는 오른쪽 사이드바에 표시 */}

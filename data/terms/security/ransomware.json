@@ -1,0 +1,130 @@
+{
+  "order": 1300,
+  "updatedAt": "2026-11-02",
+  "term": {
+    "ko": "랜섬웨어",
+    "en": "Ransomware"
+  },
+  "definition": {
+    "ko": "랜섬웨어는 데이터나 시스템의 접근을 막고 복구 등을 대가로 금전을 요구하는 악성 소프트웨어예요. 파일 암호화나 시스템 잠금으로 업무를 방해하고, 데이터 탈취와 공개 협박이 결합될 수도 있어요. 피싱과 취약점, 탈취 계정 등 여러 침투 경로가 있으며 몸값 지불이 복구를 보장하지 않으므로 예방과 사고 대응, 검증된 백업·복구 체계가 필요해요.",
+    "en": "Ransomware denies access to data or systems and demands payment. Encryption or locking can disrupt work and combine with data theft and exposure threats. Entry routes include phishing, vulnerabilities and stolen accounts; payment does not guarantee recovery, making prevention, incident response and tested backup and restoration important."
+  },
+  "description": {
+    "ko": "데이터나 시스템을 잠그고 복구 등을 빌미로 돈을 요구하는 악성 소프트웨어예요.",
+    "en": "Malware that denies access to data or systems and demands payment for recovery or related claims."
+  },
+  "analogy": {
+    "ko": "업무 자료실을 잠가 쓰지 못하게 하고 열어 주는 대가를 요구하는 것과 같아요.",
+    "en": "Like locking a work archive and demanding payment to reopen it."
+  },
+  "details": {
+    "ko": [
+      "파일 암호화나 시스템 잠금으로 업무를 방해하고, 자료를 먼저 빼내 공개하겠다고 협박하는 공격과 결합되기도 해요.",
+      "피싱뿐 아니라 취약한 외부 서비스나 탈취된 계정 등도 침투 경로가 될 수 있어요. 복구하려면 격리된 백업과 실제 복원 가능성, 업무 복구 순서를 준비해야 해요."
+    ],
+    "en": [
+      "Ransomware disrupts work through encryption or locking and can be combined with stealing data and threatening publication.",
+      "Entry points can include exposed vulnerabilities or stolen accounts as well as phishing. Recovery preparation includes isolated backups, tested restoration and business recovery priorities."
+    ]
+  },
+  "background": {
+    "ko": [
+      "데이터를 사용할 수 없을 때 조직이 받는 압박을 이용해 금전을 요구하는 범죄에 사용돼요."
+    ],
+    "en": [
+      "Attackers exploit the operational pressure of unavailable data to extort money."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "침투와 영향 확대",
+        "text": "계정이나 취약점 등을 통해 시스템에 영향을 줘요."
+      },
+      {
+        "title": "잠금과 협박",
+        "text": "암호화·접근 차단과 데이터 공개 위협 등으로 금전을 요구해요."
+      },
+      {
+        "title": "격리와 복구",
+        "text": "정해진 사고 대응 절차로 확산을 줄이고 조사와 검증된 복구를 진행해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Compromise and disruption",
+        "text": "Accounts or vulnerabilities enable compromise of systems."
+      },
+      {
+        "title": "Lock and extort",
+        "text": "Demand payment using encryption, access denial or threats of data exposure."
+      },
+      {
+        "title": "Contain and recover",
+        "text": "Use incident procedures to contain spread, investigate and restore from verified sources."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "업무 문서 암호화로 이용 불가",
+      "공유 저장소 피해",
+      "데이터 탈취와 결합한 이중 협박"
+    ],
+    "en": [
+      "Unavailable work documents after encryption",
+      "Disruption of shared storage",
+      "Extortion combining encryption and stolen data"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "복구 계획 점검",
+        "text": "“백업 성공 표시만 보지 말고, 별도 보호된 사본으로 핵심 업무가 실제 복원되는지 시험하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Reviewing recovery readiness",
+        "text": "Say: “Test whether protected backup copies actually restore critical operations, rather than checking only backup success indicators.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "몸값을 내면 반드시 복구되나요?",
+        "en": "Does paying guarantee recovery?"
+      },
+      "fact": {
+        "ko": "복구 도구와 데이터 반환을 보장하지 않아요. 탈취된 사본이 삭제됐는지도 확신할 수 없어 사고 대응과 복구 절차가 필요해요.",
+        "en": "Payment does not guarantee working recovery tools or returned data, nor deletion of stolen copies. Incident response and recovery procedures remain necessary."
+      }
+    }
+  ],
+  "keywords": [
+    "phishing",
+    "storage",
+    "encryption",
+    "mfa"
+  ],
+  "related": [
+    {
+      "id": "phishing",
+      "type": "related"
+    },
+    {
+      "id": "storage",
+      "type": "related"
+    },
+    {
+      "id": "encryption",
+      "type": "related"
+    },
+    {
+      "id": "mfa",
+      "type": "related"
+    }
+  ]
+}
