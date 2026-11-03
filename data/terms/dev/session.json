@@ -1,0 +1,49 @@
+{
+  "order": 1140,
+  "updatedAt": "2026-11-03",
+  "term": {
+    "ko": "세션",
+    "en": "Session"
+  },
+  "definition": {
+    "ko": "웹 앱은 로그인 뒤 서버에 세션 상태를 만들고 브라우저가 보낸 세션 ID로 이를 찾을 수 있어요. 쿠키는 그 ID를 전달하는 수단 중 하나이며 세션 유지 시간과 로그아웃 시 종료 방식은 서비스의 정책에 따라 정해요.",
+    "en": "A web app can create server-side session state after login and retrieve it using a session ID from the browser. Cookies are one way to carry that ID, while service policy determines session duration and logout behavior."
+  },
+  "description": {
+    "ko": "여러 요청에 걸쳐 이어지는 사용자의 이용 상태를 관리하는 단위예요.",
+    "en": "A unit for maintaining a user's interaction state across requests."
+  },
+  "analogy": {
+    "ko": "한 번 들어온 손님의 이용 기록을 이어서 관리하는 것과 같아요.",
+    "en": "Like maintaining one visitor's record throughout a visit."
+  },
+  "examples": {
+    "ko": [
+      "로그인 유지",
+      "여러 화면에 걸친 입력 상태"
+    ],
+    "en": [
+      "Maintaining login",
+      "multi-page interaction state"
+    ]
+  },
+  "keywords": [
+    "cookie",
+    "cookies-and-sessions",
+    "authentication"
+  ],
+  "related": [
+    {
+      "id": "cookie",
+      "type": "related"
+    },
+    {
+      "id": "cookies-and-sessions",
+      "type": "related"
+    },
+    {
+      "id": "authentication",
+      "type": "related"
+    }
+  ]
+}

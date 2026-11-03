@@ -1,0 +1,49 @@
+{
+  "order": 960,
+  "updatedAt": "2026-11-03",
+  "term": {
+    "ko": "릴리즈",
+    "en": "Release"
+  },
+  "definition": {
+    "ko": "릴리즈는 공개할 범위와 시점을 정하고 특정 버전이나 기능을 이용할 수 있게 하는 과정이에요. 코드를 환경에 반영하는 배포를 먼저 마친 뒤 설정을 통해 기능을 일부 사용자에게 공개할 수도 있어요.",
+    "en": "A release sets when and to whom a version or feature becomes available. Code can be deployed first and then exposed to selected users through configuration."
+  },
+  "description": {
+    "ko": "정해진 버전의 소프트웨어나 기능을 사용자에게 제공하는 일이에요.",
+    "en": "Making a defined software version or feature available to users."
+  },
+  "analogy": {
+    "ko": "완성된 책의 새 판을 독자에게 내놓는 것과 같아요.",
+    "en": "Like making a new edition of a book available to readers."
+  },
+  "examples": {
+    "ko": [
+      "앱 새 버전 공개",
+      "새 기능 순차 공개"
+    ],
+    "en": [
+      "Publishing an app version",
+      "gradually releasing a feature"
+    ]
+  },
+  "keywords": [
+    "deployment",
+    "build",
+    "version-control"
+  ],
+  "related": [
+    {
+      "id": "deployment",
+      "type": "related"
+    },
+    {
+      "id": "build",
+      "type": "related"
+    },
+    {
+      "id": "version-control",
+      "type": "related"
+    }
+  ]
+}

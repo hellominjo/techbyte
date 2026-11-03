@@ -1,0 +1,49 @@
+{
+  "order": 990,
+  "updatedAt": "2026-11-03",
+  "term": {
+    "ko": "쿠키",
+    "en": "Cookie"
+  },
+  "definition": {
+    "ko": "서버는 응답에서 쿠키를 설정할 수 있고 브라우저는 범위와 만료 조건에 따라 이를 보관하고 전송해요. 쿠키에 언어 설정을 담거나 세션 ID를 넣어 서버가 로그인 상태를 찾게 할 수 있어요.",
+    "en": "A server can set cookies in responses, and browsers store and send them under scope and expiration rules. A cookie can hold a language preference or a session ID for looking up login state."
+  },
+  "description": {
+    "ko": "브라우저가 보관하고 조건에 맞는 웹 요청에 함께 보내는 작은 데이터예요.",
+    "en": "Small pieces of data stored by a browser and sent with matching web requests."
+  },
+  "analogy": {
+    "ko": "다음 방문 때 보여 주는 작은 보관증과 같아요.",
+    "en": "Like a small claim ticket shown on a later visit."
+  },
+  "examples": {
+    "ko": [
+      "언어 설정 기억",
+      "세션 ID 전달"
+    ],
+    "en": [
+      "Remembering language preferences",
+      "carrying session IDs"
+    ]
+  },
+  "keywords": [
+    "session",
+    "cookies-and-sessions",
+    "authentication"
+  ],
+  "related": [
+    {
+      "id": "session",
+      "type": "related"
+    },
+    {
+      "id": "cookies-and-sessions",
+      "type": "related"
+    },
+    {
+      "id": "authentication",
+      "type": "related"
+    }
+  ]
+}

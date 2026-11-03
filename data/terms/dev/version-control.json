@@ -1,0 +1,47 @@
+{
+  "order": 950,
+  "updatedAt": "2026-11-03",
+  "term": {
+    "ko": "버전 관리",
+    "en": "Version Control"
+  },
+  "definition": {
+    "ko": "버전 관리 시스템은 선택한 변경을 기록해 이전 상태와 차이를 확인하고 필요한 변경을 통합하게 해요. Git은 이력을 로컬 저장소에 보관하고 원격 저장소를 통해 공유할 수 있는 도구예요.",
+    "en": "A version control system records selected changes for comparison, recovery and integration. Git keeps history in local repositories and supports sharing through remotes."
+  },
+  "description": {
+    "ko": "파일의 변경 이력을 기록하고 서로 다른 작업을 비교하거나 합치는 방법이에요.",
+    "en": "Tracking file changes so different versions and lines of work can be compared and integrated."
+  },
+  "analogy": {
+    "ko": "수정한 사람과 이유를 적어 둔 문서 이력과 같아요.",
+    "en": "Like a document history that records who changed what and why."
+  },
+  "examples": {
+    "ko": [
+      "기능별 브랜치와 수정 이력 추적"
+    ],
+    "en": [
+      "Feature branches and change history"
+    ]
+  },
+  "keywords": [
+    "git",
+    "github",
+    "release"
+  ],
+  "related": [
+    {
+      "id": "git",
+      "type": "related"
+    },
+    {
+      "id": "github",
+      "type": "related"
+    },
+    {
+      "id": "release",
+      "type": "related"
+    }
+  ]
+}

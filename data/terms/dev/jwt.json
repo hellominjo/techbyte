@@ -1,0 +1,51 @@
+{
+  "order": 940,
+  "updatedAt": "2026-11-03",
+  "term": {
+    "ko": "JWT 토큰",
+    "en": "JWT"
+  },
+  "fullName": {
+    "ko": "JSON 웹 토큰",
+    "en": "JSON Web Token"
+  },
+  "definition": {
+    "ko": "JWT(JSON Web Token)는 서비스 간에 클레임이라는 정보를 전달하는 형식이에요. 서명형 토큰의 내용은 읽을 수 있고 서명은 변조 여부를 확인하는 데 쓰여요. 받는 쪽은 서명과 함께 대상 서비스와 만료 등 필요한 조건을 검사해요.",
+    "en": "A JSON Web Token carries claims between parties. A signed token's payload can be read, while its signature protects integrity. The recipient verifies the signature and relevant conditions such as audience and expiration."
+  },
+  "description": {
+    "ko": "발급자나 만료 시각 같은 정보를 JSON으로 담아 전달하는 토큰 형식이에요.",
+    "en": "A token format for conveying JSON claims such as issuer or expiration."
+  },
+  "analogy": {
+    "ko": "발급처와 유효 기간이 적힌 전자 출입증과 비슷해요.",
+    "en": "Like a digital pass that lists its issuer and expiration."
+  },
+  "examples": {
+    "ko": [
+      "API 접근 토큰의 클레임 전달"
+    ],
+    "en": [
+      "Carrying claims in an API access token"
+    ]
+  },
+  "keywords": [
+    "oauth",
+    "json",
+    "authentication"
+  ],
+  "related": [
+    {
+      "id": "oauth",
+      "type": "related"
+    },
+    {
+      "id": "json",
+      "type": "related"
+    },
+    {
+      "id": "authentication",
+      "type": "related"
+    }
+  ]
+}

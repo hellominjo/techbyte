@@ -1,0 +1,47 @@
+{
+  "order": 970,
+  "updatedAt": "2026-11-03",
+  "term": {
+    "ko": "오브젝트 스토리지",
+    "en": "Object Storage"
+  },
+  "definition": {
+    "ko": "객체 스토리지에서는 보통 버킷이라는 보관 단위에 데이터와 메타데이터를 넣고 키를 사용해 읽거나 갱신해요. 사진이나 백업처럼 파일 단위로 다루는 자료에 활용하며 접근 권한과 보관 기간을 설정할 수 있어요.",
+    "en": "Object storage typically groups data and metadata into buckets and reads or updates objects by key. It is used for media and backups and can apply access and retention policies."
+  },
+  "description": {
+    "ko": "파일 데이터를 메타데이터와 함께 객체로 보관하고 키로 찾아 쓰는 저장 방식이에요.",
+    "en": "Storing data as objects with metadata and retrieving them by key."
+  },
+  "analogy": {
+    "ko": "물건마다 번호표와 설명을 붙여 보관하는 창고와 같아요.",
+    "en": "Like a warehouse that gives each item a label and a lookup number."
+  },
+  "examples": {
+    "ko": [
+      "첨부 파일, 사진 원본, 백업 보관"
+    ],
+    "en": [
+      "Storing attachments, original photos and backups"
+    ]
+  },
+  "keywords": [
+    "storage",
+    "metadata",
+    "cdn"
+  ],
+  "related": [
+    {
+      "id": "storage",
+      "type": "related"
+    },
+    {
+      "id": "metadata",
+      "type": "related"
+    },
+    {
+      "id": "cdn",
+      "type": "related"
+    }
+  ]
+}

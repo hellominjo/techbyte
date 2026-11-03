@@ -1,0 +1,44 @@
+{
+  "order": 930,
+  "updatedAt": "2026-11-03",
+  "term": {
+    "ko": "버퍼",
+    "en": "Buffer"
+  },
+  "definition": {
+    "ko": "영상 앱은 재생에 쓸 다음 몇 초를 미리 저장해 전송 속도의 짧은 변동을 흡수해요. 받는 속도가 소비 속도보다 낮은 상태가 오래 이어져 버퍼가 비면 재생이 멈출 수 있어요.",
+    "en": "A player stores upcoming seconds of video to absorb short delivery fluctuations. If consumption outpaces delivery for long enough, playback can pause when the buffer empties."
+  },
+  "description": {
+    "ko": "처리 속도가 다른 두 단계 사이에 데이터를 잠시 쌓아 두는 공간이에요.",
+    "en": "Temporary space holding data between stages that operate at different rates."
+  },
+  "analogy": {
+    "ko": "손님이 오기 전에 음료를 몇 잔 준비해 두는 것과 비슷해요.",
+    "en": "Like preparing a few drinks before customers arrive."
+  },
+  "examples": {
+    "ko": [
+      "동영상 재생 대기",
+      "파일 입출력"
+    ],
+    "en": [
+      "Video playback",
+      "file input/output"
+    ]
+  },
+  "keywords": [
+    "streaming",
+    "cache"
+  ],
+  "related": [
+    {
+      "id": "streaming",
+      "type": "related"
+    },
+    {
+      "id": "cache",
+      "type": "related"
+    }
+  ]
+}

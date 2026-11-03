@@ -1,0 +1,49 @@
+{
+  "order": 980,
+  "updatedAt": "2026-11-03",
+  "term": {
+    "ko": "인코딩",
+    "en": "Encoding"
+  },
+  "definition": {
+    "ko": "글자를 UTF-8 바이트로 나타내거나 음성과 영상을 재생 가능한 형식으로 바꾸는 작업이 인코딩에 해당해요. 규칙에 맞춰 해석하는 과정을 디코딩이라 하며, 일부 미디어 인코딩에서는 용량을 줄이기 위해 정보의 일부가 제거돼요.",
+    "en": "Encoding includes representing text as UTF-8 bytes or converting media to playable formats. Decoding interprets the representation, and some media encodings discard information to reduce size."
+  },
+  "description": {
+    "ko": "데이터를 정해진 규칙에 따라 다른 형식으로 표현하는 일이에요.",
+    "en": "Representing data in a different format under defined rules."
+  },
+  "analogy": {
+    "ko": "같은 내용을 다른 사람이 읽을 수 있는 표기법으로 옮기는 것과 비슷해요.",
+    "en": "Like writing the same message in a notation the recipient can read."
+  },
+  "examples": {
+    "ko": [
+      "한글 파일을 UTF-8로 저장",
+      "영상 변환"
+    ],
+    "en": [
+      "Saving Korean text as UTF-8",
+      "converting video"
+    ]
+  },
+  "keywords": [
+    "streaming",
+    "json",
+    "encryption"
+  ],
+  "related": [
+    {
+      "id": "streaming",
+      "type": "related"
+    },
+    {
+      "id": "json",
+      "type": "related"
+    },
+    {
+      "id": "encryption",
+      "type": "related"
+    }
+  ]
+}

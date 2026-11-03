@@ -1,0 +1,44 @@
+{
+  "order": 920,
+  "updatedAt": "2026-11-03",
+  "term": {
+    "ko": "스트리밍",
+    "en": "Streaming"
+  },
+  "definition": {
+    "ko": "영상이나 음성은 연속 데이터로 전송되거나 짧은 구간으로 나뉘어 전달돼요. 재생 앱은 앞으로 재생할 분량을 버퍼에 쌓고 연결 상태에 맞춰 다음 구간을 받아요.",
+    "en": "Media arrives as a continuous stream or in short segments. The player buffers upcoming content and retrieves the next portion as network conditions allow."
+  },
+  "description": {
+    "ko": "전체 파일을 받기 전에 데이터가 도착하는 순서에 맞춰 재생하는 방식이에요.",
+    "en": "Playback that starts before the entire file arrives and continues as data arrives."
+  },
+  "analogy": {
+    "ko": "책을 한 권 다 받기 전에 먼저 도착한 페이지부터 읽는 것과 비슷해요.",
+    "en": "Like reading the first pages while the rest of the book arrives."
+  },
+  "examples": {
+    "ko": [
+      "영상 재생",
+      "인터넷 라디오"
+    ],
+    "en": [
+      "Video playback",
+      "internet radio"
+    ]
+  },
+  "keywords": [
+    "buffer",
+    "cdn"
+  ],
+  "related": [
+    {
+      "id": "buffer",
+      "type": "related"
+    },
+    {
+      "id": "cdn",
+      "type": "related"
+    }
+  ]
+}
