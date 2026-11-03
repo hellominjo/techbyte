@@ -2,7 +2,7 @@
 title: ChatGPT는 왜 모르는 것도 아는 척할까?
 description: 자연스러운 문장과 사실인 답은 왜 다를까? AI 환각의 원리
 date: 2026-10-29
-order: 55
+order: 9
 terms: llm, token, training, inference, hallucination, rag, evaluation
 ---
 
@@ -14,9 +14,9 @@ terms: llm, token, training, inference, hallucination, rag, evaluation
 
 모르면 모른다고 하면 될 텐데, 왜 이렇게 구체적인 내용을 만들어 낸 걸까요? 자신 있게 설명했다는 건 사실이라는 뜻 아니었을까요?
 
-[[terms]]
-
 현우가 만난 상황을 통해 언어 모델이 답을 만드는 방식과 **환각**을 살펴보겠습니다. 이 이야기의 논문 사례는 설명을 위한 가상 상황이며, ChatGPT의 특정 모델이나 기능에서 직접 관찰한 결과를 인용한 것은 아닙니다.
+
+---
 
 ## 1. 문서를 그대로 꺼내기보다 다음 표현을 계산해 답을 만듭니다
 
@@ -41,3 +41,5 @@ ChatGPT 같은 서비스의 중심에는 **대규모 언어 모델**, 즉 LLM이
 현우는 요청을 바꿉니다. "확인할 수 있는 논문만 제시하고, 찾지 못한 것은 찾지 못했다고 표시해 줘. 제목과 저자, 원문 링크가 일치하는지도 확인해 줘." 이렇게 자료 범위와 불확실성 표시를 명확히 하면 검토하기 쉬운 답을 얻는 데 도움이 됩니다. 다만 이런 지시가 오류를 완전히 막아 주는 것은 아닙니다. OpenAI도 [공식 프롬프팅 가이드](https://developers.openai.com/cookbook/examples/chatgpt/chatgpt_prompt_guide/chatgpt_prompt_guide)에서 근거 제공, 불확실성 표시와 결과 비교를 권합니다.
 
 현우는 추천받은 논문의 원문에서 제목과 저자, 실제 주장까지 확인한 뒤 보고서에 반영합니다. 이처럼 기대한 기준으로 출력을 확인하는 **평가**가 필요합니다. AI는 아이디어를 넓히고 초안을 만드는 데 도움을 줄 수 있지만, 매끄러운 문장이 검증을 대신하지는 않습니다. 다음에 답을 읽을 때는 얼마나 자신 있게 말하는지와 함께 무엇을 근거로 말하는지 살펴보면 좋겠습니다. 중요한 이름과 수치, 인용을 확인하라는 원칙은 [ChatGPT 공식 이용 안내](https://learn.chatgpt.com/docs/use-chatgpt)에서도 확인할 수 있습니다.
+
+[[terms]]

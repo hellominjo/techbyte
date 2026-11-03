@@ -2,7 +2,7 @@
 title: 로그인 버튼 하나에 숨겨진 기술들
 description: 비밀번호를 확인한 뒤에도 나를 기억하는 이유
 date: 2026-10-27
-order: 45
+order: 6
 terms: client, api, ssl-tls, hash, authentication, cookies-and-sessions, oauth, passkey
 ---
 
@@ -14,9 +14,9 @@ terms: client, api, ssl-tls, hash, authentication, cookies-and-sessions, oauth, 
 
 사이트는 비밀번호가 맞는지 어떻게 확인할까요? 그리고 로그인 버튼은 한 번 눌렀는데, 다음 화면에서도 어떻게 나라는 걸 알아볼까요?
 
-[[terms]]
-
 지윤의 출근 첫 로그인을 따라가며, 웹에서 흔히 사용하는 비밀번호·세션 방식의 구조를 살펴보겠습니다. 모든 서비스가 같은 방식으로 구현되는 것은 아니지만, 이 흐름을 알면 다른 로그인 방식도 이해하기 쉬워집니다.
+
+---
 
 ## 1. 비밀번호가 출발하기 전에 보호된 연결을 만듭니다
 
@@ -41,3 +41,5 @@ terms: client, api, ssl-tls, hash, authentication, cookies-and-sessions, oauth, 
 지윤이 다른 서비스에서 '외부 계정으로 로그인'을 누른다면 확인을 맡는 곳이 달라질 수 있습니다. 서비스가 신원 제공자의 인증 결과를 검증해 자체 로그인을 만드는 방식입니다. 여기서 자주 나오는 **OAuth**는 정확히는 제한된 자원 접근 권한을 위임하는 틀이고, 로그인 신원 확인에는 그 위에 인증 기능을 더한 OpenID Connect 같은 프로토콜을 사용합니다. 외부 계정의 비밀번호를 새 서비스에 그대로 넘기는 구조로 이해하면 안 됩니다. 이 차이는 [OpenID Foundation의 설명](https://openid.net/developers/how-connect-works/)에 잘 드러납니다.
 
 **패스키**는 또 다른 접근입니다. 서비스가 보관한 공개키로, 인증기가 개인키를 사용해 만든 서명을 검증합니다. 기기의 PIN이나 생체 확인은 키 사용을 승인하는 데 쓰일 수 있으며, 지문 자체를 사이트에 보내는 것은 아닙니다. 지윤이 보는 버튼은 작지만 그 뒤에는 연결 보호, 신원 확인, 상태 유지와 권한 검사가 나뉘어 있습니다. 다음에 로그인 화면을 만났을 때는 버튼 하나보다, 그 버튼이 연결하는 여러 확인 절차가 보일지도 모릅니다. 패스키의 작동 방식은 [FIDO Alliance 공식 안내](https://fidoalliance.org/passkeys/)를 참고했습니다.
+
+[[terms]]
