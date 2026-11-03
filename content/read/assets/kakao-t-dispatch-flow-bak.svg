@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+<title id="title">카카오 T 택시 호출 흐름</title>
+<desc id="desc">승객 앱이 서버에 호출을 보냅니다. 서버는 기사 후보를 골라 기사 앱에 콜 카드를 보냅니다. 기사 수락이 서버에 돌아오고 배차가 확정되면 두 앱에 결과를 표시합니다.</desc>
+<style>
+  :root {
+    color-scheme: light dark;
+    --ink: #172238;
+    --card: #f5f7fa;
+    --border: #aab6ce;
+    --accent-card: #e1efff;
+    --title: #000000;
+    --stage: #28578a;
+    --muted: #737f90;
+    --caption: #717d8e;
+    --number: #415679;
+    --icon: #224c80;
+    --arrow: #38577d;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #f0f4fc;
+      --card: #202b3d;
+      --border: #5c6d88;
+      --accent-card: #304968;
+      --title: #f0f4fc;
+      --stage: #b4d3ff;
+      --muted: #aab7ca;
+      --caption: #a5b3c6;
+      --number: #c0cdeb;
+      --icon: #a8caff;
+      --arrow: #a8caff;
+    }
+  }
+</style>
+<g font-family="Noto Sans KR, Malgun Gothic, Apple SD Gothic Neo, sans-serif" fill="var(--ink)">
+<text x="32" y="56" font-size="22" font-weight="bold" fill="var(--title)">카카오 T 택시 호출 흐름</text>
+<g transform="translate(32 88)">
+<rect width="216" height="224" rx="16" fill="var(--card)" stroke="var(--border)"/>
+<text x="15" y="30" font-size="18" font-weight="bold" fill="var(--number)">01</text>
+<g transform="translate(76 37)" fill="none" stroke="var(--icon)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><rect x="18" y="7" width="28" height="50" rx="5"/><path d="M24 15h16M29 49h6"/></g>
+<text x="108" y="135" text-anchor="middle" font-size="27" font-weight="bold" fill="var(--stage)">호출 요청</text>
+<text x="108" y="169" text-anchor="middle" font-size="16">출발지·목적지 전송</text>
+<text x="108" y="198" text-anchor="middle" font-size="14" fill="var(--muted)">클라이언트 · API 요청</text>
+</g><path d="M250 194h10m-5-5 5 5-5 5" fill="none" stroke="var(--arrow)" stroke-width="2.5"/>
+<g transform="translate(262 88)">
+<rect width="216" height="224" rx="16" fill="var(--card)" stroke="var(--border)"/>
+<text x="15" y="30" font-size="18" font-weight="bold" fill="var(--number)">02</text>
+<g transform="translate(76 37)" fill="none" stroke="var(--icon)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M48 25c0 13-16 27-16 27S16 38 16 25a16 16 0 1 1 32 0Z"/><circle cx="32" cy="25" r="5"/></g>
+<text x="108" y="135" text-anchor="middle" font-size="27" font-weight="bold" fill="var(--stage)">기사 후보 탐색</text>
+<text x="108" y="169" text-anchor="middle" font-size="16">배차 서버가 후보 선정</text>
+<text x="108" y="198" text-anchor="middle" font-size="14" fill="var(--muted)">GPS · 예상 도착 시간</text>
+</g><path d="M480 194h10m-5-5 5 5-5 5" fill="none" stroke="var(--arrow)" stroke-width="2.5"/>
+<g transform="translate(492 88)">
+<rect width="216" height="224" rx="16" fill="var(--card)" stroke="var(--border)"/>
+<text x="15" y="30" font-size="18" font-weight="bold" fill="var(--number)">03</text>
+<g transform="translate(76 37)" fill="none" stroke="var(--icon)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="14" width="50" height="36" rx="6"/><path d="M17 26h30M17 37h19"/></g>
+<text x="108" y="135" text-anchor="middle" font-size="27" font-weight="bold" fill="var(--stage)">콜 카드 전달</text>
+<text x="108" y="169" text-anchor="middle" font-size="16">기사 앱에 호출 제안</text>
+<text x="108" y="198" text-anchor="middle" font-size="14" fill="var(--muted)">서버 → 앱 메시지</text>
+</g><path d="M710 194h10m-5-5 5 5-5 5" fill="none" stroke="var(--arrow)" stroke-width="2.5"/>
+<g transform="translate(722 88)">
+<rect width="216" height="224" rx="16" fill="var(--card)" stroke="var(--border)"/>
+<text x="15" y="30" font-size="18" font-weight="bold" fill="var(--number)">04</text>
+<g transform="translate(76 37)" fill="none" stroke="var(--icon)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="32" r="23"/><path d="m20 32 8 8 16-17"/></g>
+<text x="108" y="135" text-anchor="middle" font-size="27" font-weight="bold" fill="var(--stage)">기사 수락</text>
+<text x="108" y="169" text-anchor="middle" font-size="16">수락 응답이 서버로</text>
+<text x="108" y="198" text-anchor="middle" font-size="14" fill="var(--muted)">요청 · 응답</text>
+</g><path d="M940 194h10m-5-5 5 5-5 5" fill="none" stroke="var(--arrow)" stroke-width="2.5"/>
+<g transform="translate(952 88)">
+<rect width="216" height="224" rx="16" fill="var(--accent-card)" stroke="var(--border)"/>
+<text x="15" y="30" font-size="18" font-weight="bold" fill="var(--number)">05</text>
+<g transform="translate(76 37)" fill="none" stroke="var(--icon)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="m13 31 6-13h26l6 13M10 48V35l5-4h34l5 4v13H10Zm7 0v6m30-6v6M19 39h5m16 0h5"/></g>
+<text x="108" y="135" text-anchor="middle" font-size="27" font-weight="bold" fill="var(--stage)">배차 확정</text>
+<text x="108" y="169" text-anchor="middle" font-size="16">승객·기사 앱에 결과 표시</text>
+<text x="108" y="198" text-anchor="middle" font-size="14" fill="var(--muted)">상태 동기화</text>
+</g>
+<text x="32" y="341" font-size="15" fill="var(--caption)">배차가 성사된 경우 · 콜 카드는 기사 앱에 뜨는 호출 제안이에요.</text>
+</g>
+</svg>
