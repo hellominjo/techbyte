@@ -2,7 +2,9 @@
 
 import Link from "next/link";
 import { useLang } from "@/app/ui/language";
+import ShareActions from "@/app/ui/share-actions";
 import { pick } from "@/lib/i18n";
+import { siteValue } from "@/lib/site";
 
 // 이전·다음 글 카드 (용어 상세의 이전·다음 용어와 같은 모양)
 function AdjacentPosts({ prev, next, basePath, lang, t }) {
@@ -65,6 +67,7 @@ export default function PostView({ section, basePath, post, adjacent }) {
   const content = (lang === "en" && post.en) || post.ko;
   const termsLabel = section.termsLabel ? pick(section.termsLabel, lang) : t.postTerms;
   const inline = content.htmlAfter !== null && content.chips.length > 0;
+  const url = `${siteValue("siteUrl", lang)}${basePath}/${post.slug}`;
 
   return (
     <article className="pt-4 sm:pt-8">
@@ -101,10 +104,14 @@ export default function PostView({ section, basePath, post, adjacent }) {
         )}
       </div>
 
-      {/* 본문에 [[terms]]가 없으면 용어 태그를 본문 아래에 표시 */}
-      {!inline && content.chips.length > 0 && (
+      {/* 본문에 [[terms]]가 없으면 용어 태그를 본문 아래에 표시 (인쇄·공유 버튼은 제목 줄 오른쪽).
+          용어 태그 영역이 없으면 인쇄·공유 버튼만 본문 아래 오른쪽에 */}
+      {!inline && content.chips.length > 0 ? (
         <section className="mt-14 border-t border-line pt-8">
-          <h2 className="text-[15px] font-bold">{termsLabel}</h2>
+          <div className="flex items-center justify-between gap-4">
+            <h2 className="text-[15px] font-bold">{termsLabel}</h2>
+            <ShareActions url={url} text={t.shareActions} />
+          </div>
           <ul className="mt-4 flex flex-wrap gap-2">
             {content.chips.map((chip, i) => (
               <li key={i}>
@@ -117,6 +124,8 @@ export default function PostView({ section, basePath, post, adjacent }) {
             ))}
           </ul>
         </section>
+      ) : (
+        <ShareActions url={url} text={t.shareActions} className="mt-10 justify-end" />
       )}
 
       {adjacent && (adjacent.prev || adjacent.next) && (

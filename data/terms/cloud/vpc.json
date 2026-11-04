@@ -1,0 +1,118 @@
+{
+  "order": 1420,
+  "updatedAt": "2026-11-04",
+  "term": {
+    "ko": "VPC",
+    "en": "VPC"
+  },
+  "fullName": {
+    "ko": "가상 사설 클라우드",
+    "en": "Virtual Private Cloud"
+  },
+  "definition": {
+    "ko": "VPC(Virtual Private Cloud)는 클라우드 자원을 논리적으로 구분된 가상 네트워크 안에 배치하고 연결을 제어하는 서비스 개념이에요. 주소 범위와 서브넷, 라우팅과 접근 규칙 등을 설정해 앱과 데이터 시스템의 통신 경계를 구성해요. 적용 범위와 구성 방식은 제공자마다 달라 필요한 연결과 보안 정책을 서비스 기준으로 확인해야 해요.",
+    "en": "A VPC (Virtual Private Cloud) provides a logically separated virtual network for cloud resources. Address ranges, subnets, routing and access rules define communication boundaries for applications and data systems. Scope and configuration differ across providers, requiring service-specific network and access design."
+  },
+  "description": {
+    "ko": "클라우드 자원을 위한 가상 네트워크를 구성하고 연결을 제어하는 환경이에요.",
+    "en": "A virtual network environment for organizing cloud resources and controlling connectivity."
+  },
+  "analogy": {
+    "ko": "공유된 시설 안에서 구역과 출입 동선을 정해 사용하는 것과 비슷해요.",
+    "en": "Like defining zones and access routes within a shared facility."
+  },
+  "details": {
+    "ko": [
+      "서브넷과 라우팅으로 자원의 통신 경로를 정하고 방화벽 규칙 등으로 접근을 제어해요. 인터넷 연결이나 사내망 연결은 필요한 구성 요소를 따로 준비해요.",
+      "VPC라는 이름의 서비스도 제공자에 따라 리전 범위와 기본 설정이 달라요. 사설 주소 사용과 인터넷 통신 가능 여부는 실제 경로와 접근 설정을 함께 확인해야 해요."
+    ],
+    "en": [
+      "Subnets and routes define communication paths, and firewall controls restrict access. Internet or organizational network connections require appropriate components.",
+      "Products named VPC differ in regional scope and defaults. Check routes and access configuration to determine actual private and internet connectivity."
+    ]
+  },
+  "background": {
+    "ko": [
+      "공통 자원을 목적과 책임에 맞게 구성하고 안정적으로 운영하기 위해 활용해요."
+    ],
+    "en": [
+      "Used to organize and operate resources according to workload needs and responsibilities."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "요구 정의",
+        "text": "필요한 자원과 연결, 관리 책임을 정해요."
+      },
+      {
+        "title": "구성",
+        "text": "요구에 맞춰 환경과 접근 규칙을 준비해요."
+      },
+      {
+        "title": "운영 확인",
+        "text": "성능과 연결, 장애 대응을 점검해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Define requirements",
+        "text": "Define resources, connectivity and responsibilities."
+      },
+      {
+        "title": "Configure",
+        "text": "Prepare the environment and access rules."
+      },
+      {
+        "title": "Verify operation",
+        "text": "Check performance, connectivity and recovery."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "웹 앱과 내부 데이터베이스의 통신 구역 구성"
+    ],
+    "en": [
+      "Organizing network zones for a web app and internal database"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "구성 검토",
+        "text": "앱과 데이터베이스의 연결 경로를 정하고, 필요한 출발지와 포트만 허용하는지 확인하자."
+      }
+    ],
+    "en": [
+      {
+        "title": "Reviewing configuration",
+        "text": "Define application-to-database paths and check that only required sources and ports are allowed."
+      }
+    ]
+  },
+  "keywords": [
+    "cloud",
+    "ip-address",
+    "firewall",
+    "vpn"
+  ],
+  "related": [
+    {
+      "id": "cloud",
+      "type": "prerequisite"
+    },
+    {
+      "id": "ip-address",
+      "type": "related"
+    },
+    {
+      "id": "firewall",
+      "type": "related"
+    },
+    {
+      "id": "vpn",
+      "type": "related"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "order": 1550,
+  "updatedAt": "2026-11-04",
+  "term": {
+    "ko": "접근 제어",
+    "en": "Access Control"
+  },
+  "definition": {
+    "ko": "접근 제어는 사용자나 프로그램이 어떤 자원에 어떤 행동을 할 수 있는지 정책에 따라 결정하고 집행하는 체계예요. 역할과 속성, 소유 관계와 요청 맥락 등을 기준으로 읽기·수정·실행 권한을 제한해요. 신원을 확인한 뒤에도 개별 자원과 작업마다 권한을 검사하고 변경·해지된 권한을 반영해야 해요.",
+    "en": "Access control decides and enforces which actions users or programs may perform on resources. Policies can use roles, attributes, ownership and context to restrict reading, modification or execution. Resource- and operation-level checks must remain effective after authentication and reflect changed or revoked permissions."
+  },
+  "description": {
+    "ko": "누가 어떤 자원에서 무엇을 할 수 있는지 정하고 실제로 제한하는 체계예요.",
+    "en": "Deciding and enforcing who may do what with each resource."
+  },
+  "analogy": {
+    "ko": "신분에 맞춰 들어갈 방과 사용할 설비를 구분하는 출입 관리와 같아요.",
+    "en": "Like controlling which rooms and facilities each person can use."
+  },
+  "details": {
+    "ko": [
+      "역할 기반 접근 제어(RBAC)는 담당 역할의 권한을 묶어 부여하고, 속성 기반 접근 제어(ABAC)는 사용자·자원·환경 속성으로 정책을 판단해요.",
+      "화면에서 메뉴를 숨기는 것과 서버에서 권한을 집행하는 일을 함께 구성해요. 최소 권한을 부여하고 기본적으로 거부한 뒤 허용 조건을 검사하는 방식이 일반적이에요."
+    ],
+    "en": [
+      "Role-based access control (RBAC) groups permissions by role; attribute-based access control (ABAC) evaluates subject, resource and environmental attributes.",
+      "Combine UI behavior with server-side enforcement. Common principles include least privilege and denying access unless applicable rules permit it."
+    ]
+  },
+  "background": {
+    "ko": [
+      "여러 주체가 같은 시스템을 사용하면서 서로의 데이터와 기능을 목적에 맞는 범위에서 이용하도록 관리해요."
+    ],
+    "en": [
+      "Shared systems need controls that limit each subject to the data and capabilities appropriate for its purpose."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "정책 정의",
+        "text": "주체, 자원과 행동별 허용 조건을 정해요."
+      },
+      {
+        "title": "요청별 집행",
+        "text": "신원과 자원 정보를 바탕으로 권한을 검사해요."
+      },
+      {
+        "title": "수명과 감사",
+        "text": "이동·퇴사와 권한 변경을 반영하고 중요한 접근을 기록해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Define policies",
+        "text": "Define permitted subject-resource-action combinations."
+      },
+      {
+        "title": "Enforce per request",
+        "text": "Check permissions using identity and resource context."
+      },
+      {
+        "title": "Review lifecycle and audit",
+        "text": "Reflect transfers, departures and permission changes and record significant access."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "작성자만 게시글 수정 허용",
+      "팀별 문서 열람 범위",
+      "서비스 계정의 DB 권한 제한"
+    ],
+    "en": [
+      "Allowing only owners to edit posts",
+      "Team-based document access",
+      "Restricting database privileges for service accounts"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "주문 조회",
+        "text": "“로그인만 확인하지 말고, 요청한 주문의 소유자나 담당 역할까지 서버에서 검사하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Order lookup",
+        "text": "Say: “Check order ownership or the authorized role on the server as well as login status.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "로그인하면 접근 제어는 끝난 건가요?",
+        "en": "Does sign-in complete access control?"
+      },
+      "fact": {
+        "ko": "인증은 신원을 확인해요. 이후에도 대상 자원과 행동이 허용되는지 정책에 따라 검사해야 해요.",
+        "en": "Authentication establishes identity. The target resource and action still require policy-based authorization."
+      }
+    }
+  ],
+  "keywords": [
+    "authentication",
+    "personal-information",
+    "firewall",
+    "log"
+  ],
+  "related": [
+    {
+      "id": "authentication",
+      "type": "related"
+    },
+    {
+      "id": "personal-information",
+      "type": "related"
+    },
+    {
+      "id": "firewall",
+      "type": "related"
+    },
+    {
+      "id": "log",
+      "type": "related"
+    }
+  ]
+}

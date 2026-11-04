@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
 @custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+/* techbyte 서브도메인 접속: <html data-brand="techbyte"> 일 때 적용 (lib/brand.js) */
+@custom-variant techbyte (&:where([data-brand="techbyte"] *));
 
 :root {
   color-scheme: light;
@@ -12,6 +14,7 @@
   --surface-hover: #e9e9eb;
   --line: #e5e5e5;
   --accent: #1d7a68;
+  --brand-blue: #036daa; /* 서브도메인 로고 */
   --box-analogy: #f1f8f6; /* 쉽게 비유하면 */
   --box-examples: #f1f1f1; /* 활용 예시 */
 }
@@ -40,6 +43,7 @@
   --surface-hover: #2a2a2d;
   --line: #2a2a2a;
   --accent: #5cc6b0;
+  --brand-blue: #5a9bf6;
   --box-analogy: #15201e; /* 쉽게 비유하면 */
   --box-examples: #272727; /* 활용 예시 */
 }

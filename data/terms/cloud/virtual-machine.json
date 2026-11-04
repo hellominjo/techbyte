@@ -1,0 +1,118 @@
+{
+  "order": 1400,
+  "updatedAt": "2026-11-04",
+  "term": {
+    "ko": "가상머신",
+    "en": "Virtual Machine"
+  },
+  "fullName": {
+    "ko": "가상머신",
+    "en": "Virtual Machine (VM)"
+  },
+  "definition": {
+    "ko": "가상머신(VM)은 물리 하드웨어 위에서 자체 운영체제와 앱을 실행하는 소프트웨어 기반 컴퓨터예요. 하이퍼바이저가 가상 CPU와 메모리, 디스크 등의 자원을 배분해 여러 환경을 구분해 실행하게 해요. 클라우드와 조직 내부 장비에서 모두 사용할 수 있으며 각 VM의 운영체제와 앱을 관리해야 해요.",
+    "en": "A virtual machine (VM) is a software-based computer running its own operating system and applications on physical hardware. A hypervisor assigns virtual compute, memory and storage to isolated environments. VMs can run in clouds or on organizational hardware and require guest OS and application management."
+  },
+  "description": {
+    "ko": "물리 컴퓨터의 자원을 나눠 독립된 컴퓨터처럼 실행하는 환경이에요.",
+    "en": "An environment using physical resources to run like an independent computer."
+  },
+  "analogy": {
+    "ko": "큰 건물을 여러 사무실로 나눠 각자의 설비와 업무를 운영하는 것과 비슷해요.",
+    "en": "Like dividing a building into offices with their own equipment and work."
+  },
+  "details": {
+    "ko": [
+      "시스템 가상머신은 자체 커널과 운영체제를 실행해 서로 다른 환경을 한 장비에서 운영할 수 있게 해요. CPU와 메모리 배분, 디스크와 네트워크 설정이 성능에 영향을 줘요.",
+      "개발·시험 환경을 분리하거나 기존 서버 앱을 옮길 때 활용해요. 이미지와 스냅샷은 환경 준비와 복구에 도움이 되며, 실제 복구 요구에 맞는 백업도 설계해요."
+    ],
+    "en": [
+      "System VMs run their own kernels and operating systems so different environments can share hardware. CPU, memory, disk and network configuration affect performance.",
+      "VMs support separated test environments and migration of existing applications. Images and snapshots aid provisioning and recovery, alongside backups suited to recovery requirements."
+    ]
+  },
+  "background": {
+    "ko": [
+      "공통 자원을 목적과 책임에 맞게 구성하고 안정적으로 운영하기 위해 활용해요."
+    ],
+    "en": [
+      "Used to organize and operate resources according to workload needs and responsibilities."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "요구 정의",
+        "text": "필요한 자원과 연결, 관리 책임을 정해요."
+      },
+      {
+        "title": "구성",
+        "text": "요구에 맞춰 환경과 접근 규칙을 준비해요."
+      },
+      {
+        "title": "운영 확인",
+        "text": "성능과 연결, 장애 대응을 점검해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Define requirements",
+        "text": "Define resources, connectivity and responsibilities."
+      },
+      {
+        "title": "Configure",
+        "text": "Prepare the environment and access rules."
+      },
+      {
+        "title": "Verify operation",
+        "text": "Check performance, connectivity and recovery."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "개발·시험 환경 분리"
+    ],
+    "en": [
+      "Separating development and test environments"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "구성 검토",
+        "text": "VM을 만들기 전에 운영체제 갱신 담당자와 자원 크기, 백업·복구 기준을 정하자."
+      }
+    ],
+    "en": [
+      {
+        "title": "Reviewing configuration",
+        "text": "Before provisioning a VM, assign OS maintenance and define capacity and recovery requirements."
+      }
+    ]
+  },
+  "keywords": [
+    "iaas",
+    "container",
+    "on-premises",
+    "storage"
+  ],
+  "related": [
+    {
+      "id": "iaas",
+      "type": "related"
+    },
+    {
+      "id": "container",
+      "type": "compare"
+    },
+    {
+      "id": "on-premises",
+      "type": "related"
+    },
+    {
+      "id": "storage",
+      "type": "related"
+    }
+  ]
+}

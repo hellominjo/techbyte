@@ -54,6 +54,7 @@ const MENU = [
 export default function SiteHeader() {
   const { lang, t } = useLang();
   const mainSite = siteConfig.mainSite ?? {};
+  const tagline = siteValue("tagline", lang);
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -82,14 +83,23 @@ export default function SiteHeader() {
             width={20}
             height={20}
             preload
-            className="size-7 dark:ring-1 dark:ring-white/15"
+            className="size-7 dark:ring-1 dark:ring-white/15 techbyte:hidden"
           />
-          <span className="mt-0.5 text-[19px] font-bold tracking-tight">
+          {/* 기본(zerofound.io): ZEROFOUND TECHBYTE */}
+          <span className="mt-0.5 text-[19px] font-bold tracking-tight techbyte:hidden">
             {siteValue("siteName", lang)}
           </span>
-          {/*TECHBYTE */}
-          <span className="py-0.5 text-xs font-medium text-foreground/85 tracking-tight">
+          <span className="py-0.5 text-xs font-medium text-foreground/85 tracking-tight techbyte:hidden">
             {siteValue("tagline", lang)}
+          </span>
+          {/* techbyte 서브도메인: TECHBYTE by ZEROFOUND (tagline과 siteName 자리를 바꿈).
+              tagline을 반으로 나눠 뒤쪽(BYTE)만 파란색 */}
+          <span className="mt-0.5 hidden text-[21px] font-bold techbyte:inline">
+            {tagline.slice(0, Math.ceil(tagline.length / 2))}
+            <span className="text-(--brand-blue)">{tagline.slice(Math.ceil(tagline.length / 2))}</span>
+          </span>
+          <span className="hidden py-0.5 text-xs font-medium text-foreground/85 tracking-tight techbyte:inline">
+            by {siteValue("siteName", lang)}
           </span>
         </Link>
         <div className="flex items-center gap-2">

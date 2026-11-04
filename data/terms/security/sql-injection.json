@@ -1,0 +1,128 @@
+{
+  "order": 1540,
+  "updatedAt": "2026-11-04",
+  "term": {
+    "ko": "SQL 인젝션",
+    "en": "SQL Injection"
+  },
+  "definition": {
+    "ko": "SQL 인젝션은 외부 입력이 SQL 명령의 일부로 해석돼 개발자가 의도하지 않은 조회나 변경이 실행되는 취약점과 공격을 말해요. 입력을 문자열로 이어 붙여 질의를 만들 때 발생할 수 있어요. 질의 구조와 값을 분리하는 파라미터 바인딩을 적용하고 동적 식별자와 데이터베이스 권한도 관리해야 해요.",
+    "en": "SQL injection occurs when untrusted input is interpreted as part of an SQL command, enabling unintended queries or changes. Concatenating input into queries can cause it. Parameter binding separates values from query structure; dynamic identifiers and database privileges also need controls."
+  },
+  "description": {
+    "ko": "입력값이 SQL 명령으로 해석돼 의도하지 않은 데이터 처리가 일어나는 문제예요.",
+    "en": "Untrusted input changes SQL command behavior and causes unintended data operations."
+  },
+  "analogy": {
+    "ko": "주문서의 메모가 주방의 작업 지시로 잘못 읽히는 것과 비슷해요.",
+    "en": "Like an order note being mistakenly treated as a kitchen instruction."
+  },
+  "details": {
+    "ko": [
+      "검색어와 폼 입력뿐 아니라 앱이 신뢰할 수 없는 여러 값이 영향을 줄 수 있어요. 서버에서 쿼리를 만드는 경로를 점검해요.",
+      "일반적인 값은 준비된 질의와 파라미터 바인딩으로 전달해요. 테이블명과 정렬 기준 등 값으로 바인딩하기 어려운 부분은 허용 목록처럼 제한된 선택으로 구성해요."
+    ],
+    "en": [
+      "Search terms, form inputs and other untrusted values can be involved. Review server-side paths that construct queries.",
+      "Use prepared, parameterized queries for values. Constrain elements such as table names and sort options through allow-listed choices when they cannot be bound as values."
+    ]
+  },
+  "background": {
+    "ko": [
+      "앱의 데이터와 실행할 명령을 같은 문자열로 조립하면 입력이 명령 구조를 바꾸는 문제가 생길 수 있어요."
+    ],
+    "en": [
+      "Combining data and commands in one constructed string can let input alter command structure."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "입력 처리 확인",
+        "text": "입력이 데이터베이스 질의에 들어가는 경로를 찾아요."
+      },
+      {
+        "title": "명령과 값 분리",
+        "text": "파라미터 바인딩과 제한된 동적 구성을 적용해요."
+      },
+      {
+        "title": "권한과 검증",
+        "text": "필요한 DB 권한만 부여하고 회귀 검사를 수행해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Review input handling",
+        "text": "Find where input reaches database queries."
+      },
+      {
+        "title": "Separate commands and values",
+        "text": "Apply parameter binding and constrained dynamic construction."
+      },
+      {
+        "title": "Check privileges and behavior",
+        "text": "Grant necessary database privileges and verify behavior against regressions."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "검색 API의 질의 생성 점검",
+      "관리자 보고서의 정렬 조건 검토"
+    ],
+    "en": [
+      "Reviewing query construction in search APIs",
+      "Reviewing report sort options"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "검색 기능 개발",
+        "text": "“검색어는 파라미터로 전달하고, 정렬 항목은 정해진 선택만 허용하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Building search",
+        "text": "Say: “Bind search terms as parameters and restrict sorting to defined choices.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "따옴표를 지우거나 ORM을 쓰면 항상 예방되나요?",
+        "en": "Do removing quotes or using an ORM always prevent it?"
+      },
+      "fact": {
+        "ko": "문자 제거만으로 충분하지 않고 ORM에서도 원시 질의를 조립하면 위험해요. 실제 질의 생성 방식과 바인딩을 확인해야 해요.",
+        "en": "Character removal is insufficient, and raw query construction in an ORM can remain vulnerable. Verify actual query construction and binding."
+      }
+    }
+  ],
+  "keywords": [
+    "sql",
+    "database",
+    "backend",
+    "access-control"
+  ],
+  "related": [
+    {
+      "id": "sql",
+      "type": "prerequisite"
+    },
+    {
+      "id": "database",
+      "type": "related"
+    },
+    {
+      "id": "backend",
+      "type": "related"
+    },
+    {
+      "id": "access-control",
+      "type": "related"
+    }
+  ]
+}

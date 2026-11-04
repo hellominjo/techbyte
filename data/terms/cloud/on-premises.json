@@ -1,0 +1,114 @@
+{
+  "order": 1410,
+  "updatedAt": "2026-11-04",
+  "term": {
+    "ko": "온프레미스",
+    "en": "On-premises"
+  },
+  "definition": {
+    "ko": "온프레미스는 조직이 직접 통제하는 시설의 장비에서 시스템을 구축·운영하는 방식이에요. 사내 서버실이나 조직이 관리하는 데이터센터 등의 환경을 포함하며, 설비와 인프라 운영 책임을 조직이 맡는 범위가 커요. 가상머신과 컨테이너를 사용할 수도 있고 외부 클라우드와 연결한 혼합 구성도 가능해요.",
+    "en": "On-premises means operating systems on infrastructure in facilities controlled by an organization. It includes server rooms and managed data-center facilities, with substantial infrastructure responsibilities retained by the organization. It can use VMs and containers and connect with external cloud environments."
+  },
+  "description": {
+    "ko": "조직이 관리하는 시설과 장비에 시스템을 두고 운영하는 방식이에요.",
+    "en": "Operating systems on infrastructure in facilities managed by an organization."
+  },
+  "analogy": {
+    "ko": "직접 마련한 주방에서 설비와 유지보수까지 관리하며 요리하는 것과 같아요.",
+    "en": "Like running a kitchen whose equipment and maintenance you manage."
+  },
+  "details": {
+    "ko": [
+      "하드웨어 조달과 설치, 네트워크와 접근 통제, 전력·냉각과 장애 대응 등을 계획해야 해요. 실제 운영 업무는 외부 업체와 나눌 수 있어요.",
+      "기존 장비와의 연결, 데이터 처리 조건과 통제 요구 등을 고려해 선택해요. 확장에 필요한 준비 시간과 인력, 설비 교체 비용도 함께 계산해요."
+    ],
+    "en": [
+      "Plan procurement, installation, networking, access, power, cooling and recovery. Operational work may be shared with contractors.",
+      "Selection can reflect existing equipment, data-handling conditions and control requirements. Account for expansion lead time, staff and replacement costs."
+    ]
+  },
+  "background": {
+    "ko": [
+      "공통 자원을 목적과 책임에 맞게 구성하고 안정적으로 운영하기 위해 활용해요."
+    ],
+    "en": [
+      "Used to organize and operate resources according to workload needs and responsibilities."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "요구 정의",
+        "text": "필요한 자원과 연결, 관리 책임을 정해요."
+      },
+      {
+        "title": "구성",
+        "text": "요구에 맞춰 환경과 접근 규칙을 준비해요."
+      },
+      {
+        "title": "운영 확인",
+        "text": "성능과 연결, 장애 대응을 점검해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Define requirements",
+        "text": "Define resources, connectivity and responsibilities."
+      },
+      {
+        "title": "Configure",
+        "text": "Prepare the environment and access rules."
+      },
+      {
+        "title": "Verify operation",
+        "text": "Check performance, connectivity and recovery."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "사내 업무 시스템 운영"
+    ],
+    "en": [
+      "Operating internal business systems"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "구성 검토",
+        "text": "온프레미스와 클라우드를 비교할 때 장비 가격뿐 아니라 운영 인력과 교체·복구 비용도 포함하자."
+      }
+    ],
+    "en": [
+      {
+        "title": "Reviewing configuration",
+        "text": "Include staffing, replacement and recovery costs when comparing on-premises and cloud options."
+      }
+    ]
+  },
+  "keywords": [
+    "cloud",
+    "virtual-machine",
+    "vpn",
+    "storage"
+  ],
+  "related": [
+    {
+      "id": "cloud",
+      "type": "compare"
+    },
+    {
+      "id": "virtual-machine",
+      "type": "related"
+    },
+    {
+      "id": "vpn",
+      "type": "related"
+    },
+    {
+      "id": "storage",
+      "type": "related"
+    }
+  ]
+}

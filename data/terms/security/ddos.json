@@ -1,0 +1,132 @@
+{
+  "order": 1520,
+  "updatedAt": "2026-11-04",
+  "term": {
+    "ko": "DDoS",
+    "en": "DDoS"
+  },
+  "fullName": {
+    "ko": "분산 서비스 거부 공격",
+    "en": "Distributed Denial of Service"
+  },
+  "definition": {
+    "ko": "DDoS는 여러 출처의 트래픽이나 요청으로 네트워크와 시스템 자원을 소모시켜 정상 사용자의 이용을 방해하는 분산 서비스 거부 공격이에요. 회선 용량부터 연결 처리와 앱의 무거운 연산까지 여러 계층이 대상이 될 수 있어요. 대응에는 정상 트래픽 구분과 상위 네트워크의 완화, 앱의 자원 보호를 함께 고려해요.",
+    "en": "DDoS is a distributed denial-of-service attack that exhausts network or system resources with traffic or requests from multiple sources. Targets can include bandwidth, connection handling and costly application operations. Response considers traffic classification, upstream mitigation and application resource protection."
+  },
+  "description": {
+    "ko": "여러 곳에서 몰려오는 공격 트래픽으로 서비스 이용을 어렵게 만드는 공격이에요.",
+    "en": "An attack that disrupts a service using traffic from many sources."
+  },
+  "analogy": {
+    "ko": "여러 사람이 창구와 입구를 점유해 실제 손님이 이용하지 못하게 만드는 것과 비슷해요.",
+    "en": "Like crowds occupying entrances and counters so legitimate customers cannot be served."
+  },
+  "details": {
+    "ko": [
+      "공격 트래픽은 감염된 장치나 다른 네트워크 경로 등에서 분산돼 들어올 수 있어요. 요청 수뿐 아니라 회선 사용량과 응답 지연, 오류를 함께 살펴요.",
+      "회선이 먼저 포화되면 앱 서버만 늘려도 한계가 있어요. 제공자 측 완화와 필터, 호출 제한을 조합하고 정상 이용자에게 미치는 영향도 확인해요."
+    ],
+    "en": [
+      "Attack traffic can arrive through compromised devices and other distributed paths. Review bandwidth, latency and errors alongside request counts.",
+      "Adding app servers cannot solve an already saturated upstream link. Combine provider mitigation, filtering and rate controls while checking effects on legitimate users."
+    ]
+  },
+  "background": {
+    "ko": [
+      "서비스가 외부 요청을 처리하는 데 쓰는 한정된 자원을 공격자가 소모시켜 가용성을 떨어뜨리는 문제예요."
+    ],
+    "en": [
+      "The attack reduces availability by consuming finite resources used to handle external requests."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "이상 탐지",
+        "text": "평소와 다른 트래픽과 서비스 상태를 확인해요."
+      },
+      {
+        "title": "분산 완화",
+        "text": "보호 서비스와 네트워크 제공자 등에서 공격 특성에 맞춰 걸러요."
+      },
+      {
+        "title": "정상 이용 확인",
+        "text": "오차단과 잔여 부하를 살피며 서비스 회복을 확인해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Detect anomalies",
+        "text": "Detect unusual traffic and service behavior."
+      },
+      {
+        "title": "Mitigate upstream",
+        "text": "Use protection services and network providers to mitigate attack patterns."
+      },
+      {
+        "title": "Check availability",
+        "text": "Review false positives and remaining load and verify recovery."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "접속 지연과 시간 초과",
+      "회선 포화로 인한 서비스 중단"
+    ],
+    "en": [
+      "Connection delays and timeouts",
+      "Service disruption from saturated links"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "급격한 부하 증가",
+        "text": "“정상 행사 트래픽인지 공격인지 지표로 확인하고, 네트워크 보호 담당자와 완화 절차를 연결하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Sudden load growth",
+        "text": "Say: “Use metrics to distinguish an event surge from an attack and coordinate mitigation with network protection teams.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "접속자가 많아 느려지면 모두 DDoS인가요?",
+        "en": "Is every traffic surge a DDoS attack?"
+      },
+      "fact": {
+        "ko": "행사나 장애 등도 비슷한 증상을 만들어요. 요청 패턴과 자원 상태를 조사해 원인을 판단해야 해요.",
+        "en": "Events and failures can produce similar symptoms. Investigate traffic patterns and resource state to determine the cause."
+      }
+    }
+  ],
+  "keywords": [
+    "firewall",
+    "cdn",
+    "scaling",
+    "log"
+  ],
+  "related": [
+    {
+      "id": "firewall",
+      "type": "related"
+    },
+    {
+      "id": "cdn",
+      "type": "related"
+    },
+    {
+      "id": "scaling",
+      "type": "related"
+    },
+    {
+      "id": "log",
+      "type": "related"
+    }
+  ]
+}

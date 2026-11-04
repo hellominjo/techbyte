@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import CategoryIcon from "@/app/ui/category-icon";
+import Toast from "@/app/ui/toast";
 
 // AI 서비스에 질문을 채워서 여는 주소 (q 파라미터)
 const AI_LINKS = [
@@ -16,6 +17,7 @@ export default function PageActions({ getMarkdown, prompt, text }) {
   const [open, setOpen] = useState(false);
   const [copied, setCopied] = useState(false);
   const rootRef = useRef(null);
+  const timer = useRef(null);
 
   // 바깥을 누르거나 Esc를 누르면 메뉴 닫기
   useEffect(() => {
@@ -39,7 +41,9 @@ export default function PageActions({ getMarkdown, prompt, text }) {
     try {
       await navigator.clipboard.writeText(getMarkdown());
       setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
+      // 연속 클릭 시 이전 타이머를 지워 토스트가 일찍 사라지지 않도록
+      clearTimeout(timer.current);
+      timer.current = setTimeout(() => setCopied(false), 2000);
     } catch {
       // 클립보드 권한이 없는 환경에서는 조용히 무시
     }
@@ -62,7 +66,7 @@ export default function PageActions({ getMarkdown, prompt, text }) {
           className="flex items-center gap-1.5 px-3 py-1.5 font-medium transition-colors hover:bg-surface"
         >
           <CategoryIcon name={copied ? "check" : "copy"} className="size-4" />
-          <span aria-live="polite">{copied ? text.copied : text.copyPage}</span>
+          <span>{copied ? text.copied : text.copyPage}</span>
         </button>
         <button
           type="button"
@@ -118,6 +122,8 @@ export default function PageActions({ getMarkdown, prompt, text }) {
           ))}
         </div>
       )}
+
+      <Toast show={copied} message={text.pageCopied} />
     </div>
   );
 }

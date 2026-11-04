@@ -2,6 +2,7 @@
 
 import { useRef, useState } from "react";
 import CategoryIcon from "@/app/ui/category-icon";
+import Toast from "@/app/ui/toast";
 
 // 둥근 아이콘 버튼: 인쇄 / 링크 공유(클립보드에 링크 복사)
 export default function ShareActions({ url, text, className = "" }) {
@@ -31,21 +32,7 @@ export default function ShareActions({ url, text, className = "" }) {
       <button type="button" onClick={share} aria-label={text.copyLink} title={text.copyLink} className={button}>
         <CategoryIcon name={copied ? "check" : "share"} className="size-[18px]" />
       </button>
-      {/* 복사 알림 토스트: 화면 하단 가운데에 잠깐 표시 */}
-      <div
-        aria-hidden="true"
-        className={`pointer-events-none fixed inset-x-0 bottom-8 z-50 flex justify-center px-4 transition-all duration-300 ${
-          copied ? "translate-y-0 opacity-100" : "translate-y-2 opacity-0"
-        }`}
-      >
-        <span className="rounded-full bg-foreground px-4 py-2.5 text-sm text-background shadow-lg">
-          {text.linkCopied}
-        </span>
-      </div>
-      {/* 스크린 리더용 알림 */}
-      <span role="status" aria-live="polite" className="sr-only">
-        {copied && text.linkCopied}
-      </span>
+      <Toast show={copied} message={text.linkCopied} />
     </div>
   );
 }

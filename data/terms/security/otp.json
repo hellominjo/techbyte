@@ -1,0 +1,132 @@
+{
+  "order": 1560,
+  "updatedAt": "2026-11-04",
+  "term": {
+    "ko": "OTP",
+    "en": "OTP"
+  },
+  "fullName": {
+    "ko": "일회용 비밀번호",
+    "en": "One-Time Password"
+  },
+  "definition": {
+    "ko": "OTP(One-Time Password)는 한 번의 인증에 사용하도록 생성하는 일회용 인증값이에요. 대표적으로 인증기와 서버가 공유한 비밀값에 시간이나 카운터를 결합해 생성하고 검증해요. 같은 값을 다시 사용할 수 없도록 검증해야 하며, 로그인 요소의 조합에 따라 MFA의 일부로 활용할 수 있어요.",
+    "en": "An OTP (One-Time Password) is an authentication value generated for one-time use. Common authenticators derive values from a shared secret plus time or a counter. Verifiers must prevent reuse; OTPs can form part of MFA depending on the factor combination."
+  },
+  "description": {
+    "ko": "한 번의 인증에 사용하도록 만들고 검증하는 일회용 인증값이에요.",
+    "en": "A one-time value generated and verified for authentication."
+  },
+  "analogy": {
+    "ko": "한 번 쓰면 다시 쓸 수 없는 임시 입장 번호와 비슷해요.",
+    "en": "Like a temporary entry number that cannot be used again."
+  },
+  "details": {
+    "ko": [
+      "TOTP는 시간 기준으로, HOTP는 카운터 기준으로 값을 만들어요. 생성기가 바뀐다고 기존 세션이나 계정 권한이 자동 종료되는 것은 아니에요.",
+      "문자로 전달하는 일회용 코드와 인증 앱이 생성하는 OTP는 비슷한 사용 경험이지만 전달과 생성 구조가 달라요. 복구와 재등록 절차도 보호해야 해요."
+    ],
+    "en": [
+      "TOTP uses time and HOTP uses counters. A changing code does not automatically end existing sessions or revoke permissions.",
+      "SMS-delivered codes and authenticator-generated OTPs can look similar to users but have different generation and delivery mechanisms. Protect recovery and re-enrollment."
+    ]
+  },
+  "background": {
+    "ko": [
+      "반복 사용하는 비밀값이 노출됐을 때의 위험을 줄이고 추가 인증 수단을 제공하려고 활용해요."
+    ],
+    "en": [
+      "OTPs reduce reliance on reusable secrets and provide an additional authentication mechanism."
+    ]
+  },
+  "howItWorks": {
+    "ko": [
+      {
+        "title": "등록",
+        "text": "신뢰할 절차로 인증기와 검증에 필요한 정보를 등록해요."
+      },
+      {
+        "title": "생성",
+        "text": "시간이나 카운터에 따라 일회용 값을 만들어요."
+      },
+      {
+        "title": "검증",
+        "text": "유효 범위와 일치 여부를 확인하고 성공한 값의 재사용을 차단해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Enroll",
+        "text": "Enroll an authenticator and verification information through a trusted process."
+      },
+      {
+        "title": "Generate",
+        "text": "Generate a value from time or a counter."
+      },
+      {
+        "title": "Verify",
+        "text": "Check validity and matching and block reuse of a successful value."
+      }
+    ]
+  },
+  "examples": {
+    "ko": [
+      "인증 앱의 로그인 코드",
+      "금융용 OTP 인증기"
+    ],
+    "en": [
+      "Sign-in codes from authenticator apps",
+      "OTP authenticators for financial services"
+    ]
+  },
+  "usage": {
+    "ko": [
+      {
+        "title": "추가 인증 설계",
+        "text": "“OTP 만료와 재사용 차단, 입력 횟수 제한과 분실 시 재등록까지 함께 설계하자”라고 이야기해요."
+      }
+    ],
+    "en": [
+      {
+        "title": "Designing additional authentication",
+        "text": "Say: “Design expiration, reuse prevention, attempt limits and lost-authenticator recovery together.”"
+      }
+    ]
+  },
+  "misconceptions": [
+    {
+      "myth": {
+        "ko": "일회용이라 피싱 사이트에 입력해도 안전한가요?",
+        "en": "Is an OTP safe to enter on a phishing site?"
+      },
+      "fact": {
+        "ko": "가짜 사이트가 유효한 코드를 실제 서비스에 전달할 수 있어요. OTP는 피싱 저항성을 제공하지 않으므로 서비스 확인과 인증 방식 선택이 중요해요.",
+        "en": "A fake site can relay a valid code to the real service. OTPs are not phishing-resistant, so verify the service and assess authentication methods."
+      }
+    }
+  ],
+  "keywords": [
+    "authentication",
+    "mfa",
+    "passkey",
+    "phishing"
+  ],
+  "related": [
+    {
+      "id": "authentication",
+      "type": "prerequisite"
+    },
+    {
+      "id": "mfa",
+      "type": "related"
+    },
+    {
+      "id": "passkey",
+      "type": "related"
+    },
+    {
+      "id": "phishing",
+      "type": "related"
+    }
+  ]
+}
