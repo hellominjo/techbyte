@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import logo from "@/app/logo.png";
+import techbyteLogo from "@/app/techbyte.png";
 import CategoryIcon from "@/app/ui/category-icon";
 import ThemeToggle from "@/app/ui/theme-toggle";
 import { setLang, useLang } from "@/app/ui/language";
@@ -84,6 +85,14 @@ export default function SiteHeader() {
             height={20}
             preload
             className="size-7 dark:ring-1 dark:ring-white/15 techbyte:hidden"
+          />
+          {/* techbyte 서브도메인 로고 이미지 */}
+          <Image
+            src={techbyteLogo}
+            alt=""
+            width={20}
+            height={20}
+            className="hidden size-7 techbyte:block"
           />
           {/* 기본(zerofound.io): ZEROFOUND TECHBYTE */}
           <span className="mt-0.5 text-[19px] font-bold tracking-tight techbyte:hidden">
